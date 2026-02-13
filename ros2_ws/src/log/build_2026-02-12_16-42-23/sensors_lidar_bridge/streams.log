@@ -1,0 +1,3 @@
+[0.475s] Invoking command in '/mnt/home/leflarsa/autonomous-vehicle-project/ros2_ws/src/build/sensors_lidar_bridge': PS1=humble:\u@\h:\w\$ /usr/bin/cmake /mnt/home/leflarsa/autonomous-vehicle-project/ros2_ws/src/sensors_lidar_bridge -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/mnt/home/leflarsa/autonomous-vehicle-project/ros2_ws/src/install/sensors_lidar_bridge
+[0.477s] [0mCMake Error: The source directory "/mnt/home/leflarsa/autonomous-vehicle-project/ros2_ws/src/sensors_lidar_bridge" does not appear to contain CMakeLists.txt.
+[0.477s] Specify --help for usage, or press the help button on the CMake GUI.[0m

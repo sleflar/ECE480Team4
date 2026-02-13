@@ -1,0 +1,6 @@
+[0.145s] Invoking command in '/mnt/home/leflarsa/av/autonomous-vehicle-project/ros2_ws/build/curvy_road': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=humble:\u@\h:\w\$ /usr/bin/cmake --build /mnt/home/leflarsa/av/autonomous-vehicle-project/ros2_ws/build/curvy_road -- -j6 -l6
+[1.174s] [0mCMake Error: The current CMakeCache.txt directory /mnt/home/leflarsa/av/autonomous-vehicle-project/ros2_ws/build/curvy_road/CMakeCache.txt is different than the directory /mnt/home/leflarsa/autonomous-vehicle-project/ros2_ws/build/curvy_road where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[1.174s] [0mCMake Error: The source directory "/mnt/home/leflarsa/autonomous-vehicle-project/ros2_ws/curvy_road" does not exist.
+[1.174s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[1.174s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[1.441s] Invoked command in '/mnt/home/leflarsa/av/autonomous-vehicle-project/ros2_ws/build/curvy_road' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=humble:\u@\h:\w\$ /usr/bin/cmake --build /mnt/home/leflarsa/av/autonomous-vehicle-project/ros2_ws/build/curvy_road -- -j6 -l6

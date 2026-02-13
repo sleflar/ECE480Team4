@@ -1,0 +1,4 @@
+source;share/curvy_road/local_setup.bash
+source;share/curvy_road/local_setup.dsv
+source;share/curvy_road/local_setup.sh
+source;share/curvy_road/local_setup.zsh
