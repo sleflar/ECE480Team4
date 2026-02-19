@@ -1,0 +1,693 @@
+[0.460s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.460s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x149e13cb29e0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x149e13dfb910>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x149e13dfb910>>, mixin_verb=('build',))
+[1.002s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.003s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.003s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.003s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.003s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.003s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.003s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws'
+[1.003s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.003s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.003s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.004s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.004s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.004s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.004s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.004s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.004s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.021s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.021s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.021s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.022s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.022s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.024s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.024s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.024s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.025s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['ignore', 'ignore_ament_install']
+[1.025s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'ignore'
+[1.026s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'ignore_ament_install'
+[1.026s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['colcon_pkg']
+[1.026s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'colcon_pkg'
+[1.026s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['colcon_meta']
+[1.027s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'colcon_meta'
+[1.027s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['ros']
+[1.027s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'ros'
+[1.028s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['cmake', 'python']
+[1.028s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'cmake'
+[1.028s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'python'
+[1.028s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['python_setup_py']
+[1.028s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'python_setup_py'
+[1.031s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.031s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.031s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.032s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['ignore', 'ignore_ament_install']
+[1.032s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ignore'
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ignore_ament_install'
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['colcon_pkg']
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'colcon_pkg'
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['colcon_meta']
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'colcon_meta'
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['ros']
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ros'
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['cmake', 'python']
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'cmake'
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'python'
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['python_setup_py']
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'python_setup_py'
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.040s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.040s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.042s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.042s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.042s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.043s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.043s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.044s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_pure_pursuit_node) by extensions ['ignore', 'ignore_ament_install']
+[1.045s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_pure_pursuit_node) by extension 'ignore'
+[1.045s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_pure_pursuit_node) by extension 'ignore_ament_install'
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_pure_pursuit_node) by extensions ['colcon_pkg']
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_pure_pursuit_node) by extension 'colcon_pkg'
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_pure_pursuit_node) by extensions ['colcon_meta']
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_pure_pursuit_node) by extension 'colcon_meta'
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_pure_pursuit_node) by extensions ['ros']
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_pure_pursuit_node) by extension 'ros'
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_pure_pursuit_node) by extensions ['cmake', 'python']
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_pure_pursuit_node) by extension 'cmake'
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_pure_pursuit_node) by extension 'python'
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_pure_pursuit_node) by extensions ['python_setup_py']
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_pure_pursuit_node) by extension 'python_setup_py'
+[1.051s] Level 1:colcon.colcon_core.package_identification:_identify(src/curvy_road) by extensions ['ignore', 'ignore_ament_install']
+[1.051s] Level 1:colcon.colcon_core.package_identification:_identify(src/curvy_road) by extension 'ignore'
+[1.051s] Level 1:colcon.colcon_core.package_identification:_identify(src/curvy_road) by extension 'ignore_ament_install'
+[1.051s] Level 1:colcon.colcon_core.package_identification:_identify(src/curvy_road) by extensions ['colcon_pkg']
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(src/curvy_road) by extension 'colcon_pkg'
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(src/curvy_road) by extensions ['colcon_meta']
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(src/curvy_road) by extension 'colcon_meta'
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(src/curvy_road) by extensions ['ros']
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(src/curvy_road) by extension 'ros'
+[1.057s] DEBUG:colcon.colcon_core.package_identification:Package 'src/curvy_road' with type 'ros.ament_cmake' and name 'curvy_road'
+[1.059s] Level 1:colcon.colcon_core.package_identification:_identify(src/lane_follow) by extensions ['ignore', 'ignore_ament_install']
+[1.059s] Level 1:colcon.colcon_core.package_identification:_identify(src/lane_follow) by extension 'ignore'
+[1.060s] Level 1:colcon.colcon_core.package_identification:_identify(src/lane_follow) by extension 'ignore_ament_install'
+[1.061s] Level 1:colcon.colcon_core.package_identification:_identify(src/lane_follow) by extensions ['colcon_pkg']
+[1.061s] Level 1:colcon.colcon_core.package_identification:_identify(src/lane_follow) by extension 'colcon_pkg'
+[1.061s] Level 1:colcon.colcon_core.package_identification:_identify(src/lane_follow) by extensions ['colcon_meta']
+[1.061s] Level 1:colcon.colcon_core.package_identification:_identify(src/lane_follow) by extension 'colcon_meta'
+[1.061s] Level 1:colcon.colcon_core.package_identification:_identify(src/lane_follow) by extensions ['ros']
+[1.062s] Level 1:colcon.colcon_core.package_identification:_identify(src/lane_follow) by extension 'ros'
+[1.064s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lane_follow' with type 'ros.ament_python' and name 'lane_follow'
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_ekf_node) by extensions ['ignore', 'ignore_ament_install']
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_ekf_node) by extension 'ignore'
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_ekf_node) by extension 'ignore_ament_install'
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_ekf_node) by extensions ['colcon_pkg']
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_ekf_node) by extension 'colcon_pkg'
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_ekf_node) by extensions ['colcon_meta']
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_ekf_node) by extension 'colcon_meta'
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_ekf_node) by extensions ['ros']
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_ekf_node) by extension 'ros'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_ekf_node) by extensions ['cmake', 'python']
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_ekf_node) by extension 'cmake'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_ekf_node) by extension 'python'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_ekf_node) by extensions ['python_setup_py']
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_ekf_node) by extension 'python_setup_py'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_orb_slam_vio_node) by extensions ['ignore', 'ignore_ament_install']
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_orb_slam_vio_node) by extension 'ignore'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_orb_slam_vio_node) by extension 'ignore_ament_install'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_orb_slam_vio_node) by extensions ['colcon_pkg']
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_orb_slam_vio_node) by extension 'colcon_pkg'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_orb_slam_vio_node) by extensions ['colcon_meta']
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_orb_slam_vio_node) by extension 'colcon_meta'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_orb_slam_vio_node) by extensions ['ros']
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_orb_slam_vio_node) by extension 'ros'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_orb_slam_vio_node) by extensions ['cmake', 'python']
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_orb_slam_vio_node) by extension 'cmake'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_orb_slam_vio_node) by extension 'python'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_orb_slam_vio_node) by extensions ['python_setup_py']
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_orb_slam_vio_node) by extension 'python_setup_py'
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(src/obstacles_det) by extensions ['ignore', 'ignore_ament_install']
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(src/obstacles_det) by extension 'ignore'
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(src/obstacles_det) by extension 'ignore_ament_install'
+[1.075s] Level 1:colcon.colcon_core.package_identification:_identify(src/obstacles_det) by extensions ['colcon_pkg']
+[1.075s] Level 1:colcon.colcon_core.package_identification:_identify(src/obstacles_det) by extension 'colcon_pkg'
+[1.075s] Level 1:colcon.colcon_core.package_identification:_identify(src/obstacles_det) by extensions ['colcon_meta']
+[1.075s] Level 1:colcon.colcon_core.package_identification:_identify(src/obstacles_det) by extension 'colcon_meta'
+[1.075s] Level 1:colcon.colcon_core.package_identification:_identify(src/obstacles_det) by extensions ['ros']
+[1.075s] Level 1:colcon.colcon_core.package_identification:_identify(src/obstacles_det) by extension 'ros'
+[1.076s] Level 1:colcon.colcon_core.package_identification:_identify(src/obstacles_det) by extensions ['cmake', 'python']
+[1.076s] Level 1:colcon.colcon_core.package_identification:_identify(src/obstacles_det) by extension 'cmake'
+[1.076s] Level 1:colcon.colcon_core.package_identification:_identify(src/obstacles_det) by extension 'python'
+[1.076s] Level 1:colcon.colcon_core.package_identification:_identify(src/obstacles_det) by extensions ['python_setup_py']
+[1.076s] Level 1:colcon.colcon_core.package_identification:_identify(src/obstacles_det) by extension 'python_setup_py'
+[1.078s] Level 1:colcon.colcon_core.package_identification:_identify(src/obstacles_det/obstacle_det) by extensions ['ignore', 'ignore_ament_install']
+[1.078s] Level 1:colcon.colcon_core.package_identification:_identify(src/obstacles_det/obstacle_det) by extension 'ignore'
+[1.078s] Level 1:colcon.colcon_core.package_identification:_identify(src/obstacles_det/obstacle_det) by extension 'ignore_ament_install'
+[1.079s] Level 1:colcon.colcon_core.package_identification:_identify(src/obstacles_det/obstacle_det) by extensions ['colcon_pkg']
+[1.079s] Level 1:colcon.colcon_core.package_identification:_identify(src/obstacles_det/obstacle_det) by extension 'colcon_pkg'
+[1.079s] Level 1:colcon.colcon_core.package_identification:_identify(src/obstacles_det/obstacle_det) by extensions ['colcon_meta']
+[1.079s] Level 1:colcon.colcon_core.package_identification:_identify(src/obstacles_det/obstacle_det) by extension 'colcon_meta'
+[1.079s] Level 1:colcon.colcon_core.package_identification:_identify(src/obstacles_det/obstacle_det) by extensions ['ros']
+[1.079s] Level 1:colcon.colcon_core.package_identification:_identify(src/obstacles_det/obstacle_det) by extension 'ros'
+[1.082s] DEBUG:colcon.colcon_core.package_identification:Package 'src/obstacles_det/obstacle_det' with type 'ros.ament_python' and name 'obstacle_det'
+[1.083s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_fusion_node) by extensions ['ignore', 'ignore_ament_install']
+[1.083s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_fusion_node) by extension 'ignore'
+[1.083s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_fusion_node) by extension 'ignore_ament_install'
+[1.084s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_fusion_node) by extensions ['colcon_pkg']
+[1.084s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_fusion_node) by extension 'colcon_pkg'
+[1.084s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_fusion_node) by extensions ['colcon_meta']
+[1.084s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_fusion_node) by extension 'colcon_meta'
+[1.084s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_fusion_node) by extensions ['ros']
+[1.084s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_fusion_node) by extension 'ros'
+[1.085s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_fusion_node) by extensions ['cmake', 'python']
+[1.085s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_fusion_node) by extension 'cmake'
+[1.085s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_fusion_node) by extension 'python'
+[1.086s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_fusion_node) by extensions ['python_setup_py']
+[1.086s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_fusion_node) by extension 'python_setup_py'
+[1.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_ml_node) by extensions ['ignore', 'ignore_ament_install']
+[1.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_ml_node) by extension 'ignore'
+[1.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_ml_node) by extension 'ignore_ament_install'
+[1.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_ml_node) by extensions ['colcon_pkg']
+[1.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_ml_node) by extension 'colcon_pkg'
+[1.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_ml_node) by extensions ['colcon_meta']
+[1.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_ml_node) by extension 'colcon_meta'
+[1.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_ml_node) by extensions ['ros']
+[1.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_ml_node) by extension 'ros'
+[1.091s] DEBUG:colcon.colcon_core.package_identification:Package 'src/perception_ml_node' with type 'ros.ament_python' and name 'perception_ml_node'
+[1.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_sync_node) by extensions ['ignore', 'ignore_ament_install']
+[1.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_sync_node) by extension 'ignore'
+[1.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_sync_node) by extension 'ignore_ament_install'
+[1.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_sync_node) by extensions ['colcon_pkg']
+[1.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_sync_node) by extension 'colcon_pkg'
+[1.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_sync_node) by extensions ['colcon_meta']
+[1.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_sync_node) by extension 'colcon_meta'
+[1.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_sync_node) by extensions ['ros']
+[1.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_sync_node) by extension 'ros'
+[1.096s] DEBUG:colcon.colcon_core.package_identification:Failed to parse potential ROS package manifest in'src/perception_sync_node': Error(s) in package 'src/perception_sync_node/package.xml':
+The manifest contains invalid XML:
+not well-formed (invalid token): line 6, column 36
+[1.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_sync_node) by extensions ['cmake', 'python']
+[1.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_sync_node) by extension 'cmake'
+[1.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_sync_node) by extension 'python'
+[1.098s] DEBUG:colcon.colcon_core.package_identification:Python package in 'src/perception_sync_node' passes arguments to the setup() function which requires a different identification extension than 'python'
+[1.098s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_sync_node) by extensions ['python_setup_py']
+[1.098s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_sync_node) by extension 'python_setup_py'
+[1.361s] DEBUG:colcon.colcon_core.package_identification:Package 'src/perception_sync_node' with type 'python' and name 'perception_sync_node'
+[1.363s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning_global_planner_node) by extensions ['ignore', 'ignore_ament_install']
+[1.363s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning_global_planner_node) by extension 'ignore'
+[1.363s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning_global_planner_node) by extension 'ignore_ament_install'
+[1.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning_global_planner_node) by extensions ['colcon_pkg']
+[1.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning_global_planner_node) by extension 'colcon_pkg'
+[1.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning_global_planner_node) by extensions ['colcon_meta']
+[1.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning_global_planner_node) by extension 'colcon_meta'
+[1.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning_global_planner_node) by extensions ['ros']
+[1.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning_global_planner_node) by extension 'ros'
+[1.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning_global_planner_node) by extensions ['cmake', 'python']
+[1.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning_global_planner_node) by extension 'cmake'
+[1.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning_global_planner_node) by extension 'python'
+[1.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning_global_planner_node) by extensions ['python_setup_py']
+[1.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/planning_global_planner_node) by extension 'python_setup_py'
+[1.367s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors_camera_node) by extensions ['ignore', 'ignore_ament_install']
+[1.367s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors_camera_node) by extension 'ignore'
+[1.367s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors_camera_node) by extension 'ignore_ament_install'
+[1.367s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors_camera_node) by extensions ['colcon_pkg']
+[1.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors_camera_node) by extension 'colcon_pkg'
+[1.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors_camera_node) by extensions ['colcon_meta']
+[1.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors_camera_node) by extension 'colcon_meta'
+[1.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors_camera_node) by extensions ['ros']
+[1.368s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors_camera_node) by extension 'ros'
+[1.371s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sensors_camera_node' with type 'ros.ament_python' and name 'sensors_camera_node'
+[1.373s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors_imu_bridge) by extensions ['ignore', 'ignore_ament_install']
+[1.373s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors_imu_bridge) by extension 'ignore'
+[1.373s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors_imu_bridge) by extension 'ignore_ament_install'
+[1.373s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors_imu_bridge) by extensions ['colcon_pkg']
+[1.373s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors_imu_bridge) by extension 'colcon_pkg'
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors_imu_bridge) by extensions ['colcon_meta']
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors_imu_bridge) by extension 'colcon_meta'
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors_imu_bridge) by extensions ['ros']
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors_imu_bridge) by extension 'ros'
+[1.378s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sensors_imu_bridge' with type 'ros.ament_python' and name 'sensors_imu_bridge'
+[1.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors_lidar_bridge) by extensions ['ignore', 'ignore_ament_install']
+[1.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors_lidar_bridge) by extension 'ignore'
+[1.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors_lidar_bridge) by extension 'ignore_ament_install'
+[1.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors_lidar_bridge) by extensions ['colcon_pkg']
+[1.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors_lidar_bridge) by extension 'colcon_pkg'
+[1.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors_lidar_bridge) by extensions ['colcon_meta']
+[1.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors_lidar_bridge) by extension 'colcon_meta'
+[1.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors_lidar_bridge) by extensions ['ros']
+[1.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors_lidar_bridge) by extension 'ros'
+[1.386s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sensors_lidar_bridge' with type 'ros.ament_python' and name 'sensors_lidar_bridge'
+[1.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/tools_bag_recorder) by extensions ['ignore', 'ignore_ament_install']
+[1.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/tools_bag_recorder) by extension 'ignore'
+[1.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/tools_bag_recorder) by extension 'ignore_ament_install'
+[1.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/tools_bag_recorder) by extensions ['colcon_pkg']
+[1.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/tools_bag_recorder) by extension 'colcon_pkg'
+[1.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/tools_bag_recorder) by extensions ['colcon_meta']
+[1.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/tools_bag_recorder) by extension 'colcon_meta'
+[1.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/tools_bag_recorder) by extensions ['ros']
+[1.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/tools_bag_recorder) by extension 'ros'
+[1.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/tools_bag_recorder) by extensions ['cmake', 'python']
+[1.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/tools_bag_recorder) by extension 'cmake'
+[1.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/tools_bag_recorder) by extension 'python'
+[1.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/tools_bag_recorder) by extensions ['python_setup_py']
+[1.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/tools_bag_recorder) by extension 'python_setup_py'
+[1.391s] Level 1:colcon.colcon_core.package_identification:_identify(src/viz_rviz) by extensions ['ignore', 'ignore_ament_install']
+[1.391s] Level 1:colcon.colcon_core.package_identification:_identify(src/viz_rviz) by extension 'ignore'
+[1.391s] Level 1:colcon.colcon_core.package_identification:_identify(src/viz_rviz) by extension 'ignore_ament_install'
+[1.391s] Level 1:colcon.colcon_core.package_identification:_identify(src/viz_rviz) by extensions ['colcon_pkg']
+[1.391s] Level 1:colcon.colcon_core.package_identification:_identify(src/viz_rviz) by extension 'colcon_pkg'
+[1.392s] Level 1:colcon.colcon_core.package_identification:_identify(src/viz_rviz) by extensions ['colcon_meta']
+[1.392s] Level 1:colcon.colcon_core.package_identification:_identify(src/viz_rviz) by extension 'colcon_meta'
+[1.392s] Level 1:colcon.colcon_core.package_identification:_identify(src/viz_rviz) by extensions ['ros']
+[1.392s] Level 1:colcon.colcon_core.package_identification:_identify(src/viz_rviz) by extension 'ros'
+[1.392s] Level 1:colcon.colcon_core.package_identification:_identify(src/viz_rviz) by extensions ['cmake', 'python']
+[1.392s] Level 1:colcon.colcon_core.package_identification:_identify(src/viz_rviz) by extension 'cmake'
+[1.392s] Level 1:colcon.colcon_core.package_identification:_identify(src/viz_rviz) by extension 'python'
+[1.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/viz_rviz) by extensions ['python_setup_py']
+[1.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/viz_rviz) by extension 'python_setup_py'
+[1.394s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extensions ['ignore', 'ignore_ament_install']
+[1.394s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'ignore'
+[1.394s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'ignore_ament_install'
+[1.394s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extensions ['colcon_pkg']
+[1.394s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'colcon_pkg'
+[1.395s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extensions ['colcon_meta']
+[1.395s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'colcon_meta'
+[1.395s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extensions ['ros']
+[1.395s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'ros'
+[1.395s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extensions ['cmake', 'python']
+[1.395s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'cmake'
+[1.396s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'python'
+[1.396s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extensions ['python_setup_py']
+[1.396s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'python_setup_py'
+[1.396s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.396s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.396s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.396s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.396s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.459s] Level 5:colcon.colcon_core.verb:set package 'curvy_road' build argument 'cmake_args' from command line to 'None'
+[1.459s] Level 5:colcon.colcon_core.verb:set package 'curvy_road' build argument 'cmake_target' from command line to 'None'
+[1.459s] Level 5:colcon.colcon_core.verb:set package 'curvy_road' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.459s] Level 5:colcon.colcon_core.verb:set package 'curvy_road' build argument 'cmake_clean_cache' from command line to 'False'
+[1.459s] Level 5:colcon.colcon_core.verb:set package 'curvy_road' build argument 'cmake_clean_first' from command line to 'False'
+[1.459s] Level 5:colcon.colcon_core.verb:set package 'curvy_road' build argument 'cmake_force_configure' from command line to 'False'
+[1.459s] Level 5:colcon.colcon_core.verb:set package 'curvy_road' build argument 'ament_cmake_args' from command line to 'None'
+[1.459s] Level 5:colcon.colcon_core.verb:set package 'curvy_road' build argument 'catkin_cmake_args' from command line to 'None'
+[1.459s] Level 5:colcon.colcon_core.verb:set package 'curvy_road' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.459s] DEBUG:colcon.colcon_core.verb:Building package 'curvy_road' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/curvy_road', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/curvy_road', 'merge_install': False, 'path': '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/src/curvy_road', 'symlink_install': True, 'test_result_base': None}
+[1.460s] Level 5:colcon.colcon_core.verb:set package 'lane_follow' build argument 'cmake_args' from command line to 'None'
+[1.460s] Level 5:colcon.colcon_core.verb:set package 'lane_follow' build argument 'cmake_target' from command line to 'None'
+[1.460s] Level 5:colcon.colcon_core.verb:set package 'lane_follow' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.460s] Level 5:colcon.colcon_core.verb:set package 'lane_follow' build argument 'cmake_clean_cache' from command line to 'False'
+[1.460s] Level 5:colcon.colcon_core.verb:set package 'lane_follow' build argument 'cmake_clean_first' from command line to 'False'
+[1.460s] Level 5:colcon.colcon_core.verb:set package 'lane_follow' build argument 'cmake_force_configure' from command line to 'False'
+[1.460s] Level 5:colcon.colcon_core.verb:set package 'lane_follow' build argument 'ament_cmake_args' from command line to 'None'
+[1.460s] Level 5:colcon.colcon_core.verb:set package 'lane_follow' build argument 'catkin_cmake_args' from command line to 'None'
+[1.460s] Level 5:colcon.colcon_core.verb:set package 'lane_follow' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.460s] DEBUG:colcon.colcon_core.verb:Building package 'lane_follow' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/lane_follow', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/lane_follow', 'merge_install': False, 'path': '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/src/lane_follow', 'symlink_install': True, 'test_result_base': None}
+[1.460s] Level 5:colcon.colcon_core.verb:set package 'obstacle_det' build argument 'cmake_args' from command line to 'None'
+[1.460s] Level 5:colcon.colcon_core.verb:set package 'obstacle_det' build argument 'cmake_target' from command line to 'None'
+[1.460s] Level 5:colcon.colcon_core.verb:set package 'obstacle_det' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.460s] Level 5:colcon.colcon_core.verb:set package 'obstacle_det' build argument 'cmake_clean_cache' from command line to 'False'
+[1.460s] Level 5:colcon.colcon_core.verb:set package 'obstacle_det' build argument 'cmake_clean_first' from command line to 'False'
+[1.460s] Level 5:colcon.colcon_core.verb:set package 'obstacle_det' build argument 'cmake_force_configure' from command line to 'False'
+[1.460s] Level 5:colcon.colcon_core.verb:set package 'obstacle_det' build argument 'ament_cmake_args' from command line to 'None'
+[1.460s] Level 5:colcon.colcon_core.verb:set package 'obstacle_det' build argument 'catkin_cmake_args' from command line to 'None'
+[1.460s] Level 5:colcon.colcon_core.verb:set package 'obstacle_det' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.460s] DEBUG:colcon.colcon_core.verb:Building package 'obstacle_det' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/obstacle_det', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/obstacle_det', 'merge_install': False, 'path': '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/src/obstacles_det/obstacle_det', 'symlink_install': True, 'test_result_base': None}
+[1.461s] Level 5:colcon.colcon_core.verb:set package 'perception_ml_node' build argument 'cmake_args' from command line to 'None'
+[1.461s] Level 5:colcon.colcon_core.verb:set package 'perception_ml_node' build argument 'cmake_target' from command line to 'None'
+[1.461s] Level 5:colcon.colcon_core.verb:set package 'perception_ml_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.461s] Level 5:colcon.colcon_core.verb:set package 'perception_ml_node' build argument 'cmake_clean_cache' from command line to 'False'
+[1.461s] Level 5:colcon.colcon_core.verb:set package 'perception_ml_node' build argument 'cmake_clean_first' from command line to 'False'
+[1.461s] Level 5:colcon.colcon_core.verb:set package 'perception_ml_node' build argument 'cmake_force_configure' from command line to 'False'
+[1.461s] Level 5:colcon.colcon_core.verb:set package 'perception_ml_node' build argument 'ament_cmake_args' from command line to 'None'
+[1.461s] Level 5:colcon.colcon_core.verb:set package 'perception_ml_node' build argument 'catkin_cmake_args' from command line to 'None'
+[1.461s] Level 5:colcon.colcon_core.verb:set package 'perception_ml_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.461s] DEBUG:colcon.colcon_core.verb:Building package 'perception_ml_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/perception_ml_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_ml_node', 'merge_install': False, 'path': '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/src/perception_ml_node', 'symlink_install': True, 'test_result_base': None}
+[1.461s] Level 5:colcon.colcon_core.verb:set package 'perception_sync_node' build argument 'cmake_args' from command line to 'None'
+[1.461s] Level 5:colcon.colcon_core.verb:set package 'perception_sync_node' build argument 'cmake_target' from command line to 'None'
+[1.461s] Level 5:colcon.colcon_core.verb:set package 'perception_sync_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.461s] Level 5:colcon.colcon_core.verb:set package 'perception_sync_node' build argument 'cmake_clean_cache' from command line to 'False'
+[1.461s] Level 5:colcon.colcon_core.verb:set package 'perception_sync_node' build argument 'cmake_clean_first' from command line to 'False'
+[1.461s] Level 5:colcon.colcon_core.verb:set package 'perception_sync_node' build argument 'cmake_force_configure' from command line to 'False'
+[1.461s] Level 5:colcon.colcon_core.verb:set package 'perception_sync_node' build argument 'ament_cmake_args' from command line to 'None'
+[1.461s] Level 5:colcon.colcon_core.verb:set package 'perception_sync_node' build argument 'catkin_cmake_args' from command line to 'None'
+[1.462s] Level 5:colcon.colcon_core.verb:set package 'perception_sync_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.462s] DEBUG:colcon.colcon_core.verb:Building package 'perception_sync_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/perception_sync_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_sync_node', 'merge_install': False, 'path': '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/src/perception_sync_node', 'symlink_install': True, 'test_result_base': None}
+[1.462s] Level 5:colcon.colcon_core.verb:set package 'sensors_camera_node' build argument 'cmake_args' from command line to 'None'
+[1.462s] Level 5:colcon.colcon_core.verb:set package 'sensors_camera_node' build argument 'cmake_target' from command line to 'None'
+[1.462s] Level 5:colcon.colcon_core.verb:set package 'sensors_camera_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.462s] Level 5:colcon.colcon_core.verb:set package 'sensors_camera_node' build argument 'cmake_clean_cache' from command line to 'False'
+[1.462s] Level 5:colcon.colcon_core.verb:set package 'sensors_camera_node' build argument 'cmake_clean_first' from command line to 'False'
+[1.462s] Level 5:colcon.colcon_core.verb:set package 'sensors_camera_node' build argument 'cmake_force_configure' from command line to 'False'
+[1.462s] Level 5:colcon.colcon_core.verb:set package 'sensors_camera_node' build argument 'ament_cmake_args' from command line to 'None'
+[1.462s] Level 5:colcon.colcon_core.verb:set package 'sensors_camera_node' build argument 'catkin_cmake_args' from command line to 'None'
+[1.462s] Level 5:colcon.colcon_core.verb:set package 'sensors_camera_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.462s] DEBUG:colcon.colcon_core.verb:Building package 'sensors_camera_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/sensors_camera_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node', 'merge_install': False, 'path': '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/src/sensors_camera_node', 'symlink_install': True, 'test_result_base': None}
+[1.462s] Level 5:colcon.colcon_core.verb:set package 'sensors_imu_bridge' build argument 'cmake_args' from command line to 'None'
+[1.462s] Level 5:colcon.colcon_core.verb:set package 'sensors_imu_bridge' build argument 'cmake_target' from command line to 'None'
+[1.462s] Level 5:colcon.colcon_core.verb:set package 'sensors_imu_bridge' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.462s] Level 5:colcon.colcon_core.verb:set package 'sensors_imu_bridge' build argument 'cmake_clean_cache' from command line to 'False'
+[1.462s] Level 5:colcon.colcon_core.verb:set package 'sensors_imu_bridge' build argument 'cmake_clean_first' from command line to 'False'
+[1.463s] Level 5:colcon.colcon_core.verb:set package 'sensors_imu_bridge' build argument 'cmake_force_configure' from command line to 'False'
+[1.463s] Level 5:colcon.colcon_core.verb:set package 'sensors_imu_bridge' build argument 'ament_cmake_args' from command line to 'None'
+[1.463s] Level 5:colcon.colcon_core.verb:set package 'sensors_imu_bridge' build argument 'catkin_cmake_args' from command line to 'None'
+[1.463s] Level 5:colcon.colcon_core.verb:set package 'sensors_imu_bridge' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.463s] DEBUG:colcon.colcon_core.verb:Building package 'sensors_imu_bridge' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/sensors_imu_bridge', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_imu_bridge', 'merge_install': False, 'path': '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/src/sensors_imu_bridge', 'symlink_install': True, 'test_result_base': None}
+[1.463s] Level 5:colcon.colcon_core.verb:set package 'sensors_lidar_bridge' build argument 'cmake_args' from command line to 'None'
+[1.463s] Level 5:colcon.colcon_core.verb:set package 'sensors_lidar_bridge' build argument 'cmake_target' from command line to 'None'
+[1.463s] Level 5:colcon.colcon_core.verb:set package 'sensors_lidar_bridge' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.463s] Level 5:colcon.colcon_core.verb:set package 'sensors_lidar_bridge' build argument 'cmake_clean_cache' from command line to 'False'
+[1.463s] Level 5:colcon.colcon_core.verb:set package 'sensors_lidar_bridge' build argument 'cmake_clean_first' from command line to 'False'
+[1.463s] Level 5:colcon.colcon_core.verb:set package 'sensors_lidar_bridge' build argument 'cmake_force_configure' from command line to 'False'
+[1.463s] Level 5:colcon.colcon_core.verb:set package 'sensors_lidar_bridge' build argument 'ament_cmake_args' from command line to 'None'
+[1.463s] Level 5:colcon.colcon_core.verb:set package 'sensors_lidar_bridge' build argument 'catkin_cmake_args' from command line to 'None'
+[1.463s] Level 5:colcon.colcon_core.verb:set package 'sensors_lidar_bridge' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.463s] DEBUG:colcon.colcon_core.verb:Building package 'sensors_lidar_bridge' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/sensors_lidar_bridge', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_lidar_bridge', 'merge_install': False, 'path': '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/src/sensors_lidar_bridge', 'symlink_install': True, 'test_result_base': None}
+[1.463s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.464s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.464s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/src/curvy_road' with build type 'ament_cmake'
+[1.464s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/src/curvy_road'
+[1.469s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.469s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.469s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.486s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/src/lane_follow' with build type 'ament_python'
+[1.487s] Level 1:colcon.colcon_core.shell:create_environment_hook('lane_follow', 'ament_prefix_path')
+[1.487s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/lane_follow/share/lane_follow/hook/ament_prefix_path.ps1'
+[1.496s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/lane_follow/share/lane_follow/hook/ament_prefix_path.dsv'
+[1.500s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/lane_follow/share/lane_follow/hook/ament_prefix_path.sh'
+[1.505s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.505s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.515s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/src/obstacles_det/obstacle_det' with build type 'ament_python'
+[1.515s] Level 1:colcon.colcon_core.shell:create_environment_hook('obstacle_det', 'ament_prefix_path')
+[1.515s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/obstacle_det/share/obstacle_det/hook/ament_prefix_path.ps1'
+[1.523s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/obstacle_det/share/obstacle_det/hook/ament_prefix_path.dsv'
+[1.526s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/obstacle_det/share/obstacle_det/hook/ament_prefix_path.sh'
+[1.531s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.531s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.540s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/src/perception_ml_node' with build type 'ament_python'
+[1.541s] Level 1:colcon.colcon_core.shell:create_environment_hook('perception_ml_node', 'ament_prefix_path')
+[1.541s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_ml_node/share/perception_ml_node/hook/ament_prefix_path.ps1'
+[1.549s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_ml_node/share/perception_ml_node/hook/ament_prefix_path.dsv'
+[1.553s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_ml_node/share/perception_ml_node/hook/ament_prefix_path.sh'
+[1.558s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.558s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.567s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/src/perception_sync_node'
+[1.567s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.568s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.577s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/src/sensors_camera_node' with build type 'ament_python'
+[1.577s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensors_camera_node', 'ament_prefix_path')
+[1.577s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node/share/sensors_camera_node/hook/ament_prefix_path.ps1'
+[1.585s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node/share/sensors_camera_node/hook/ament_prefix_path.dsv'
+[1.589s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node/share/sensors_camera_node/hook/ament_prefix_path.sh'
+[1.593s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.593s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.639s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/curvy_road': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=humble:\u@\h:\w\$ /usr/bin/cmake --build /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/curvy_road -- -j6 -l6
+[2.088s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/src/lane_follow'
+[2.089s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.089s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.364s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/src/obstacles_det/obstacle_det'
+[2.364s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.365s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.640s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/src/perception_ml_node'
+[2.641s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.641s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.187s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/src/sensors_camera_node'
+[3.187s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.187s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.198s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/curvy_road' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=humble:\u@\h:\w\$ /usr/bin/cmake --build /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/curvy_road -- -j6 -l6
+[3.243s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/curvy_road': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=humble:\u@\h:\w\$ /usr/bin/cmake --install /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/curvy_road
+[3.421s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/perception_sync_node': PS1=humble:\u@\h:\w\$ PYTHONPATH=/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/perception_sync_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_sync_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/perception_sync_node/build --no-deps
+[3.597s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(curvy_road)
+[3.599s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/curvy_road' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=humble:\u@\h:\w\$ /usr/bin/cmake --install /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/curvy_road
+[3.611s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/curvy_road' for CMake module files
+[3.654s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/curvy_road' for CMake config files
+[3.669s] Level 1:colcon.colcon_core.shell:create_environment_hook('curvy_road', 'cmake_prefix_path')
+[3.670s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/hook/cmake_prefix_path.ps1'
+[3.674s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/hook/cmake_prefix_path.dsv'
+[3.677s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/hook/cmake_prefix_path.sh'
+[3.681s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/curvy_road/bin'
+[3.682s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/curvy_road/lib/pkgconfig/curvy_road.pc'
+[3.682s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/curvy_road/lib/python3.10/site-packages'
+[3.682s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/curvy_road/bin'
+[3.683s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/package.ps1'
+[3.687s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/package.dsv'
+[3.695s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/package.sh'
+[3.699s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/package.bash'
+[3.703s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/package.zsh'
+[3.708s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/curvy_road/share/colcon-core/packages/curvy_road)
+[3.712s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(curvy_road)
+[3.712s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/curvy_road' for CMake module files
+[3.715s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/curvy_road' for CMake config files
+[3.717s] Level 1:colcon.colcon_core.shell:create_environment_hook('curvy_road', 'cmake_prefix_path')
+[3.718s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/hook/cmake_prefix_path.ps1'
+[3.723s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/hook/cmake_prefix_path.dsv'
+[3.725s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/hook/cmake_prefix_path.sh'
+[3.728s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/curvy_road/bin'
+[3.728s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/curvy_road/lib/pkgconfig/curvy_road.pc'
+[3.729s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/curvy_road/lib/python3.10/site-packages'
+[3.729s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/curvy_road/bin'
+[3.729s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/package.ps1'
+[3.732s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/package.dsv'
+[3.735s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/package.sh'
+[3.738s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/package.bash'
+[3.740s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/package.zsh'
+[3.743s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/curvy_road/share/colcon-core/packages/curvy_road)
+[3.746s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/src/sensors_imu_bridge' with build type 'ament_python'
+[3.746s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensors_imu_bridge', 'ament_prefix_path')
+[3.747s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_imu_bridge/share/sensors_imu_bridge/hook/ament_prefix_path.ps1'
+[3.760s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_imu_bridge/share/sensors_imu_bridge/hook/ament_prefix_path.dsv'
+[3.764s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_imu_bridge/share/sensors_imu_bridge/hook/ament_prefix_path.sh'
+[3.770s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.770s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.815s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/lane_follow': PS1=humble:\u@\h:\w\$ PYTHONPATH=/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/lane_follow/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/lane_follow/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/lane_follow/build --no-deps symlink_data
+[3.833s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/perception_ml_node': PS1=humble:\u@\h:\w\$ PYTHONPATH=/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/perception_ml_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_ml_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/perception_ml_node/build --no-deps symlink_data
+[3.856s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/sensors_camera_node': PS1=humble:\u@\h:\w\$ PYTHONPATH=/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/sensors_camera_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/sensors_camera_node/build --no-deps symlink_data
+[3.876s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/obstacle_det': PS1=humble:\u@\h:\w\$ PYTHONPATH=/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/obstacle_det/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/obstacle_det/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/obstacle_det/build --no-deps symlink_data
+[4.179s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/src/sensors_imu_bridge'
+[4.179s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.179s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.208s] Level 1:colcon.colcon_core.shell:create_environment_hook('perception_sync_node', 'pythonpath_develop')
+[4.209s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/perception_sync_node/share/perception_sync_node/hook/pythonpath_develop.ps1'
+[4.211s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/perception_sync_node' returned '0': PS1=humble:\u@\h:\w\$ PYTHONPATH=/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/perception_sync_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_sync_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/perception_sync_node/build --no-deps
+[4.226s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/perception_sync_node/share/perception_sync_node/hook/pythonpath_develop.dsv'
+[4.229s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/perception_sync_node/share/perception_sync_node/hook/pythonpath_develop.sh'
+[4.232s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_sync_node' for CMake module files
+[4.240s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_sync_node' for CMake config files
+[4.258s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_sync_node/lib'
+[4.258s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_sync_node/bin'
+[4.259s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_sync_node/lib/pkgconfig/perception_sync_node.pc'
+[4.259s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_sync_node/lib/python3.10/site-packages'
+[4.259s] Level 1:colcon.colcon_core.shell:create_environment_hook('perception_sync_node', 'pythonpath')
+[4.260s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_sync_node/share/perception_sync_node/hook/pythonpath.ps1'
+[4.263s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_sync_node/share/perception_sync_node/hook/pythonpath.dsv'
+[4.266s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_sync_node/share/perception_sync_node/hook/pythonpath.sh'
+[4.269s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_sync_node/bin'
+[4.269s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(perception_sync_node)
+[4.270s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_sync_node/share/perception_sync_node/package.ps1'
+[4.273s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_sync_node/share/perception_sync_node/package.dsv'
+[4.275s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_sync_node/share/perception_sync_node/package.sh'
+[4.280s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_sync_node/share/perception_sync_node/package.bash'
+[4.283s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_sync_node/share/perception_sync_node/package.zsh'
+[4.285s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_sync_node/share/colcon-core/packages/perception_sync_node)
+[4.291s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/src/sensors_lidar_bridge' with build type 'ament_python'
+[4.291s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensors_lidar_bridge', 'ament_prefix_path')
+[4.292s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/sensors_lidar_bridge/hook/ament_prefix_path.ps1'
+[4.300s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/sensors_lidar_bridge/hook/ament_prefix_path.dsv'
+[4.304s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/sensors_lidar_bridge/hook/ament_prefix_path.sh'
+[4.307s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.307s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.637s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/src/sensors_lidar_bridge'
+[4.637s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.637s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.661s] Level 1:colcon.colcon_core.shell:create_environment_hook('lane_follow', 'pythonpath_develop')
+[4.662s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/lane_follow/share/lane_follow/hook/pythonpath_develop.ps1'
+[4.664s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/lane_follow' returned '0': PS1=humble:\u@\h:\w\$ PYTHONPATH=/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/lane_follow/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/lane_follow/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/lane_follow/build --no-deps symlink_data
+[4.673s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/lane_follow/share/lane_follow/hook/pythonpath_develop.dsv'
+[4.677s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/lane_follow/share/lane_follow/hook/pythonpath_develop.sh'
+[4.681s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/lane_follow' for CMake module files
+[4.689s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/lane_follow' for CMake config files
+[4.704s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/lane_follow/lib'
+[4.704s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/lane_follow/bin'
+[4.704s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/lane_follow/lib/pkgconfig/lane_follow.pc'
+[4.705s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/lane_follow/lib/python3.10/site-packages'
+[4.705s] Level 1:colcon.colcon_core.shell:create_environment_hook('lane_follow', 'pythonpath')
+[4.705s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/lane_follow/share/lane_follow/hook/pythonpath.ps1'
+[4.709s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/lane_follow/share/lane_follow/hook/pythonpath.dsv'
+[4.712s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/lane_follow/share/lane_follow/hook/pythonpath.sh'
+[4.716s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/lane_follow/bin'
+[4.717s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lane_follow)
+[4.717s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/lane_follow/share/lane_follow/package.ps1'
+[4.721s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/lane_follow/share/lane_follow/package.dsv'
+[4.725s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/lane_follow/share/lane_follow/package.sh'
+[4.735s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/lane_follow/share/lane_follow/package.bash'
+[4.739s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/lane_follow/share/lane_follow/package.zsh'
+[4.744s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/lane_follow/share/colcon-core/packages/lane_follow)
+[4.747s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensors_camera_node', 'pythonpath_develop')
+[4.747s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/sensors_camera_node/share/sensors_camera_node/hook/pythonpath_develop.ps1'
+[4.754s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/sensors_camera_node' returned '0': PS1=humble:\u@\h:\w\$ PYTHONPATH=/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/sensors_camera_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/sensors_camera_node/build --no-deps symlink_data
+[4.755s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/sensors_camera_node/share/sensors_camera_node/hook/pythonpath_develop.dsv'
+[4.758s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/sensors_camera_node/share/sensors_camera_node/hook/pythonpath_develop.sh'
+[4.761s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node' for CMake module files
+[4.766s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node' for CMake config files
+[4.783s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node/lib'
+[4.783s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node/bin'
+[4.783s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensors_camera_node', 'path')
+[4.783s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node/share/sensors_camera_node/hook/path.ps1'
+[4.787s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node/share/sensors_camera_node/hook/path.dsv'
+[4.791s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node/share/sensors_camera_node/hook/path.sh'
+[4.794s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node/lib/pkgconfig/sensors_camera_node.pc'
+[4.795s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node/lib/python3.10/site-packages'
+[4.795s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensors_camera_node', 'pythonpath')
+[4.795s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node/share/sensors_camera_node/hook/pythonpath.ps1'
+[4.798s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node/share/sensors_camera_node/hook/pythonpath.dsv'
+[4.800s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node/share/sensors_camera_node/hook/pythonpath.sh'
+[4.803s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node/bin'
+[4.804s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensors_camera_node', 'pythonscriptspath')
+[4.804s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node/share/sensors_camera_node/hook/pythonscriptspath.ps1'
+[4.807s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node/share/sensors_camera_node/hook/pythonscriptspath.dsv'
+[4.812s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node/share/sensors_camera_node/hook/pythonscriptspath.sh'
+[4.815s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sensors_camera_node)
+[4.816s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node/share/sensors_camera_node/package.ps1'
+[4.819s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node/share/sensors_camera_node/package.dsv'
+[4.822s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node/share/sensors_camera_node/package.sh'
+[4.825s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node/share/sensors_camera_node/package.bash'
+[4.828s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node/share/sensors_camera_node/package.zsh'
+[4.831s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node/share/colcon-core/packages/sensors_camera_node)
+[4.833s] Level 1:colcon.colcon_core.shell:create_environment_hook('perception_ml_node', 'pythonpath_develop')
+[4.834s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/perception_ml_node/share/perception_ml_node/hook/pythonpath_develop.ps1'
+[4.839s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/perception_ml_node' returned '0': PS1=humble:\u@\h:\w\$ PYTHONPATH=/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/perception_ml_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_ml_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/perception_ml_node/build --no-deps symlink_data
+[4.843s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/perception_ml_node/share/perception_ml_node/hook/pythonpath_develop.dsv'
+[4.846s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/perception_ml_node/share/perception_ml_node/hook/pythonpath_develop.sh'
+[4.852s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_ml_node' for CMake module files
+[4.855s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_ml_node' for CMake config files
+[4.867s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_ml_node/lib'
+[4.867s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_ml_node/bin'
+[4.867s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_ml_node/lib/pkgconfig/perception_ml_node.pc'
+[4.868s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_ml_node/lib/python3.10/site-packages'
+[4.868s] Level 1:colcon.colcon_core.shell:create_environment_hook('perception_ml_node', 'pythonpath')
+[4.868s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_ml_node/share/perception_ml_node/hook/pythonpath.ps1'
+[4.871s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_ml_node/share/perception_ml_node/hook/pythonpath.dsv'
+[4.875s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_ml_node/share/perception_ml_node/hook/pythonpath.sh'
+[4.878s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_ml_node/bin'
+[4.878s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(perception_ml_node)
+[4.879s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_ml_node/share/perception_ml_node/package.ps1'
+[4.882s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_ml_node/share/perception_ml_node/package.dsv'
+[4.885s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_ml_node/share/perception_ml_node/package.sh'
+[4.888s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_ml_node/share/perception_ml_node/package.bash'
+[4.891s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_ml_node/share/perception_ml_node/package.zsh'
+[4.894s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_ml_node/share/colcon-core/packages/perception_ml_node)
+[4.897s] Level 1:colcon.colcon_core.shell:create_environment_hook('obstacle_det', 'pythonpath_develop')
+[4.897s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/obstacle_det/share/obstacle_det/hook/pythonpath_develop.ps1'
+[4.903s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/obstacle_det' returned '0': PS1=humble:\u@\h:\w\$ PYTHONPATH=/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/obstacle_det/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/obstacle_det/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/obstacle_det/build --no-deps symlink_data
+[4.904s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/obstacle_det/share/obstacle_det/hook/pythonpath_develop.dsv'
+[4.906s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/obstacle_det/share/obstacle_det/hook/pythonpath_develop.sh'
+[4.909s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/obstacle_det' for CMake module files
+[4.914s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/obstacle_det' for CMake config files
+[4.925s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/obstacle_det/lib'
+[4.925s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/obstacle_det/bin'
+[4.925s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/obstacle_det/lib/pkgconfig/obstacle_det.pc'
+[4.926s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/obstacle_det/lib/python3.10/site-packages'
+[4.926s] Level 1:colcon.colcon_core.shell:create_environment_hook('obstacle_det', 'pythonpath')
+[4.926s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/obstacle_det/share/obstacle_det/hook/pythonpath.ps1'
+[4.929s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/obstacle_det/share/obstacle_det/hook/pythonpath.dsv'
+[4.933s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/obstacle_det/share/obstacle_det/hook/pythonpath.sh'
+[4.936s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/obstacle_det/bin'
+[4.937s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(obstacle_det)
+[4.937s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/obstacle_det/share/obstacle_det/package.ps1'
+[4.940s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/obstacle_det/share/obstacle_det/package.dsv'
+[4.942s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/obstacle_det/share/obstacle_det/package.sh'
+[4.945s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/obstacle_det/share/obstacle_det/package.bash'
+[4.948s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/obstacle_det/share/obstacle_det/package.zsh'
+[4.951s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/obstacle_det/share/colcon-core/packages/obstacle_det)
+[5.064s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/sensors_imu_bridge': PS1=humble:\u@\h:\w\$ PYTHONPATH=/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/sensors_imu_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_imu_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/sensors_imu_bridge/build --no-deps symlink_data
+[5.472s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/sensors_lidar_bridge': PS1=humble:\u@\h:\w\$ PYTHONPATH=/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/sensors_lidar_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/sensors_lidar_bridge/build --no-deps symlink_data
+[5.589s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensors_imu_bridge', 'pythonpath_develop')
+[5.589s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/sensors_imu_bridge/share/sensors_imu_bridge/hook/pythonpath_develop.ps1'
+[5.591s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/sensors_imu_bridge' returned '0': PS1=humble:\u@\h:\w\$ PYTHONPATH=/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/sensors_imu_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_imu_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/sensors_imu_bridge/build --no-deps symlink_data
+[5.598s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/sensors_imu_bridge/share/sensors_imu_bridge/hook/pythonpath_develop.dsv'
+[5.600s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/sensors_imu_bridge/share/sensors_imu_bridge/hook/pythonpath_develop.sh'
+[5.605s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_imu_bridge' for CMake module files
+[5.610s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_imu_bridge' for CMake config files
+[5.636s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_imu_bridge/lib'
+[5.637s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_imu_bridge/bin'
+[5.637s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensors_imu_bridge', 'path')
+[5.638s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_imu_bridge/share/sensors_imu_bridge/hook/path.ps1'
+[5.641s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_imu_bridge/share/sensors_imu_bridge/hook/path.dsv'
+[5.644s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_imu_bridge/share/sensors_imu_bridge/hook/path.sh'
+[5.647s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_imu_bridge/lib/pkgconfig/sensors_imu_bridge.pc'
+[5.647s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_imu_bridge/lib/python3.10/site-packages'
+[5.647s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensors_imu_bridge', 'pythonpath')
+[5.648s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_imu_bridge/share/sensors_imu_bridge/hook/pythonpath.ps1'
+[5.651s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_imu_bridge/share/sensors_imu_bridge/hook/pythonpath.dsv'
+[5.654s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_imu_bridge/share/sensors_imu_bridge/hook/pythonpath.sh'
+[5.657s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_imu_bridge/bin'
+[5.658s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensors_imu_bridge', 'pythonscriptspath')
+[5.659s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_imu_bridge/share/sensors_imu_bridge/hook/pythonscriptspath.ps1'
+[5.666s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_imu_bridge/share/sensors_imu_bridge/hook/pythonscriptspath.dsv'
+[5.669s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_imu_bridge/share/sensors_imu_bridge/hook/pythonscriptspath.sh'
+[5.673s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sensors_imu_bridge)
+[5.673s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_imu_bridge/share/sensors_imu_bridge/package.ps1'
+[5.678s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_imu_bridge/share/sensors_imu_bridge/package.dsv'
+[5.682s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_imu_bridge/share/sensors_imu_bridge/package.sh'
+[5.685s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_imu_bridge/share/sensors_imu_bridge/package.bash'
+[5.688s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_imu_bridge/share/sensors_imu_bridge/package.zsh'
+[5.691s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_imu_bridge/share/colcon-core/packages/sensors_imu_bridge)
+[5.996s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensors_lidar_bridge', 'pythonpath_develop')
+[5.998s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/sensors_lidar_bridge' returned '0': PS1=humble:\u@\h:\w\$ PYTHONPATH=/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/sensors_lidar_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/sensors_lidar_bridge/build --no-deps symlink_data
+[5.998s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/sensors_lidar_bridge/share/sensors_lidar_bridge/hook/pythonpath_develop.ps1'
+[6.005s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/sensors_lidar_bridge/share/sensors_lidar_bridge/hook/pythonpath_develop.dsv'
+[6.010s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/sensors_lidar_bridge/share/sensors_lidar_bridge/hook/pythonpath_develop.sh'
+[6.013s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_lidar_bridge' for CMake module files
+[6.017s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_lidar_bridge' for CMake config files
+[6.036s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/lib'
+[6.036s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/bin'
+[6.036s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensors_lidar_bridge', 'path')
+[6.036s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/sensors_lidar_bridge/hook/path.ps1'
+[6.039s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/sensors_lidar_bridge/hook/path.dsv'
+[6.042s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/sensors_lidar_bridge/hook/path.sh'
+[6.045s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/lib/pkgconfig/sensors_lidar_bridge.pc'
+[6.045s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/lib/python3.10/site-packages'
+[6.046s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensors_lidar_bridge', 'pythonpath')
+[6.046s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/sensors_lidar_bridge/hook/pythonpath.ps1'
+[6.049s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/sensors_lidar_bridge/hook/pythonpath.dsv'
+[6.052s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/sensors_lidar_bridge/hook/pythonpath.sh'
+[6.055s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/bin'
+[6.055s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensors_lidar_bridge', 'pythonscriptspath')
+[6.055s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/sensors_lidar_bridge/hook/pythonscriptspath.ps1'
+[6.058s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/sensors_lidar_bridge/hook/pythonscriptspath.dsv'
+[6.060s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/sensors_lidar_bridge/hook/pythonscriptspath.sh'
+[6.063s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sensors_lidar_bridge)
+[6.064s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/sensors_lidar_bridge/package.ps1'
+[6.067s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/sensors_lidar_bridge/package.dsv'
+[6.070s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/sensors_lidar_bridge/package.sh'
+[6.073s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/sensors_lidar_bridge/package.bash'
+[6.076s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/sensors_lidar_bridge/package.zsh'
+[6.079s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/colcon-core/packages/sensors_lidar_bridge)
+[6.082s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[6.082s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[6.082s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[6.082s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[6.166s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[6.166s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[6.166s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[6.166s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[6.423s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[6.423s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/local_setup.ps1'
+[6.429s] INFO:colcon.colcon_core.shell:Creating prefix util module '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/_local_setup_util_ps1.py'
+[6.450s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/setup.ps1'
+[6.454s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/local_setup.sh'
+[6.457s] INFO:colcon.colcon_core.shell:Creating prefix util module '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/_local_setup_util_sh.py'
+[6.460s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/setup.sh'
+[6.464s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/local_setup.bash'
+[6.468s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/setup.bash'
+[6.471s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/local_setup.zsh'
+[6.476s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/setup.zsh'

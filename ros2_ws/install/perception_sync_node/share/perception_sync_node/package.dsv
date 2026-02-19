@@ -1,0 +1,6 @@
+source;share/perception_sync_node/hook/pythonpath.ps1
+source;share/perception_sync_node/hook/pythonpath.dsv
+source;share/perception_sync_node/hook/pythonpath.sh
+source;../../build/perception_sync_node/share/perception_sync_node/hook/pythonpath_develop.ps1
+source;../../build/perception_sync_node/share/perception_sync_node/hook/pythonpath_develop.dsv
+source;../../build/perception_sync_node/share/perception_sync_node/hook/pythonpath_develop.sh

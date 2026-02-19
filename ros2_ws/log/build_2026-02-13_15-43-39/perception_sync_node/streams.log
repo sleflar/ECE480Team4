@@ -1,0 +1,16 @@
+[1.436s] Invoking command in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/perception_sync_node': PS1=humble:\u@\h:\w\$ PYTHONPATH=/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/perception_sync_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_sync_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/perception_sync_node/build --no-deps
+[1.713s] running develop
+[1.897s] running egg_info
+[1.897s] writing perception_sync_node.egg-info/PKG-INFO
+[1.901s] writing dependency_links to perception_sync_node.egg-info/dependency_links.txt
+[1.903s] writing entry points to perception_sync_node.egg-info/entry_points.txt
+[1.905s] writing requirements to perception_sync_node.egg-info/requires.txt
+[1.908s] writing top-level names to perception_sync_node.egg-info/top_level.txt
+[1.912s] reading manifest file 'perception_sync_node.egg-info/SOURCES.txt'
+[1.914s] writing manifest file 'perception_sync_node.egg-info/SOURCES.txt'
+[1.917s] running build_ext
+[1.918s] Creating /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_sync_node/lib/python3.10/site-packages/perception-sync-node.egg-link (link to .)
+[1.923s] Installing perception_sync_node script to /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_sync_node/lib/perception_sync_node
+[1.929s] 
+[1.929s] Installed /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/perception_sync_node
+[2.085s] Invoked command in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/perception_sync_node' returned '0': PS1=humble:\u@\h:\w\$ PYTHONPATH=/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/perception_sync_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/perception_sync_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/perception_sync_node/build --no-deps

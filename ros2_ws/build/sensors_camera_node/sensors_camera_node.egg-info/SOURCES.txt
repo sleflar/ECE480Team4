@@ -1,0 +1,13 @@
+package.xml
+setup.py
+launch/cam.launch.py
+resource/sensors_camera_node
+sensors_camera_node/__init__.py
+sensors_camera_node/sensors_camera_node.py
+sensors_camera_node.egg-info/PKG-INFO
+sensors_camera_node.egg-info/SOURCES.txt
+sensors_camera_node.egg-info/dependency_links.txt
+sensors_camera_node.egg-info/entry_points.txt
+sensors_camera_node.egg-info/requires.txt
+sensors_camera_node.egg-info/top_level.txt
+sensors_camera_node.egg-info/zip-safe

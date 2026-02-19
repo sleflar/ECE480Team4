@@ -1,3 +1,6 @@
+source;share/curvy_road/hook/cmake_prefix_path.ps1
+source;share/curvy_road/hook/cmake_prefix_path.dsv
+source;share/curvy_road/hook/cmake_prefix_path.sh
 source;share/curvy_road/local_setup.bash
 source;share/curvy_road/local_setup.dsv
 source;share/curvy_road/local_setup.ps1

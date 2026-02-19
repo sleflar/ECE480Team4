@@ -1,5 +1,0 @@
-[0.038s] Invoking command in '/mnt/home/leflarsa/autonomous-vehicle-project/ros2_ws/build/curvy_road': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=humble:\u@\h:\w\$ /usr/bin/cmake --build /mnt/home/leflarsa/autonomous-vehicle-project/ros2_ws/build/curvy_road -- -j6 -l6
-[0.061s] [0mCMake Error: The source directory "/mnt/home/leflarsa/autonomous-vehicle-project/ros2_ws/curvy_road" does not exist.
-[0.061s] Specify --help for usage, or press the help button on the CMake GUI.[0m
-[0.062s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
-[0.064s] Invoked command in '/mnt/home/leflarsa/autonomous-vehicle-project/ros2_ws/build/curvy_road' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=humble:\u@\h:\w\$ /usr/bin/cmake --build /mnt/home/leflarsa/autonomous-vehicle-project/ros2_ws/build/curvy_road -- -j6 -l6

@@ -1,0 +1,3 @@
+[console_scripts]
+perception_sync_node = perception_sync_node.perception_sync_node:main
+

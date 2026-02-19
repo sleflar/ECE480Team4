@@ -21,8 +21,8 @@ def generate_launch_description():
     return LaunchDescription(declares + [
         Node(
             package='sensors_camera_node',
-            executable='camera_node',
-            name='camera_node',
+            executable='sensors_camera_node',
+            name='sensors_camera_node',
             output='screen',
             parameters=[params],
         )

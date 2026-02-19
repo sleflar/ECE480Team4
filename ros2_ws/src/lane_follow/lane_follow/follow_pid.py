@@ -1,10 +1,9 @@
-#!/usr/bin/env python3
+"""#!/usr/bin/env python3
 
-"""
 PID Lane Follower for Curvy Road
 Subscribes to /lane_point and publishes /cmd_vel
 Saves pid_params.txt when the course is completed
-"""
+
 
 import rclpy
 from rclpy.node import Node
@@ -149,6 +148,119 @@ def main(args=None):
         if rclpy.ok():
             node.destroy_node()
             rclpy.shutdown()
+
+
+if __name__ == '__main__':
+    main()
+"""
+#!/usr/bin/env python3
+import rclpy
+from rclpy.node import Node
+from geometry_msgs.msg import PointStamped, Twist
+from lane_follow.pid import pid_controller  # import your given class
+import time
+
+class FollowPID(Node):
+    def __init__(self):
+        super().__init__('follow_pid')
+
+        # ---- PID + motion parameters ----
+        self.Kp = 1.55
+        self.Ki = 0.0001
+        self.Kd = 0.15
+        self.linear_velocity = 0.25 # constant forward velocity (m/s)
+        self.focal_length_px = 1200
+        self.image_width_px = 1920
+        # ---------------------------------
+
+        # Create PID controller instance
+        self.pid = pid_controller(self.Kp, self.Ki, self.Kd)
+
+        # Track run time
+        self.start_time = time.time()
+        self.finished = False
+
+        # ROS interfaces
+        self.sub_lane = self.create_subscription(PointStamped, '/lane_point', self.lane_callback, 10)
+        self.pub_cmd = self.create_publisher(Twist, '/cmd_vel', 10)
+
+        self.get_logger().info("follow_pid node started.")
+
+    def lane_callback(self, msg: PointStamped):
+        """Called when a new lane point is received."""
+        if self.finished:
+            self.save_results(time.time())
+            return
+        x_lane = msg.point.x
+        y_lane = msg.point.y
+
+        # Check for all-zero end condition
+        if x_lane == 0.0 and y_lane == 0.0:
+            total_time = time.time() - self.start_time
+            self.stop_robot()
+            self.save_results(total_time)
+            self.finished = True
+            return
+
+        # Desired center of image
+        desired_center_x = self.image_width_px / 2.0
+
+        # Pixel error (center - detected)
+        pixel_error = desired_center_x - x_lane
+
+        # Convert pixel error → approximate angular error
+        angular_error = pixel_error / self.focal_length_px
+
+        # Get current time in seconds
+        current_time_sec = time.time()
+
+        # PID output (angular.z)
+        control_output, _, _, _ = self.pid.update_control(
+            target=0.0,      # we want angular error = 0
+            state=angular_error,
+            current_time_sec=current_time_sec
+        )
+        # Build and publish Twist
+        cmd = Twist()
+        cmd.linear.x = self.linear_velocity
+        cmd.angular.z = -control_output
+        # max_ang_vel = 0.5  # rad/s, adjust as needed
+        # cmd.angular.z = max(-max_ang_vel, min(max_ang_vel, control_output))
+
+        self.pub_cmd.publish(cmd)
+
+    def stop_robot(self):
+        """Stops the robot safely."""
+        stop_msg = Twist()
+        stop_msg.linear.x = 0.0
+        stop_msg.angular.z = 0.0
+        self.pub_cmd.publish(stop_msg)
+        self.get_logger().info("End of lane reached — robot stopped.")
+
+    def save_results(self, total_time):
+        """Prints and saves PID run summary."""
+        print("\n========== PID Run Summary ==========")
+        print(f"Kp: {self.Kp}")
+        print(f"Ki: {self.Ki}")
+        print(f"Kd: {self.Kd}")
+        print(f"Linear Velocity: {self.linear_velocity}")
+        print(f"Time to complete: {total_time:.2f} seconds")
+        print("=====================================\n")
+
+        with open("pid_params.txt", "w") as f:
+            f.write(f"Kp: {self.Kp}\n")
+            f.write(f"Ki: {self.Ki}\n")
+            f.write(f"Kd: {self.Kd}\n")
+            f.write(f"Linear Velocity: {self.linear_velocity}\n")
+            f.write(f"Time to complete: {total_time:.2f}\n")
+
+
+def main(args=None):
+    rclpy.init(args=args)
+    node = FollowPID()
+    rclpy.spin(node)
+    node.destroy_node()
+    rclpy.shutdown()
 
 
 if __name__ == '__main__':

@@ -1,0 +1,24 @@
+running develop
+running egg_info
+creating sensors_camera_node.egg-info
+writing sensors_camera_node.egg-info/PKG-INFO
+writing dependency_links to sensors_camera_node.egg-info/dependency_links.txt
+writing entry points to sensors_camera_node.egg-info/entry_points.txt
+writing requirements to sensors_camera_node.egg-info/requires.txt
+writing top-level names to sensors_camera_node.egg-info/top_level.txt
+writing manifest file 'sensors_camera_node.egg-info/SOURCES.txt'
+reading manifest file 'sensors_camera_node.egg-info/SOURCES.txt'
+writing manifest file 'sensors_camera_node.egg-info/SOURCES.txt'
+running build_ext
+Creating /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node/lib/python3.10/site-packages/sensors-camera-node.egg-link (link to .)
+Installing sensors_camera_node script to /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node/bin
+
+Installed /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/sensors_camera_node
+running symlink_data
+creating /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node/share/ament_index
+creating /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node/share/ament_index/resource_index
+creating /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node/share/ament_index/resource_index/packages
+symbolically linking /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/sensors_camera_node/resource/sensors_camera_node -> /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node/share/ament_index/resource_index/packages
+symbolically linking /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/sensors_camera_node/package.xml -> /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node/share/sensors_camera_node
+creating /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node/share/sensors_camera_node/launch
+symbolically linking /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/sensors_camera_node/launch/cam.launch.py -> /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/sensors_camera_node/share/sensors_camera_node/launch

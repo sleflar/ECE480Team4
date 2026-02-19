@@ -1,0 +1,17 @@
+[2.359s] Invoking command in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/obstacle_det': PS1=humble:\u@\h:\w\$ PYTHONPATH=/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/obstacle_det/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/obstacle_det/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/obstacle_det/build --no-deps symlink_data
+[2.722s] running develop
+[2.946s] running egg_info
+[2.947s] writing obstacle_det.egg-info/PKG-INFO
+[2.949s] writing dependency_links to obstacle_det.egg-info/dependency_links.txt
+[2.952s] writing entry points to obstacle_det.egg-info/entry_points.txt
+[2.954s] writing requirements to obstacle_det.egg-info/requires.txt
+[2.957s] writing top-level names to obstacle_det.egg-info/top_level.txt
+[2.963s] reading manifest file 'obstacle_det.egg-info/SOURCES.txt'
+[2.971s] writing manifest file 'obstacle_det.egg-info/SOURCES.txt'
+[2.975s] running build_ext
+[2.976s] Creating /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/obstacle_det/lib/python3.10/site-packages/obstacle-det.egg-link (link to .)
+[2.980s] Installing obstacles_det script to /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/obstacle_det/lib/obstacle_det
+[2.986s] 
+[2.986s] Installed /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/obstacle_det
+[2.986s] running symlink_data
+[3.386s] Invoked command in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/obstacle_det' returned '0': PS1=humble:\u@\h:\w\$ PYTHONPATH=/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/obstacle_det/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/obstacle_det/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/obstacle_det/build --no-deps symlink_data

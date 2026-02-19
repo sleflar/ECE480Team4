@@ -9,8 +9,10 @@ setup(
     version='0.1.0',
     packages=[package_name],
     data_files=[
+        ('share/ament_index/resource_index/packages',
+            ['resource/' + package_name]),
         (os.path.join('share', package_name), ['package.xml']),
-        (os.path.join('share', package_name, 'launch'), glob('launch/*.py')),
+        (os.path.join('share', package_name, 'launch'), glob('launch/imu.launch.py')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -20,7 +22,7 @@ setup(
     license='MIT',
     entry_points={
         'console_scripts': [
-            'sensors_imu_bridge = sensors_imu_bridge.imu_bridge:main',
+            'sensors_imu_bridge = sensors_imu_bridge.sensors_imu_bridge:main',
         ],
     },
 )

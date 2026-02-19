@@ -2,7 +2,7 @@
 
 # since this file is sourced use either the provided AMENT_CURRENT_PREFIX
 # or fall back to the destination set at configure time
-: ${AMENT_CURRENT_PREFIX:="/mnt/home/leflarsa/autonomous-vehicle-project/ros2_ws/install/curvy_road"}
+: ${AMENT_CURRENT_PREFIX:="/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/curvy_road"}
 if [ ! -d "$AMENT_CURRENT_PREFIX" ]; then
   if [ -z "$COLCON_CURRENT_PREFIX" ]; then
     echo "The compile time prefix path '$AMENT_CURRENT_PREFIX' doesn't " \

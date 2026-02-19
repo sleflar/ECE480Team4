@@ -1,1 +1,0 @@
-Invoking command in '/mnt/home/leflarsa/autonomous-vehicle-project/ros2_ws/src/build/curvy_road': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=humble:\u@\h:\w\$ /usr/bin/cmake /mnt/home/leflarsa/autonomous-vehicle-project/ros2_ws/src/curvy_road -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/home/leflarsa/autonomous-vehicle-project/ros2_ws/src/install/curvy_road

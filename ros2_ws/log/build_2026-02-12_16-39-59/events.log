@@ -1,8 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000097] (-) JobUnselected: {'identifier': 'curvy_road'}
-[0.000119] (-) JobUnselected: {'identifier': 'perception_ml_node'}
-[0.000134] (-) JobUnselected: {'identifier': 'perception_sync_node'}
-[0.000147] (-) JobUnselected: {'identifier': 'sensors_camera_node'}
-[0.000160] (-) JobUnselected: {'identifier': 'sensors_imu_bridge'}
-[0.000173] (-) JobUnselected: {'identifier': 'sensors_lidar_bridge'}
-[0.000186] (-) EventReactorShutdown: {}

@@ -1,8 +1,8 @@
-# Install script for directory: /mnt/home/leflarsa/autonomous-vehicle-project/ros2_ws/curvy_road
+# Install script for directory: /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/src/curvy_road
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/mnt/home/leflarsa/autonomous-vehicle-project/ros2_ws/install/curvy_road")
+  set(CMAKE_INSTALL_PREFIX "/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/install/curvy_road")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/mnt/home/leflarsa/autonomous-vehicle-project/ros2_ws/build/curvy_road/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/curvy_road/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -54,5 +54,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/home/leflarsa/autonomous-vehicle-project/ros2_ws/build/curvy_road/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/curvy_road/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

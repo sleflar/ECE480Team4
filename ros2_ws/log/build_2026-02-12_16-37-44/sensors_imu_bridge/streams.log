@@ -1,3 +1,0 @@
-[0.681s] Invoking command in '/mnt/home/leflarsa/autonomous-vehicle-project/ros2_ws/build/sensors_imu_bridge': PS1=humble:\u@\h:\w\$ /usr/bin/cmake /mnt/home/leflarsa/autonomous-vehicle-project/ros2_ws/src/sensors_imu_bridge -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/mnt/home/leflarsa/autonomous-vehicle-project/ros2_ws/install/sensors_imu_bridge
-[0.689s] [0mCMake Error: The source directory "/mnt/home/leflarsa/autonomous-vehicle-project/ros2_ws/src/sensors_imu_bridge" does not appear to contain CMakeLists.txt.
-[0.689s] Specify --help for usage, or press the help button on the CMake GUI.[0m

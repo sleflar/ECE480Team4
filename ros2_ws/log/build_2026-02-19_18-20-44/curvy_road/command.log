@@ -1,0 +1,4 @@
+Invoking command in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/curvy_road': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=humble:\u@\h:\w\$ /usr/bin/cmake --build /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/curvy_road -- -j6 -l6
+Invoked command in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/curvy_road' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=humble:\u@\h:\w\$ /usr/bin/cmake --build /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/curvy_road -- -j6 -l6
+Invoking command in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/curvy_road': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=humble:\u@\h:\w\$ /usr/bin/cmake --install /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/curvy_road
+Invoked command in '/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/curvy_road' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=humble:\u@\h:\w\$ /usr/bin/cmake --install /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/curvy_road

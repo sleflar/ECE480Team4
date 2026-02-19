@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: perception-sync-node
+Version: 0.0.1
+Summary: Node that synchronizes LiDAR and IMU data for perception fusion.
+Home-page: UNKNOWN
+Maintainer: Your Name
+Maintainer-email: mart2520@msu.edu
+License: MIT
+Platform: UNKNOWN
+
+UNKNOWN
+
