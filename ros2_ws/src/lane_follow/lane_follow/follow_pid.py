@@ -165,10 +165,10 @@ class FollowPID(Node):
         super().__init__('follow_pid')
 
         # ---- PID + motion parameters ----
-        self.Kp = 1.55
-        self.Ki = 0.0001
-        self.Kd = 0.15
-        self.linear_velocity = 0.25 # constant forward velocity (m/s)
+        self.Kp = 5
+        self.Ki = 0.0005
+        self.Kd = 0.5
+        self.linear_velocity = 0.3 # constant forward velocity (m/s)
         self.focal_length_px = 1200
         self.image_width_px = 1920
         # ---------------------------------

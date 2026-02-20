@@ -1,5 +1,5 @@
-Kp: 1.55
-Ki: 0.0001
-Kd: 0.15
-Linear Velocity: 0.25
-Time to complete: 1771545498.50
+Kp: 5
+Ki: 0.0005
+Kd: 0.5
+Linear Velocity: 0.3
+Time to complete: 1771548068.70
