@@ -1,0 +1,80 @@
+# ----------------------------------------------------------
+# .rosinit file to configure ROS for ECE-CSE 434
+# from inside a singularity start this with:
+# source .rosinit
+
+# Deconflict ROS and Gazebo instances by adjusting the below:
+export ROS_DOMAIN_ID=58             # replace 0 with your assigned number.  **No spaces around the "="
+
+if [ $(( ROS_DOMAIN_ID )) == 0 ]
+then
+  echo "ROS_DOMAIN_ID: $ROS_DOMAIN_ID, but it must be > 0"
+  return
+fi
+
+if [ -f /opt/ros/humble/setup.bash ]
+then 
+  # Avoid warnings during colcon build:
+  export PYTHONWARNINGS=ignore:::setuptools.command.install,ignore:::setuptools.command.easy_install,ignore:::pkg_resources
+  unset CMAKE_PREFIX_PATH AMENT_PREFIX_PATH COLCON_PREFIX_PATH
+
+  # Setup Gazebo:
+  GAZEBO_PORT=$(( 61000 + ROS_DOMAIN_ID ))      
+  export GAZEBO_MASTER_URI=http://localhost:$GAZEBO_PORT
+  export TURTLEBOT3_MODEL=waffle
+  source /usr/share/gazebo/setup.sh
+  export ALSOFT_DRIVERS=null
+  
+  PS1='humble:\u@\h:\w\$ ' 
+  cmd="source /opt/ros/humble/setup.bash"
+elif [ -f /opt/ros/jazzy/setup.bash ]
+then
+  # Avoid warnings during colcon build:
+  unset CMAKE_PREFIX_PATH AMENT_PREFIX_PATH COLCON_PREFIX_PATH
+
+  PS1='jazzy:\u@\h:\w\$ ' 
+  cmd="source /opt/ros/jazzy/setup.bash"
+else
+  echo "No ROS installation found!"
+  return
+fi
+
+echo "ROS_DOMAIN_ID: $ROS_DOMAIN_ID"
+echo $cmd
+eval $cmd
+
+export PROMPT_DIRTRIM=4 # Trimming path to 4 directories
+
+# Get rid of some Qt runtime warnings
+export XDG_RUNTIME_DIR="/tmp/runtime-$USER"
+mkdir -p "$XDG_RUNTIME_DIR"
+chmod 700 "$XDG_RUNTIME_DIR"
+unset SESSION_MANAGER
+
+# Command to activate selected virtual environment:
+VENV_FOLDER=$HOME/av/venvs                                     # Change this as appropriate
+act() {
+  if [ $# -eq 0 ] 
+  then
+    ls $VENV_FOLDER                       # If no arguments, display all virtual environments
+  else
+    cmd="source $VENV_FOLDER/${1}/bin/activate"   # Activate selected virtual environment
+    echo $cmd
+    eval $cmd
+  fi
+}
+# The following will enable ROS nodes to access packages installed in a
+# virtual environment.  Activating a virtual environment with the act 
+# command is insufficient for ROS Python to use it.  Instead use: addpypath
+addpypath() {
+  if [ $# -eq 0 ] 
+  then
+    ls $VENV_FOLDER                       # If no arguments, display all virtual environments
+  else
+    pyversion=`/usr/bin/ls $VENV_FOLDER/${1}/lib`
+    newpath=$VENV_FOLDER/${1}/lib/$pyversion/site-packages
+    echo 'Appending $PYTHONPATH:'"$newpath"
+    cmd="export PYTHONPATH=$PYTHONPATH:$newpath"   # Activate selected virtual environment
+    eval $cmd
+  fi
+}
