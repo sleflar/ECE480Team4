@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/src/curvy_road
+CMAKE_SOURCE_DIR = /home/eceteam4/ECE480Team4/ros2_ws/src/curvy_road
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/curvy_road
+CMAKE_BINARY_DIR = /home/eceteam4/ECE480Team4/ros2_ws/build/curvy_road
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/curvy_road && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/src/curvy_road /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/src/curvy_road /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/curvy_road /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/curvy_road /mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/curvy_road/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/eceteam4/ECE480Team4/ros2_ws/build/curvy_road && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/eceteam4/ECE480Team4/ros2_ws/src/curvy_road /home/eceteam4/ECE480Team4/ros2_ws/src/curvy_road /home/eceteam4/ECE480Team4/ros2_ws/build/curvy_road /home/eceteam4/ECE480Team4/ros2_ws/build/curvy_road /home/eceteam4/ECE480Team4/ros2_ws/build/curvy_road/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

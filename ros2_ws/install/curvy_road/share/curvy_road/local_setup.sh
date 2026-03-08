@@ -1,1 +1,1 @@
-/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/curvy_road/ament_cmake_environment_hooks/local_setup.sh
+/home/eceteam4/ECE480Team4/ros2_ws/build/curvy_road/ament_cmake_environment_hooks/local_setup.sh

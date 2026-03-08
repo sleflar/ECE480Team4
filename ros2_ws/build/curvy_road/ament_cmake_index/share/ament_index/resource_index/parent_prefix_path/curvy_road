@@ -1,1 +1,1 @@
-/opt/ros/humble
+/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge:/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_imu_bridge:/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node:/home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node:/home/eceteam4/ECE480Team4/ros2_ws/install/obstacle_det:/home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow:/home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road:/opt/ros/humble

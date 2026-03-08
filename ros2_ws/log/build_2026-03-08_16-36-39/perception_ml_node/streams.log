@@ -1,0 +1,24 @@
+[3.406s] Invoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/perception_ml_node': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/perception_ml_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/perception_ml_node/build --no-deps symlink_data
+[3.980s] running develop
+[4.301s] running egg_info
+[4.301s] creating perception_ml_node.egg-info
+[4.302s] writing perception_ml_node.egg-info/PKG-INFO
+[4.302s] writing dependency_links to perception_ml_node.egg-info/dependency_links.txt
+[4.303s] writing requirements to perception_ml_node.egg-info/requires.txt
+[4.303s] writing top-level names to perception_ml_node.egg-info/top_level.txt
+[4.303s] writing manifest file 'perception_ml_node.egg-info/SOURCES.txt'
+[4.307s] reading manifest file 'perception_ml_node.egg-info/SOURCES.txt'
+[4.308s] writing manifest file 'perception_ml_node.egg-info/SOURCES.txt'
+[4.311s] running build_ext
+[4.311s] Creating /home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node/lib/python3.10/site-packages/perception-ml-node.egg-link (link to .)
+[4.313s] 
+[4.313s] Installed /home/eceteam4/ECE480Team4/ros2_ws/build/perception_ml_node
+[4.313s] running symlink_data
+[4.313s] creating /home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node/share/ament_index
+[4.314s] creating /home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node/share/ament_index/resource_index
+[4.314s] creating /home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node/share/ament_index/resource_index/packages
+[4.314s] symbolically linking /home/eceteam4/ECE480Team4/ros2_ws/build/perception_ml_node/resource/perception_ml_node -> /home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node/share/ament_index/resource_index/packages
+[4.314s] symbolically linking /home/eceteam4/ECE480Team4/ros2_ws/build/perception_ml_node/package.xml -> /home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node/share/perception_ml_node
+[4.314s] creating /home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node/share/scripts
+[4.315s] symbolically linking /home/eceteam4/ECE480Team4/ros2_ws/build/perception_ml_node/perception_ml_node/scripts/run_yolopv2_demo.py -> /home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node/share//scripts
+[4.559s] Invoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/perception_ml_node' returned '0': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/perception_ml_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/perception_ml_node/build --no-deps symlink_data

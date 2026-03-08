@@ -6,6 +6,8 @@ lane_follow/detect.py
 lane_follow/follow_pid.py
 lane_follow/follow_pure_pursuit.py
 lane_follow/ground_spot.py
+lane_follow/pid.py
+lane_follow/sensors_camera_node.py
 lane_follow.egg-info/PKG-INFO
 lane_follow.egg-info/SOURCES.txt
 lane_follow.egg-info/dependency_links.txt

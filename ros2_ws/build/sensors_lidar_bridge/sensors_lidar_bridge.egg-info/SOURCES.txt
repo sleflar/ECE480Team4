@@ -1,4 +1,5 @@
 package.xml
+setup.cfg
 setup.py
 launch/lidar.launch.py
 resource/sensors_lidar_bridge

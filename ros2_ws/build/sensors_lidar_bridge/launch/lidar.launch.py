@@ -1,1 +1,1 @@
-/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/src/sensors_lidar_bridge/launch/lidar.launch.py
+/home/eceteam4/ECE480Team4/ros2_ws/src/sensors_lidar_bridge/launch/lidar.launch.py

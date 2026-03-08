@@ -9,7 +9,6 @@
   <maintainer email="dmorris@msu.edu">Daniel Morris</maintainer>
   <license>Apache 2.0</license>
   <buildtool_depend>ament_cmake</buildtool_depend>
-  <depend>gazebo_ros_pkgs</depend>
   <depend>geometry_msgs</depend>
   <depend>nav_msgs</depend>
   <depend>rclcpp</depend>

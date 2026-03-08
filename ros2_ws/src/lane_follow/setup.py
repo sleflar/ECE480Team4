@@ -21,6 +21,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'sensors_camera_node = lane_follow.sensors_camera_node:main',
             'detect = lane_follow.detect:main',
             'follow_pid = lane_follow.follow_pid:main',
             'ground_spot = lane_follow.ground_spot:main',
