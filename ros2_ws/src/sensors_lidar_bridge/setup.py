@@ -22,7 +22,7 @@ setup(
     license='MIT',
     entry_points={
         'console_scripts': [
-            'sensors_lidar_bridge = sensors_lidar_bridge.sensors_lidar_bridge:main',
+            'sensors_lidar_bridge=sensors_lidar_bridge.sensors_lidar_bridge:main',
         ],
     },
 )
