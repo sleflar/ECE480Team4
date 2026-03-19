@@ -1,0 +1,10 @@
+[ 20%] Built target vesc_driver_node
+[ 30%] [32mBuilding CXX object CMakeFiles/vesc_driver.dir/src/vesc_driver.cpp.o[0m
+In file included from [01m[K/home/eceteam4/ECE480Team4/ros2_ws/src/vesc_driver/src/vesc_driver.cpp:31[m[K:
+[01m[K/home/eceteam4/ECE480Team4/ros2_ws/src/vesc_driver/include/vesc_driver/vesc_driver.hpp:41:10:[m[K [01;31m[Kfatal error: [m[Kvesc_msgs/msg/vesc_state.hpp: No such file or directory
+   41 | #include [01;31m[K<vesc_msgs/msg/vesc_state.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/vesc_driver.dir/build.make:76: CMakeFiles/vesc_driver.dir/src/vesc_driver.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/vesc_driver.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

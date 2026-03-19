@@ -1,0 +1,2 @@
+Invoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_driver': /usr/bin/cmake /home/eceteam4/ECE480Team4/ros2_ws/src/vesc_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver
+Invoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_driver' returned '1': /usr/bin/cmake /home/eceteam4/ECE480Team4/ros2_ws/src/vesc_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver

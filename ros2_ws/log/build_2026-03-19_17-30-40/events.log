@@ -1,0 +1,161 @@
+[0.000000] (-) TimerEvent: {}
+[0.001110] (curvy_road) JobQueued: {'identifier': 'curvy_road', 'dependencies': OrderedDict()}
+[0.001418] (lane_follow) JobQueued: {'identifier': 'lane_follow', 'dependencies': OrderedDict()}
+[0.001705] (obstacle_det) JobQueued: {'identifier': 'obstacle_det', 'dependencies': OrderedDict()}
+[0.001811] (perception_ml_node) JobQueued: {'identifier': 'perception_ml_node', 'dependencies': OrderedDict()}
+[0.001890] (perception_sync_node) JobQueued: {'identifier': 'perception_sync_node', 'dependencies': OrderedDict()}
+[0.001965] (sensors_camera_node) JobQueued: {'identifier': 'sensors_camera_node', 'dependencies': OrderedDict()}
+[0.002034] (sensors_imu_bridge) JobQueued: {'identifier': 'sensors_imu_bridge', 'dependencies': OrderedDict()}
+[0.002107] (sensors_lidar_bridge) JobQueued: {'identifier': 'sensors_lidar_bridge', 'dependencies': OrderedDict()}
+[0.002175] (vesc_ackermann) JobQueued: {'identifier': 'vesc_ackermann', 'dependencies': OrderedDict()}
+[0.002243] (vesc_control) JobQueued: {'identifier': 'vesc_control', 'dependencies': OrderedDict()}
+[0.002303] (vesc_driver) JobQueued: {'identifier': 'vesc_driver', 'dependencies': OrderedDict()}
+[0.002369] (vesc) JobQueued: {'identifier': 'vesc', 'dependencies': OrderedDict([('vesc_ackermann', '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann'), ('vesc_driver', '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver')])}
+[0.002613] (vesc_ackermann) JobStarted: {'identifier': 'vesc_ackermann'}
+[0.012008] (vesc_driver) JobStarted: {'identifier': 'vesc_driver'}
+[0.017760] (curvy_road) JobStarted: {'identifier': 'curvy_road'}
+[0.023469] (lane_follow) JobStarted: {'identifier': 'lane_follow'}
+[0.032900] (obstacle_det) JobStarted: {'identifier': 'obstacle_det'}
+[0.040985] (perception_ml_node) JobStarted: {'identifier': 'perception_ml_node'}
+[0.053485] (vesc_ackermann) JobProgress: {'identifier': 'vesc_ackermann', 'progress': 'cmake'}
+[0.054945] (vesc_ackermann) JobProgress: {'identifier': 'vesc_ackermann', 'progress': 'build'}
+[0.056253] (vesc_ackermann) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann', '--', '-j6', '-l6'], 'cwd': '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann', 'env': OrderedDict([('USER', 'eceteam4'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eceteam4'), ('OLDPWD', '/home/eceteam4'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1824'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'eceteam4'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PROMPT_DIRTRIM', '4'), ('USERNAME', 'eceteam4'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/eceteam4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eceteam4-desktop:@/tmp/.ICE-unix/1798,unix/eceteam4-desktop:/tmp/.ICE-unix/1798'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/87ae8d3f_6c0b_4383_896f_32dcb5144f82'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.061548] (vesc_driver) JobProgress: {'identifier': 'vesc_driver', 'progress': 'cmake'}
+[0.062721] (vesc_driver) JobProgress: {'identifier': 'vesc_driver', 'progress': 'build'}
+[0.063295] (vesc_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_driver', '--', '-j6', '-l6'], 'cwd': '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_driver', 'env': OrderedDict([('USER', 'eceteam4'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eceteam4'), ('OLDPWD', '/home/eceteam4'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1824'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'eceteam4'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PROMPT_DIRTRIM', '4'), ('USERNAME', 'eceteam4'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/eceteam4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eceteam4-desktop:@/tmp/.ICE-unix/1798,unix/eceteam4-desktop:/tmp/.ICE-unix/1798'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/87ae8d3f_6c0b_4383_896f_32dcb5144f82'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_driver'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.069024] (curvy_road) JobProgress: {'identifier': 'curvy_road', 'progress': 'cmake'}
+[0.069537] (curvy_road) JobProgress: {'identifier': 'curvy_road', 'progress': 'build'}
+[0.069991] (curvy_road) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eceteam4/ECE480Team4/ros2_ws/build/curvy_road', '--', '-j6', '-l6'], 'cwd': '/home/eceteam4/ECE480Team4/ros2_ws/build/curvy_road', 'env': OrderedDict([('USER', 'eceteam4'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eceteam4'), ('OLDPWD', '/home/eceteam4'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1824'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'eceteam4'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PROMPT_DIRTRIM', '4'), ('USERNAME', 'eceteam4'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/eceteam4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eceteam4-desktop:@/tmp/.ICE-unix/1798,unix/eceteam4-desktop:/tmp/.ICE-unix/1798'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/87ae8d3f_6c0b_4383_896f_32dcb5144f82'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eceteam4/ECE480Team4/ros2_ws/build/curvy_road'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099102] (-) TimerEvent: {}
+[0.199778] (-) TimerEvent: {}
+[0.300423] (-) TimerEvent: {}
+[0.401070] (-) TimerEvent: {}
+[0.501734] (-) TimerEvent: {}
+[0.602366] (-) TimerEvent: {}
+[0.703102] (-) TimerEvent: {}
+[0.803879] (-) TimerEvent: {}
+[0.904613] (-) TimerEvent: {}
+[1.005376] (-) TimerEvent: {}
+[1.104925] (vesc_ackermann) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o\x1b[0m\n'}
+[1.106705] (-) TimerEvent: {}
+[1.109102] (vesc_ackermann) StdoutLine: {'line': b'[ 42%] Built target ackermann_to_vesc_node\n'}
+[1.110366] (vesc_ackermann) StdoutLine: {'line': b'[ 71%] Built target vesc_to_odom_node\n'}
+[1.110550] (vesc_ackermann) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/eceteam4/ECE480Team4/ros2_ws/src/vesc_ackermann/src/vesc_to_odom.cpp:31\x1b[m\x1b[K:\n'}
+[1.110740] (vesc_ackermann) StderrLine: {'line': b'\x1b[01m\x1b[K/home/eceteam4/ECE480Team4/ros2_ws/src/vesc_ackermann/include/vesc_ackermann/vesc_to_odom.hpp:42:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kvesc_msgs/msg/vesc_state_stamped.hpp: No such file or directory\n'}
+[1.110884] (vesc_ackermann) StderrLine: {'line': b'   42 | #include \x1b[01;31m\x1b[K<vesc_msgs/msg/vesc_state_stamped.hpp>\x1b[m\x1b[K\n'}
+[1.111027] (vesc_ackermann) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.111422] (vesc_ackermann) StderrLine: {'line': b'compilation terminated.\n'}
+[1.111590] (vesc_ackermann) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/vesc_ackermann.dir/build.make:90: CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o] Error 1\n'}
+[1.111705] (vesc_ackermann) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/vesc_ackermann.dir/all] Error 2\n'}
+[1.111820] (vesc_ackermann) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[1.112263] (vesc_driver) StdoutLine: {'line': b'[ 30%] Built target vesc_driver_node\n'}
+[1.113771] (vesc_driver) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/vesc_driver.dir/src/vesc_driver.cpp.o\x1b[0m\n'}
+[1.114011] (vesc_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/eceteam4/ECE480Team4/ros2_ws/src/vesc_driver/src/vesc_driver.cpp:31\x1b[m\x1b[K:\n'}
+[1.114224] (vesc_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/eceteam4/ECE480Team4/ros2_ws/src/vesc_driver/include/vesc_driver/vesc_driver.hpp:41:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kvesc/vesc_msgs/msg/vesc_state.hpp: No such file or directory\n'}
+[1.114363] (vesc_driver) StderrLine: {'line': b'   41 | #include \x1b[01;31m\x1b[K<vesc/vesc_msgs/msg/vesc_state.hpp>\x1b[m\x1b[K\n'}
+[1.114498] (vesc_driver) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.114607] (vesc_driver) StderrLine: {'line': b'compilation terminated.\n'}
+[1.114712] (vesc_driver) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/vesc_driver.dir/build.make:76: CMakeFiles/vesc_driver.dir/src/vesc_driver.cpp.o] Error 1\n'}
+[1.114821] (vesc_driver) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/vesc_driver.dir/all] Error 2\n'}
+[1.114924] (vesc_driver) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[1.206847] (-) TimerEvent: {}
+[1.307391] (-) TimerEvent: {}
+[1.407918] (-) TimerEvent: {}
+[1.508455] (-) TimerEvent: {}
+[1.604730] (curvy_road) CommandEnded: {'returncode': 0}
+[1.606407] (curvy_road) JobProgress: {'identifier': 'curvy_road', 'progress': 'install'}
+[1.608522] (-) TimerEvent: {}
+[1.626507] (curvy_road) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/eceteam4/ECE480Team4/ros2_ws/build/curvy_road'], 'cwd': '/home/eceteam4/ECE480Team4/ros2_ws/build/curvy_road', 'env': OrderedDict([('USER', 'eceteam4'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eceteam4'), ('OLDPWD', '/home/eceteam4'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1824'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'eceteam4'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PROMPT_DIRTRIM', '4'), ('USERNAME', 'eceteam4'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/eceteam4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eceteam4-desktop:@/tmp/.ICE-unix/1798,unix/eceteam4-desktop:/tmp/.ICE-unix/1798'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/87ae8d3f_6c0b_4383_896f_32dcb5144f82'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eceteam4/ECE480Team4/ros2_ws/build/curvy_road'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.631072] (vesc_driver) CommandEnded: {'returncode': 2}
+[1.654151] (vesc_driver) JobEnded: {'identifier': 'vesc_driver', 'rc': 2}
+[1.656819] (vesc_ackermann) CommandEnded: {'returncode': 2}
+[1.666285] (vesc_ackermann) JobEnded: {'identifier': 'vesc_ackermann', 'rc': 2}
+[1.671902] (lane_follow) JobEnded: {'identifier': 'lane_follow', 'rc': 'SIGINT'}
+[1.672859] (obstacle_det) JobEnded: {'identifier': 'obstacle_det', 'rc': 'SIGINT'}
+[1.673738] (perception_ml_node) JobEnded: {'identifier': 'perception_ml_node', 'rc': 'SIGINT'}
+[1.674537] (curvy_road) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.674967] (curvy_road) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.675170] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//launch/curvy_road.launch.py\n'}
+[1.675438] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//launch/empty_world.launch.py\n'}
+[1.675655] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//launch/robot_state_publisher.launch.py\n'}
+[1.675954] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//launch/turtlebot3_world.launch.py\n'}
+[1.676209] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_burger/meshes/burger_base.dae\n'}
+[1.676436] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_burger/meshes/lds.dae\n'}
+[1.676670] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_burger/meshes/tire.dae\n'}
+[1.676835] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_burger/model-1_4.sdf\n'}
+[1.676991] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_burger/model.config\n'}
+[1.677143] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_burger/model.sdf\n'}
+[1.677290] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/course/materials/scripts/course.material\n'}
+[1.677442] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/course/materials/textures/road_2.png\n'}
+[1.677593] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/course/materials/textures/road_3.png\n'}
+[1.677741] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/course/model.config\n'}
+[1.677888] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/course/model.sdf\n'}
+[1.678035] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/curvy_road/model.config\n'}
+[1.678183] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/curvy_road/model.sdf\n'}
+[1.678330] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/curvy_road_world/model.config\n'}
+[1.678548] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/curvy_road_world/model.sdf\n'}
+[1.678700] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/model.config\n'}
+[1.678880] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/traffic_parking/materials/scripts/traffic_parking.material\n'}
+[1.679034] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/traffic_parking/materials/textures/traffic_parking.png\n'}
+[1.679187] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/traffic_parking/model.config\n'}
+[1.679727] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/traffic_parking/model.sdf\n'}
+[1.679891] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle/meshes/lds.dae\n'}
+[1.680223] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle/meshes/r200.dae\n'}
+[1.680760] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle/meshes/tire.dae\n'}
+[1.681676] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle/meshes/waffle_base.dae\n'}
+[1.681881] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle/model-1_4.sdf\n'}
+[1.682040] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle/model.config\n'}
+[1.682191] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle/model.sdf\n'}
+[1.682342] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_pi/meshes/lds.dae\n'}
+[1.682523] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_pi/meshes/tire.dae\n'}
+[1.682677] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_pi/meshes/waffle_pi_base.dae\n'}
+[1.682827] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_pi/model-1_4_.sdf\n'}
+[1.682981] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_pi/model.config\n'}
+[1.683133] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_pi/model.sdf\n'}
+[1.683287] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_robot1/meshes/lds.dae\n'}
+[1.683440] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_robot1/meshes/r200.dae\n'}
+[1.683593] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_robot1/meshes/tire.dae\n'}
+[1.683745] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_robot1/meshes/waffle_base.dae\n'}
+[1.683916] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_robot1/model-1_4.sdf\n'}
+[1.684068] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_robot1/model.config\n'}
+[1.684219] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_robot1/model.sdf\n'}
+[1.684368] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_world/meshes/hexagon.dae\n'}
+[1.684516] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_world/meshes/wall.dae\n'}
+[1.684665] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_world/model-1_4.sdf\n'}
+[1.684814] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_world/model.config\n'}
+[1.684964] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_world/model.sdf\n'}
+[1.685112] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//rviz/tb3_gazebo.rviz\n'}
+[1.685274] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//worlds/empty_worlds/burger.model\n'}
+[1.685430] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//worlds/empty_worlds/waffle.model\n'}
+[1.685581] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//worlds/empty_worlds/waffle_pi.model\n'}
+[1.685729] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//worlds/turtlebot3_curvy_road/burger.model\n'}
+[1.685879] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//worlds/turtlebot3_curvy_road/waffle.model\n'}
+[1.686028] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//worlds/turtlebot3_curvy_road/waffle_pi.model\n'}
+[1.686177] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//worlds/turtlebot3_worlds/burger.model\n'}
+[1.686325] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//worlds/turtlebot3_worlds/waffle.model\n'}
+[1.686535] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//worlds/turtlebot3_worlds/waffle_pi.model\n'}
+[1.686739] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/ament_index/resource_index/package_run_dependencies/curvy_road\n'}
+[1.686908] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/ament_index/resource_index/parent_prefix_path/curvy_road\n'}
+[1.687071] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/environment/ament_prefix_path.sh\n'}
+[1.687233] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/environment/ament_prefix_path.dsv\n'}
+[1.687408] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/environment/path.sh\n'}
+[1.687573] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/environment/path.dsv\n'}
+[1.687735] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/local_setup.bash\n'}
+[1.687896] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/local_setup.sh\n'}
+[1.688056] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/local_setup.zsh\n'}
+[1.688215] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/local_setup.dsv\n'}
+[1.688372] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/package.dsv\n'}
+[1.688531] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/ament_index/resource_index/packages/curvy_road\n'}
+[1.688693] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.688856] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[1.689015] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/cmake/curvy_roadConfig.cmake\n'}
+[1.689173] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/cmake/curvy_roadConfig-version.cmake\n'}
+[1.689330] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/package.xml\n'}
+[1.689489] (curvy_road) JobEnded: {'identifier': 'curvy_road', 'rc': 'SIGINT'}
+[1.693213] (perception_sync_node) JobSkipped: {'identifier': 'perception_sync_node'}
+[1.693394] (sensors_camera_node) JobSkipped: {'identifier': 'sensors_camera_node'}
+[1.693502] (sensors_imu_bridge) JobSkipped: {'identifier': 'sensors_imu_bridge'}
+[1.693619] (sensors_lidar_bridge) JobSkipped: {'identifier': 'sensors_lidar_bridge'}
+[1.693711] (vesc_control) JobSkipped: {'identifier': 'vesc_control'}
+[1.693801] (vesc) JobSkipped: {'identifier': 'vesc'}
+[1.693852] (-) EventReactorShutdown: {}

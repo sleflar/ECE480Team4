@@ -1,4 +1,5 @@
 package.xml
+setup.cfg
 setup.py
 launch/cam.launch.py
 resource/sensors_camera_node

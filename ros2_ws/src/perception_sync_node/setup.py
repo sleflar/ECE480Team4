@@ -17,4 +17,9 @@ setup(
 
         ],
     },
+    data_files=[
+    ('share/ament_index/resource_index/packages',
+        ['resource/perception_sync_node']),
+    ('share/perception_sync_node', ['package.xml']),
+],
 )

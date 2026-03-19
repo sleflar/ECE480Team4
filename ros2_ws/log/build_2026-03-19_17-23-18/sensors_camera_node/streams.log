@@ -1,0 +1,25 @@
+[4.036s] Invoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_camera_node': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_camera_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/sensors_camera_node/build --no-deps symlink_data
+[4.915s] running develop
+[5.334s] running egg_info
+[5.334s] creating sensors_camera_node.egg-info
+[5.334s] writing sensors_camera_node.egg-info/PKG-INFO
+[5.337s] writing dependency_links to sensors_camera_node.egg-info/dependency_links.txt
+[5.338s] writing entry points to sensors_camera_node.egg-info/entry_points.txt
+[5.339s] writing requirements to sensors_camera_node.egg-info/requires.txt
+[5.339s] writing top-level names to sensors_camera_node.egg-info/top_level.txt
+[5.340s] writing manifest file 'sensors_camera_node.egg-info/SOURCES.txt'
+[5.351s] reading manifest file 'sensors_camera_node.egg-info/SOURCES.txt'
+[5.358s] writing manifest file 'sensors_camera_node.egg-info/SOURCES.txt'
+[5.363s] running build_ext
+[5.364s] Creating /home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node/lib/python3.10/site-packages/sensors-camera-node.egg-link (link to .)
+[5.367s] Installing sensors_camera_node script to /home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node/lib/sensors_camera_node
+[5.368s] 
+[5.369s] Installed /home/eceteam4/ECE480Team4/ros2_ws/build/sensors_camera_node
+[5.369s] running symlink_data
+[5.370s] creating /home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node/share/ament_index
+[5.370s] creating /home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node/share/ament_index/resource_index
+[5.371s] creating /home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node/share/ament_index/resource_index/packages
+[5.372s] symbolically linking /home/eceteam4/ECE480Team4/ros2_ws/build/sensors_camera_node/resource/sensors_camera_node -> /home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node/share/ament_index/resource_index/packages
+[5.372s] symbolically linking /home/eceteam4/ECE480Team4/ros2_ws/build/sensors_camera_node/package.xml -> /home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node/share/sensors_camera_node
+[5.373s] creating /home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node/share/sensors_camera_node/launch
+[5.374s] symbolically linking /home/eceteam4/ECE480Team4/ros2_ws/build/sensors_camera_node/launch/cam.launch.py -> /home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node/share/sensors_camera_node/launch

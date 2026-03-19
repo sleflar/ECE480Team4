@@ -78,9 +78,7 @@ _colcon_package_sh_source_script() {
 }
 
 # source sh hooks
-_colcon_package_sh_source_script "$COLCON_CURRENT_PREFIX/share/sensors_imu_bridge/hook/path.sh"
 _colcon_package_sh_source_script "$COLCON_CURRENT_PREFIX/share/sensors_imu_bridge/hook/pythonpath.sh"
-_colcon_package_sh_source_script "$COLCON_CURRENT_PREFIX/share/sensors_imu_bridge/hook/pythonscriptspath.sh"
 _colcon_package_sh_source_script "$COLCON_CURRENT_PREFIX/share/sensors_imu_bridge/hook/ament_prefix_path.sh"
 _colcon_package_sh_source_script "$COLCON_CURRENT_PREFIX/../../build/sensors_imu_bridge/share/sensors_imu_bridge/hook/pythonpath_develop.sh"
 

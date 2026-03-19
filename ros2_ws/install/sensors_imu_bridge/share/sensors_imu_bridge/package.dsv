@@ -1,12 +1,6 @@
-source;share/sensors_imu_bridge/hook/path.ps1
-source;share/sensors_imu_bridge/hook/path.dsv
-source;share/sensors_imu_bridge/hook/path.sh
 source;share/sensors_imu_bridge/hook/pythonpath.ps1
 source;share/sensors_imu_bridge/hook/pythonpath.dsv
 source;share/sensors_imu_bridge/hook/pythonpath.sh
-source;share/sensors_imu_bridge/hook/pythonscriptspath.ps1
-source;share/sensors_imu_bridge/hook/pythonscriptspath.dsv
-source;share/sensors_imu_bridge/hook/pythonscriptspath.sh
 source;share/sensors_imu_bridge/hook/ament_prefix_path.ps1
 source;share/sensors_imu_bridge/hook/ament_prefix_path.dsv
 source;share/sensors_imu_bridge/hook/ament_prefix_path.sh

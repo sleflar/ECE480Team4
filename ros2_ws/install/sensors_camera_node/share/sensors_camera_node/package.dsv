@@ -1,12 +1,6 @@
-source;share/sensors_camera_node/hook/path.ps1
-source;share/sensors_camera_node/hook/path.dsv
-source;share/sensors_camera_node/hook/path.sh
 source;share/sensors_camera_node/hook/pythonpath.ps1
 source;share/sensors_camera_node/hook/pythonpath.dsv
 source;share/sensors_camera_node/hook/pythonpath.sh
-source;share/sensors_camera_node/hook/pythonscriptspath.ps1
-source;share/sensors_camera_node/hook/pythonscriptspath.dsv
-source;share/sensors_camera_node/hook/pythonscriptspath.sh
 source;share/sensors_camera_node/hook/ament_prefix_path.ps1
 source;share/sensors_camera_node/hook/ament_prefix_path.dsv
 source;share/sensors_camera_node/hook/ament_prefix_path.sh

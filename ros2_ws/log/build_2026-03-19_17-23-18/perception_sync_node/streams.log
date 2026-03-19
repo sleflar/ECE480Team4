@@ -1,0 +1,23 @@
+[3.063s] Invoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/perception_sync_node': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/perception_sync_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/perception_sync_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/perception_sync_node/build --no-deps symlink_data
+[4.158s] running develop
+[4.571s] running egg_info
+[4.572s] creating perception_sync_node.egg-info
+[4.572s] writing perception_sync_node.egg-info/PKG-INFO
+[4.573s] writing dependency_links to perception_sync_node.egg-info/dependency_links.txt
+[4.574s] writing entry points to perception_sync_node.egg-info/entry_points.txt
+[4.575s] writing requirements to perception_sync_node.egg-info/requires.txt
+[4.575s] writing top-level names to perception_sync_node.egg-info/top_level.txt
+[4.576s] writing manifest file 'perception_sync_node.egg-info/SOURCES.txt'
+[4.581s] reading manifest file 'perception_sync_node.egg-info/SOURCES.txt'
+[4.582s] writing manifest file 'perception_sync_node.egg-info/SOURCES.txt'
+[4.599s] running build_ext
+[4.602s] Creating /home/eceteam4/ECE480Team4/ros2_ws/install/perception_sync_node/lib/python3.10/site-packages/perception-sync-node.egg-link (link to .)
+[4.605s] Installing perception_sync_node script to /home/eceteam4/ECE480Team4/ros2_ws/install/perception_sync_node/lib/perception_sync_node
+[4.607s] 
+[4.607s] Installed /home/eceteam4/ECE480Team4/ros2_ws/build/perception_sync_node
+[4.607s] running symlink_data
+[4.608s] creating /home/eceteam4/ECE480Team4/ros2_ws/install/perception_sync_node/share/ament_index
+[4.608s] creating /home/eceteam4/ECE480Team4/ros2_ws/install/perception_sync_node/share/ament_index/resource_index
+[4.608s] creating /home/eceteam4/ECE480Team4/ros2_ws/install/perception_sync_node/share/ament_index/resource_index/packages
+[4.609s] error: can't copy '/home/eceteam4/ECE480Team4/ros2_ws/build/perception_sync_node/resource/perception_sync_node': doesn't exist or not a regular file
+[4.799s] Invoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/perception_sync_node' returned '1': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/perception_sync_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/perception_sync_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/perception_sync_node/build --no-deps symlink_data

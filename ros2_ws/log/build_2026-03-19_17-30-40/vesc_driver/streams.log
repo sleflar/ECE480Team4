@@ -1,0 +1,12 @@
+[0.056s] Invoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_driver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/eceteam4/ECE480Team4/ros2_ws/build/vesc_driver -- -j6 -l6
+[1.100s] [ 30%] Built target vesc_driver_node
+[1.102s] [ 30%] [32mBuilding CXX object CMakeFiles/vesc_driver.dir/src/vesc_driver.cpp.o[0m
+[1.102s] In file included from [01m[K/home/eceteam4/ECE480Team4/ros2_ws/src/vesc_driver/src/vesc_driver.cpp:31[m[K:
+[1.102s] [01m[K/home/eceteam4/ECE480Team4/ros2_ws/src/vesc_driver/include/vesc_driver/vesc_driver.hpp:41:10:[m[K [01;31m[Kfatal error: [m[Kvesc/vesc_msgs/msg/vesc_state.hpp: No such file or directory
+[1.102s]    41 | #include [01;31m[K<vesc/vesc_msgs/msg/vesc_state.hpp>[m[K
+[1.102s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.102s] compilation terminated.
+[1.103s] gmake[2]: *** [CMakeFiles/vesc_driver.dir/build.make:76: CMakeFiles/vesc_driver.dir/src/vesc_driver.cpp.o] Error 1
+[1.103s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/vesc_driver.dir/all] Error 2
+[1.103s] gmake: *** [Makefile:146: all] Error 2
+[1.619s] Invoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_driver' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/eceteam4/ECE480Team4/ros2_ws/build/vesc_driver -- -j6 -l6

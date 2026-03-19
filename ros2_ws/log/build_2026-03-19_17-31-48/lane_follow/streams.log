@@ -1,0 +1,21 @@
+[2.857s] Invoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/lane_follow': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/lane_follow/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/lane_follow/build --no-deps symlink_data
+[3.376s] running develop
+[3.704s] running egg_info
+[3.705s] writing lane_follow.egg-info/PKG-INFO
+[3.705s] writing dependency_links to lane_follow.egg-info/dependency_links.txt
+[3.706s] writing entry points to lane_follow.egg-info/entry_points.txt
+[3.706s] writing requirements to lane_follow.egg-info/requires.txt
+[3.706s] writing top-level names to lane_follow.egg-info/top_level.txt
+[3.711s] reading manifest file 'lane_follow.egg-info/SOURCES.txt'
+[3.712s] writing manifest file 'lane_follow.egg-info/SOURCES.txt'
+[3.715s] running build_ext
+[3.715s] Creating /home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow/lib/python3.10/site-packages/lane-follow.egg-link (link to .)
+[3.717s] Installing detect script to /home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow/lib/lane_follow
+[3.717s] Installing follow_pid script to /home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow/lib/lane_follow
+[3.718s] Installing follow_pure_pursuit script to /home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow/lib/lane_follow
+[3.718s] Installing ground_spot script to /home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow/lib/lane_follow
+[3.718s] Installing sensors_camera_node script to /home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow/lib/lane_follow
+[3.718s] 
+[3.719s] Installed /home/eceteam4/ECE480Team4/ros2_ws/build/lane_follow
+[3.719s] running symlink_data
+[3.813s] Invoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/lane_follow' returned '0': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/lane_follow/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/lane_follow/build --no-deps symlink_data

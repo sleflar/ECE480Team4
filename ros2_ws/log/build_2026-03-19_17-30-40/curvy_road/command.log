@@ -1,0 +1,3 @@
+Invoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/curvy_road': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/eceteam4/ECE480Team4/ros2_ws/build/curvy_road -- -j6 -l6
+Invoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/curvy_road' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/eceteam4/ECE480Team4/ros2_ws/build/curvy_road -- -j6 -l6
+Invoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/curvy_road': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/eceteam4/ECE480Team4/ros2_ws/build/curvy_road

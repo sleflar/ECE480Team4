@@ -1,0 +1,14 @@
+[35m[1mConsolidate compiler generated dependencies of target vesc_to_odom_node[0m
+[35m[1mConsolidate compiler generated dependencies of target vesc_ackermann[0m
+[35m[1mConsolidate compiler generated dependencies of target ackermann_to_vesc_node[0m
+[ 28%] Built target vesc_to_odom_node
+[ 71%] [32mBuilding CXX object CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o[0m
+[ 71%] Built target ackermann_to_vesc_node
+In file included from [01m[K/home/eceteam4/ECE480Team4/ros2_ws/src/vesc_ackermann/src/vesc_to_odom.cpp:31[m[K:
+[01m[K/home/eceteam4/ECE480Team4/ros2_ws/src/vesc_ackermann/include/vesc_ackermann/vesc_to_odom.hpp:42:10:[m[K [01;31m[Kfatal error: [m[Kvesc_msgs/msg/vesc_state_stamped.hpp: No such file or directory
+   42 | #include [01;31m[K<vesc_msgs/msg/vesc_state_stamped.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/vesc_ackermann.dir/build.make:90: CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/vesc_ackermann.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
