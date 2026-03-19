@@ -1,0 +1,20 @@
+######################################################################
+#                                                                    #
+#  Copyright (c) 2001, 2025 NoMachine, http://www.nomachine.com.     #
+#                                                                    #
+#  All rights reserved.                                              #
+#                                                                    #
+######################################################################
+
+#
+# Specify the path of base directory where the NX software has been
+# installed.
+#
+
+ServerRoot = "/usr/NX"
+
+#
+# Specify the path of the home directory of the nx user on Windows.
+#
+
+NXUserHome = "/var/NX/nx/.nx"
