@@ -47,7 +47,7 @@ class DetectNode(Node):
         #'/camera/camera/color/image_raw'
         self.image_sub = self.create_subscription(Image, '/camera/image_raw', self.image_callback, 10)
         self.image_pub = self.create_publisher(Image, '/image_processed', 10)
-        self.point_pub = self.create_publisher(PointStamped, '/lane_point', 10)
+        self.point_pub = self.create_publisher(PointStamped, '/ground_point', 10)
 
         self.get_logger().info('Lane detection node started (using BGR + Memory for sharp turns).')
     

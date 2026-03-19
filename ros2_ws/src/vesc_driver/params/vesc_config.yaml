@@ -9,7 +9,7 @@
     duty_cycle_min: -1.0
     position_max: 1.0
     position_min: 0.0
-    servo_max: 0.65
-    servo_min: 0.35
+    servo_max: .8
+    servo_min: 0.05
     speed_max: 100000.0
     speed_min: -23250.0

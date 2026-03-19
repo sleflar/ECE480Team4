@@ -104,7 +104,7 @@ class FollowPurePursuit(Node):
 
         # Pure Pursuit curvature → steering
         curvature = 2.0 * y / (L * L)
-        steering = curvature    # You can scale this later if needed
+        steering = 500*curvature    # You can scale this later if needed
 
         # ================================
         # PUBLISH COMMANDS (Float64)
