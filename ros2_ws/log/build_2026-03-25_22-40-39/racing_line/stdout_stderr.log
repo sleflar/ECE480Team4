@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/racing_line/racing_line.egg-info
+writing ../../build/racing_line/racing_line.egg-info/PKG-INFO
+writing dependency_links to ../../build/racing_line/racing_line.egg-info/dependency_links.txt
+writing entry points to ../../build/racing_line/racing_line.egg-info/entry_points.txt
+writing requirements to ../../build/racing_line/racing_line.egg-info/requires.txt
+writing top-level names to ../../build/racing_line/racing_line.egg-info/top_level.txt
+writing manifest file '../../build/racing_line/racing_line.egg-info/SOURCES.txt'
+reading manifest file '../../build/racing_line/racing_line.egg-info/SOURCES.txt'
+writing manifest file '../../build/racing_line/racing_line.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/build/racing_line/build
+creating /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/build/racing_line/build/lib
+creating /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/build/racing_line/build/lib/racing_line
+copying racing_line/__init__.py -> /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/build/racing_line/build/lib/racing_line
+copying racing_line/racing_line.py -> /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/build/racing_line/build/lib/racing_line
+running install
+running install_lib
+creating /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/lib/python3.12/site-packages/racing_line
+copying /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/build/racing_line/build/lib/racing_line/__init__.py -> /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/lib/python3.12/site-packages/racing_line
+copying /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/build/racing_line/build/lib/racing_line/racing_line.py -> /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/lib/python3.12/site-packages/racing_line
+byte-compiling /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/lib/python3.12/site-packages/racing_line/__init__.py to __init__.cpython-312.pyc
+byte-compiling /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/lib/python3.12/site-packages/racing_line/racing_line.py to racing_line.cpython-312.pyc
+running install_data
+creating /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/share/ament_index
+creating /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/share/ament_index/resource_index
+creating /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/share/ament_index/resource_index/packages
+copying resource/racing_line -> /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/share/ament_index/resource_index/packages
+copying package.xml -> /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/share/racing_line
+running install_egg_info
+Copying ../../build/racing_line/racing_line.egg-info to /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/lib/python3.12/site-packages/racing_line-0.0.0-py3.12.egg-info
+running install_scripts
+Installing racing_line script to /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/lib/racing_line_pkg
+writing list of installed files to '/mnt/home/ramosriv/av/ECE480Team4/ros2_ws/build/racing_line/install.log'

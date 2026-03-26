@@ -1,0 +1,37 @@
+[0.945s] Invoking command in '/mnt/home/ramosriv/av/ECE480Team4/ros2_ws/src/racing_line': PS1=(.venv) jazzy:\u@\h:\w\$ PYTHONPATH=/mnt/home/ramosriv/av/ECE480Team4/ros2_ws/build/racing_line/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/racing_line build --build-base /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/build/racing_line/build install --record /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/build/racing_line/install.log --single-version-externally-managed install_data
+[1.219s] running egg_info
+[1.220s] creating ../../build/racing_line/racing_line.egg-info
+[1.240s] writing ../../build/racing_line/racing_line.egg-info/PKG-INFO
+[1.245s] writing dependency_links to ../../build/racing_line/racing_line.egg-info/dependency_links.txt
+[1.248s] writing entry points to ../../build/racing_line/racing_line.egg-info/entry_points.txt
+[1.251s] writing requirements to ../../build/racing_line/racing_line.egg-info/requires.txt
+[1.253s] writing top-level names to ../../build/racing_line/racing_line.egg-info/top_level.txt
+[1.257s] writing manifest file '../../build/racing_line/racing_line.egg-info/SOURCES.txt'
+[1.298s] reading manifest file '../../build/racing_line/racing_line.egg-info/SOURCES.txt'
+[1.301s] writing manifest file '../../build/racing_line/racing_line.egg-info/SOURCES.txt'
+[1.302s] running build
+[1.303s] running build_py
+[1.304s] creating /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/build/racing_line/build
+[1.304s] creating /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/build/racing_line/build/lib
+[1.306s] creating /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/build/racing_line/build/lib/racing_line
+[1.309s] copying racing_line/__init__.py -> /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/build/racing_line/build/lib/racing_line
+[1.310s] copying racing_line/racing_line.py -> /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/build/racing_line/build/lib/racing_line
+[1.312s] running install
+[1.319s] running install_lib
+[1.342s] creating /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/lib/python3.12/site-packages/racing_line
+[1.345s] copying /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/build/racing_line/build/lib/racing_line/__init__.py -> /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/lib/python3.12/site-packages/racing_line
+[1.347s] copying /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/build/racing_line/build/lib/racing_line/racing_line.py -> /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/lib/python3.12/site-packages/racing_line
+[1.354s] byte-compiling /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/lib/python3.12/site-packages/racing_line/__init__.py to __init__.cpython-312.pyc
+[1.363s] byte-compiling /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/lib/python3.12/site-packages/racing_line/racing_line.py to racing_line.cpython-312.pyc
+[1.372s] running install_data
+[1.372s] creating /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/share/ament_index
+[1.375s] creating /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/share/ament_index/resource_index
+[1.376s] creating /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/share/ament_index/resource_index/packages
+[1.379s] copying resource/racing_line -> /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/share/ament_index/resource_index/packages
+[1.383s] copying package.xml -> /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/share/racing_line
+[1.384s] running install_egg_info
+[1.407s] Copying ../../build/racing_line/racing_line.egg-info to /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/lib/python3.12/site-packages/racing_line-0.0.0-py3.12.egg-info
+[1.439s] running install_scripts
+[1.599s] Installing racing_line script to /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/lib/racing_line_pkg
+[1.604s] writing list of installed files to '/mnt/home/ramosriv/av/ECE480Team4/ros2_ws/build/racing_line/install.log'
+[1.635s] Invoked command in '/mnt/home/ramosriv/av/ECE480Team4/ros2_ws/src/racing_line' returned '0': PS1=(.venv) jazzy:\u@\h:\w\$ PYTHONPATH=/mnt/home/ramosriv/av/ECE480Team4/ros2_ws/build/racing_line/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/racing_line build --build-base /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/build/racing_line/build install --record /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/build/racing_line/install.log --single-version-externally-managed install_data

@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'racing_line_pkg'
+package_name = 'racing_line'
 
 setup(
     name=package_name,
@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'racing_line_node = racing_line_pkg.racing_line_node:main',
+            'racing_line = racing_line.racing_line:main',
         ],
     },
 )

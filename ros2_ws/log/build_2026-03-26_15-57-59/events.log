@@ -1,0 +1,74 @@
+[0.000000] (-) TimerEvent: {}
+[0.000122] (-) JobUnselected: {'identifier': 'curvy_road'}
+[0.000155] (-) JobUnselected: {'identifier': 'lane_follow'}
+[0.000175] (-) JobUnselected: {'identifier': 'obstacle_det'}
+[0.000201] (-) JobUnselected: {'identifier': 'perception_ml_node'}
+[0.000214] (-) JobUnselected: {'identifier': 'perception_sync_node'}
+[0.000228] (-) JobUnselected: {'identifier': 'sensors_camera_node'}
+[0.000240] (-) JobUnselected: {'identifier': 'sensors_imu_bridge'}
+[0.000252] (-) JobUnselected: {'identifier': 'sensors_lidar_bridge'}
+[0.000264] (-) JobUnselected: {'identifier': 'vesc'}
+[0.000287] (-) JobUnselected: {'identifier': 'vesc_ackermann'}
+[0.000299] (-) JobUnselected: {'identifier': 'vesc_control'}
+[0.000311] (-) JobUnselected: {'identifier': 'vesc_driver'}
+[0.000322] (-) JobUnselected: {'identifier': 'vesc_msgs'}
+[0.000336] (racing_line) JobQueued: {'identifier': 'racing_line', 'dependencies': OrderedDict()}
+[0.000352] (racing_line) JobStarted: {'identifier': 'racing_line'}
+[0.098435] (-) TimerEvent: {}
+[0.198708] (-) TimerEvent: {}
+[0.298992] (-) TimerEvent: {}
+[0.399275] (-) TimerEvent: {}
+[0.499510] (-) TimerEvent: {}
+[0.599742] (-) TimerEvent: {}
+[0.699990] (-) TimerEvent: {}
+[0.800238] (-) TimerEvent: {}
+[0.900545] (-) TimerEvent: {}
+[1.000833] (-) TimerEvent: {}
+[1.101102] (-) TimerEvent: {}
+[1.201420] (-) TimerEvent: {}
+[1.222867] (racing_line) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/racing_line', 'build', '--build-base', '/mnt/home/ramosriv/av/ECE480Team4/ros2_ws/build/racing_line/build', 'install', '--record', '/mnt/home/ramosriv/av/ECE480Team4/ros2_ws/build/racing_line/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/mnt/home/ramosriv/av/ECE480Team4/ros2_ws/src/racing_line', 'env': {'PYTHON_BASIC_REPL': '1', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'ramosriv', 'SSH_CLIENT': '172.16.93.62 46818 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/mnt/ffs24/home/ramosriv/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/.singularity.d/libs', 'BROWSER': '/mnt/ffs24/home/ramosriv/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/bin/helpers/browser.sh', 'HOME': '/mnt/home/ramosriv', 'TERM_PROGRAM_VERSION': '1.112.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/6034455/vscode-ipc-e7958e38-66ca-4fa7-be01-d7172fe1e340.sock', 'USER_PATH': '/mnt/home/ramosriv/av/ECE480Team4/ros2_ws/.venv/bin:/mnt/home/ramosriv/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/mnt/home/ramosriv/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/mnt/ffs24/home/ramosriv/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/mnt/home/ramosriv/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts:/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/local/sbin', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/mnt/ffs24/home/ramosriv/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/extensions/git/dist/askpass-main.js', 'PS1': 'jazzy:\\u@\\h:\\w\\$', 'VSCODE_GIT_ASKPASS_NODE': '/mnt/ffs24/home/ramosriv/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/mnt/home/ramosriv/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/6034455/bus', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'jazzy', 'SINGULARITY_ENVIRONMENT': '/.singularity.d/env/91-environment.sh', 'LOGNAME': 'ramosriv', 'IGN_GAZEBO_MODEL_PATH': '/opt/ros/jazzy/share', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'PROMPT_DIRTRIM': '4', 'USERNAME': 'avc', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '133915', 'GAZEBO_MODEL_PATH': '/opt/ros/jazzy/share', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'XDG_RUNTIME_DIR': '/tmp/runtime-ramosriv', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/mnt/home/ramosriv/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-9f6914f1d59c86ef.txt', 'LANG': 'C.UTF-8', 'PYTHONSTARTUP': '/mnt/home/ramosriv/.vscode-server/data/User/workspaceStorage/0651f9af34fa0ad4b9c3b5da69a923fb/ms-python.python/pythonrc.py', 'VIRTUAL_ENV_PROMPT': '(.venv)', 'SINGULARITY_COMMAND': 'exec', 'VSCODE_GIT_IPC_HANDLE': '/run/user/6034455/vscode-git-d95568f758.sock', 'TERM_PROGRAM': 'vscode', 'USERID': '1001', 'ROS_DOMAIN_ID': '76', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'KRB5CCNAME': 'FILE:/tmp/krb5cc_6034455_S8cMBE', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'VIRTUAL_ENV': '/mnt/home/ramosriv/av/ECE480Team4/ros2_ws/.venv', 'SINGULARITY_CONTAINER': '/mnt/home/ramosriv/av/ros_jazzy.sif', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'SINGULARITY_BIND': '', 'PWD': '/mnt/home/ramosriv/av/ECE480Team4/ros2_ws/build/racing_line', 'LC_ALL': 'C.UTF-8', 'SSH_CONNECTION': '172.16.93.62 46818 192.168.10.106 22', 'PYTHONPATH': '/mnt/home/ramosriv/av/ECE480Team4/ros2_ws/build/racing_line/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'SINGULARITY_NAME': 'ros_jazzy.sif', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[1.301565] (-) TimerEvent: {}
+[1.401864] (-) TimerEvent: {}
+[1.502159] (-) TimerEvent: {}
+[1.520050] (racing_line) StdoutLine: {'line': b'running egg_info\n'}
+[1.520354] (racing_line) StdoutLine: {'line': b'creating ../../build/racing_line/racing_line.egg-info\n'}
+[1.542114] (racing_line) StdoutLine: {'line': b'writing ../../build/racing_line/racing_line.egg-info/PKG-INFO\n'}
+[1.547436] (racing_line) StdoutLine: {'line': b'writing dependency_links to ../../build/racing_line/racing_line.egg-info/dependency_links.txt\n'}
+[1.549411] (racing_line) StdoutLine: {'line': b'writing entry points to ../../build/racing_line/racing_line.egg-info/entry_points.txt\n'}
+[1.551719] (racing_line) StdoutLine: {'line': b'writing requirements to ../../build/racing_line/racing_line.egg-info/requires.txt\n'}
+[1.553196] (racing_line) StdoutLine: {'line': b'writing top-level names to ../../build/racing_line/racing_line.egg-info/top_level.txt\n'}
+[1.555198] (racing_line) StdoutLine: {'line': b"writing manifest file '../../build/racing_line/racing_line.egg-info/SOURCES.txt'\n"}
+[1.599167] (racing_line) StdoutLine: {'line': b"reading manifest file '../../build/racing_line/racing_line.egg-info/SOURCES.txt'\n"}
+[1.601459] (racing_line) StdoutLine: {'line': b"writing manifest file '../../build/racing_line/racing_line.egg-info/SOURCES.txt'\n"}
+[1.602216] (-) TimerEvent: {}
+[1.602506] (racing_line) StdoutLine: {'line': b'running build\n'}
+[1.602687] (racing_line) StdoutLine: {'line': b'running build_py\n'}
+[1.603121] (racing_line) StdoutLine: {'line': b'creating /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/build/racing_line/build\n'}
+[1.604444] (racing_line) StdoutLine: {'line': b'creating /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/build/racing_line/build/lib\n'}
+[1.606434] (racing_line) StdoutLine: {'line': b'creating /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/build/racing_line/build/lib/racing_line\n'}
+[1.608983] (racing_line) StdoutLine: {'line': b'copying racing_line/__init__.py -> /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/build/racing_line/build/lib/racing_line\n'}
+[1.611076] (racing_line) StdoutLine: {'line': b'copying racing_line/racing_line.py -> /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/build/racing_line/build/lib/racing_line\n'}
+[1.614179] (racing_line) StdoutLine: {'line': b'running install\n'}
+[1.621351] (racing_line) StdoutLine: {'line': b'running install_lib\n'}
+[1.643813] (racing_line) StdoutLine: {'line': b'creating /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/lib/python3.12/site-packages/racing_line\n'}
+[1.645720] (racing_line) StdoutLine: {'line': b'copying /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/build/racing_line/build/lib/racing_line/__init__.py -> /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/lib/python3.12/site-packages/racing_line\n'}
+[1.648185] (racing_line) StdoutLine: {'line': b'copying /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/build/racing_line/build/lib/racing_line/racing_line.py -> /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/lib/python3.12/site-packages/racing_line\n'}
+[1.652029] (racing_line) StdoutLine: {'line': b'byte-compiling /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/lib/python3.12/site-packages/racing_line/__init__.py to __init__.cpython-312.pyc\n'}
+[1.658922] (racing_line) StdoutLine: {'line': b'byte-compiling /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/lib/python3.12/site-packages/racing_line/racing_line.py to racing_line.cpython-312.pyc\n'}
+[1.665654] (racing_line) StdoutLine: {'line': b'running install_data\n'}
+[1.665932] (racing_line) StdoutLine: {'line': b'creating /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/share/ament_index\n'}
+[1.667025] (racing_line) StdoutLine: {'line': b'creating /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/share/ament_index/resource_index\n'}
+[1.668445] (racing_line) StdoutLine: {'line': b'creating /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/share/ament_index/resource_index/packages\n'}
+[1.670333] (racing_line) StdoutLine: {'line': b'copying resource/racing_line -> /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/share/ament_index/resource_index/packages\n'}
+[1.673263] (racing_line) StdoutLine: {'line': b'copying package.xml -> /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/share/racing_line\n'}
+[1.675718] (racing_line) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.698610] (racing_line) StdoutLine: {'line': b'Copying ../../build/racing_line/racing_line.egg-info to /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/lib/python3.12/site-packages/racing_line-0.0.0-py3.12.egg-info\n'}
+[1.702350] (-) TimerEvent: {}
+[1.724501] (racing_line) StdoutLine: {'line': b'running install_scripts\n'}
+[1.802499] (-) TimerEvent: {}
+[1.885793] (racing_line) StdoutLine: {'line': b'Installing racing_line script to /mnt/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line/lib/racing_line_pkg\n'}
+[1.889945] (racing_line) StdoutLine: {'line': b"writing list of installed files to '/mnt/home/ramosriv/av/ECE480Team4/ros2_ws/build/racing_line/install.log'\n"}
+[1.902660] (-) TimerEvent: {}
+[1.920967] (racing_line) CommandEnded: {'returncode': 0}
+[1.973699] (racing_line) JobEnded: {'identifier': 'racing_line', 'rc': 0}
+[1.976493] (-) EventReactorShutdown: {}
