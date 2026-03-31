@@ -1,1 +1,0 @@
-/home/eceteam4/ECE480Team4/ros2_ws/src/sensors_camera_node/launch/cam.launch.py

@@ -1,2 +1,0 @@
-Invoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann': /usr/bin/cmake /home/eceteam4/ECE480Team4/ros2_ws/src/vesc_ackermann -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann
-Invoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann' returned '1': /usr/bin/cmake /home/eceteam4/ECE480Team4/ros2_ws/src/vesc_ackermann -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann
