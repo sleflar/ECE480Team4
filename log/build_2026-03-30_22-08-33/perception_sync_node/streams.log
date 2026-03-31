@@ -1,0 +1,17 @@
+[4.167s] Invoking command in '/home/eceteam4/ECE480Team4/build/perception_sync_node': PYTHONPATH=/home/eceteam4/ECE480Team4/build/perception_sync_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/install/perception_sync_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/build/perception_sync_node/build --no-deps symlink_data
+[4.943s] running develop
+[5.490s] running egg_info
+[5.490s] writing perception_sync_node.egg-info/PKG-INFO
+[5.491s] writing dependency_links to perception_sync_node.egg-info/dependency_links.txt
+[5.491s] writing entry points to perception_sync_node.egg-info/entry_points.txt
+[5.493s] writing requirements to perception_sync_node.egg-info/requires.txt
+[5.493s] writing top-level names to perception_sync_node.egg-info/top_level.txt
+[5.496s] reading manifest file 'perception_sync_node.egg-info/SOURCES.txt'
+[5.499s] writing manifest file 'perception_sync_node.egg-info/SOURCES.txt'
+[5.503s] running build_ext
+[5.503s] Creating /home/eceteam4/ECE480Team4/install/perception_sync_node/lib/python3.10/site-packages/perception-sync-node.egg-link (link to .)
+[5.505s] Installing perception_sync_node script to /home/eceteam4/ECE480Team4/install/perception_sync_node/lib/perception_sync_node
+[5.506s] 
+[5.506s] Installed /home/eceteam4/ECE480Team4/build/perception_sync_node
+[5.506s] running symlink_data
+[5.670s] Invoked command in '/home/eceteam4/ECE480Team4/build/perception_sync_node' returned '0': PYTHONPATH=/home/eceteam4/ECE480Team4/build/perception_sync_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/install/perception_sync_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/build/perception_sync_node/build --no-deps symlink_data

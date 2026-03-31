@@ -1,0 +1,15 @@
+[3.159s] Invoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/perception_ml_node': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/perception_ml_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/perception_ml_node/build --no-deps symlink_data
+[3.700s] running develop
+[4.034s] running egg_info
+[4.035s] writing perception_ml_node.egg-info/PKG-INFO
+[4.035s] writing dependency_links to perception_ml_node.egg-info/dependency_links.txt
+[4.035s] writing requirements to perception_ml_node.egg-info/requires.txt
+[4.035s] writing top-level names to perception_ml_node.egg-info/top_level.txt
+[4.040s] reading manifest file 'perception_ml_node.egg-info/SOURCES.txt'
+[4.043s] writing manifest file 'perception_ml_node.egg-info/SOURCES.txt'
+[4.046s] running build_ext
+[4.046s] Creating /home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node/lib/python3.10/site-packages/perception-ml-node.egg-link (link to .)
+[4.048s] 
+[4.048s] Installed /home/eceteam4/ECE480Team4/ros2_ws/build/perception_ml_node
+[4.048s] running symlink_data
+[4.149s] Invoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/perception_ml_node' returned '0': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/perception_ml_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/perception_ml_node/build --no-deps symlink_data

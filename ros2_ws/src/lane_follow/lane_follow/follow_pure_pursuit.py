@@ -33,6 +33,7 @@ class FollowPurePursuit(Node):
 
         # Fixed motor speed command (VESC expects high Float64 values)
         self.motor_speed_command = 5000.0
+        self.spot_count = 0
 
         # State machine
         self.reached_end = False
@@ -105,6 +106,13 @@ class FollowPurePursuit(Node):
         # Pure Pursuit curvature → steering
         curvature = 2.0 * y / (L * L)
         steering = 500*curvature    # You can scale this later if needed
+
+        self.spot_count += 1
+        
+        if self.spot_count <= 500:
+            self.motor_speed_command = 10.0 * self.spot_count
+        else:
+            self.motor_speed_command = 5000.0
 
         # ================================
         # PUBLISH COMMANDS (Float64)

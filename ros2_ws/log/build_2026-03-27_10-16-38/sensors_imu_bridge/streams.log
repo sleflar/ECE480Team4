@@ -1,0 +1,17 @@
+[2.489s] Invoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_imu_bridge': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_imu_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_imu_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/sensors_imu_bridge/build --no-deps symlink_data
+[3.067s] running develop
+[3.397s] running egg_info
+[3.398s] writing sensors_imu_bridge.egg-info/PKG-INFO
+[3.398s] writing dependency_links to sensors_imu_bridge.egg-info/dependency_links.txt
+[3.399s] writing entry points to sensors_imu_bridge.egg-info/entry_points.txt
+[3.399s] writing requirements to sensors_imu_bridge.egg-info/requires.txt
+[3.399s] writing top-level names to sensors_imu_bridge.egg-info/top_level.txt
+[3.404s] reading manifest file 'sensors_imu_bridge.egg-info/SOURCES.txt'
+[3.406s] writing manifest file 'sensors_imu_bridge.egg-info/SOURCES.txt'
+[3.409s] running build_ext
+[3.409s] Creating /home/eceteam4/ECE480Team4/ros2_ws/install/sensors_imu_bridge/lib/python3.10/site-packages/sensors-imu-bridge.egg-link (link to .)
+[3.411s] Installing sensors_imu_bridge script to /home/eceteam4/ECE480Team4/ros2_ws/install/sensors_imu_bridge/lib/sensors_imu_bridge
+[3.412s] 
+[3.412s] Installed /home/eceteam4/ECE480Team4/ros2_ws/build/sensors_imu_bridge
+[3.412s] running symlink_data
+[3.535s] Invoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_imu_bridge' returned '0': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_imu_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_imu_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/sensors_imu_bridge/build --no-deps symlink_data

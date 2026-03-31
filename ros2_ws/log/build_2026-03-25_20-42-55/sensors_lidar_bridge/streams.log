@@ -1,0 +1,17 @@
+[2.010s] Invoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_lidar_bridge': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_lidar_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/sensors_lidar_bridge/build --no-deps symlink_data
+[2.560s] running develop
+[2.875s] running egg_info
+[2.875s] writing sensors_lidar_bridge.egg-info/PKG-INFO
+[2.875s] writing dependency_links to sensors_lidar_bridge.egg-info/dependency_links.txt
+[2.876s] writing entry points to sensors_lidar_bridge.egg-info/entry_points.txt
+[2.876s] writing requirements to sensors_lidar_bridge.egg-info/requires.txt
+[2.876s] writing top-level names to sensors_lidar_bridge.egg-info/top_level.txt
+[2.880s] reading manifest file 'sensors_lidar_bridge.egg-info/SOURCES.txt'
+[2.882s] writing manifest file 'sensors_lidar_bridge.egg-info/SOURCES.txt'
+[2.885s] running build_ext
+[2.885s] Creating /home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/lib/python3.10/site-packages/sensors-lidar-bridge.egg-link (link to .)
+[2.887s] Installing sensors_lidar_bridge script to /home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/lib/sensors_lidar_bridge
+[2.888s] 
+[2.888s] Installed /home/eceteam4/ECE480Team4/ros2_ws/build/sensors_lidar_bridge
+[2.888s] running symlink_data
+[2.992s] Invoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_lidar_bridge' returned '0': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_lidar_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/sensors_lidar_bridge/build --no-deps symlink_data

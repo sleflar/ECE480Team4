@@ -1,0 +1,17 @@
+[2.811s] Invoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/perception_sync_node': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/perception_sync_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/perception_sync_node/lib/python3.10/site-packages: /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/perception_sync_node/build --no-deps symlink_data
+[3.399s] running develop
+[3.615s] running egg_info
+[3.616s] writing perception_sync_node.egg-info/PKG-INFO
+[3.617s] writing dependency_links to perception_sync_node.egg-info/dependency_links.txt
+[3.617s] writing entry points to perception_sync_node.egg-info/entry_points.txt
+[3.617s] writing requirements to perception_sync_node.egg-info/requires.txt
+[3.617s] writing top-level names to perception_sync_node.egg-info/top_level.txt
+[3.629s] reading manifest file 'perception_sync_node.egg-info/SOURCES.txt'
+[3.637s] writing manifest file 'perception_sync_node.egg-info/SOURCES.txt'
+[3.640s] running build_ext
+[3.640s] Creating /home/eceteam4/ECE480Team4/ros2_ws/install/perception_sync_node/lib/python3.10/site-packages/perception-sync-node.egg-link (link to .)
+[3.643s] Installing perception_sync_node script to /home/eceteam4/ECE480Team4/ros2_ws/install/perception_sync_node/lib/perception_sync_node
+[3.643s] 
+[3.643s] Installed /home/eceteam4/ECE480Team4/ros2_ws/build/perception_sync_node
+[3.644s] running symlink_data
+[4.384s] Invoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/perception_sync_node' returned '0': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/perception_sync_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/perception_sync_node/lib/python3.10/site-packages: /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/perception_sync_node/build --no-deps symlink_data

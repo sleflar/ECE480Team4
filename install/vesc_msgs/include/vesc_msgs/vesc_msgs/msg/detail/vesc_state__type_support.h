@@ -1,0 +1,1 @@
+/home/eceteam4/ECE480Team4/build/vesc_msgs/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__type_support.h

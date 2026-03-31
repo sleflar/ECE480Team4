@@ -1,0 +1,1016 @@
+[0.885s] [34mcolcon[0m [1;30mDEBUG[0m [32mCommand line arguments: ['/usr/bin/colcon', 'build', '--symlink-install'][0m
+[0.885s] [34mcolcon[0m [1;30mDEBUG[0m [32mParsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffffbb4878e0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffbb487070>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffbb487070>>, mixin_verb=('build',))[0m
+[1.576s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) check parameters
+[1.576s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) check parameters
+[1.576s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) check parameters
+[1.576s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) check parameters
+[1.576s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) discover
+[1.577s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) discover
+[1.577s] [34mcolcon.colcon_core.package_discovery[0m [1;30mINFO[0m Crawling recursively for packages in '/home/eceteam4/ECE480Team4/ros2_ws'
+[1.577s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.577s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore'
+[1.577s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore_ament_install'
+[1.577s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_pkg']
+[1.577s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_pkg'
+[1.578s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_meta']
+[1.578s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_meta'
+[1.578s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ros']
+[1.578s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ros'
+[1.609s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['cmake', 'python']
+[1.609s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'cmake'
+[1.609s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python'
+[1.609s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['python_setup_py']
+[1.609s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python_setup_py'
+[1.610s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.610s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extension 'ignore'
+[1.610s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) ignored
+[1.611s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(config) by extensions ['ignore', 'ignore_ament_install']
+[1.611s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(config) by extension 'ignore'
+[1.611s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(config) by extension 'ignore_ament_install'
+[1.612s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(config) by extensions ['colcon_pkg']
+[1.612s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(config) by extension 'colcon_pkg'
+[1.612s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(config) by extensions ['colcon_meta']
+[1.612s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(config) by extension 'colcon_meta'
+[1.612s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(config) by extensions ['ros']
+[1.612s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(config) by extension 'ros'
+[1.612s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(config) by extensions ['cmake', 'python']
+[1.612s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(config) by extension 'cmake'
+[1.612s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(config) by extension 'python'
+[1.613s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(config) by extensions ['python_setup_py']
+[1.613s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(config) by extension 'python_setup_py'
+[1.613s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.613s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extension 'ignore'
+[1.613s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) ignored
+[1.615s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(launch) by extensions ['ignore', 'ignore_ament_install']
+[1.615s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(launch) by extension 'ignore'
+[1.615s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(launch) by extension 'ignore_ament_install'
+[1.615s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(launch) by extensions ['colcon_pkg']
+[1.615s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(launch) by extension 'colcon_pkg'
+[1.615s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(launch) by extensions ['colcon_meta']
+[1.615s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(launch) by extension 'colcon_meta'
+[1.616s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(launch) by extensions ['ros']
+[1.616s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(launch) by extension 'ros'
+[1.616s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(launch) by extensions ['cmake', 'python']
+[1.616s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(launch) by extension 'cmake'
+[1.616s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(launch) by extension 'python'
+[1.616s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(launch) by extensions ['python_setup_py']
+[1.616s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(launch) by extension 'python_setup_py'
+[1.616s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.617s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extension 'ignore'
+[1.617s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) ignored
+[1.617s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.617s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ignore'
+[1.618s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ignore_ament_install'
+[1.618s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['colcon_pkg']
+[1.618s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'colcon_pkg'
+[1.618s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['colcon_meta']
+[1.618s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'colcon_meta'
+[1.618s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['ros']
+[1.618s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ros'
+[1.618s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['cmake', 'python']
+[1.618s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'cmake'
+[1.618s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'python'
+[1.619s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['python_setup_py']
+[1.619s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'python_setup_py'
+[1.619s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/Curve_detection_turnsbaseoncamera) by extensions ['ignore', 'ignore_ament_install']
+[1.620s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/Curve_detection_turnsbaseoncamera) by extension 'ignore'
+[1.620s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/Curve_detection_turnsbaseoncamera) by extension 'ignore_ament_install'
+[1.620s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/Curve_detection_turnsbaseoncamera) by extensions ['colcon_pkg']
+[1.620s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/Curve_detection_turnsbaseoncamera) by extension 'colcon_pkg'
+[1.620s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/Curve_detection_turnsbaseoncamera) by extensions ['colcon_meta']
+[1.620s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/Curve_detection_turnsbaseoncamera) by extension 'colcon_meta'
+[1.620s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/Curve_detection_turnsbaseoncamera) by extensions ['ros']
+[1.620s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/Curve_detection_turnsbaseoncamera) by extension 'ros'
+[1.620s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/Curve_detection_turnsbaseoncamera) by extensions ['cmake', 'python']
+[1.620s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/Curve_detection_turnsbaseoncamera) by extension 'cmake'
+[1.621s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/Curve_detection_turnsbaseoncamera) by extension 'python'
+[1.621s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/Curve_detection_turnsbaseoncamera) by extensions ['python_setup_py']
+[1.621s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/Curve_detection_turnsbaseoncamera) by extension 'python_setup_py'
+[1.621s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/control_pure_pursuit_node) by extensions ['ignore', 'ignore_ament_install']
+[1.622s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/control_pure_pursuit_node) by extension 'ignore'
+[1.622s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/control_pure_pursuit_node) by extension 'ignore_ament_install'
+[1.622s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/control_pure_pursuit_node) by extensions ['colcon_pkg']
+[1.622s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/control_pure_pursuit_node) by extension 'colcon_pkg'
+[1.622s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/control_pure_pursuit_node) by extensions ['colcon_meta']
+[1.622s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/control_pure_pursuit_node) by extension 'colcon_meta'
+[1.622s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/control_pure_pursuit_node) by extensions ['ros']
+[1.622s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/control_pure_pursuit_node) by extension 'ros'
+[1.622s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/control_pure_pursuit_node) by extensions ['cmake', 'python']
+[1.622s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/control_pure_pursuit_node) by extension 'cmake'
+[1.622s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/control_pure_pursuit_node) by extension 'python'
+[1.623s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/control_pure_pursuit_node) by extensions ['python_setup_py']
+[1.623s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/control_pure_pursuit_node) by extension 'python_setup_py'
+[1.623s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/curvy_road) by extensions ['ignore', 'ignore_ament_install']
+[1.624s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/curvy_road) by extension 'ignore'
+[1.624s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/curvy_road) by extension 'ignore_ament_install'
+[1.624s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/curvy_road) by extensions ['colcon_pkg']
+[1.624s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/curvy_road) by extension 'colcon_pkg'
+[1.624s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/curvy_road) by extensions ['colcon_meta']
+[1.624s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/curvy_road) by extension 'colcon_meta'
+[1.624s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/curvy_road) by extensions ['ros']
+[1.624s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/curvy_road) by extension 'ros'
+[1.633s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/curvy_road' with type 'ros.ament_cmake' and name 'curvy_road'[0m
+[1.637s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/lane_follow) by extensions ['ignore', 'ignore_ament_install']
+[1.638s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/lane_follow) by extension 'ignore'
+[1.638s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/lane_follow) by extension 'ignore_ament_install'
+[1.638s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/lane_follow) by extensions ['colcon_pkg']
+[1.638s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/lane_follow) by extension 'colcon_pkg'
+[1.638s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/lane_follow) by extensions ['colcon_meta']
+[1.638s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/lane_follow) by extension 'colcon_meta'
+[1.638s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/lane_follow) by extensions ['ros']
+[1.638s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/lane_follow) by extension 'ros'
+[1.640s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/lane_follow' with type 'ros.ament_python' and name 'lane_follow'[0m
+[1.641s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/localization_ekf_node) by extensions ['ignore', 'ignore_ament_install']
+[1.641s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/localization_ekf_node) by extension 'ignore'
+[1.641s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/localization_ekf_node) by extension 'ignore_ament_install'
+[1.642s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/localization_ekf_node) by extensions ['colcon_pkg']
+[1.642s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/localization_ekf_node) by extension 'colcon_pkg'
+[1.642s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/localization_ekf_node) by extensions ['colcon_meta']
+[1.642s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/localization_ekf_node) by extension 'colcon_meta'
+[1.642s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/localization_ekf_node) by extensions ['ros']
+[1.642s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/localization_ekf_node) by extension 'ros'
+[1.642s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/localization_ekf_node) by extensions ['cmake', 'python']
+[1.642s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/localization_ekf_node) by extension 'cmake'
+[1.642s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/localization_ekf_node) by extension 'python'
+[1.642s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/localization_ekf_node) by extensions ['python_setup_py']
+[1.642s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/localization_ekf_node) by extension 'python_setup_py'
+[1.643s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/localization_orb_slam_vio_node) by extensions ['ignore', 'ignore_ament_install']
+[1.643s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/localization_orb_slam_vio_node) by extension 'ignore'
+[1.643s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/localization_orb_slam_vio_node) by extension 'ignore_ament_install'
+[1.643s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/localization_orb_slam_vio_node) by extensions ['colcon_pkg']
+[1.643s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/localization_orb_slam_vio_node) by extension 'colcon_pkg'
+[1.644s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/localization_orb_slam_vio_node) by extensions ['colcon_meta']
+[1.644s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/localization_orb_slam_vio_node) by extension 'colcon_meta'
+[1.644s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/localization_orb_slam_vio_node) by extensions ['ros']
+[1.644s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/localization_orb_slam_vio_node) by extension 'ros'
+[1.644s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/localization_orb_slam_vio_node) by extensions ['cmake', 'python']
+[1.644s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/localization_orb_slam_vio_node) by extension 'cmake'
+[1.644s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/localization_orb_slam_vio_node) by extension 'python'
+[1.644s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/localization_orb_slam_vio_node) by extensions ['python_setup_py']
+[1.644s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/localization_orb_slam_vio_node) by extension 'python_setup_py'
+[1.645s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/obstacles_det) by extensions ['ignore', 'ignore_ament_install']
+[1.645s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/obstacles_det) by extension 'ignore'
+[1.645s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/obstacles_det) by extension 'ignore_ament_install'
+[1.645s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/obstacles_det) by extensions ['colcon_pkg']
+[1.645s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/obstacles_det) by extension 'colcon_pkg'
+[1.645s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/obstacles_det) by extensions ['colcon_meta']
+[1.645s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/obstacles_det) by extension 'colcon_meta'
+[1.646s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/obstacles_det) by extensions ['ros']
+[1.646s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/obstacles_det) by extension 'ros'
+[1.646s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/obstacles_det) by extensions ['cmake', 'python']
+[1.646s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/obstacles_det) by extension 'cmake'
+[1.646s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/obstacles_det) by extension 'python'
+[1.646s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/obstacles_det) by extensions ['python_setup_py']
+[1.646s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/obstacles_det) by extension 'python_setup_py'
+[1.647s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/obstacles_det/obstacle_det) by extensions ['ignore', 'ignore_ament_install']
+[1.647s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/obstacles_det/obstacle_det) by extension 'ignore'
+[1.647s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/obstacles_det/obstacle_det) by extension 'ignore_ament_install'
+[1.647s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/obstacles_det/obstacle_det) by extensions ['colcon_pkg']
+[1.647s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/obstacles_det/obstacle_det) by extension 'colcon_pkg'
+[1.647s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/obstacles_det/obstacle_det) by extensions ['colcon_meta']
+[1.647s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/obstacles_det/obstacle_det) by extension 'colcon_meta'
+[1.647s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/obstacles_det/obstacle_det) by extensions ['ros']
+[1.647s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/obstacles_det/obstacle_det) by extension 'ros'
+[1.649s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/obstacles_det/obstacle_det' with type 'ros.ament_python' and name 'obstacle_det'[0m
+[1.650s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/perception_fusion_node) by extensions ['ignore', 'ignore_ament_install']
+[1.650s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/perception_fusion_node) by extension 'ignore'
+[1.650s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/perception_fusion_node) by extension 'ignore_ament_install'
+[1.650s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/perception_fusion_node) by extensions ['colcon_pkg']
+[1.650s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/perception_fusion_node) by extension 'colcon_pkg'
+[1.650s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/perception_fusion_node) by extensions ['colcon_meta']
+[1.650s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/perception_fusion_node) by extension 'colcon_meta'
+[1.650s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/perception_fusion_node) by extensions ['ros']
+[1.650s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/perception_fusion_node) by extension 'ros'
+[1.651s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/perception_fusion_node) by extensions ['cmake', 'python']
+[1.651s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/perception_fusion_node) by extension 'cmake'
+[1.651s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/perception_fusion_node) by extension 'python'
+[1.651s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/perception_fusion_node) by extensions ['python_setup_py']
+[1.651s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/perception_fusion_node) by extension 'python_setup_py'
+[1.651s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/perception_ml_node) by extensions ['ignore', 'ignore_ament_install']
+[1.652s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/perception_ml_node) by extension 'ignore'
+[1.652s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/perception_ml_node) by extension 'ignore_ament_install'
+[1.652s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/perception_ml_node) by extensions ['colcon_pkg']
+[1.652s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/perception_ml_node) by extension 'colcon_pkg'
+[1.652s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/perception_ml_node) by extensions ['colcon_meta']
+[1.652s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/perception_ml_node) by extension 'colcon_meta'
+[1.652s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/perception_ml_node) by extensions ['ros']
+[1.652s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/perception_ml_node) by extension 'ros'
+[1.653s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/perception_ml_node' with type 'ros.ament_python' and name 'perception_ml_node'[0m
+[1.654s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/perception_sync_node) by extensions ['ignore', 'ignore_ament_install']
+[1.657s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/perception_sync_node) by extension 'ignore'
+[1.657s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/perception_sync_node) by extension 'ignore_ament_install'
+[1.657s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/perception_sync_node) by extensions ['colcon_pkg']
+[1.658s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/perception_sync_node) by extension 'colcon_pkg'
+[1.658s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/perception_sync_node) by extensions ['colcon_meta']
+[1.658s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/perception_sync_node) by extension 'colcon_meta'
+[1.658s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/perception_sync_node) by extensions ['ros']
+[1.658s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/perception_sync_node) by extension 'ros'
+[1.663s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/perception_sync_node' with type 'ros.ament_python' and name 'perception_sync_node'[0m
+[1.664s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/planning_global_planner_node) by extensions ['ignore', 'ignore_ament_install']
+[1.664s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/planning_global_planner_node) by extension 'ignore'
+[1.665s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/planning_global_planner_node) by extension 'ignore_ament_install'
+[1.665s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/planning_global_planner_node) by extensions ['colcon_pkg']
+[1.665s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/planning_global_planner_node) by extension 'colcon_pkg'
+[1.665s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/planning_global_planner_node) by extensions ['colcon_meta']
+[1.665s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/planning_global_planner_node) by extension 'colcon_meta'
+[1.665s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/planning_global_planner_node) by extensions ['ros']
+[1.665s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/planning_global_planner_node) by extension 'ros'
+[1.665s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/planning_global_planner_node) by extensions ['cmake', 'python']
+[1.665s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/planning_global_planner_node) by extension 'cmake'
+[1.666s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/planning_global_planner_node) by extension 'python'
+[1.666s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/planning_global_planner_node) by extensions ['python_setup_py']
+[1.666s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/planning_global_planner_node) by extension 'python_setup_py'
+[1.666s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/sensors_camera_node) by extensions ['ignore', 'ignore_ament_install']
+[1.666s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/sensors_camera_node) by extension 'ignore'
+[1.667s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/sensors_camera_node) by extension 'ignore_ament_install'
+[1.667s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/sensors_camera_node) by extensions ['colcon_pkg']
+[1.667s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/sensors_camera_node) by extension 'colcon_pkg'
+[1.667s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/sensors_camera_node) by extensions ['colcon_meta']
+[1.667s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/sensors_camera_node) by extension 'colcon_meta'
+[1.667s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/sensors_camera_node) by extensions ['ros']
+[1.667s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/sensors_camera_node) by extension 'ros'
+[1.669s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/sensors_camera_node' with type 'ros.ament_python' and name 'sensors_camera_node'[0m
+[1.669s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/sensors_imu_bridge) by extensions ['ignore', 'ignore_ament_install']
+[1.669s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/sensors_imu_bridge) by extension 'ignore'
+[1.670s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/sensors_imu_bridge) by extension 'ignore_ament_install'
+[1.670s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/sensors_imu_bridge) by extensions ['colcon_pkg']
+[1.670s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/sensors_imu_bridge) by extension 'colcon_pkg'
+[1.670s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/sensors_imu_bridge) by extensions ['colcon_meta']
+[1.670s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/sensors_imu_bridge) by extension 'colcon_meta'
+[1.670s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/sensors_imu_bridge) by extensions ['ros']
+[1.670s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/sensors_imu_bridge) by extension 'ros'
+[1.671s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/sensors_imu_bridge' with type 'ros.ament_python' and name 'sensors_imu_bridge'[0m
+[1.672s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/sensors_lidar_bridge) by extensions ['ignore', 'ignore_ament_install']
+[1.672s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/sensors_lidar_bridge) by extension 'ignore'
+[1.672s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/sensors_lidar_bridge) by extension 'ignore_ament_install'
+[1.672s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/sensors_lidar_bridge) by extensions ['colcon_pkg']
+[1.673s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/sensors_lidar_bridge) by extension 'colcon_pkg'
+[1.673s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/sensors_lidar_bridge) by extensions ['colcon_meta']
+[1.673s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/sensors_lidar_bridge) by extension 'colcon_meta'
+[1.673s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/sensors_lidar_bridge) by extensions ['ros']
+[1.673s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/sensors_lidar_bridge) by extension 'ros'
+[1.674s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/sensors_lidar_bridge' with type 'ros.ament_python' and name 'sensors_lidar_bridge'[0m
+[1.675s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tools_bag_recorder) by extensions ['ignore', 'ignore_ament_install']
+[1.675s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tools_bag_recorder) by extension 'ignore'
+[1.675s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tools_bag_recorder) by extension 'ignore_ament_install'
+[1.675s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tools_bag_recorder) by extensions ['colcon_pkg']
+[1.675s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tools_bag_recorder) by extension 'colcon_pkg'
+[1.675s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tools_bag_recorder) by extensions ['colcon_meta']
+[1.675s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tools_bag_recorder) by extension 'colcon_meta'
+[1.676s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tools_bag_recorder) by extensions ['ros']
+[1.676s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tools_bag_recorder) by extension 'ros'
+[1.676s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tools_bag_recorder) by extensions ['cmake', 'python']
+[1.676s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tools_bag_recorder) by extension 'cmake'
+[1.676s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tools_bag_recorder) by extension 'python'
+[1.676s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tools_bag_recorder) by extensions ['python_setup_py']
+[1.676s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/tools_bag_recorder) by extension 'python_setup_py'
+[1.677s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc) by extensions ['ignore', 'ignore_ament_install']
+[1.677s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc) by extension 'ignore'
+[1.677s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc) by extension 'ignore_ament_install'
+[1.677s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc) by extensions ['colcon_pkg']
+[1.677s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc) by extension 'colcon_pkg'
+[1.677s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc) by extensions ['colcon_meta']
+[1.678s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc) by extension 'colcon_meta'
+[1.678s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc) by extensions ['ros']
+[1.678s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc) by extension 'ros'
+[1.680s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/vesc' with type 'ros.ament_cmake' and name 'vesc'[0m
+[1.680s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc_ackermann) by extensions ['ignore', 'ignore_ament_install']
+[1.680s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc_ackermann) by extension 'ignore'
+[1.680s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc_ackermann) by extension 'ignore_ament_install'
+[1.681s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc_ackermann) by extensions ['colcon_pkg']
+[1.681s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc_ackermann) by extension 'colcon_pkg'
+[1.681s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc_ackermann) by extensions ['colcon_meta']
+[1.681s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc_ackermann) by extension 'colcon_meta'
+[1.681s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc_ackermann) by extensions ['ros']
+[1.681s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc_ackermann) by extension 'ros'
+[1.711s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/vesc_ackermann' with type 'ros.ament_cmake' and name 'vesc_ackermann'[0m
+[1.712s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc_control) by extensions ['ignore', 'ignore_ament_install']
+[1.712s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc_control) by extension 'ignore'
+[1.712s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc_control) by extension 'ignore_ament_install'
+[1.712s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc_control) by extensions ['colcon_pkg']
+[1.712s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc_control) by extension 'colcon_pkg'
+[1.713s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc_control) by extensions ['colcon_meta']
+[1.713s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc_control) by extension 'colcon_meta'
+[1.713s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc_control) by extensions ['ros']
+[1.713s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc_control) by extension 'ros'
+[1.714s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/vesc_control' with type 'ros.ament_python' and name 'vesc_control'[0m
+[1.715s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc_driver) by extensions ['ignore', 'ignore_ament_install']
+[1.715s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc_driver) by extension 'ignore'
+[1.715s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc_driver) by extension 'ignore_ament_install'
+[1.715s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc_driver) by extensions ['colcon_pkg']
+[1.715s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc_driver) by extension 'colcon_pkg'
+[1.716s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc_driver) by extensions ['colcon_meta']
+[1.716s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc_driver) by extension 'colcon_meta'
+[1.716s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc_driver) by extensions ['ros']
+[1.716s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc_driver) by extension 'ros'
+[1.719s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/vesc_driver' with type 'ros.ament_cmake' and name 'vesc_driver'[0m
+[1.719s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc_msgs) by extensions ['ignore', 'ignore_ament_install']
+[1.720s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc_msgs) by extension 'ignore'
+[1.720s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc_msgs) by extension 'ignore_ament_install'
+[1.720s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc_msgs) by extensions ['colcon_pkg']
+[1.720s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc_msgs) by extension 'colcon_pkg'
+[1.720s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc_msgs) by extensions ['colcon_meta']
+[1.720s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc_msgs) by extension 'colcon_meta'
+[1.720s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc_msgs) by extensions ['ros']
+[1.720s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vesc_msgs) by extension 'ros'
+[1.722s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/vesc_msgs' with type 'ros.ament_cmake' and name 'vesc_msgs'[0m
+[1.723s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/viz_rviz) by extensions ['ignore', 'ignore_ament_install']
+[1.723s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/viz_rviz) by extension 'ignore'
+[1.723s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/viz_rviz) by extension 'ignore_ament_install'
+[1.723s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/viz_rviz) by extensions ['colcon_pkg']
+[1.723s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/viz_rviz) by extension 'colcon_pkg'
+[1.723s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/viz_rviz) by extensions ['colcon_meta']
+[1.724s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/viz_rviz) by extension 'colcon_meta'
+[1.724s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/viz_rviz) by extensions ['ros']
+[1.724s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/viz_rviz) by extension 'ros'
+[1.724s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/viz_rviz) by extensions ['cmake', 'python']
+[1.724s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/viz_rviz) by extension 'cmake'
+[1.724s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/viz_rviz) by extension 'python'
+[1.724s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/viz_rviz) by extensions ['python_setup_py']
+[1.724s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/viz_rviz) by extension 'python_setup_py'
+[1.725s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(test) by extensions ['ignore', 'ignore_ament_install']
+[1.725s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(test) by extension 'ignore'
+[1.725s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(test) by extension 'ignore_ament_install'
+[1.725s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(test) by extensions ['colcon_pkg']
+[1.725s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(test) by extension 'colcon_pkg'
+[1.725s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(test) by extensions ['colcon_meta']
+[1.725s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(test) by extension 'colcon_meta'
+[1.725s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(test) by extensions ['ros']
+[1.725s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(test) by extension 'ros'
+[1.726s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(test) by extensions ['cmake', 'python']
+[1.726s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(test) by extension 'cmake'
+[1.726s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(test) by extension 'python'
+[1.726s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(test) by extensions ['python_setup_py']
+[1.726s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(test) by extension 'python_setup_py'
+[1.726s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) using defaults
+[1.726s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) discover
+[1.726s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) using defaults
+[1.726s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) discover
+[1.726s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) using defaults
+[1.782s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) check parameters
+[1.782s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) discover
+[1.791s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 299 installed packages in /opt/ros/humble[0m
+[1.794s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) using defaults
+[1.867s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'curvy_road' build argument 'cmake_args' from command line to 'None'
+[1.867s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'curvy_road' build argument 'cmake_target' from command line to 'None'
+[1.867s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'curvy_road' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.867s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'curvy_road' build argument 'cmake_clean_cache' from command line to 'False'
+[1.867s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'curvy_road' build argument 'cmake_clean_first' from command line to 'False'
+[1.867s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'curvy_road' build argument 'cmake_force_configure' from command line to 'False'
+[1.867s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'curvy_road' build argument 'ament_cmake_args' from command line to 'None'
+[1.867s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'curvy_road' build argument 'catkin_cmake_args' from command line to 'None'
+[1.868s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'curvy_road' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.868s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'curvy_road' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eceteam4/ECE480Team4/ros2_ws/build/curvy_road', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road', 'merge_install': False, 'path': '/home/eceteam4/ECE480Team4/ros2_ws/src/curvy_road', 'symlink_install': True, 'test_result_base': None}[0m
+[1.868s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lane_follow' build argument 'cmake_args' from command line to 'None'
+[1.868s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lane_follow' build argument 'cmake_target' from command line to 'None'
+[1.868s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lane_follow' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.868s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lane_follow' build argument 'cmake_clean_cache' from command line to 'False'
+[1.869s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lane_follow' build argument 'cmake_clean_first' from command line to 'False'
+[1.869s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lane_follow' build argument 'cmake_force_configure' from command line to 'False'
+[1.869s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lane_follow' build argument 'ament_cmake_args' from command line to 'None'
+[1.869s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lane_follow' build argument 'catkin_cmake_args' from command line to 'None'
+[1.869s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lane_follow' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.869s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'lane_follow' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eceteam4/ECE480Team4/ros2_ws/build/lane_follow', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow', 'merge_install': False, 'path': '/home/eceteam4/ECE480Team4/ros2_ws/src/lane_follow', 'symlink_install': True, 'test_result_base': None}[0m
+[1.869s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'obstacle_det' build argument 'cmake_args' from command line to 'None'
+[1.869s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'obstacle_det' build argument 'cmake_target' from command line to 'None'
+[1.869s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'obstacle_det' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.870s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'obstacle_det' build argument 'cmake_clean_cache' from command line to 'False'
+[1.870s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'obstacle_det' build argument 'cmake_clean_first' from command line to 'False'
+[1.870s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'obstacle_det' build argument 'cmake_force_configure' from command line to 'False'
+[1.870s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'obstacle_det' build argument 'ament_cmake_args' from command line to 'None'
+[1.870s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'obstacle_det' build argument 'catkin_cmake_args' from command line to 'None'
+[1.870s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'obstacle_det' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.870s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'obstacle_det' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eceteam4/ECE480Team4/ros2_ws/build/obstacle_det', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eceteam4/ECE480Team4/ros2_ws/install/obstacle_det', 'merge_install': False, 'path': '/home/eceteam4/ECE480Team4/ros2_ws/src/obstacles_det/obstacle_det', 'symlink_install': True, 'test_result_base': None}[0m
+[1.870s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'perception_ml_node' build argument 'cmake_args' from command line to 'None'
+[1.870s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'perception_ml_node' build argument 'cmake_target' from command line to 'None'
+[1.870s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'perception_ml_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.871s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'perception_ml_node' build argument 'cmake_clean_cache' from command line to 'False'
+[1.871s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'perception_ml_node' build argument 'cmake_clean_first' from command line to 'False'
+[1.871s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'perception_ml_node' build argument 'cmake_force_configure' from command line to 'False'
+[1.871s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'perception_ml_node' build argument 'ament_cmake_args' from command line to 'None'
+[1.871s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'perception_ml_node' build argument 'catkin_cmake_args' from command line to 'None'
+[1.871s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'perception_ml_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.871s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'perception_ml_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eceteam4/ECE480Team4/ros2_ws/build/perception_ml_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node', 'merge_install': False, 'path': '/home/eceteam4/ECE480Team4/ros2_ws/src/perception_ml_node', 'symlink_install': True, 'test_result_base': None}[0m
+[1.871s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'perception_sync_node' build argument 'cmake_args' from command line to 'None'
+[1.871s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'perception_sync_node' build argument 'cmake_target' from command line to 'None'
+[1.871s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'perception_sync_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.872s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'perception_sync_node' build argument 'cmake_clean_cache' from command line to 'False'
+[1.872s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'perception_sync_node' build argument 'cmake_clean_first' from command line to 'False'
+[1.872s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'perception_sync_node' build argument 'cmake_force_configure' from command line to 'False'
+[1.872s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'perception_sync_node' build argument 'ament_cmake_args' from command line to 'None'
+[1.872s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'perception_sync_node' build argument 'catkin_cmake_args' from command line to 'None'
+[1.872s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'perception_sync_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.872s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'perception_sync_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eceteam4/ECE480Team4/ros2_ws/build/perception_sync_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_sync_node', 'merge_install': False, 'path': '/home/eceteam4/ECE480Team4/ros2_ws/src/perception_sync_node', 'symlink_install': True, 'test_result_base': None}[0m
+[1.872s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'sensors_camera_node' build argument 'cmake_args' from command line to 'None'
+[1.872s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'sensors_camera_node' build argument 'cmake_target' from command line to 'None'
+[1.872s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'sensors_camera_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.873s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'sensors_camera_node' build argument 'cmake_clean_cache' from command line to 'False'
+[1.873s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'sensors_camera_node' build argument 'cmake_clean_first' from command line to 'False'
+[1.873s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'sensors_camera_node' build argument 'cmake_force_configure' from command line to 'False'
+[1.873s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'sensors_camera_node' build argument 'ament_cmake_args' from command line to 'None'
+[1.873s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'sensors_camera_node' build argument 'catkin_cmake_args' from command line to 'None'
+[1.873s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'sensors_camera_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.873s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'sensors_camera_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_camera_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node', 'merge_install': False, 'path': '/home/eceteam4/ECE480Team4/ros2_ws/src/sensors_camera_node', 'symlink_install': True, 'test_result_base': None}[0m
+[1.873s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'sensors_imu_bridge' build argument 'cmake_args' from command line to 'None'
+[1.873s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'sensors_imu_bridge' build argument 'cmake_target' from command line to 'None'
+[1.873s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'sensors_imu_bridge' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.874s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'sensors_imu_bridge' build argument 'cmake_clean_cache' from command line to 'False'
+[1.874s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'sensors_imu_bridge' build argument 'cmake_clean_first' from command line to 'False'
+[1.874s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'sensors_imu_bridge' build argument 'cmake_force_configure' from command line to 'False'
+[1.874s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'sensors_imu_bridge' build argument 'ament_cmake_args' from command line to 'None'
+[1.874s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'sensors_imu_bridge' build argument 'catkin_cmake_args' from command line to 'None'
+[1.874s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'sensors_imu_bridge' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.874s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'sensors_imu_bridge' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_imu_bridge', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_imu_bridge', 'merge_install': False, 'path': '/home/eceteam4/ECE480Team4/ros2_ws/src/sensors_imu_bridge', 'symlink_install': True, 'test_result_base': None}[0m
+[1.874s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'sensors_lidar_bridge' build argument 'cmake_args' from command line to 'None'
+[1.874s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'sensors_lidar_bridge' build argument 'cmake_target' from command line to 'None'
+[1.874s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'sensors_lidar_bridge' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.875s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'sensors_lidar_bridge' build argument 'cmake_clean_cache' from command line to 'False'
+[1.875s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'sensors_lidar_bridge' build argument 'cmake_clean_first' from command line to 'False'
+[1.875s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'sensors_lidar_bridge' build argument 'cmake_force_configure' from command line to 'False'
+[1.875s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'sensors_lidar_bridge' build argument 'ament_cmake_args' from command line to 'None'
+[1.875s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'sensors_lidar_bridge' build argument 'catkin_cmake_args' from command line to 'None'
+[1.875s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'sensors_lidar_bridge' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.875s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'sensors_lidar_bridge' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_lidar_bridge', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge', 'merge_install': False, 'path': '/home/eceteam4/ECE480Team4/ros2_ws/src/sensors_lidar_bridge', 'symlink_install': True, 'test_result_base': None}[0m
+[1.875s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc_control' build argument 'cmake_args' from command line to 'None'
+[1.875s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc_control' build argument 'cmake_target' from command line to 'None'
+[1.875s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.875s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc_control' build argument 'cmake_clean_cache' from command line to 'False'
+[1.876s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc_control' build argument 'cmake_clean_first' from command line to 'False'
+[1.876s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc_control' build argument 'cmake_force_configure' from command line to 'False'
+[1.876s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc_control' build argument 'ament_cmake_args' from command line to 'None'
+[1.876s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc_control' build argument 'catkin_cmake_args' from command line to 'None'
+[1.876s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.876s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'vesc_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_control', 'merge_install': False, 'path': '/home/eceteam4/ECE480Team4/ros2_ws/src/vesc_control', 'symlink_install': True, 'test_result_base': None}[0m
+[1.876s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc_msgs' build argument 'cmake_args' from command line to 'None'
+[1.876s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc_msgs' build argument 'cmake_target' from command line to 'None'
+[1.876s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.876s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[1.877s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[1.877s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[1.877s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[1.877s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[1.877s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.877s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'vesc_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs', 'merge_install': False, 'path': '/home/eceteam4/ECE480Team4/ros2_ws/src/vesc_msgs', 'symlink_install': True, 'test_result_base': None}[0m
+[1.877s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc_ackermann' build argument 'cmake_args' from command line to 'None'
+[1.877s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc_ackermann' build argument 'cmake_target' from command line to 'None'
+[1.877s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc_ackermann' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.877s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc_ackermann' build argument 'cmake_clean_cache' from command line to 'False'
+[1.878s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc_ackermann' build argument 'cmake_clean_first' from command line to 'False'
+[1.878s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc_ackermann' build argument 'cmake_force_configure' from command line to 'False'
+[1.878s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc_ackermann' build argument 'ament_cmake_args' from command line to 'None'
+[1.878s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc_ackermann' build argument 'catkin_cmake_args' from command line to 'None'
+[1.878s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc_ackermann' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.878s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'vesc_ackermann' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann', 'merge_install': False, 'path': '/home/eceteam4/ECE480Team4/ros2_ws/src/vesc_ackermann', 'symlink_install': True, 'test_result_base': None}[0m
+[1.878s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc_driver' build argument 'cmake_args' from command line to 'None'
+[1.878s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc_driver' build argument 'cmake_target' from command line to 'None'
+[1.878s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.878s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[1.878s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc_driver' build argument 'cmake_clean_first' from command line to 'False'
+[1.879s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc_driver' build argument 'cmake_force_configure' from command line to 'False'
+[1.879s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc_driver' build argument 'ament_cmake_args' from command line to 'None'
+[1.879s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[1.879s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.879s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'vesc_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver', 'merge_install': False, 'path': '/home/eceteam4/ECE480Team4/ros2_ws/src/vesc_driver', 'symlink_install': True, 'test_result_base': None}[0m
+[1.879s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc' build argument 'cmake_args' from command line to 'None'
+[1.879s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc' build argument 'cmake_target' from command line to 'None'
+[1.879s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.880s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc' build argument 'cmake_clean_cache' from command line to 'False'
+[1.880s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc' build argument 'cmake_clean_first' from command line to 'False'
+[1.880s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc' build argument 'cmake_force_configure' from command line to 'False'
+[1.880s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc' build argument 'ament_cmake_args' from command line to 'None'
+[1.880s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc' build argument 'catkin_cmake_args' from command line to 'None'
+[1.880s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vesc' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.880s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'vesc' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc', 'merge_install': False, 'path': '/home/eceteam4/ECE480Team4/ros2_ws/src/vesc', 'symlink_install': True, 'test_result_base': None}[0m
+[1.880s] [34mcolcon.colcon_core.executor[0m [1;30mINFO[0m Executing jobs using 'parallel' executor
+[1.882s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete[0m
+[1.883s] [34mcolcon.colcon_ros.task.ament_cmake.build[0m [1;30mINFO[0m Building ROS package in '/home/eceteam4/ECE480Team4/ros2_ws/src/vesc_msgs' with build type 'ament_cmake'
+[1.883s] [34mcolcon.colcon_cmake.task.cmake.build[0m [1;30mINFO[0m Building CMake package in '/home/eceteam4/ECE480Team4/ros2_ws/src/vesc_msgs'
+[1.895s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.896s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.896s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[1.902s] [34mcolcon.colcon_ros.task.ament_cmake.build[0m [1;30mINFO[0m Building ROS package in '/home/eceteam4/ECE480Team4/ros2_ws/src/curvy_road' with build type 'ament_cmake'
+[1.902s] [34mcolcon.colcon_cmake.task.cmake.build[0m [1;30mINFO[0m Building CMake package in '/home/eceteam4/ECE480Team4/ros2_ws/src/curvy_road'
+[1.903s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.903s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[1.908s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/eceteam4/ECE480Team4/ros2_ws/src/lane_follow' with build type 'ament_python'
+[1.908s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('lane_follow', 'ament_prefix_path')
+[1.908s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow/share/lane_follow/hook/ament_prefix_path.ps1'
+[1.912s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow/share/lane_follow/hook/ament_prefix_path.dsv'
+[1.914s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow/share/lane_follow/hook/ament_prefix_path.sh'
+[1.919s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.919s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[1.927s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/eceteam4/ECE480Team4/ros2_ws/src/obstacles_det/obstacle_det' with build type 'ament_python'
+[1.928s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('obstacle_det', 'ament_prefix_path')
+[1.928s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/obstacle_det/share/obstacle_det/hook/ament_prefix_path.ps1'
+[1.932s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/obstacle_det/share/obstacle_det/hook/ament_prefix_path.dsv'
+[1.933s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/obstacle_det/share/obstacle_det/hook/ament_prefix_path.sh'
+[1.934s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.934s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[1.939s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/eceteam4/ECE480Team4/ros2_ws/src/perception_ml_node' with build type 'ament_python'
+[1.940s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('perception_ml_node', 'ament_prefix_path')
+[1.940s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node/share/perception_ml_node/hook/ament_prefix_path.ps1'
+[1.943s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node/share/perception_ml_node/hook/ament_prefix_path.dsv'
+[1.945s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node/share/perception_ml_node/hook/ament_prefix_path.sh'
+[1.947s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.947s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[1.952s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/eceteam4/ECE480Team4/ros2_ws/src/perception_sync_node' with build type 'ament_python'
+[1.952s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('perception_sync_node', 'ament_prefix_path')
+[1.953s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_sync_node/share/perception_sync_node/hook/ament_prefix_path.ps1'
+[1.957s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_sync_node/share/perception_sync_node/hook/ament_prefix_path.dsv'
+[1.958s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_sync_node/share/perception_sync_node/hook/ament_prefix_path.sh'
+[1.960s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.960s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[1.975s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/eceteam4/ECE480Team4/ros2_ws/build/vesc_msgs -- -j6 -l6[0m
+[2.028s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/curvy_road': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/eceteam4/ECE480Team4/ros2_ws/build/curvy_road -- -j6 -l6[0m
+[2.575s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/eceteam4/ECE480Team4/ros2_ws/src/lane_follow'
+[2.576s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.576s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[3.085s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/eceteam4/ECE480Team4/ros2_ws/src/obstacles_det/obstacle_det'
+[3.087s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.087s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[3.604s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/eceteam4/ECE480Team4/ros2_ws/src/perception_ml_node'
+[3.605s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.605s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[4.113s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/eceteam4/ECE480Team4/ros2_ws/src/perception_sync_node'
+[4.114s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.114s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[4.140s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/curvy_road' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/eceteam4/ECE480Team4/ros2_ws/build/curvy_road -- -j6 -l6[0m
+[4.162s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/curvy_road': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/eceteam4/ECE480Team4/ros2_ws/build/curvy_road[0m
+[4.163s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/eceteam4/ECE480Team4/ros2_ws/build/vesc_msgs -- -j6 -l6[0m
+[4.173s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/eceteam4/ECE480Team4/ros2_ws/build/vesc_msgs[0m
+[4.327s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(curvy_road)
+[4.328s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/curvy_road' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/eceteam4/ECE480Team4/ros2_ws/build/curvy_road[0m
+[4.347s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road' for CMake module files
+[4.348s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road' for CMake config files
+[4.350s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('curvy_road', 'cmake_prefix_path')
+[4.351s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/hook/cmake_prefix_path.ps1'
+[4.354s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/hook/cmake_prefix_path.dsv'
+[4.355s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/hook/cmake_prefix_path.sh'
+[4.356s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/bin'
+[4.357s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/lib/pkgconfig/curvy_road.pc'
+[4.357s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/lib/python3.10/site-packages'
+[4.358s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/bin'
+[4.359s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/package.ps1'
+[4.362s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/package.dsv'
+[4.365s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/package.sh'
+[4.369s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/package.bash'
+[4.374s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/package.zsh'
+[4.377s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/colcon-core/packages/curvy_road)
+[4.380s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(curvy_road)
+[4.380s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road' for CMake module files
+[4.381s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road' for CMake config files
+[4.382s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('curvy_road', 'cmake_prefix_path')
+[4.382s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/hook/cmake_prefix_path.ps1'
+[4.383s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/hook/cmake_prefix_path.dsv'
+[4.384s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/hook/cmake_prefix_path.sh'
+[4.386s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/bin'
+[4.386s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/lib/pkgconfig/curvy_road.pc'
+[4.387s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/lib/python3.10/site-packages'
+[4.387s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/bin'
+[4.388s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/package.ps1'
+[4.389s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/package.dsv'
+[4.390s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/package.sh'
+[4.391s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/package.bash'
+[4.392s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/package.zsh'
+[4.393s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/colcon-core/packages/curvy_road)
+[4.395s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/eceteam4/ECE480Team4/ros2_ws/src/sensors_camera_node' with build type 'ament_python'
+[4.396s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('sensors_camera_node', 'ament_prefix_path')
+[4.397s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node/share/sensors_camera_node/hook/ament_prefix_path.ps1'
+[4.402s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node/share/sensors_camera_node/hook/ament_prefix_path.dsv'
+[4.404s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node/share/sensors_camera_node/hook/ament_prefix_path.sh'
+[4.406s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.406s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[4.954s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/eceteam4/ECE480Team4/ros2_ws/src/sensors_camera_node'
+[4.955s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.955s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[4.964s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(vesc_msgs)
+[4.965s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs' for CMake module files
+[4.966s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/eceteam4/ECE480Team4/ros2_ws/build/vesc_msgs[0m
+[4.968s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs' for CMake config files
+[4.969s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('vesc_msgs', 'cmake_prefix_path')
+[4.970s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/hook/cmake_prefix_path.ps1'
+[4.973s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/hook/cmake_prefix_path.dsv'
+[4.974s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/hook/cmake_prefix_path.sh'
+[4.975s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib'
+[4.976s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('vesc_msgs', 'ld_library_path_lib')
+[4.976s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/hook/ld_library_path_lib.ps1'
+[4.978s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/hook/ld_library_path_lib.dsv'
+[4.978s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/hook/ld_library_path_lib.sh'
+[4.980s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/bin'
+[4.980s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib/pkgconfig/vesc_msgs.pc'
+[4.980s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib/python3.10/site-packages'
+[4.981s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/bin'
+[4.982s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/package.ps1'
+[4.983s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/package.dsv'
+[4.984s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/package.sh'
+[4.985s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/package.bash'
+[4.986s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/package.zsh'
+[4.987s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/colcon-core/packages/vesc_msgs)
+[4.992s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(vesc_msgs)
+[4.993s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs' for CMake module files
+[4.994s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs' for CMake config files
+[4.995s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('vesc_msgs', 'cmake_prefix_path')
+[4.996s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/hook/cmake_prefix_path.ps1'
+[4.997s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/hook/cmake_prefix_path.dsv'
+[4.998s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/hook/cmake_prefix_path.sh'
+[4.999s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib'
+[4.999s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('vesc_msgs', 'ld_library_path_lib')
+[5.000s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/hook/ld_library_path_lib.ps1'
+[5.001s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/hook/ld_library_path_lib.dsv'
+[5.002s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/hook/ld_library_path_lib.sh'
+[5.003s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/bin'
+[5.003s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib/pkgconfig/vesc_msgs.pc'
+[5.004s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib/python3.10/site-packages'
+[5.004s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/bin'
+[5.005s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/package.ps1'
+[5.007s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/package.dsv'
+[5.008s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/package.sh'
+[5.008s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/package.bash'
+[5.009s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/package.zsh'
+[5.010s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/colcon-core/packages/vesc_msgs)
+[5.013s] [34mcolcon.colcon_ros.task.ament_cmake.build[0m [1;30mINFO[0m Building ROS package in '/home/eceteam4/ECE480Team4/ros2_ws/src/vesc_ackermann' with build type 'ament_cmake'
+[5.013s] [34mcolcon.colcon_cmake.task.cmake.build[0m [1;30mINFO[0m Building CMake package in '/home/eceteam4/ECE480Team4/ros2_ws/src/vesc_ackermann'
+[5.014s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.014s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[5.032s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/perception_sync_node': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/perception_sync_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/perception_sync_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/perception_sync_node/build --no-deps symlink_data[0m
+[5.037s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/perception_ml_node': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/perception_ml_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/perception_ml_node/build --no-deps symlink_data[0m
+[5.043s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/obstacle_det': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/obstacle_det/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/obstacle_det/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/obstacle_det/build --no-deps symlink_data[0m
+[5.079s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/lane_follow': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/lane_follow/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/lane_follow/build --no-deps symlink_data[0m
+[5.100s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann': AMENT_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann -- -j6 -l6[0m
+[5.444s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann' returned '0': AMENT_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann -- -j6 -l6[0m
+[5.452s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann': AMENT_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann[0m
+[5.542s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(vesc_ackermann)
+[5.543s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann' for CMake module files
+[5.544s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann' for CMake config files
+[5.545s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann' returned '0': AMENT_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann[0m
+[5.546s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('vesc_ackermann', 'cmake_prefix_path')
+[5.547s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/hook/cmake_prefix_path.ps1'
+[5.549s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/hook/cmake_prefix_path.dsv'
+[5.550s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/hook/cmake_prefix_path.sh'
+[5.551s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/lib'
+[5.551s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('vesc_ackermann', 'ld_library_path_lib')
+[5.552s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/hook/ld_library_path_lib.ps1'
+[5.553s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/hook/ld_library_path_lib.dsv'
+[5.553s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/hook/ld_library_path_lib.sh'
+[5.554s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/bin'
+[5.554s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/lib/pkgconfig/vesc_ackermann.pc'
+[5.555s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/lib/python3.10/site-packages'
+[5.555s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/bin'
+[5.556s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/package.ps1'
+[5.563s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/package.dsv'
+[5.564s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/package.sh'
+[5.565s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/package.bash'
+[5.566s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/package.zsh'
+[5.567s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/colcon-core/packages/vesc_ackermann)
+[5.569s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(vesc_ackermann)
+[5.569s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann' for CMake module files
+[5.570s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann' for CMake config files
+[5.571s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('vesc_ackermann', 'cmake_prefix_path')
+[5.572s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/hook/cmake_prefix_path.ps1'
+[5.573s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/hook/cmake_prefix_path.dsv'
+[5.574s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/hook/cmake_prefix_path.sh'
+[5.575s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/lib'
+[5.575s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('vesc_ackermann', 'ld_library_path_lib')
+[5.576s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/hook/ld_library_path_lib.ps1'
+[5.577s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/hook/ld_library_path_lib.dsv'
+[5.578s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/hook/ld_library_path_lib.sh'
+[5.579s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/bin'
+[5.579s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/lib/pkgconfig/vesc_ackermann.pc'
+[5.579s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/lib/python3.10/site-packages'
+[5.580s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/bin'
+[5.581s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/package.ps1'
+[5.582s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/package.dsv'
+[5.584s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/package.sh'
+[5.585s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/package.bash'
+[5.586s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/package.zsh'
+[5.587s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/colcon-core/packages/vesc_ackermann)
+[5.590s] [34mcolcon.colcon_ros.task.ament_cmake.build[0m [1;30mINFO[0m Building ROS package in '/home/eceteam4/ECE480Team4/ros2_ws/src/vesc_driver' with build type 'ament_cmake'
+[5.590s] [34mcolcon.colcon_cmake.task.cmake.build[0m [1;30mINFO[0m Building CMake package in '/home/eceteam4/ECE480Team4/ros2_ws/src/vesc_driver'
+[5.591s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.591s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[5.638s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_driver': AMENT_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/eceteam4/ECE480Team4/ros2_ws/build/vesc_driver -- -j6 -l6[0m
+[5.882s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_camera_node': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_camera_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/sensors_camera_node/build --no-deps symlink_data[0m
+[6.083s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_driver' returned '0': AMENT_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/eceteam4/ECE480Team4/ros2_ws/build/vesc_driver -- -j6 -l6[0m
+[6.091s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_driver': AMENT_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/eceteam4/ECE480Team4/ros2_ws/build/vesc_driver[0m
+[6.174s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('perception_ml_node', 'pythonpath_develop')
+[6.175s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/build/perception_ml_node/share/perception_ml_node/hook/pythonpath_develop.ps1'
+[6.180s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/perception_ml_node' returned '0': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/perception_ml_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/perception_ml_node/build --no-deps symlink_data[0m
+[6.181s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/build/perception_ml_node/share/perception_ml_node/hook/pythonpath_develop.dsv'
+[6.183s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/build/perception_ml_node/share/perception_ml_node/hook/pythonpath_develop.sh'
+[6.186s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node' for CMake module files
+[6.188s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node' for CMake config files
+[6.190s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node/lib'
+[6.191s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node/bin'
+[6.191s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node/lib/pkgconfig/perception_ml_node.pc'
+[6.191s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node/lib/python3.10/site-packages'
+[6.191s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('perception_ml_node', 'pythonpath')
+[6.192s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node/share/perception_ml_node/hook/pythonpath.ps1'
+[6.193s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node/share/perception_ml_node/hook/pythonpath.dsv'
+[6.194s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node/share/perception_ml_node/hook/pythonpath.sh'
+[6.196s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node/bin'
+[6.196s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(perception_ml_node)
+[6.197s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node/share/perception_ml_node/package.ps1'
+[6.198s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node/share/perception_ml_node/package.dsv'
+[6.200s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node/share/perception_ml_node/package.sh'
+[6.201s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node/share/perception_ml_node/package.bash'
+[6.201s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node/share/perception_ml_node/package.zsh'
+[6.202s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node/share/colcon-core/packages/perception_ml_node)
+[6.204s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/eceteam4/ECE480Team4/ros2_ws/src/sensors_imu_bridge' with build type 'ament_python'
+[6.204s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('sensors_imu_bridge', 'ament_prefix_path')
+[6.205s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_imu_bridge/share/sensors_imu_bridge/hook/ament_prefix_path.ps1'
+[6.211s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_imu_bridge/share/sensors_imu_bridge/hook/ament_prefix_path.dsv'
+[6.212s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_imu_bridge/share/sensors_imu_bridge/hook/ament_prefix_path.sh'
+[6.213s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.213s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[6.222s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(vesc_driver)
+[6.222s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver' for CMake module files
+[6.224s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver' for CMake config files
+[6.226s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_driver' returned '0': AMENT_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/eceteam4/ECE480Team4/ros2_ws/build/vesc_driver[0m
+[6.229s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('vesc_driver', 'cmake_prefix_path')
+[6.229s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/hook/cmake_prefix_path.ps1'
+[6.233s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/hook/cmake_prefix_path.dsv'
+[6.234s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/hook/cmake_prefix_path.sh'
+[6.235s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/lib'
+[6.235s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('vesc_driver', 'ld_library_path_lib')
+[6.236s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/hook/ld_library_path_lib.ps1'
+[6.237s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/hook/ld_library_path_lib.dsv'
+[6.237s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/hook/ld_library_path_lib.sh'
+[6.238s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/bin'
+[6.238s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/lib/pkgconfig/vesc_driver.pc'
+[6.239s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/lib/python3.10/site-packages'
+[6.239s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/bin'
+[6.240s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/package.ps1'
+[6.241s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/package.dsv'
+[6.242s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/package.sh'
+[6.243s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/package.bash'
+[6.244s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/package.zsh'
+[6.245s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/colcon-core/packages/vesc_driver)
+[6.247s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(vesc_driver)
+[6.248s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver' for CMake module files
+[6.249s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver' for CMake config files
+[6.249s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('vesc_driver', 'cmake_prefix_path')
+[6.250s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/hook/cmake_prefix_path.ps1'
+[6.251s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/hook/cmake_prefix_path.dsv'
+[6.251s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/hook/cmake_prefix_path.sh'
+[6.252s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/lib'
+[6.253s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('vesc_driver', 'ld_library_path_lib')
+[6.253s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/hook/ld_library_path_lib.ps1'
+[6.265s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/hook/ld_library_path_lib.dsv'
+[6.266s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/hook/ld_library_path_lib.sh'
+[6.266s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/bin'
+[6.267s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/lib/pkgconfig/vesc_driver.pc'
+[6.267s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/lib/python3.10/site-packages'
+[6.268s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/bin'
+[6.268s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/package.ps1'
+[6.269s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/package.dsv'
+[6.270s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/package.sh'
+[6.271s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/package.bash'
+[6.272s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/package.zsh'
+[6.273s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/colcon-core/packages/vesc_driver)
+[6.275s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/eceteam4/ECE480Team4/ros2_ws/src/sensors_lidar_bridge' with build type 'ament_python'
+[6.275s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('sensors_lidar_bridge', 'ament_prefix_path')
+[6.275s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/sensors_lidar_bridge/hook/ament_prefix_path.ps1'
+[6.296s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/sensors_lidar_bridge/hook/ament_prefix_path.dsv'
+[6.298s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/sensors_lidar_bridge/hook/ament_prefix_path.sh'
+[6.299s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.300s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[6.308s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('lane_follow', 'pythonpath_develop')
+[6.309s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/build/lane_follow/share/lane_follow/hook/pythonpath_develop.ps1'
+[6.310s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/lane_follow' returned '0': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/lane_follow/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/lane_follow/build --no-deps symlink_data[0m
+[6.311s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/build/lane_follow/share/lane_follow/hook/pythonpath_develop.dsv'
+[6.312s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/build/lane_follow/share/lane_follow/hook/pythonpath_develop.sh'
+[6.313s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow' for CMake module files
+[6.314s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow' for CMake config files
+[6.319s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow/lib'
+[6.319s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow/bin'
+[6.319s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow/lib/pkgconfig/lane_follow.pc'
+[6.320s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow/lib/python3.10/site-packages'
+[6.320s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('lane_follow', 'pythonpath')
+[6.320s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow/share/lane_follow/hook/pythonpath.ps1'
+[6.321s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow/share/lane_follow/hook/pythonpath.dsv'
+[6.322s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow/share/lane_follow/hook/pythonpath.sh'
+[6.323s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow/bin'
+[6.323s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(lane_follow)
+[6.324s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow/share/lane_follow/package.ps1'
+[6.325s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow/share/lane_follow/package.dsv'
+[6.326s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow/share/lane_follow/package.sh'
+[6.327s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow/share/lane_follow/package.bash'
+[6.328s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow/share/lane_follow/package.zsh'
+[6.328s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow/share/colcon-core/packages/lane_follow)
+[6.332s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/eceteam4/ECE480Team4/ros2_ws/src/vesc_control' with build type 'ament_python'
+[6.332s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('vesc_control', 'ament_prefix_path')
+[6.332s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_control/share/vesc_control/hook/ament_prefix_path.ps1'
+[6.336s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_control/share/vesc_control/hook/ament_prefix_path.dsv'
+[6.337s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_control/share/vesc_control/hook/ament_prefix_path.sh'
+[6.338s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.338s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[6.345s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('perception_sync_node', 'pythonpath_develop')
+[6.347s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/build/perception_sync_node/share/perception_sync_node/hook/pythonpath_develop.ps1'
+[6.350s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/perception_sync_node' returned '0': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/perception_sync_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/perception_sync_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/perception_sync_node/build --no-deps symlink_data[0m
+[6.354s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/build/perception_sync_node/share/perception_sync_node/hook/pythonpath_develop.dsv'
+[6.354s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/build/perception_sync_node/share/perception_sync_node/hook/pythonpath_develop.sh'
+[6.356s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_sync_node' for CMake module files
+[6.357s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_sync_node' for CMake config files
+[6.359s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_sync_node/lib'
+[6.359s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_sync_node/bin'
+[6.359s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_sync_node/lib/pkgconfig/perception_sync_node.pc'
+[6.360s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_sync_node/lib/python3.10/site-packages'
+[6.360s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('perception_sync_node', 'pythonpath')
+[6.360s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_sync_node/share/perception_sync_node/hook/pythonpath.ps1'
+[6.362s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_sync_node/share/perception_sync_node/hook/pythonpath.dsv'
+[6.363s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_sync_node/share/perception_sync_node/hook/pythonpath.sh'
+[6.364s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_sync_node/bin'
+[6.365s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(perception_sync_node)
+[6.366s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_sync_node/share/perception_sync_node/package.ps1'
+[6.369s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_sync_node/share/perception_sync_node/package.dsv'
+[6.375s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_sync_node/share/perception_sync_node/package.sh'
+[6.376s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_sync_node/share/perception_sync_node/package.bash'
+[6.377s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/perception_sync_node/share/perception_sync_node/package.zsh'
+[6.378s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/eceteam4/ECE480Team4/ros2_ws/install/perception_sync_node/share/colcon-core/packages/perception_sync_node)
+[6.891s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/eceteam4/ECE480Team4/ros2_ws/src/sensors_imu_bridge'
+[6.892s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.892s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[6.899s] [34mcolcon.colcon_ros.task.ament_cmake.build[0m [1;30mINFO[0m Building ROS package in '/home/eceteam4/ECE480Team4/ros2_ws/src/vesc' with build type 'ament_cmake'
+[6.900s] [34mcolcon.colcon_cmake.task.cmake.build[0m [1;30mINFO[0m Building CMake package in '/home/eceteam4/ECE480Team4/ros2_ws/src/vesc'
+[6.901s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.901s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[6.913s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('obstacle_det', 'pythonpath_develop')
+[6.914s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/build/obstacle_det/share/obstacle_det/hook/pythonpath_develop.ps1'
+[6.915s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/obstacle_det' returned '0': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/obstacle_det/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/obstacle_det/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/obstacle_det/build --no-deps symlink_data[0m
+[6.918s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/build/obstacle_det/share/obstacle_det/hook/pythonpath_develop.dsv'
+[6.923s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/build/obstacle_det/share/obstacle_det/hook/pythonpath_develop.sh'
+[6.927s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/obstacle_det' for CMake module files
+[6.930s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/obstacle_det' for CMake config files
+[6.937s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/obstacle_det/lib'
+[6.938s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/obstacle_det/bin'
+[6.938s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/obstacle_det/lib/pkgconfig/obstacle_det.pc'
+[6.939s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/obstacle_det/lib/python3.10/site-packages'
+[6.939s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('obstacle_det', 'pythonpath')
+[6.941s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/obstacle_det/share/obstacle_det/hook/pythonpath.ps1'
+[6.944s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/obstacle_det/share/obstacle_det/hook/pythonpath.dsv'
+[6.946s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/obstacle_det/share/obstacle_det/hook/pythonpath.sh'
+[6.948s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/obstacle_det/bin'
+[6.949s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(obstacle_det)
+[6.950s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/obstacle_det/share/obstacle_det/package.ps1'
+[6.952s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/obstacle_det/share/obstacle_det/package.dsv'
+[6.954s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/obstacle_det/share/obstacle_det/package.sh'
+[6.955s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/obstacle_det/share/obstacle_det/package.bash'
+[6.957s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/obstacle_det/share/obstacle_det/package.zsh'
+[6.958s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/eceteam4/ECE480Team4/ros2_ws/install/obstacle_det/share/colcon-core/packages/obstacle_det)
+[7.479s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/eceteam4/ECE480Team4/ros2_ws/src/sensors_lidar_bridge'
+[7.480s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.480s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[8.041s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/eceteam4/ECE480Team4/ros2_ws/src/vesc_control'
+[8.042s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.042s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[8.054s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('sensors_camera_node', 'pythonpath_develop')
+[8.055s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_camera_node/share/sensors_camera_node/hook/pythonpath_develop.ps1'
+[8.056s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_camera_node' returned '0': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_camera_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/sensors_camera_node/build --no-deps symlink_data[0m
+[8.061s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_camera_node/share/sensors_camera_node/hook/pythonpath_develop.dsv'
+[8.063s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_camera_node/share/sensors_camera_node/hook/pythonpath_develop.sh'
+[8.066s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node' for CMake module files
+[8.068s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node' for CMake config files
+[8.071s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node/lib'
+[8.071s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node/bin'
+[8.071s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node/lib/pkgconfig/sensors_camera_node.pc'
+[8.073s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node/lib/python3.10/site-packages'
+[8.073s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('sensors_camera_node', 'pythonpath')
+[8.074s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node/share/sensors_camera_node/hook/pythonpath.ps1'
+[8.076s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node/share/sensors_camera_node/hook/pythonpath.dsv'
+[8.077s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node/share/sensors_camera_node/hook/pythonpath.sh'
+[8.080s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node/bin'
+[8.080s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(sensors_camera_node)
+[8.081s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node/share/sensors_camera_node/package.ps1'
+[8.083s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node/share/sensors_camera_node/package.dsv'
+[8.085s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node/share/sensors_camera_node/package.sh'
+[8.087s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node/share/sensors_camera_node/package.bash'
+[8.088s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node/share/sensors_camera_node/package.zsh'
+[8.089s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node/share/colcon-core/packages/sensors_camera_node)
+[8.105s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc': AMENT_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/lib:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/lib:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/eceteam4/ECE480Team4/ros2_ws/build/vesc -- -j6 -l6[0m
+[8.201s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc' returned '0': AMENT_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/lib:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/lib:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/eceteam4/ECE480Team4/ros2_ws/build/vesc -- -j6 -l6[0m
+[8.205s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc': AMENT_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/lib:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/lib:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/eceteam4/ECE480Team4/ros2_ws/build/vesc[0m
+[8.270s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(vesc)
+[8.271s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc' for CMake module files
+[8.272s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc' returned '0': AMENT_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/lib:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/lib:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/eceteam4/ECE480Team4/ros2_ws/build/vesc[0m
+[8.273s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc' for CMake config files
+[8.275s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('vesc', 'cmake_prefix_path')
+[8.275s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc/share/vesc/hook/cmake_prefix_path.ps1'
+[8.277s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc/share/vesc/hook/cmake_prefix_path.dsv'
+[8.278s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc/share/vesc/hook/cmake_prefix_path.sh'
+[8.279s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc/bin'
+[8.279s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc/lib/pkgconfig/vesc.pc'
+[8.280s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc/lib/python3.10/site-packages'
+[8.281s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc/bin'
+[8.283s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc/share/vesc/package.ps1'
+[8.285s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc/share/vesc/package.dsv'
+[8.286s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc/share/vesc/package.sh'
+[8.287s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc/share/vesc/package.bash'
+[8.288s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc/share/vesc/package.zsh'
+[8.289s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/eceteam4/ECE480Team4/ros2_ws/install/vesc/share/colcon-core/packages/vesc)
+[8.291s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(vesc)
+[8.291s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc' for CMake module files
+[8.292s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc' for CMake config files
+[8.293s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('vesc', 'cmake_prefix_path')
+[8.293s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc/share/vesc/hook/cmake_prefix_path.ps1'
+[8.294s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc/share/vesc/hook/cmake_prefix_path.dsv'
+[8.295s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc/share/vesc/hook/cmake_prefix_path.sh'
+[8.296s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc/bin'
+[8.296s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc/lib/pkgconfig/vesc.pc'
+[8.297s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc/lib/python3.10/site-packages'
+[8.297s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc/bin'
+[8.298s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc/share/vesc/package.ps1'
+[8.299s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc/share/vesc/package.dsv'
+[8.300s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc/share/vesc/package.sh'
+[8.301s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc/share/vesc/package.bash'
+[8.302s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc/share/vesc/package.zsh'
+[8.303s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/eceteam4/ECE480Team4/ros2_ws/install/vesc/share/colcon-core/packages/vesc)
+[8.801s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_lidar_bridge': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_lidar_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/sensors_lidar_bridge/build --no-deps symlink_data[0m
+[8.840s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_imu_bridge': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_imu_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_imu_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/sensors_imu_bridge/build --no-deps symlink_data[0m
+[8.849s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_control': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/vesc_control/build --no-deps symlink_data[0m
+[9.758s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('sensors_lidar_bridge', 'pythonpath_develop')
+[9.759s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_lidar_bridge/share/sensors_lidar_bridge/hook/pythonpath_develop.ps1'
+[9.760s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_lidar_bridge' returned '0': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_lidar_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/sensors_lidar_bridge/build --no-deps symlink_data[0m
+[9.763s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_lidar_bridge/share/sensors_lidar_bridge/hook/pythonpath_develop.dsv'
+[9.765s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_lidar_bridge/share/sensors_lidar_bridge/hook/pythonpath_develop.sh'
+[9.771s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge' for CMake module files
+[9.776s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge' for CMake config files
+[9.779s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/lib'
+[9.780s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/bin'
+[9.780s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/lib/pkgconfig/sensors_lidar_bridge.pc'
+[9.781s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/lib/python3.10/site-packages'
+[9.781s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('sensors_lidar_bridge', 'pythonpath')
+[9.782s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/sensors_lidar_bridge/hook/pythonpath.ps1'
+[9.784s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/sensors_lidar_bridge/hook/pythonpath.dsv'
+[9.785s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/sensors_lidar_bridge/hook/pythonpath.sh'
+[9.787s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/bin'
+[9.788s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(sensors_lidar_bridge)
+[9.789s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/sensors_lidar_bridge/package.ps1'
+[9.790s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/sensors_lidar_bridge/package.dsv'
+[9.792s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/sensors_lidar_bridge/package.sh'
+[9.794s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/sensors_lidar_bridge/package.bash'
+[9.795s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/sensors_lidar_bridge/package.zsh'
+[9.796s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/colcon-core/packages/sensors_lidar_bridge)
+[9.814s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('vesc_control', 'pythonpath_develop')
+[9.815s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_control/share/vesc_control/hook/pythonpath_develop.ps1'
+[9.815s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_control' returned '0': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/vesc_control/build --no-deps symlink_data[0m
+[9.818s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_control/share/vesc_control/hook/pythonpath_develop.dsv'
+[9.820s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_control/share/vesc_control/hook/pythonpath_develop.sh'
+[9.822s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_control' for CMake module files
+[9.823s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_control' for CMake config files
+[9.829s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_control/lib'
+[9.831s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_control/bin'
+[9.831s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_control/lib/pkgconfig/vesc_control.pc'
+[9.831s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_control/lib/python3.10/site-packages'
+[9.832s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('vesc_control', 'pythonpath')
+[9.832s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_control/share/vesc_control/hook/pythonpath.ps1'
+[9.833s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_control/share/vesc_control/hook/pythonpath.dsv'
+[9.834s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_control/share/vesc_control/hook/pythonpath.sh'
+[9.836s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_control/bin'
+[9.836s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(vesc_control)
+[9.837s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_control/share/vesc_control/package.ps1'
+[9.839s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_control/share/vesc_control/package.dsv'
+[9.840s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_control/share/vesc_control/package.sh'
+[9.842s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_control/share/vesc_control/package.bash'
+[9.842s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_control/share/vesc_control/package.zsh'
+[9.843s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_control/share/colcon-core/packages/vesc_control)
+[9.884s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('sensors_imu_bridge', 'pythonpath_develop')
+[9.885s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_imu_bridge/share/sensors_imu_bridge/hook/pythonpath_develop.ps1'
+[9.887s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_imu_bridge' returned '0': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_imu_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_imu_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/sensors_imu_bridge/build --no-deps symlink_data[0m
+[9.891s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_imu_bridge/share/sensors_imu_bridge/hook/pythonpath_develop.dsv'
+[9.893s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_imu_bridge/share/sensors_imu_bridge/hook/pythonpath_develop.sh'
+[9.895s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_imu_bridge' for CMake module files
+[9.896s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_imu_bridge' for CMake config files
+[9.898s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_imu_bridge/lib'
+[9.898s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_imu_bridge/bin'
+[9.898s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_imu_bridge/lib/pkgconfig/sensors_imu_bridge.pc'
+[9.899s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_imu_bridge/lib/python3.10/site-packages'
+[9.899s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('sensors_imu_bridge', 'pythonpath')
+[9.899s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_imu_bridge/share/sensors_imu_bridge/hook/pythonpath.ps1'
+[9.900s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_imu_bridge/share/sensors_imu_bridge/hook/pythonpath.dsv'
+[9.901s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_imu_bridge/share/sensors_imu_bridge/hook/pythonpath.sh'
+[9.903s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_imu_bridge/bin'
+[9.903s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(sensors_imu_bridge)
+[9.904s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_imu_bridge/share/sensors_imu_bridge/package.ps1'
+[9.906s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_imu_bridge/share/sensors_imu_bridge/package.dsv'
+[9.908s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_imu_bridge/share/sensors_imu_bridge/package.sh'
+[9.910s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_imu_bridge/share/sensors_imu_bridge/package.bash'
+[9.911s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_imu_bridge/share/sensors_imu_bridge/package.zsh'
+[9.912s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_imu_bridge/share/colcon-core/packages/sensors_imu_bridge)
+[9.913s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mclosing loop[0m
+[9.915s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mloop closed[0m
+[9.915s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete finished with '0'[0m
+[9.916s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoining thread[0m
+[9.942s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[9.942s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[9.943s] [34mcolcon.colcon_notification.desktop_notification[0m [1;30mINFO[0m Sending desktop notification using 'notify2'
+[10.015s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoined thread[0m
+[10.016s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/eceteam4/ECE480Team4/ros2_ws/install/local_setup.ps1'
+[10.019s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/eceteam4/ECE480Team4/ros2_ws/install/_local_setup_util_ps1.py'
+[10.023s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/eceteam4/ECE480Team4/ros2_ws/install/setup.ps1'
+[10.026s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/eceteam4/ECE480Team4/ros2_ws/install/local_setup.sh'
+[10.030s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/eceteam4/ECE480Team4/ros2_ws/install/_local_setup_util_sh.py'
+[10.033s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/eceteam4/ECE480Team4/ros2_ws/install/setup.sh'
+[10.036s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/eceteam4/ECE480Team4/ros2_ws/install/local_setup.bash'
+[10.039s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/eceteam4/ECE480Team4/ros2_ws/install/setup.bash'
+[10.042s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/eceteam4/ECE480Team4/ros2_ws/install/local_setup.zsh'
+[10.045s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/eceteam4/ECE480Team4/ros2_ws/install/setup.zsh'

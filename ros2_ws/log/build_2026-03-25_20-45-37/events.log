@@ -1,0 +1,644 @@
+[0.000000] (-) TimerEvent: {}
+[0.000415] (curvy_road) JobQueued: {'identifier': 'curvy_road', 'dependencies': OrderedDict()}
+[0.000491] (lane_follow) JobQueued: {'identifier': 'lane_follow', 'dependencies': OrderedDict()}
+[0.000534] (obstacle_det) JobQueued: {'identifier': 'obstacle_det', 'dependencies': OrderedDict()}
+[0.000568] (perception_ml_node) JobQueued: {'identifier': 'perception_ml_node', 'dependencies': OrderedDict()}
+[0.000601] (perception_sync_node) JobQueued: {'identifier': 'perception_sync_node', 'dependencies': OrderedDict()}
+[0.000632] (sensors_camera_node) JobQueued: {'identifier': 'sensors_camera_node', 'dependencies': OrderedDict()}
+[0.000661] (sensors_imu_bridge) JobQueued: {'identifier': 'sensors_imu_bridge', 'dependencies': OrderedDict()}
+[0.000689] (sensors_lidar_bridge) JobQueued: {'identifier': 'sensors_lidar_bridge', 'dependencies': OrderedDict()}
+[0.000717] (vesc_control) JobQueued: {'identifier': 'vesc_control', 'dependencies': OrderedDict()}
+[0.000744] (vesc_msgs) JobQueued: {'identifier': 'vesc_msgs', 'dependencies': OrderedDict()}
+[0.000772] (vesc_ackermann) JobQueued: {'identifier': 'vesc_ackermann', 'dependencies': OrderedDict([('vesc_msgs', '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs')])}
+[0.000830] (vesc_driver) JobQueued: {'identifier': 'vesc_driver', 'dependencies': OrderedDict([('vesc_msgs', '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs')])}
+[0.000864] (vesc) JobQueued: {'identifier': 'vesc', 'dependencies': OrderedDict([('vesc_msgs', '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs'), ('vesc_ackermann', '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann'), ('vesc_driver', '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver')])}
+[0.000905] (vesc_msgs) JobStarted: {'identifier': 'vesc_msgs'}
+[0.012115] (curvy_road) JobStarted: {'identifier': 'curvy_road'}
+[0.016785] (lane_follow) JobStarted: {'identifier': 'lane_follow'}
+[0.071167] (obstacle_det) JobStarted: {'identifier': 'obstacle_det'}
+[0.084421] (perception_ml_node) JobStarted: {'identifier': 'perception_ml_node'}
+[0.091906] (perception_sync_node) JobStarted: {'identifier': 'perception_sync_node'}
+[0.095483] (-) TimerEvent: {}
+[0.104478] (vesc_msgs) JobProgress: {'identifier': 'vesc_msgs', 'progress': 'cmake'}
+[0.106884] (vesc_msgs) JobProgress: {'identifier': 'vesc_msgs', 'progress': 'build'}
+[0.108304] (vesc_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_msgs', '--', '-j6', '-l6'], 'cwd': '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_msgs', 'env': OrderedDict([('USER', 'eceteam4'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('HOME', '/home/eceteam4'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '3106'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'eceteam4'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('PROMPT_DIRTRIM', '4'), ('USERNAME', 'eceteam4'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/home/eceteam4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eceteam4-desktop:@/tmp/.ICE-unix/1786,unix/eceteam4-desktop:/tmp/.ICE-unix/1786'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3053c5f8_67e2_4273_827f_b879aa89b343'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.97'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('COLCON', '1'), ('VTE_VERSION', '6800')]), 'shell': False}
+[0.112768] (curvy_road) JobProgress: {'identifier': 'curvy_road', 'progress': 'cmake'}
+[0.114074] (curvy_road) JobProgress: {'identifier': 'curvy_road', 'progress': 'build'}
+[0.114683] (curvy_road) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eceteam4/ECE480Team4/ros2_ws/build/curvy_road', '--', '-j6', '-l6'], 'cwd': '/home/eceteam4/ECE480Team4/ros2_ws/build/curvy_road', 'env': OrderedDict([('USER', 'eceteam4'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('HOME', '/home/eceteam4'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '3106'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'eceteam4'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('PROMPT_DIRTRIM', '4'), ('USERNAME', 'eceteam4'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/home/eceteam4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eceteam4-desktop:@/tmp/.ICE-unix/1786,unix/eceteam4-desktop:/tmp/.ICE-unix/1786'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3053c5f8_67e2_4273_827f_b879aa89b343'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.97'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eceteam4/ECE480Team4/ros2_ws/build/curvy_road'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('COLCON', '1'), ('VTE_VERSION', '6800')]), 'shell': False}
+[0.195719] (-) TimerEvent: {}
+[0.296537] (-) TimerEvent: {}
+[0.397246] (-) TimerEvent: {}
+[0.498068] (-) TimerEvent: {}
+[0.598917] (-) TimerEvent: {}
+[0.699735] (-) TimerEvent: {}
+[0.800440] (-) TimerEvent: {}
+[0.901223] (-) TimerEvent: {}
+[1.001939] (-) TimerEvent: {}
+[1.102625] (-) TimerEvent: {}
+[1.203717] (-) TimerEvent: {}
+[1.304419] (-) TimerEvent: {}
+[1.405144] (-) TimerEvent: {}
+[1.505908] (-) TimerEvent: {}
+[1.606632] (-) TimerEvent: {}
+[1.707302] (-) TimerEvent: {}
+[1.808017] (-) TimerEvent: {}
+[1.902550] (vesc_msgs) StdoutLine: {'line': b'[ 12%] Built target vesc_msgs__rosidl_generator_c\n'}
+[1.903800] (vesc_msgs) StdoutLine: {'line': b'[ 12%] Built target vesc_msgs__cpp\n'}
+[1.904498] (vesc_msgs) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_symlink_vesc_msgs\n'}
+[1.904814] (vesc_msgs) StdoutLine: {'line': b'[ 23%] Built target vesc_msgs__rosidl_typesupport_c\n'}
+[1.905187] (vesc_msgs) StdoutLine: {'line': b'[ 34%] Built target vesc_msgs__rosidl_typesupport_fastrtps_c\n'}
+[1.905496] (vesc_msgs) StdoutLine: {'line': b'[ 52%] Built target vesc_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[1.906300] (vesc_msgs) StdoutLine: {'line': b'[ 57%] Built target vesc_msgs__rosidl_typesupport_introspection_c\n'}
+[1.906905] (vesc_msgs) StdoutLine: {'line': b'[ 68%] Built target vesc_msgs__rosidl_typesupport_introspection_cpp\n'}
+[1.908111] (-) TimerEvent: {}
+[1.910195] (vesc_msgs) StdoutLine: {'line': b'[ 79%] Built target vesc_msgs__rosidl_typesupport_cpp\n'}
+[1.911743] (vesc_msgs) StdoutLine: {'line': b'[ 79%] Built target vesc_msgs\n'}
+[1.912305] (vesc_msgs) StdoutLine: {'line': b'[ 80%] Built target vesc_msgs__py\n'}
+[1.912592] (vesc_msgs) StdoutLine: {'line': b'[ 90%] Built target vesc_msgs__rosidl_generator_py\n'}
+[1.912931] (vesc_msgs) StdoutLine: {'line': b'[ 93%] Built target vesc_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.913056] (vesc_msgs) StdoutLine: {'line': b'[ 96%] Built target vesc_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[1.913931] (vesc_msgs) StdoutLine: {'line': b'[100%] Built target vesc_msgs__rosidl_typesupport_c__pyext\n'}
+[1.914071] (vesc_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[1.914189] (vesc_msgs) StdoutLine: {'line': b'writing vesc_msgs.egg-info/PKG-INFO\n'}
+[1.914299] (vesc_msgs) StdoutLine: {'line': b'writing dependency_links to vesc_msgs.egg-info/dependency_links.txt\n'}
+[1.914405] (vesc_msgs) StdoutLine: {'line': b'writing top-level names to vesc_msgs.egg-info/top_level.txt\n'}
+[1.914508] (vesc_msgs) StdoutLine: {'line': b"reading manifest file 'vesc_msgs.egg-info/SOURCES.txt'\n"}
+[1.915894] (vesc_msgs) StdoutLine: {'line': b"writing manifest file 'vesc_msgs.egg-info/SOURCES.txt'\n"}
+[1.916226] (vesc_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_vesc_msgs_egg\n'}
+[1.916366] (curvy_road) CommandEnded: {'returncode': 0}
+[1.917485] (curvy_road) JobProgress: {'identifier': 'curvy_road', 'progress': 'install'}
+[1.934929] (curvy_road) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/eceteam4/ECE480Team4/ros2_ws/build/curvy_road'], 'cwd': '/home/eceteam4/ECE480Team4/ros2_ws/build/curvy_road', 'env': OrderedDict([('USER', 'eceteam4'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('HOME', '/home/eceteam4'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '3106'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'eceteam4'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('PROMPT_DIRTRIM', '4'), ('USERNAME', 'eceteam4'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/home/eceteam4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eceteam4-desktop:@/tmp/.ICE-unix/1786,unix/eceteam4-desktop:/tmp/.ICE-unix/1786'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3053c5f8_67e2_4273_827f_b879aa89b343'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.97'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eceteam4/ECE480Team4/ros2_ws/build/curvy_road'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('COLCON', '1'), ('VTE_VERSION', '6800')]), 'shell': False}
+[1.938638] (vesc_msgs) CommandEnded: {'returncode': 0}
+[1.940302] (vesc_msgs) JobProgress: {'identifier': 'vesc_msgs', 'progress': 'install'}
+[1.940871] (vesc_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_msgs'], 'cwd': '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_msgs', 'env': OrderedDict([('USER', 'eceteam4'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('HOME', '/home/eceteam4'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '3106'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'eceteam4'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('PROMPT_DIRTRIM', '4'), ('USERNAME', 'eceteam4'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/home/eceteam4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eceteam4-desktop:@/tmp/.ICE-unix/1786,unix/eceteam4-desktop:/tmp/.ICE-unix/1786'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3053c5f8_67e2_4273_827f_b879aa89b343'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.97'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('COLCON', '1'), ('VTE_VERSION', '6800')]), 'shell': False}
+[2.008268] (-) TimerEvent: {}
+[2.108878] (-) TimerEvent: {}
+[2.214236] (-) TimerEvent: {}
+[2.314958] (-) TimerEvent: {}
+[2.415662] (-) TimerEvent: {}
+[2.466532] (curvy_road) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.470174] (curvy_road) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[2.470822] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//launch/curvy_road.launch.py\n'}
+[2.471107] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//launch/empty_world.launch.py\n'}
+[2.471313] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//launch/robot_state_publisher.launch.py\n'}
+[2.471507] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//launch/turtlebot3_world.launch.py\n'}
+[2.471904] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_burger/meshes/burger_base.dae\n'}
+[2.473119] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_burger/meshes/lds.dae\n'}
+[2.473380] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_burger/meshes/tire.dae\n'}
+[2.473616] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_burger/model-1_4.sdf\n'}
+[2.473804] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_burger/model.config\n'}
+[2.473980] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_burger/model.sdf\n'}
+[2.474185] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/course/materials/scripts/course.material\n'}
+[2.474358] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/course/materials/textures/road_2.png\n'}
+[2.474520] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/course/materials/textures/road_3.png\n'}
+[2.474759] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/course/model.config\n'}
+[2.474925] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/course/model.sdf\n'}
+[2.475085] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/curvy_road/model.config\n'}
+[2.475277] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/curvy_road/model.sdf\n'}
+[2.475437] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/curvy_road_world/model.config\n'}
+[2.475634] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/curvy_road_world/model.sdf\n'}
+[2.475804] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/model.config\n'}
+[2.475999] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/traffic_parking/materials/scripts/traffic_parking.material\n'}
+[2.476192] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/traffic_parking/materials/textures/traffic_parking.png\n'}
+[2.476375] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/traffic_parking/model.config\n'}
+[2.476580] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/traffic_parking/model.sdf\n'}
+[2.476745] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle/meshes/lds.dae\n'}
+[2.476929] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle/meshes/r200.dae\n'}
+[2.477090] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle/meshes/tire.dae\n'}
+[2.477246] (vesc_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.478002] (vesc_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[2.478248] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/ament_index/resource_index/rosidl_interfaces/vesc_msgs\n'}
+[2.478422] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_cmd__functions.h\n'}
+[2.478584] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_cmd__struct.h\n'}
+[2.478770] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_cmd__type_support.h\n'}
+[2.478922] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu__functions.h\n'}
+[2.479068] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu__struct.h\n'}
+[2.479294] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu__type_support.h\n'}
+[2.479453] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu_stamped__functions.h\n'}
+[2.479750] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu_stamped__struct.h\n'}
+[2.480700] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.h\n'}
+[2.480939] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state__functions.h\n'}
+[2.481427] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state__struct.h\n'}
+[2.484858] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state__type_support.h\n'}
+[2.485110] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state_stamped__functions.h\n'}
+[2.485255] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state_stamped__struct.h\n'}
+[2.485416] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state_stamped__type_support.h\n'}
+[2.485591] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[2.485729] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/vesc_cmd.h\n'}
+[2.485851] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/vesc_imu.h\n'}
+[2.485962] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/vesc_imu_stamped.h\n'}
+[2.486062] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/vesc_state.h\n'}
+[2.486776] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/vesc_state_stamped.h\n'}
+[2.489015] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/environment/library_path.sh\n'}
+[2.489672] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/environment/library_path.dsv\n'}
+[2.489816] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_cmd__rosidl_typesupport_fastrtps_c.h\n'}
+[2.489936] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu__rosidl_typesupport_fastrtps_c.h\n'}
+[2.490051] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu_stamped__rosidl_typesupport_fastrtps_c.h\n'}
+[2.490165] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state__rosidl_typesupport_fastrtps_c.h\n'}
+[2.490316] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle/meshes/waffle_base.dae\n'}
+[2.490492] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle/model-1_4.sdf\n'}
+[2.490611] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle/model.config\n'}
+[2.490722] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle/model.sdf\n'}
+[2.490832] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_pi/meshes/lds.dae\n'}
+[2.490942] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_pi/meshes/tire.dae\n'}
+[2.491056] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_pi/meshes/waffle_pi_base.dae\n'}
+[2.491171] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_pi/model-1_4_.sdf\n'}
+[2.491303] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_pi/model.config\n'}
+[2.491458] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_pi/model.sdf\n'}
+[2.491813] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_robot1/meshes/lds.dae\n'}
+[2.491933] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_robot1/meshes/r200.dae\n'}
+[2.492042] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_robot1/meshes/tire.dae\n'}
+[2.492472] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_robot1/meshes/waffle_base.dae\n'}
+[2.492641] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_robot1/model-1_4.sdf\n'}
+[2.492751] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_robot1/model.config\n'}
+[2.492853] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_robot1/model.sdf\n'}
+[2.492958] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_world/meshes/hexagon.dae\n'}
+[2.493059] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_world/meshes/wall.dae\n'}
+[2.493158] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_world/model-1_4.sdf\n'}
+[2.493257] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_world/model.config\n'}
+[2.493398] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//models/turtlebot3_world/model.sdf\n'}
+[2.493505] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//rviz/tb3_gazebo.rviz\n'}
+[2.493611] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//worlds/empty_worlds/burger.model\n'}
+[2.494290] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//worlds/empty_worlds/waffle.model\n'}
+[2.494426] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//worlds/empty_worlds/waffle_pi.model\n'}
+[2.494574] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//worlds/turtlebot3_curvy_road/burger.model\n'}
+[2.494690] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//worlds/turtlebot3_curvy_road/waffle.model\n'}
+[2.494805] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//worlds/turtlebot3_curvy_road/waffle_pi.model\n'}
+[2.494911] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//worlds/turtlebot3_worlds/burger.model\n'}
+[2.495014] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state_stamped__rosidl_typesupport_fastrtps_c.h\n'}
+[2.495151] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[2.495265] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_cmd__rosidl_typesupport_introspection_c.h\n'}
+[2.495371] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu__rosidl_typesupport_introspection_c.h\n'}
+[2.500499] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu_stamped__rosidl_typesupport_introspection_c.h\n'}
+[2.500929] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state__rosidl_typesupport_introspection_c.h\n'}
+[2.501109] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state_stamped__rosidl_typesupport_introspection_c.h\n'}
+[2.501231] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[2.501346] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_cmd__builder.hpp\n'}
+[2.501457] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_cmd__struct.hpp\n'}
+[2.501564] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_cmd__traits.hpp\n'}
+[2.501668] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_cmd__type_support.hpp\n'}
+[2.501860] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu__builder.hpp\n'}
+[2.502022] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu__struct.hpp\n'}
+[2.502153] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu__traits.hpp\n'}
+[2.502263] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu__type_support.hpp\n'}
+[2.502400] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu_stamped__builder.hpp\n'}
+[2.502544] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu_stamped__struct.hpp\n'}
+[2.502652] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu_stamped__traits.hpp\n'}
+[2.502905] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.hpp\n'}
+[2.503030] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state__builder.hpp\n'}
+[2.503172] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state__struct.hpp\n'}
+[2.503281] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state__traits.hpp\n'}
+[2.503384] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state__type_support.hpp\n'}
+[2.505548] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state_stamped__builder.hpp\n'}
+[2.505906] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state_stamped__struct.hpp\n'}
+[2.506037] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state_stamped__traits.hpp\n'}
+[2.506165] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state_stamped__type_support.hpp\n'}
+[2.506277] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[2.506495] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/vesc_cmd.hpp\n'}
+[2.506640] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/vesc_imu.hpp\n'}
+[2.506913] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/vesc_imu_stamped.hpp\n'}
+[2.511056] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/vesc_state.hpp\n'}
+[2.511391] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/vesc_state_stamped.hpp\n'}
+[2.511597] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_cmd__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.511729] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.511841] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu_stamped__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.511950] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.512694] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state_stamped__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.512831] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[2.512976] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_cmd__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.513087] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.513189] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu_stamped__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.513290] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.513388] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state_stamped__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.513488] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/environment/pythonpath.sh\n'}
+[2.513591] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/environment/pythonpath.dsv\n'}
+[2.513766] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs-1.1.0-py3.10.egg-info/PKG-INFO\n'}
+[2.513915] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs-1.1.0-py3.10.egg-info/SOURCES.txt\n'}
+[2.514022] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs-1.1.0-py3.10.egg-info/dependency_links.txt\n'}
+[2.514124] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs-1.1.0-py3.10.egg-info/top_level.txt\n'}
+[2.514225] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/__init__.py\n'}
+[2.514328] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[2.514443] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[2.514546] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//worlds/turtlebot3_worlds/waffle.model\n'}
+[2.514678] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road//worlds/turtlebot3_worlds/waffle_pi.model\n'}
+[2.514807] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/ament_index/resource_index/package_run_dependencies/curvy_road\n'}
+[2.514911] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/ament_index/resource_index/parent_prefix_path/curvy_road\n'}
+[2.515014] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/environment/ament_prefix_path.sh\n'}
+[2.515114] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/environment/ament_prefix_path.dsv\n'}
+[2.515214] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/environment/path.sh\n'}
+[2.520373] (-) TimerEvent: {}
+[2.522232] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/environment/path.dsv\n'}
+[2.524710] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/local_setup.bash\n'}
+[2.526658] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/local_setup.sh\n'}
+[2.526913] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/local_setup.zsh\n'}
+[2.527055] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/local_setup.dsv\n'}
+[2.527178] (curvy_road) StdoutLine: {'line': b'-- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/package.dsv\n'}
+[2.527423] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/ament_index/resource_index/packages/curvy_road\n'}
+[2.527618] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[2.527747] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[2.527860] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/cmake/curvy_roadConfig.cmake\n'}
+[2.531913] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/cmake/curvy_roadConfig-version.cmake\n'}
+[2.532164] (curvy_road) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/curvy_road/share/curvy_road/package.xml\n'}
+[2.532298] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[2.532438] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/libvesc_msgs__rosidl_generator_py.so\n'}
+[2.532554] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/msg/__init__.py\n'}
+[2.532705] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/msg/_vesc_cmd.py\n'}
+[2.532815] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/msg/_vesc_cmd_s.c\n'}
+[2.532918] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/msg/_vesc_imu.py\n'}
+[2.533020] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/msg/_vesc_imu_s.c\n'}
+[2.533124] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/msg/_vesc_imu_stamped.py\n'}
+[2.533229] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/msg/_vesc_imu_stamped_s.c\n'}
+[2.533333] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/msg/_vesc_state.py\n'}
+[2.533435] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/msg/_vesc_state_s.c\n'}
+[2.535939] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/msg/_vesc_state_stamped.py\n'}
+[2.536289] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/msg/_vesc_state_stamped_s.c\n'}
+[2.536434] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/vesc_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.536560] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/vesc_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.536679] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/vesc_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.536929] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/vesc_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.537230] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/vesc_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.537416] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/vesc_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.537536] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/msg/VescCmd.idl\n'}
+[2.547957] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/msg/VescImu.idl\n'}
+[2.548138] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/msg/VescImuStamped.idl\n'}
+[2.548266] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/msg/VescState.idl\n'}
+[2.548399] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/msg/VescStateStamped.idl\n'}
+[2.548514] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/msg/VescCmd.msg\n'}
+[2.548624] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/msg/VescImu.msg\n'}
+[2.549339] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/msg/VescImuStamped.msg\n'}
+[2.551261] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/msg/VescState.msg\n'}
+[2.551401] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/msg/VescStateStamped.msg\n'}
+[2.551525] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/ament_index/resource_index/package_run_dependencies/vesc_msgs\n'}
+[2.551691] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/ament_index/resource_index/parent_prefix_path/vesc_msgs\n'}
+[2.551862] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/environment/ament_prefix_path.sh\n'}
+[2.551981] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/environment/ament_prefix_path.dsv\n'}
+[2.552092] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/environment/path.sh\n'}
+[2.552198] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/environment/path.dsv\n'}
+[2.552302] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/local_setup.bash\n'}
+[2.552495] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/local_setup.sh\n'}
+[2.552710] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/local_setup.zsh\n'}
+[2.552900] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/local_setup.dsv\n'}
+[2.559106] (vesc_msgs) StdoutLine: {'line': b'-- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/package.dsv\n'}
+[2.559393] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/ament_index/resource_index/packages/vesc_msgs\n'}
+[2.559570] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[2.559700] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[2.559816] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[2.559927] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[2.560033] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[2.560138] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[2.560275] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[2.560380] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgsConfig.cmake\n'}
+[2.560484] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgsConfig-version.cmake\n'}
+[2.560591] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/package.xml\n'}
+[2.560694] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_generator_c.so\n'}
+[2.560798] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[2.560900] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_typesupport_introspection_c.so\n'}
+[2.561199] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_typesupport_c.so\n'}
+[2.561345] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[2.561479] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[2.561873] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_typesupport_cpp.so\n'}
+[2.561999] (vesc_msgs) StdoutLine: {'line': b"Listing '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs'...\n"}
+[2.562132] (vesc_msgs) StdoutLine: {'line': b"Listing '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/msg'...\n"}
+[2.566939] (curvy_road) CommandEnded: {'returncode': 0}
+[2.583324] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_generator_py.so\n'}
+[2.583783] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/cmake/export_vesc_msgs__rosidl_generator_cExport.cmake\n'}
+[2.583957] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/cmake/export_vesc_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[2.584093] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/cmake/export_vesc_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[2.584216] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/cmake/export_vesc_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[2.584340] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[2.584461] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[2.584574] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgs__rosidl_typesupport_cExport.cmake\n'}
+[2.584685] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[2.584839] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/cmake/export_vesc_msgs__rosidl_generator_cppExport.cmake\n'}
+[2.584981] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/cmake/export_vesc_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[2.585091] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/cmake/export_vesc_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[2.585198] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[2.585308] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[2.585412] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[2.585519] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[2.585624] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/cmake/export_vesc_msgs__rosidl_generator_pyExport.cmake\n'}
+[2.586349] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/cmake/export_vesc_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[2.620560] (-) TimerEvent: {}
+[2.653431] (curvy_road) JobEnded: {'identifier': 'curvy_road', 'rc': 0}
+[2.654467] (sensors_camera_node) JobStarted: {'identifier': 'sensors_camera_node'}
+[2.704315] (vesc_msgs) CommandEnded: {'returncode': 0}
+[2.722382] (-) TimerEvent: {}
+[2.760848] (vesc_msgs) JobEnded: {'identifier': 'vesc_msgs', 'rc': 0}
+[2.763610] (vesc_ackermann) JobStarted: {'identifier': 'vesc_ackermann'}
+[2.822546] (-) TimerEvent: {}
+[2.923221] (-) TimerEvent: {}
+[3.024927] (-) TimerEvent: {}
+[3.125602] (-) TimerEvent: {}
+[3.226228] (-) TimerEvent: {}
+[3.326893] (-) TimerEvent: {}
+[3.427622] (-) TimerEvent: {}
+[3.508304] (vesc_ackermann) JobProgress: {'identifier': 'vesc_ackermann', 'progress': 'cmake'}
+[3.513487] (vesc_ackermann) JobProgress: {'identifier': 'vesc_ackermann', 'progress': 'build'}
+[3.515058] (vesc_ackermann) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann', '--', '-j6', '-l6'], 'cwd': '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann', 'env': OrderedDict([('USER', 'eceteam4'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib'), ('HOME', '/home/eceteam4'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '3106'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'eceteam4'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('PROMPT_DIRTRIM', '4'), ('USERNAME', 'eceteam4'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/home/eceteam4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eceteam4-desktop:@/tmp/.ICE-unix/1786,unix/eceteam4-desktop:/tmp/.ICE-unix/1786'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3053c5f8_67e2_4273_827f_b879aa89b343'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.97'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs')]), 'shell': False}
+[3.521536] (lane_follow) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/eceteam4/ECE480Team4/ros2_ws/build/lane_follow/build', '--no-deps', 'symlink_data'], 'cwd': '/home/eceteam4/ECE480Team4/ros2_ws/build/lane_follow', 'env': {'USER': 'eceteam4', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'HOME': '/home/eceteam4', 'DESKTOP_SESSION': 'ubuntu', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3106', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'eceteam4', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'PROMPT_DIRTRIM': '4', 'USERNAME': 'eceteam4', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/home/eceteam4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/eceteam4-desktop:@/tmp/.ICE-unix/1786,unix/eceteam4-desktop:/tmp/.ICE-unix/1786', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/3053c5f8_67e2_4273_827f_b879aa89b343', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'GNOME_TERMINAL_SERVICE': ':1.97', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/eceteam4/ECE480Team4/ros2_ws/build/lane_follow', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'COLCON': '1', 'VTE_VERSION': '6800', 'PYTHONPATH': '/home/eceteam4/ECE480Team4/ros2_ws/build/lane_follow/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow/lib/python3.10/site-packages:'}, 'shell': False}
+[3.528271] (obstacle_det) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/eceteam4/ECE480Team4/ros2_ws/build/obstacle_det/build', '--no-deps', 'symlink_data'], 'cwd': '/home/eceteam4/ECE480Team4/ros2_ws/build/obstacle_det', 'env': {'USER': 'eceteam4', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'HOME': '/home/eceteam4', 'DESKTOP_SESSION': 'ubuntu', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3106', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'eceteam4', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'PROMPT_DIRTRIM': '4', 'USERNAME': 'eceteam4', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/home/eceteam4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/eceteam4-desktop:@/tmp/.ICE-unix/1786,unix/eceteam4-desktop:/tmp/.ICE-unix/1786', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/3053c5f8_67e2_4273_827f_b879aa89b343', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'GNOME_TERMINAL_SERVICE': ':1.97', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/eceteam4/ECE480Team4/ros2_ws/build/obstacle_det', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'COLCON': '1', 'VTE_VERSION': '6800', 'PYTHONPATH': '/home/eceteam4/ECE480Team4/ros2_ws/build/obstacle_det/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/obstacle_det/lib/python3.10/site-packages:'}, 'shell': False}
+[3.530103] (-) TimerEvent: {}
+[3.565513] (perception_ml_node) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/eceteam4/ECE480Team4/ros2_ws/build/perception_ml_node/build', '--no-deps', 'symlink_data'], 'cwd': '/home/eceteam4/ECE480Team4/ros2_ws/build/perception_ml_node', 'env': {'USER': 'eceteam4', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'HOME': '/home/eceteam4', 'DESKTOP_SESSION': 'ubuntu', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3106', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'eceteam4', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'PROMPT_DIRTRIM': '4', 'USERNAME': 'eceteam4', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/home/eceteam4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/eceteam4-desktop:@/tmp/.ICE-unix/1786,unix/eceteam4-desktop:/tmp/.ICE-unix/1786', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/3053c5f8_67e2_4273_827f_b879aa89b343', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'GNOME_TERMINAL_SERVICE': ':1.97', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/eceteam4/ECE480Team4/ros2_ws/build/perception_ml_node', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'COLCON': '1', 'VTE_VERSION': '6800', 'PYTHONPATH': '/home/eceteam4/ECE480Team4/ros2_ws/build/perception_ml_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node/lib/python3.10/site-packages:'}, 'shell': False}
+[3.630977] (-) TimerEvent: {}
+[3.725092] (vesc_ackermann) StdoutLine: {'line': b'[ 28%] Built target ackermann_to_vesc_node\n'}
+[3.731127] (-) TimerEvent: {}
+[3.740670] (vesc_ackermann) StdoutLine: {'line': b'[ 57%] Built target vesc_to_odom_node\n'}
+[3.786487] (vesc_ackermann) StdoutLine: {'line': b'[100%] Built target vesc_ackermann\n'}
+[3.824571] (vesc_ackermann) CommandEnded: {'returncode': 0}
+[3.826802] (vesc_ackermann) JobProgress: {'identifier': 'vesc_ackermann', 'progress': 'install'}
+[3.826990] (vesc_ackermann) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann'], 'cwd': '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann', 'env': OrderedDict([('USER', 'eceteam4'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib'), ('HOME', '/home/eceteam4'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '3106'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'eceteam4'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('PROMPT_DIRTRIM', '4'), ('USERNAME', 'eceteam4'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/home/eceteam4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eceteam4-desktop:@/tmp/.ICE-unix/1786,unix/eceteam4-desktop:/tmp/.ICE-unix/1786'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3053c5f8_67e2_4273_827f_b879aa89b343'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.97'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs')]), 'shell': False}
+[3.831396] (-) TimerEvent: {}
+[3.843344] (vesc_ackermann) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.844074] (vesc_ackermann) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[3.844807] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/lib/vesc_ackermann/ackermann_to_vesc_node\n'}
+[3.845300] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/lib/vesc_ackermann/vesc_to_odom_node\n'}
+[3.851303] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/include/vesc_ackermann/ackermann_to_vesc.hpp\n'}
+[3.852474] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/include/vesc_ackermann/vesc_to_odom.hpp\n'}
+[3.852755] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/environment/library_path.sh\n'}
+[3.852903] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/environment/library_path.dsv\n'}
+[3.853025] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/lib/libvesc_ackermann.so\n'}
+[3.853181] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/launch/ackermann_to_vesc_node.launch.xml\n'}
+[3.853299] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/launch/vesc_to_odom_node.launch.xml\n'}
+[3.853540] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/ament_index/resource_index/package_run_dependencies/vesc_ackermann\n'}
+[3.853677] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/ament_index/resource_index/parent_prefix_path/vesc_ackermann\n'}
+[3.853802] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/environment/ament_prefix_path.sh\n'}
+[3.853913] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/environment/ament_prefix_path.dsv\n'}
+[3.857259] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/environment/path.sh\n'}
+[3.857692] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/environment/path.dsv\n'}
+[3.857820] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.bash\n'}
+[3.857936] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.sh\n'}
+[3.858046] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.zsh\n'}
+[3.858877] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.dsv\n'}
+[3.859035] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/package.dsv\n'}
+[3.867005] (perception_sync_node) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/eceteam4/ECE480Team4/ros2_ws/build/perception_sync_node/build', '--no-deps', 'symlink_data'], 'cwd': '/home/eceteam4/ECE480Team4/ros2_ws/build/perception_sync_node', 'env': {'USER': 'eceteam4', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'HOME': '/home/eceteam4', 'DESKTOP_SESSION': 'ubuntu', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3106', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'eceteam4', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'PROMPT_DIRTRIM': '4', 'USERNAME': 'eceteam4', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/home/eceteam4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/eceteam4-desktop:@/tmp/.ICE-unix/1786,unix/eceteam4-desktop:/tmp/.ICE-unix/1786', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/3053c5f8_67e2_4273_827f_b879aa89b343', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'GNOME_TERMINAL_SERVICE': ':1.97', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/eceteam4/ECE480Team4/ros2_ws/build/perception_sync_node', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'COLCON': '1', 'VTE_VERSION': '6800', 'PYTHONPATH': '/home/eceteam4/ECE480Team4/ros2_ws/build/perception_sync_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/perception_sync_node/lib/python3.10/site-packages:'}, 'shell': False}
+[3.886146] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/ament_index/resource_index/packages/vesc_ackermann\n'}
+[3.886967] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/ament_index/resource_index/rclcpp_components/vesc_ackermann\n'}
+[3.887328] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.887467] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.888444] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.888822] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/vesc_ackermannConfig.cmake\n'}
+[3.888995] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/vesc_ackermannConfig-version.cmake\n'}
+[3.889126] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/package.xml\n'}
+[3.907864] (vesc_ackermann) CommandEnded: {'returncode': 0}
+[3.931662] (-) TimerEvent: {}
+[3.993726] (vesc_ackermann) JobEnded: {'identifier': 'vesc_ackermann', 'rc': 0}
+[4.029793] (vesc_driver) JobStarted: {'identifier': 'vesc_driver'}
+[4.031754] (-) TimerEvent: {}
+[4.036920] (vesc_driver) JobProgress: {'identifier': 'vesc_driver', 'progress': 'cmake'}
+[4.039217] (vesc_driver) JobProgress: {'identifier': 'vesc_driver', 'progress': 'build'}
+[4.041266] (vesc_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_driver', '--', '-j6', '-l6'], 'cwd': '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_driver', 'env': OrderedDict([('USER', 'eceteam4'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib'), ('HOME', '/home/eceteam4'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '3106'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'eceteam4'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('PROMPT_DIRTRIM', '4'), ('USERNAME', 'eceteam4'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/home/eceteam4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eceteam4-desktop:@/tmp/.ICE-unix/1786,unix/eceteam4-desktop:/tmp/.ICE-unix/1786'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3053c5f8_67e2_4273_827f_b879aa89b343'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.97'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_driver'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs')]), 'shell': False}
+[4.131961] (-) TimerEvent: {}
+[4.234620] (-) TimerEvent: {}
+[4.335469] (-) TimerEvent: {}
+[4.406412] (perception_ml_node) StdoutLine: {'line': b'running develop\n'}
+[4.430956] (vesc_driver) StdoutLine: {'line': b'[ 20%] Built target vesc_driver_node\n'}
+[4.435718] (-) TimerEvent: {}
+[4.439865] (vesc_driver) StdoutLine: {'line': b'[ 70%] Built target vesc_driver\n'}
+[4.492884] (perception_sync_node) StdoutLine: {'line': b'running develop\n'}
+[4.540319] (sensors_camera_node) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_camera_node/build', '--no-deps', 'symlink_data'], 'cwd': '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_camera_node', 'env': {'USER': 'eceteam4', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'HOME': '/home/eceteam4', 'DESKTOP_SESSION': 'ubuntu', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3106', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'eceteam4', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'PROMPT_DIRTRIM': '4', 'USERNAME': 'eceteam4', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/home/eceteam4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/eceteam4-desktop:@/tmp/.ICE-unix/1786,unix/eceteam4-desktop:/tmp/.ICE-unix/1786', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/3053c5f8_67e2_4273_827f_b879aa89b343', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'GNOME_TERMINAL_SERVICE': ':1.97', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_camera_node', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'COLCON': '1', 'VTE_VERSION': '6800', 'PYTHONPATH': '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_camera_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node/lib/python3.10/site-packages:'}, 'shell': False}
+[4.541883] (-) TimerEvent: {}
+[4.542169] (lane_follow) StdoutLine: {'line': b'running develop\n'}
+[4.542489] (obstacle_det) StdoutLine: {'line': b'running develop\n'}
+[4.552270] (vesc_driver) StdoutLine: {'line': b'[100%] Built target vesc_device_namer\n'}
+[4.609107] (vesc_driver) CommandEnded: {'returncode': 0}
+[4.610087] (vesc_driver) JobProgress: {'identifier': 'vesc_driver', 'progress': 'install'}
+[4.610155] (vesc_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_driver'], 'cwd': '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_driver', 'env': OrderedDict([('USER', 'eceteam4'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib'), ('HOME', '/home/eceteam4'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '3106'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'eceteam4'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('PROMPT_DIRTRIM', '4'), ('USERNAME', 'eceteam4'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/home/eceteam4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eceteam4-desktop:@/tmp/.ICE-unix/1786,unix/eceteam4-desktop:/tmp/.ICE-unix/1786'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3053c5f8_67e2_4273_827f_b879aa89b343'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.97'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_driver'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs')]), 'shell': False}
+[4.642069] (-) TimerEvent: {}
+[4.654998] (perception_ml_node) StdoutLine: {'line': b'running egg_info\n'}
+[4.655636] (perception_ml_node) StdoutLine: {'line': b'writing perception_ml_node.egg-info/PKG-INFO\n'}
+[4.656133] (perception_ml_node) StdoutLine: {'line': b'writing dependency_links to perception_ml_node.egg-info/dependency_links.txt\n'}
+[4.656470] (perception_ml_node) StdoutLine: {'line': b'writing requirements to perception_ml_node.egg-info/requires.txt\n'}
+[4.656699] (perception_ml_node) StdoutLine: {'line': b'writing top-level names to perception_ml_node.egg-info/top_level.txt\n'}
+[4.660496] (perception_ml_node) StdoutLine: {'line': b"reading manifest file 'perception_ml_node.egg-info/SOURCES.txt'\n"}
+[4.661716] (perception_ml_node) StdoutLine: {'line': b"writing manifest file 'perception_ml_node.egg-info/SOURCES.txt'\n"}
+[4.664525] (perception_ml_node) StdoutLine: {'line': b'running build_ext\n'}
+[4.665361] (perception_ml_node) StdoutLine: {'line': b'Creating /home/eceteam4/ECE480Team4/ros2_ws/install/perception_ml_node/lib/python3.10/site-packages/perception-ml-node.egg-link (link to .)\n'}
+[4.668340] (perception_ml_node) StdoutLine: {'line': b'\n'}
+[4.668734] (perception_ml_node) StdoutLine: {'line': b'Installed /home/eceteam4/ECE480Team4/ros2_ws/build/perception_ml_node\n'}
+[4.668893] (perception_ml_node) StdoutLine: {'line': b'running symlink_data\n'}
+[4.742241] (-) TimerEvent: {}
+[4.765248] (vesc_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.766026] (vesc_driver) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[4.766225] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/lib/vesc_driver/vesc_driver_node\n'}
+[4.766360] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/include/vesc_driver/crc.hpp\n'}
+[4.766484] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/include/vesc_driver/datatypes.hpp\n'}
+[4.766598] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/include/vesc_driver/vesc_device_uuid_lookup.hpp\n'}
+[4.766711] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/include/vesc_driver/vesc_driver.hpp\n'}
+[4.766818] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/include/vesc_driver/vesc_interface.hpp\n'}
+[4.766926] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/include/vesc_driver/vesc_packet.hpp\n'}
+[4.767030] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/include/vesc_driver/vesc_packet_factory.hpp\n'}
+[4.767134] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/environment/library_path.sh\n'}
+[4.767239] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/environment/library_path.dsv\n'}
+[4.767343] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/lib/libvesc_driver.so\n'}
+[4.767449] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/lib/vesc_driver/vesc_device_namer\n'}
+[4.767928] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/launch/vesc_driver_node.launch.py\n'}
+[4.768081] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/params/vesc_config.yaml\n'}
+[4.768192] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/ament_index/resource_index/package_run_dependencies/vesc_driver\n'}
+[4.768360] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/ament_index/resource_index/parent_prefix_path/vesc_driver\n'}
+[4.768471] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/environment/ament_prefix_path.sh\n'}
+[4.768575] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/environment/ament_prefix_path.dsv\n'}
+[4.769143] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/environment/path.sh\n'}
+[4.769328] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/environment/path.dsv\n'}
+[4.769443] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/local_setup.bash\n'}
+[4.769550] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/local_setup.sh\n'}
+[4.769651] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/local_setup.zsh\n'}
+[4.769749] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/local_setup.dsv\n'}
+[4.769867] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/package.dsv\n'}
+[4.769966] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/ament_index/resource_index/packages/vesc_driver\n'}
+[4.770065] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/ament_index/resource_index/rclcpp_components/vesc_driver\n'}
+[4.770161] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.770259] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.770358] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.770456] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/cmake/vesc_driverConfig.cmake\n'}
+[4.770553] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/cmake/vesc_driverConfig-version.cmake\n'}
+[4.770693] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/package.xml\n'}
+[4.775651] (vesc_driver) CommandEnded: {'returncode': 0}
+[4.782348] (lane_follow) StdoutLine: {'line': b'running egg_info\n'}
+[4.782669] (lane_follow) StdoutLine: {'line': b'writing lane_follow.egg-info/PKG-INFO\n'}
+[4.783007] (lane_follow) StdoutLine: {'line': b'writing dependency_links to lane_follow.egg-info/dependency_links.txt\n'}
+[4.783816] (lane_follow) StdoutLine: {'line': b'writing entry points to lane_follow.egg-info/entry_points.txt\n'}
+[4.784085] (lane_follow) StdoutLine: {'line': b'writing requirements to lane_follow.egg-info/requires.txt\n'}
+[4.784217] (lane_follow) StdoutLine: {'line': b'writing top-level names to lane_follow.egg-info/top_level.txt\n'}
+[4.788134] (lane_follow) StdoutLine: {'line': b"reading manifest file 'lane_follow.egg-info/SOURCES.txt'\n"}
+[4.789425] (lane_follow) StdoutLine: {'line': b"writing manifest file 'lane_follow.egg-info/SOURCES.txt'\n"}
+[4.792690] (lane_follow) StdoutLine: {'line': b'running build_ext\n'}
+[4.793006] (lane_follow) StdoutLine: {'line': b'Creating /home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow/lib/python3.10/site-packages/lane-follow.egg-link (link to .)\n'}
+[4.795165] (lane_follow) StdoutLine: {'line': b'Installing detect script to /home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow/lib/lane_follow\n'}
+[4.795467] (lane_follow) StdoutLine: {'line': b'Installing follow_pid script to /home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow/lib/lane_follow\n'}
+[4.795754] (lane_follow) StdoutLine: {'line': b'Installing follow_pure_pursuit script to /home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow/lib/lane_follow\n'}
+[4.795920] (lane_follow) StdoutLine: {'line': b'Installing ground_spot script to /home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow/lib/lane_follow\n'}
+[4.796130] (lane_follow) StdoutLine: {'line': b'Installing sensors_camera_node script to /home/eceteam4/ECE480Team4/ros2_ws/install/lane_follow/lib/lane_follow\n'}
+[4.797721] (lane_follow) StdoutLine: {'line': b'\n'}
+[4.797925] (lane_follow) StdoutLine: {'line': b'Installed /home/eceteam4/ECE480Team4/ros2_ws/build/lane_follow\n'}
+[4.798083] (lane_follow) StdoutLine: {'line': b'running symlink_data\n'}
+[4.817560] (vesc_driver) JobEnded: {'identifier': 'vesc_driver', 'rc': 0}
+[4.818327] (perception_ml_node) CommandEnded: {'returncode': 0}
+[4.836421] (perception_ml_node) JobEnded: {'identifier': 'perception_ml_node', 'rc': 0}
+[4.837309] (obstacle_det) StdoutLine: {'line': b'running egg_info\n'}
+[4.837596] (obstacle_det) StdoutLine: {'line': b'writing obstacle_det.egg-info/PKG-INFO\n'}
+[4.837744] (obstacle_det) StdoutLine: {'line': b'writing dependency_links to obstacle_det.egg-info/dependency_links.txt\n'}
+[4.841000] (sensors_imu_bridge) JobStarted: {'identifier': 'sensors_imu_bridge'}
+[4.841178] (obstacle_det) StdoutLine: {'line': b'writing entry points to obstacle_det.egg-info/entry_points.txt\n'}
+[4.841368] (obstacle_det) StdoutLine: {'line': b'writing requirements to obstacle_det.egg-info/requires.txt\n'}
+[4.841497] (obstacle_det) StdoutLine: {'line': b'writing top-level names to obstacle_det.egg-info/top_level.txt\n'}
+[4.842400] (-) TimerEvent: {}
+[4.843203] (obstacle_det) StdoutLine: {'line': b"reading manifest file 'obstacle_det.egg-info/SOURCES.txt'\n"}
+[4.844404] (obstacle_det) StdoutLine: {'line': b"writing manifest file 'obstacle_det.egg-info/SOURCES.txt'\n"}
+[4.847417] (obstacle_det) StdoutLine: {'line': b'running build_ext\n'}
+[4.847966] (obstacle_det) StdoutLine: {'line': b'Creating /home/eceteam4/ECE480Team4/ros2_ws/install/obstacle_det/lib/python3.10/site-packages/obstacle-det.egg-link (link to .)\n'}
+[4.854358] (sensors_lidar_bridge) JobStarted: {'identifier': 'sensors_lidar_bridge'}
+[4.858596] (obstacle_det) StdoutLine: {'line': b'Installing obstacles_det script to /home/eceteam4/ECE480Team4/ros2_ws/install/obstacle_det/lib/obstacle_det\n'}
+[4.859108] (obstacle_det) StdoutLine: {'line': b'\n'}
+[4.859323] (obstacle_det) StdoutLine: {'line': b'Installed /home/eceteam4/ECE480Team4/ros2_ws/build/obstacle_det\n'}
+[4.859468] (obstacle_det) StdoutLine: {'line': b'running symlink_data\n'}
+[4.871322] (perception_sync_node) StdoutLine: {'line': b'running egg_info\n'}
+[4.872034] (perception_sync_node) StdoutLine: {'line': b'writing perception_sync_node.egg-info/PKG-INFO\n'}
+[4.872327] (perception_sync_node) StdoutLine: {'line': b'writing dependency_links to perception_sync_node.egg-info/dependency_links.txt\n'}
+[4.872560] (perception_sync_node) StdoutLine: {'line': b'writing entry points to perception_sync_node.egg-info/entry_points.txt\n'}
+[4.872803] (perception_sync_node) StdoutLine: {'line': b'writing requirements to perception_sync_node.egg-info/requires.txt\n'}
+[4.873138] (perception_sync_node) StdoutLine: {'line': b'writing top-level names to perception_sync_node.egg-info/top_level.txt\n'}
+[4.878618] (perception_sync_node) StdoutLine: {'line': b"reading manifest file 'perception_sync_node.egg-info/SOURCES.txt'\n"}
+[4.879259] (perception_sync_node) StdoutLine: {'line': b"writing manifest file 'perception_sync_node.egg-info/SOURCES.txt'\n"}
+[4.882000] (perception_sync_node) StdoutLine: {'line': b'running build_ext\n'}
+[4.882554] (perception_sync_node) StdoutLine: {'line': b'Creating /home/eceteam4/ECE480Team4/ros2_ws/install/perception_sync_node/lib/python3.10/site-packages/perception-sync-node.egg-link (link to .)\n'}
+[4.884468] (perception_sync_node) StdoutLine: {'line': b'Installing perception_sync_node script to /home/eceteam4/ECE480Team4/ros2_ws/install/perception_sync_node/lib/perception_sync_node\n'}
+[4.884990] (perception_sync_node) StdoutLine: {'line': b'\n'}
+[4.885216] (perception_sync_node) StdoutLine: {'line': b'Installed /home/eceteam4/ECE480Team4/ros2_ws/build/perception_sync_node\n'}
+[4.886411] (perception_sync_node) StdoutLine: {'line': b'running symlink_data\n'}
+[4.942576] (-) TimerEvent: {}
+[5.043209] (-) TimerEvent: {}
+[5.143853] (-) TimerEvent: {}
+[5.151232] (sensors_camera_node) StdoutLine: {'line': b'running develop\n'}
+[5.244013] (-) TimerEvent: {}
+[5.344669] (-) TimerEvent: {}
+[5.368943] (sensors_camera_node) StdoutLine: {'line': b'running egg_info\n'}
+[5.369401] (sensors_camera_node) StdoutLine: {'line': b'writing sensors_camera_node.egg-info/PKG-INFO\n'}
+[5.369693] (sensors_camera_node) StdoutLine: {'line': b'writing dependency_links to sensors_camera_node.egg-info/dependency_links.txt\n'}
+[5.370015] (sensors_camera_node) StdoutLine: {'line': b'writing entry points to sensors_camera_node.egg-info/entry_points.txt\n'}
+[5.370278] (sensors_camera_node) StdoutLine: {'line': b'writing requirements to sensors_camera_node.egg-info/requires.txt\n'}
+[5.370461] (sensors_camera_node) StdoutLine: {'line': b'writing top-level names to sensors_camera_node.egg-info/top_level.txt\n'}
+[5.374218] (sensors_camera_node) StdoutLine: {'line': b"reading manifest file 'sensors_camera_node.egg-info/SOURCES.txt'\n"}
+[5.375518] (sensors_camera_node) StdoutLine: {'line': b"writing manifest file 'sensors_camera_node.egg-info/SOURCES.txt'\n"}
+[5.378128] (sensors_camera_node) StdoutLine: {'line': b'running build_ext\n'}
+[5.378521] (sensors_camera_node) StdoutLine: {'line': b'Creating /home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node/lib/python3.10/site-packages/sensors-camera-node.egg-link (link to .)\n'}
+[5.380418] (sensors_camera_node) StdoutLine: {'line': b'Installing sensors_camera_node script to /home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node/lib/sensors_camera_node\n'}
+[5.380999] (sensors_camera_node) StdoutLine: {'line': b'\n'}
+[5.381163] (sensors_camera_node) StdoutLine: {'line': b'Installed /home/eceteam4/ECE480Team4/ros2_ws/build/sensors_camera_node\n'}
+[5.381310] (sensors_camera_node) StdoutLine: {'line': b'running symlink_data\n'}
+[5.445026] (-) TimerEvent: {}
+[5.545793] (-) TimerEvent: {}
+[5.646648] (-) TimerEvent: {}
+[5.747603] (-) TimerEvent: {}
+[5.848599] (-) TimerEvent: {}
+[5.932129] (lane_follow) CommandEnded: {'returncode': 0}
+[5.948802] (-) TimerEvent: {}
+[5.962298] (lane_follow) JobEnded: {'identifier': 'lane_follow', 'rc': 0}
+[5.964046] (perception_sync_node) CommandEnded: {'returncode': 0}
+[5.986861] (perception_sync_node) JobEnded: {'identifier': 'perception_sync_node', 'rc': 0}
+[5.988946] (obstacle_det) CommandEnded: {'returncode': 0}
+[6.016955] (obstacle_det) JobEnded: {'identifier': 'obstacle_det', 'rc': 0}
+[6.018453] (sensors_camera_node) CommandEnded: {'returncode': 0}
+[6.036726] (sensors_camera_node) JobEnded: {'identifier': 'sensors_camera_node', 'rc': 0}
+[6.040365] (vesc_control) JobStarted: {'identifier': 'vesc_control'}
+[6.049079] (vesc) JobStarted: {'identifier': 'vesc'}
+[6.050200] (-) TimerEvent: {}
+[6.151039] (-) TimerEvent: {}
+[6.251670] (-) TimerEvent: {}
+[6.353676] (-) TimerEvent: {}
+[6.465092] (-) TimerEvent: {}
+[6.565822] (-) TimerEvent: {}
+[6.662014] (vesc) JobProgress: {'identifier': 'vesc', 'progress': 'cmake'}
+[6.663539] (vesc) JobProgress: {'identifier': 'vesc', 'progress': 'build'}
+[6.664109] (vesc) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc', '--', '-j6', '-l6'], 'cwd': '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc', 'env': OrderedDict([('USER', 'eceteam4'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/lib:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/lib:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib'), ('HOME', '/home/eceteam4'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '3106'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'eceteam4'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('PROMPT_DIRTRIM', '4'), ('USERNAME', 'eceteam4'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/home/eceteam4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eceteam4-desktop:@/tmp/.ICE-unix/1786,unix/eceteam4-desktop:/tmp/.ICE-unix/1786'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3053c5f8_67e2_4273_827f_b879aa89b343'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.97'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs')]), 'shell': False}
+[6.669573] (-) TimerEvent: {}
+[6.764580] (sensors_imu_bridge) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_imu_bridge/build', '--no-deps', 'symlink_data'], 'cwd': '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_imu_bridge', 'env': {'USER': 'eceteam4', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'HOME': '/home/eceteam4', 'DESKTOP_SESSION': 'ubuntu', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3106', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'eceteam4', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'PROMPT_DIRTRIM': '4', 'USERNAME': 'eceteam4', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/home/eceteam4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/eceteam4-desktop:@/tmp/.ICE-unix/1786,unix/eceteam4-desktop:/tmp/.ICE-unix/1786', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/3053c5f8_67e2_4273_827f_b879aa89b343', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'GNOME_TERMINAL_SERVICE': ':1.97', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_imu_bridge', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'COLCON': '1', 'VTE_VERSION': '6800', 'PYTHONPATH': '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_imu_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_imu_bridge/lib/python3.10/site-packages:'}, 'shell': False}
+[6.769780] (-) TimerEvent: {}
+[6.775407] (vesc) CommandEnded: {'returncode': 0}
+[6.779894] (vesc) JobProgress: {'identifier': 'vesc', 'progress': 'install'}
+[6.780218] (vesc) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc'], 'cwd': '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc', 'env': OrderedDict([('USER', 'eceteam4'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/lib:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/lib:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib'), ('HOME', '/home/eceteam4'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '3106'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'eceteam4'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('PROMPT_DIRTRIM', '4'), ('USERNAME', 'eceteam4'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/home/eceteam4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eceteam4-desktop:@/tmp/.ICE-unix/1786,unix/eceteam4-desktop:/tmp/.ICE-unix/1786'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3053c5f8_67e2_4273_827f_b879aa89b343'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.97'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs')]), 'shell': False}
+[6.792526] (vesc) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.793518] (vesc) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[6.794432] (vesc) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc/share/ament_index/resource_index/package_run_dependencies/vesc\n'}
+[6.794810] (vesc) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc/share/ament_index/resource_index/parent_prefix_path/vesc\n'}
+[6.795204] (vesc) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc/share/vesc/environment/ament_prefix_path.sh\n'}
+[6.795608] (vesc) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc/share/vesc/environment/ament_prefix_path.dsv\n'}
+[6.795958] (vesc) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc/share/vesc/environment/path.sh\n'}
+[6.796292] (vesc) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc/share/vesc/environment/path.dsv\n'}
+[6.796638] (vesc) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc/share/vesc/local_setup.bash\n'}
+[6.797054] (vesc) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc/share/vesc/local_setup.sh\n'}
+[6.797335] (vesc) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc/share/vesc/local_setup.zsh\n'}
+[6.797679] (vesc) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc/share/vesc/local_setup.dsv\n'}
+[6.798274] (vesc) StdoutLine: {'line': b'-- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc/share/vesc/package.dsv\n'}
+[6.832440] (vesc) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc/share/ament_index/resource_index/packages/vesc\n'}
+[6.832934] (vesc) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc/share/vesc/cmake/vescConfig.cmake\n'}
+[6.833148] (vesc) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc/share/vesc/cmake/vescConfig-version.cmake\n'}
+[6.833320] (vesc) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc/share/vesc/package.xml\n'}
+[6.836825] (vesc) CommandEnded: {'returncode': 0}
+[6.870156] (-) TimerEvent: {}
+[6.883918] (vesc) JobEnded: {'identifier': 'vesc', 'rc': 0}
+[6.888804] (sensors_lidar_bridge) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_lidar_bridge/build', '--no-deps', 'symlink_data'], 'cwd': '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_lidar_bridge', 'env': {'USER': 'eceteam4', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'HOME': '/home/eceteam4', 'DESKTOP_SESSION': 'ubuntu', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3106', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'eceteam4', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'PROMPT_DIRTRIM': '4', 'USERNAME': 'eceteam4', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/home/eceteam4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/eceteam4-desktop:@/tmp/.ICE-unix/1786,unix/eceteam4-desktop:/tmp/.ICE-unix/1786', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/3053c5f8_67e2_4273_827f_b879aa89b343', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'GNOME_TERMINAL_SERVICE': ':1.97', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_lidar_bridge', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'COLCON': '1', 'VTE_VERSION': '6800', 'PYTHONPATH': '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_lidar_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/lib/python3.10/site-packages:'}, 'shell': False}
+[6.971183] (-) TimerEvent: {}
+[7.071906] (-) TimerEvent: {}
+[7.172670] (-) TimerEvent: {}
+[7.259472] (sensors_imu_bridge) StdoutLine: {'line': b'running develop\n'}
+[7.272829] (-) TimerEvent: {}
+[7.333773] (vesc_control) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_control/build', '--no-deps', 'symlink_data'], 'cwd': '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_control', 'env': {'USER': 'eceteam4', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'HOME': '/home/eceteam4', 'DESKTOP_SESSION': 'ubuntu', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3106', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'eceteam4', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'PROMPT_DIRTRIM': '4', 'USERNAME': 'eceteam4', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/home/eceteam4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/eceteam4-desktop:@/tmp/.ICE-unix/1786,unix/eceteam4-desktop:/tmp/.ICE-unix/1786', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/3053c5f8_67e2_4273_827f_b879aa89b343', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'GNOME_TERMINAL_SERVICE': ':1.97', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_control', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'COLCON': '1', 'VTE_VERSION': '6800', 'PYTHONPATH': '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_control/lib/python3.10/site-packages:'}, 'shell': False}
+[7.372979] (-) TimerEvent: {}
+[7.432819] (sensors_lidar_bridge) StdoutLine: {'line': b'running develop\n'}
+[7.468706] (sensors_imu_bridge) StdoutLine: {'line': b'running egg_info\n'}
+[7.469442] (sensors_imu_bridge) StdoutLine: {'line': b'writing sensors_imu_bridge.egg-info/PKG-INFO\n'}
+[7.470231] (sensors_imu_bridge) StdoutLine: {'line': b'writing dependency_links to sensors_imu_bridge.egg-info/dependency_links.txt\n'}
+[7.470575] (sensors_imu_bridge) StdoutLine: {'line': b'writing entry points to sensors_imu_bridge.egg-info/entry_points.txt\n'}
+[7.470877] (sensors_imu_bridge) StdoutLine: {'line': b'writing requirements to sensors_imu_bridge.egg-info/requires.txt\n'}
+[7.471106] (sensors_imu_bridge) StdoutLine: {'line': b'writing top-level names to sensors_imu_bridge.egg-info/top_level.txt\n'}
+[7.473025] (-) TimerEvent: {}
+[7.475049] (sensors_imu_bridge) StdoutLine: {'line': b"reading manifest file 'sensors_imu_bridge.egg-info/SOURCES.txt'\n"}
+[7.476429] (sensors_imu_bridge) StdoutLine: {'line': b"writing manifest file 'sensors_imu_bridge.egg-info/SOURCES.txt'\n"}
+[7.479140] (sensors_imu_bridge) StdoutLine: {'line': b'running build_ext\n'}
+[7.479759] (sensors_imu_bridge) StdoutLine: {'line': b'Creating /home/eceteam4/ECE480Team4/ros2_ws/install/sensors_imu_bridge/lib/python3.10/site-packages/sensors-imu-bridge.egg-link (link to .)\n'}
+[7.482127] (sensors_imu_bridge) StdoutLine: {'line': b'Installing sensors_imu_bridge script to /home/eceteam4/ECE480Team4/ros2_ws/install/sensors_imu_bridge/lib/sensors_imu_bridge\n'}
+[7.483377] (sensors_imu_bridge) StdoutLine: {'line': b'\n'}
+[7.484048] (sensors_imu_bridge) StdoutLine: {'line': b'Installed /home/eceteam4/ECE480Team4/ros2_ws/build/sensors_imu_bridge\n'}
+[7.484434] (sensors_imu_bridge) StdoutLine: {'line': b'running symlink_data\n'}
+[7.573202] (-) TimerEvent: {}
+[7.590643] (sensors_imu_bridge) CommandEnded: {'returncode': 0}
+[7.612097] (sensors_imu_bridge) JobEnded: {'identifier': 'sensors_imu_bridge', 'rc': 0}
+[7.651778] (sensors_lidar_bridge) StdoutLine: {'line': b'running egg_info\n'}
+[7.652295] (sensors_lidar_bridge) StdoutLine: {'line': b'writing sensors_lidar_bridge.egg-info/PKG-INFO\n'}
+[7.652512] (sensors_lidar_bridge) StdoutLine: {'line': b'writing dependency_links to sensors_lidar_bridge.egg-info/dependency_links.txt\n'}
+[7.652834] (sensors_lidar_bridge) StdoutLine: {'line': b'writing entry points to sensors_lidar_bridge.egg-info/entry_points.txt\n'}
+[7.653085] (sensors_lidar_bridge) StdoutLine: {'line': b'writing requirements to sensors_lidar_bridge.egg-info/requires.txt\n'}
+[7.653360] (sensors_lidar_bridge) StdoutLine: {'line': b'writing top-level names to sensors_lidar_bridge.egg-info/top_level.txt\n'}
+[7.657085] (sensors_lidar_bridge) StdoutLine: {'line': b"reading manifest file 'sensors_lidar_bridge.egg-info/SOURCES.txt'\n"}
+[7.658250] (sensors_lidar_bridge) StdoutLine: {'line': b"writing manifest file 'sensors_lidar_bridge.egg-info/SOURCES.txt'\n"}
+[7.660700] (sensors_lidar_bridge) StdoutLine: {'line': b'running build_ext\n'}
+[7.661072] (sensors_lidar_bridge) StdoutLine: {'line': b'Creating /home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/lib/python3.10/site-packages/sensors-lidar-bridge.egg-link (link to .)\n'}
+[7.662880] (sensors_lidar_bridge) StdoutLine: {'line': b'Installing sensors_lidar_bridge script to /home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/lib/sensors_lidar_bridge\n'}
+[7.663431] (sensors_lidar_bridge) StdoutLine: {'line': b'\n'}
+[7.663684] (sensors_lidar_bridge) StdoutLine: {'line': b'Installed /home/eceteam4/ECE480Team4/ros2_ws/build/sensors_lidar_bridge\n'}
+[7.663807] (sensors_lidar_bridge) StdoutLine: {'line': b'running symlink_data\n'}
+[7.673334] (-) TimerEvent: {}
+[7.751616] (sensors_lidar_bridge) CommandEnded: {'returncode': 0}
+[7.774407] (-) TimerEvent: {}
+[7.782978] (sensors_lidar_bridge) JobEnded: {'identifier': 'sensors_lidar_bridge', 'rc': 0}
+[7.803221] (vesc_control) StdoutLine: {'line': b'running develop\n'}
+[7.874623] (-) TimerEvent: {}
+[7.975378] (-) TimerEvent: {}
+[8.007590] (vesc_control) StdoutLine: {'line': b'running egg_info\n'}
+[8.008344] (vesc_control) StdoutLine: {'line': b'writing vesc_control.egg-info/PKG-INFO\n'}
+[8.008813] (vesc_control) StdoutLine: {'line': b'writing dependency_links to vesc_control.egg-info/dependency_links.txt\n'}
+[8.009256] (vesc_control) StdoutLine: {'line': b'writing entry points to vesc_control.egg-info/entry_points.txt\n'}
+[8.009716] (vesc_control) StdoutLine: {'line': b'writing requirements to vesc_control.egg-info/requires.txt\n'}
+[8.014288] (vesc_control) StdoutLine: {'line': b'writing top-level names to vesc_control.egg-info/top_level.txt\n'}
+[8.015366] (vesc_control) StdoutLine: {'line': b"reading manifest file 'vesc_control.egg-info/SOURCES.txt'\n"}
+[8.016027] (vesc_control) StdoutLine: {'line': b"writing manifest file 'vesc_control.egg-info/SOURCES.txt'\n"}
+[8.018711] (vesc_control) StdoutLine: {'line': b'running build_ext\n'}
+[8.019079] (vesc_control) StdoutLine: {'line': b'Creating /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_control/lib/python3.10/site-packages/vesc-control.egg-link (link to .)\n'}
+[8.020968] (vesc_control) StdoutLine: {'line': b'Installing vesc_bridge script to /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_control/lib/vesc_control\n'}
+[8.021471] (vesc_control) StdoutLine: {'line': b'\n'}
+[8.021770] (vesc_control) StdoutLine: {'line': b'Installed /home/eceteam4/ECE480Team4/ros2_ws/build/vesc_control\n'}
+[8.022002] (vesc_control) StdoutLine: {'line': b'running symlink_data\n'}
+[8.075725] (-) TimerEvent: {}
+[8.114241] (vesc_control) CommandEnded: {'returncode': 0}
+[8.150034] (vesc_control) JobEnded: {'identifier': 'vesc_control', 'rc': 0}
+[8.153508] (-) EventReactorShutdown: {}

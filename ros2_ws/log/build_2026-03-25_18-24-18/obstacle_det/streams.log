@@ -1,0 +1,17 @@
+[3.040s] Invoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/obstacle_det': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/obstacle_det/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/obstacle_det/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/obstacle_det/build --no-deps symlink_data
+[3.575s] running develop
+[3.915s] running egg_info
+[3.916s] writing obstacle_det.egg-info/PKG-INFO
+[3.916s] writing dependency_links to obstacle_det.egg-info/dependency_links.txt
+[3.916s] writing entry points to obstacle_det.egg-info/entry_points.txt
+[3.917s] writing requirements to obstacle_det.egg-info/requires.txt
+[3.917s] writing top-level names to obstacle_det.egg-info/top_level.txt
+[3.921s] reading manifest file 'obstacle_det.egg-info/SOURCES.txt'
+[3.923s] writing manifest file 'obstacle_det.egg-info/SOURCES.txt'
+[3.926s] running build_ext
+[3.926s] Creating /home/eceteam4/ECE480Team4/ros2_ws/install/obstacle_det/lib/python3.10/site-packages/obstacle-det.egg-link (link to .)
+[3.928s] Installing obstacles_det script to /home/eceteam4/ECE480Team4/ros2_ws/install/obstacle_det/lib/obstacle_det
+[3.929s] 
+[3.929s] Installed /home/eceteam4/ECE480Team4/ros2_ws/build/obstacle_det
+[3.929s] running symlink_data
+[4.037s] Invoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/obstacle_det' returned '0': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/obstacle_det/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/obstacle_det/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/obstacle_det/build --no-deps symlink_data

@@ -1,0 +1,11 @@
+[35m[1mConsolidate compiler generated dependencies of target vesc_ackermann[0m
+[ 28%] Built target ackermann_to_vesc_node
+[ 57%] Built target vesc_to_odom_node
+[ 71%] [32mBuilding CXX object CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o[0m
+[01m[K/home/eceteam4/ECE480Team4/ros2_ws/src/vesc_ackermann/src/vesc_to_odom.cpp:[m[K In member function ‘[01m[Kvoid vesc_ackermann::VescToOdom::vescStateCallback(vesc_msgs::msg::VescStateStamped_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/eceteam4/ECE480Team4/ros2_ws/src/vesc_ackermann/src/vesc_to_odom.cpp:104:36:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before numeric constant
+  104 |   double current_speed = ERPM / 14,[01;31m[K431.395[m[K  // can also use parmeters given in launch file
+      |                                    [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/vesc_ackermann.dir/build.make:90: CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/vesc_ackermann.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

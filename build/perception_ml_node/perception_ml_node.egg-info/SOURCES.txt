@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+perception_ml_node/__init__.py
+perception_ml_node/perception_ml_node.py
+perception_ml_node.egg-info/PKG-INFO
+perception_ml_node.egg-info/SOURCES.txt
+perception_ml_node.egg-info/dependency_links.txt
+perception_ml_node.egg-info/requires.txt
+perception_ml_node.egg-info/top_level.txt
+perception_ml_node.egg-info/zip-safe
+perception_ml_node/scripts/run_yolopv2_demo.py
+resource/perception_ml_node

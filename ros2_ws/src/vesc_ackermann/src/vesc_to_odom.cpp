@@ -29,7 +29,7 @@
 // -*- mode:c++; fill-column: 100; -*-
 
 #include "vesc_ackermann/vesc_to_odom.hpp"
-
+#include "rclcpp/rclcpp.hpp"
 #include <cmath>
 #include <string>
 
@@ -98,16 +98,21 @@ void VescToOdom::vescStateCallback(const VescStateStamped::SharedPtr state)
     return;
   }
 
+  double ERPM = state->state.speed;  
   // convert to engineering units
-  double current_speed = (-state->state.speed - speed_to_erpm_offset_) / speed_to_erpm_gain_;
+  // Estimated ERPM -> m/s conversion. Calculated using wheel circumference, pole pairs, and estimated gear ratio
+  double current_speed = ERPM / 14431.395;  // can also use parmeters given in launch file
   if (std::fabs(current_speed) < 0.05) {
     current_speed = 0.0;
   }
+  RCLCPP_INFO(this->get_logger(), "Current speed: %f", current_speed);
+  RCLCPP_INFO(this->get_logger(), "Current ERPM: %f", ERPM);
   double current_steering_angle(0.0), current_angular_velocity(0.0);
   if (use_servo_cmd_) {
     current_steering_angle =
       (last_servo_cmd_->data - steering_to_servo_offset_) / steering_to_servo_gain_;
     current_angular_velocity = current_speed * tan(current_steering_angle) / wheelbase_;
+    RCLCPP_INFO(this->get_logger(), "Use servo cmd");
   }
 
   // use current state as last state if this is our first time here

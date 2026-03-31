@@ -1,0 +1,1 @@
+/home/eceteam4/ECE480Team4/build/vesc_msgs/ament_cmake_python/vesc_msgs/vesc_msgs.egg-info/SOURCES.txt
