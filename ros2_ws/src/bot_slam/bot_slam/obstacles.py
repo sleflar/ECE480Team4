@@ -12,11 +12,11 @@ class Obstacles(Node):
         super().__init__('bus_monitor')             
         self.delta_r = delta_r
 
-        self.publisher = self.create_publisher(MarkerArray, 'obstacles', 1)    
+        self.publisher = self.create_publisher(MarkerArray, 'visualization_marker_array', 1)    
         self.subscription = self.create_subscription(LaserScan, 'scan', self.lidar_centroids, 1)
-        self.subscription
 
     def lidar_centroids(self, msg):       
+        print(f"Received scan with {len(msg.ranges)} points")
         ranges = np.array(msg.ranges)  # Convert to Numpy array for vector operations
         if len(ranges)==0:
             return

@@ -1,0 +1,24 @@
+running develop
+running egg_info
+creating racing_line.egg-info
+writing racing_line.egg-info/PKG-INFO
+writing dependency_links to racing_line.egg-info/dependency_links.txt
+writing entry points to racing_line.egg-info/entry_points.txt
+writing requirements to racing_line.egg-info/requires.txt
+writing top-level names to racing_line.egg-info/top_level.txt
+writing manifest file 'racing_line.egg-info/SOURCES.txt'
+reading manifest file 'racing_line.egg-info/SOURCES.txt'
+writing manifest file 'racing_line.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/eceteam4/ECE480Team4/install/racing_line/lib/python3.10/site-packages/racing-line.egg-link (link to .)
+Installing lidar_racing_line script to /home/eceteam4/ECE480Team4/install/racing_line/lib/racing_line
+Installing lidar_racing_simple script to /home/eceteam4/ECE480Team4/install/racing_line/lib/racing_line
+Installing racing_line script to /home/eceteam4/ECE480Team4/install/racing_line/lib/racing_line
+
+Installed /home/eceteam4/ECE480Team4/build/racing_line
+running symlink_data
+creating /home/eceteam4/ECE480Team4/install/racing_line/share/ament_index
+creating /home/eceteam4/ECE480Team4/install/racing_line/share/ament_index/resource_index
+creating /home/eceteam4/ECE480Team4/install/racing_line/share/ament_index/resource_index/packages
+symbolically linking /home/eceteam4/ECE480Team4/build/racing_line/resource/racing_line -> /home/eceteam4/ECE480Team4/install/racing_line/share/ament_index/resource_index/packages
+symbolically linking /home/eceteam4/ECE480Team4/build/racing_line/package.xml -> /home/eceteam4/ECE480Team4/install/racing_line/share/racing_line

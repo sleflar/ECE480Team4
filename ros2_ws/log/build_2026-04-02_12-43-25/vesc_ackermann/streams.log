@@ -1,0 +1,92 @@
+[0.024s] Invoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann': AMENT_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/eceteam4/ECE480Team4/ros2_ws/src/vesc_ackermann -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann
+[0.132s] -- The C compiler identification is GNU 11.4.0
+[0.239s] -- The CXX compiler identification is GNU 11.4.0
+[0.254s] -- Detecting C compiler ABI info
+[0.391s] -- Detecting C compiler ABI info - done
+[0.405s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.406s] -- Detecting C compile features
+[0.406s] -- Detecting C compile features - done
+[0.418s] -- Detecting CXX compiler ABI info
+[0.562s] -- Detecting CXX compiler ABI info - done
+[0.576s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.577s] -- Detecting CXX compile features
+[0.579s] -- Detecting CXX compile features - done
+[0.586s] -- Found ament_cmake_auto: 1.3.13 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.945s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.076s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.139s] -- Found vesc_msgs: 1.1.0 (/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/cmake)
+[1.209s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.217s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.231s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.250s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.276s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.669s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.673s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.810s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.869s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.947s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.960s] -- Looking for pthread.h
+[2.083s] -- Looking for pthread.h - found
+[2.085s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.243s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.245s] -- Found Threads: TRUE  
+[2.614s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.642s] [0mIn this package, headers install destination is set to `include` by ament_auto_package. It is recommended to install `include/vesc_ackermann` instead and will be the default behavior of ament_auto_package from ROS 2 Kilted Kaiju. On distributions before Kilted, ament_auto_package behaves the same way when you use USE_SCOPED_HEADER_INSTALL_DIR option.[0m
+[2.651s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.653s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.654s] -- Configured cppcheck include dirs: /home/eceteam4/ECE480Team4/ros2_ws/src/vesc_ackermann/include
+[2.654s] -- Configured cppcheck exclude dirs and/or files: 
+[2.655s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.656s] -- Configured cpplint exclude dirs and/or files: 
+[2.657s] -- Added test 'lint_cmake' to check CMake code style
+[2.659s] -- Added test 'uncrustify' to check C / C++ code style
+[2.659s] -- Configured uncrustify additional arguments: 
+[2.660s] -- Added test 'xmllint' to check XML markup files
+[2.666s] -- Configuring done
+[2.703s] -- Generating done
+[2.716s] -- Build files have been written to: /home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann
+[2.750s] Invoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann' returned '0': AMENT_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/eceteam4/ECE480Team4/ros2_ws/src/vesc_ackermann -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann
+[2.752s] Invoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann': AMENT_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann -- -j6 -l6
+[2.914s] [ 14%] [32mBuilding CXX object CMakeFiles/vesc_ackermann.dir/src/ackermann_to_vesc.cpp.o[0m
+[2.933s] [ 28%] [32mBuilding CXX object CMakeFiles/ackermann_to_vesc_node.dir/rclcpp_components/node_main_ackermann_to_vesc_node.cpp.o[0m
+[2.938s] [ 42%] [32mBuilding CXX object CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o[0m
+[2.956s] [ 57%] [32mBuilding CXX object CMakeFiles/vesc_to_odom_node.dir/rclcpp_components/node_main_vesc_to_odom_node.cpp.o[0m
+[12.995s] [ 71%] [32m[1mLinking CXX executable ackermann_to_vesc_node[0m
+[13.300s] [ 71%] Built target ackermann_to_vesc_node
+[13.589s] [ 85%] [32m[1mLinking CXX executable vesc_to_odom_node[0m
+[13.852s] [ 85%] Built target vesc_to_odom_node
+[31.216s] [100%] [32m[1mLinking CXX shared library libvesc_ackermann.so[0m
+[33.320s] [100%] Built target vesc_ackermann
+[33.356s] Invoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann' returned '0': AMENT_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann -- -j6 -l6
+[33.361s] Invoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann': AMENT_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann
+[33.377s] -- Install configuration: ""
+[33.378s] -- Execute custom install script
+[33.379s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/lib/vesc_ackermann/ackermann_to_vesc_node
+[33.401s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/lib/vesc_ackermann/vesc_to_odom_node
+[33.426s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/include/vesc_ackermann/ackermann_to_vesc.hpp
+[33.448s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/include/vesc_ackermann/vesc_to_odom.hpp
+[33.468s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/environment/library_path.sh
+[33.487s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/environment/library_path.dsv
+[33.508s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/lib/libvesc_ackermann.so
+[33.529s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/launch/ackermann_to_vesc_node.launch.xml
+[33.551s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/launch/vesc_to_odom_node.launch.xml
+[33.571s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/ament_index/resource_index/package_run_dependencies/vesc_ackermann
+[33.592s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/ament_index/resource_index/parent_prefix_path/vesc_ackermann
+[33.613s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/environment/ament_prefix_path.sh
+[33.634s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/environment/ament_prefix_path.dsv
+[33.653s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/environment/path.sh
+[33.672s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/environment/path.dsv
+[33.696s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.bash
+[33.720s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.sh
+[33.744s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.zsh
+[33.763s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.dsv
+[33.783s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/package.dsv
+[33.803s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/ament_index/resource_index/packages/vesc_ackermann
+[33.823s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/ament_index/resource_index/rclcpp_components/vesc_ackermann
+[33.842s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_dependencies-extras.cmake
+[33.866s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_include_directories-extras.cmake
+[33.888s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_libraries-extras.cmake
+[33.908s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/vesc_ackermannConfig.cmake
+[33.929s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/vesc_ackermannConfig-version.cmake
+[33.948s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/package.xml
+[33.980s] Invoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann' returned '0': AMENT_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann

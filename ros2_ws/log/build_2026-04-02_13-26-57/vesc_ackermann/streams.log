@@ -1,0 +1,37 @@
+[0.031s] Invoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann': AMENT_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages /usr/bin/cmake --build /home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann -- -j6 -l6
+[0.227s] [ 28%] Built target ackermann_to_vesc_node
+[0.242s] [ 71%] Built target vesc_ackermann
+[0.257s] [100%] Built target vesc_to_odom_node
+[0.301s] Invoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann' returned '0': AMENT_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages /usr/bin/cmake --build /home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann -- -j6 -l6
+[0.302s] Invoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann': AMENT_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages /usr/bin/cmake --install /home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann
+[0.318s] -- Install configuration: ""
+[0.319s] -- Execute custom install script
+[0.320s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/lib/vesc_ackermann/ackermann_to_vesc_node
+[0.321s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/lib/vesc_ackermann/vesc_to_odom_node
+[0.322s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/include/vesc_ackermann/ackermann_to_vesc.hpp
+[0.322s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/include/vesc_ackermann/vesc_to_odom.hpp
+[0.323s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/environment/library_path.sh
+[0.324s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/environment/library_path.dsv
+[0.324s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/lib/libvesc_ackermann.so
+[0.325s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/launch/ackermann_to_vesc_node.launch.xml
+[0.326s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/launch/vesc_to_odom_node.launch.xml
+[0.327s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/ament_index/resource_index/package_run_dependencies/vesc_ackermann
+[0.327s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/ament_index/resource_index/parent_prefix_path/vesc_ackermann
+[0.328s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/environment/ament_prefix_path.sh
+[0.329s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/environment/ament_prefix_path.dsv
+[0.329s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/environment/path.sh
+[0.329s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/environment/path.dsv
+[0.330s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.bash
+[0.330s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.sh
+[0.331s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.zsh
+[0.332s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.dsv
+[0.332s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/package.dsv
+[0.352s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/ament_index/resource_index/packages/vesc_ackermann
+[0.352s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/ament_index/resource_index/rclcpp_components/vesc_ackermann
+[0.352s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.352s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.353s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_libraries-extras.cmake
+[0.353s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/vesc_ackermannConfig.cmake
+[0.353s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/vesc_ackermannConfig-version.cmake
+[0.354s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_ackermann/share/vesc_ackermann/package.xml
+[0.362s] Invoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann' returned '0': AMENT_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages /usr/bin/cmake --install /home/eceteam4/ECE480Team4/ros2_ws/build/vesc_ackermann

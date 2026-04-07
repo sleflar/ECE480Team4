@@ -1,0 +1,10 @@
+msg/VescCmd.idl
+msg/VescCmd.msg
+msg/VescImu.idl
+msg/VescImu.msg
+msg/VescImuStamped.idl
+msg/VescImuStamped.msg
+msg/VescState.idl
+msg/VescState.msg
+msg/VescStateStamped.idl
+msg/VescStateStamped.msg

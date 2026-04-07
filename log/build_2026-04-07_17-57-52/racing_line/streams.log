@@ -1,0 +1,26 @@
+[2.809s] Invoking command in '/home/eceteam4/ECE480Team4/build/racing_line': PYTHONPATH=/home/eceteam4/ECE480Team4/build/racing_line/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/install/racing_line/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/build/racing_line/build --no-deps symlink_data
+[3.364s] running develop
+[3.711s] running egg_info
+[3.711s] creating racing_line.egg-info
+[3.712s] writing racing_line.egg-info/PKG-INFO
+[3.712s] writing dependency_links to racing_line.egg-info/dependency_links.txt
+[3.713s] writing entry points to racing_line.egg-info/entry_points.txt
+[3.713s] writing requirements to racing_line.egg-info/requires.txt
+[3.713s] writing top-level names to racing_line.egg-info/top_level.txt
+[3.713s] writing manifest file 'racing_line.egg-info/SOURCES.txt'
+[3.718s] reading manifest file 'racing_line.egg-info/SOURCES.txt'
+[3.719s] writing manifest file 'racing_line.egg-info/SOURCES.txt'
+[3.722s] running build_ext
+[3.723s] Creating /home/eceteam4/ECE480Team4/install/racing_line/lib/python3.10/site-packages/racing-line.egg-link (link to .)
+[3.725s] Installing lidar_racing_line script to /home/eceteam4/ECE480Team4/install/racing_line/lib/racing_line
+[3.725s] Installing lidar_racing_simple script to /home/eceteam4/ECE480Team4/install/racing_line/lib/racing_line
+[3.725s] Installing racing_line script to /home/eceteam4/ECE480Team4/install/racing_line/lib/racing_line
+[3.726s] 
+[3.726s] Installed /home/eceteam4/ECE480Team4/build/racing_line
+[3.726s] running symlink_data
+[3.726s] creating /home/eceteam4/ECE480Team4/install/racing_line/share/ament_index
+[3.726s] creating /home/eceteam4/ECE480Team4/install/racing_line/share/ament_index/resource_index
+[3.726s] creating /home/eceteam4/ECE480Team4/install/racing_line/share/ament_index/resource_index/packages
+[3.727s] symbolically linking /home/eceteam4/ECE480Team4/build/racing_line/resource/racing_line -> /home/eceteam4/ECE480Team4/install/racing_line/share/ament_index/resource_index/packages
+[3.727s] symbolically linking /home/eceteam4/ECE480Team4/build/racing_line/package.xml -> /home/eceteam4/ECE480Team4/install/racing_line/share/racing_line
+[3.841s] Invoked command in '/home/eceteam4/ECE480Team4/build/racing_line' returned '0': PYTHONPATH=/home/eceteam4/ECE480Team4/build/racing_line/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/install/racing_line/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/build/racing_line/build --no-deps symlink_data

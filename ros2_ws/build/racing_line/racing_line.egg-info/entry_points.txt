@@ -1,0 +1,3 @@
+[console_scripts]
+racing_line = racing_line.racing_line:main
+

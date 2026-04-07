@@ -1,0 +1,3 @@
+[console_scripts]
+sensors_imu_bridge = sensors_imu_bridge.sensors_imu_bridge:main
+

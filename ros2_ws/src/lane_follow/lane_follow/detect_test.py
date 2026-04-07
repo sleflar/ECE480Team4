@@ -65,15 +65,19 @@ class DetectNode(Node):
             return
 
         # Define Region of Interest (ROI)
+        
+        
+        roi_list = []
+        
         height, width, _ = cv_image.shape
-
-        # roi = 
+        roi_offset = int(0.2*height)
+        
         #roi_height = int(height * 0.2)  # bottom 20% of image
         if self.last_known_lane_width < 600:
-            roi_height = int(height * 0.6)  # look higher up if lane is narrow (turn)
+            roi_height = int(height * 0.4)  # look higher up if lane is narrow (turn) was 0.6
         else:
-            roi_height = int(height * 0.5)  # normal
-        roi = cv_image[height - roi_height:height, :]
+            roi_height = int(height * 0.3)  # normal: was 0.5
+        roi = cv_image[height - roi_height - roi_offset:height-roi_offset, :]
         
         # Detect Lines using OpenCV BGR Masking  and optionally cv2.morphologyEx ---
         mask_orange = cv2.inRange(roi, self.lower_orange_bgr, self.upper_orange_bgr)
@@ -124,7 +128,8 @@ class DetectNode(Node):
 
         # Draw visualization dot ONLY if we have a valid (non-zero) point
         annotated = cv_image.copy()
-        cv2.rectangle(annotated, (0, height - roi_height), (width - 1, height - 1), (60, 60, 60), 2)
+        cv2.rectangle(annotated, (0, height - roi_height - roi_offset), (width - 1, height - 1), (60, 60, 60), 2)
+        cv2.rectangle(annotated, (0, height - roi_offset), (width - 1, height - 1), (255, 60, 60), 2)
         if left_centroid:
             cv2.circle(annotated, left_centroid, 6, (0, 255, 0), -1)
         if right_centroid:
@@ -205,5 +210,4 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-
 

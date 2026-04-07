@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+resource/vesc_control
+vesc_control/__init__.py
+vesc_control/vesc_bridge.py
+vesc_control.egg-info/PKG-INFO
+vesc_control.egg-info/SOURCES.txt
+vesc_control.egg-info/dependency_links.txt
+vesc_control.egg-info/entry_points.txt
+vesc_control.egg-info/requires.txt
+vesc_control.egg-info/top_level.txt
+vesc_control.egg-info/zip-safe

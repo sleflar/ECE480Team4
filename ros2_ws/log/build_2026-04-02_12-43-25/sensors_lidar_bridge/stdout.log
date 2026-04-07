@@ -1,0 +1,24 @@
+running develop
+running egg_info
+creating sensors_lidar_bridge.egg-info
+writing sensors_lidar_bridge.egg-info/PKG-INFO
+writing dependency_links to sensors_lidar_bridge.egg-info/dependency_links.txt
+writing entry points to sensors_lidar_bridge.egg-info/entry_points.txt
+writing requirements to sensors_lidar_bridge.egg-info/requires.txt
+writing top-level names to sensors_lidar_bridge.egg-info/top_level.txt
+writing manifest file 'sensors_lidar_bridge.egg-info/SOURCES.txt'
+reading manifest file 'sensors_lidar_bridge.egg-info/SOURCES.txt'
+writing manifest file 'sensors_lidar_bridge.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/lib/python3.10/site-packages/sensors-lidar-bridge.egg-link (link to .)
+Installing sensors_lidar_bridge script to /home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/lib/sensors_lidar_bridge
+
+Installed /home/eceteam4/ECE480Team4/ros2_ws/build/sensors_lidar_bridge
+running symlink_data
+creating /home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/ament_index
+creating /home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/ament_index/resource_index
+creating /home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/ament_index/resource_index/packages
+symbolically linking /home/eceteam4/ECE480Team4/ros2_ws/build/sensors_lidar_bridge/resource/sensors_lidar_bridge -> /home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/ament_index/resource_index/packages
+symbolically linking /home/eceteam4/ECE480Team4/ros2_ws/build/sensors_lidar_bridge/package.xml -> /home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/sensors_lidar_bridge
+creating /home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/sensors_lidar_bridge/launch
+symbolically linking /home/eceteam4/ECE480Team4/ros2_ws/build/sensors_lidar_bridge/launch/lidar.launch.py -> /home/eceteam4/ECE480Team4/ros2_ws/install/sensors_lidar_bridge/share/sensors_lidar_bridge/launch

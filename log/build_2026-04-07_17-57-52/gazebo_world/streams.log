@@ -1,0 +1,46 @@
+[0.101s] Invoking command in '/home/eceteam4/ECE480Team4/build/gazebo_world': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/eceteam4/ECE480Team4/ros2_ws/src/gazebo_world -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/eceteam4/ECE480Team4/install/gazebo_world
+[1.857s] -- The C compiler identification is GNU 11.4.0
+[1.858s] -- The CXX compiler identification is GNU 11.4.0
+[1.858s] -- Detecting C compiler ABI info
+[1.859s] -- Detecting C compiler ABI info - done
+[1.859s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.859s] -- Detecting C compile features
+[1.859s] -- Detecting C compile features - done
+[1.859s] -- Detecting CXX compiler ABI info
+[1.859s] -- Detecting CXX compiler ABI info - done
+[1.859s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.859s] -- Detecting CXX compile features
+[1.860s] -- Detecting CXX compile features - done
+[1.860s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.065s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.277s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.528s] -- Configuring done
+[2.533s] -- Generating done
+[2.537s] -- Build files have been written to: /home/eceteam4/ECE480Team4/build/gazebo_world
+[2.696s] Invoked command in '/home/eceteam4/ECE480Team4/build/gazebo_world' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/eceteam4/ECE480Team4/ros2_ws/src/gazebo_world -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/eceteam4/ECE480Team4/install/gazebo_world
+[2.699s] Invoking command in '/home/eceteam4/ECE480Team4/build/gazebo_world': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/eceteam4/ECE480Team4/build/gazebo_world -- -j6 -l6
+[2.812s] Invoked command in '/home/eceteam4/ECE480Team4/build/gazebo_world' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/eceteam4/ECE480Team4/build/gazebo_world -- -j6 -l6
+[2.817s] Invoking command in '/home/eceteam4/ECE480Team4/build/gazebo_world': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/eceteam4/ECE480Team4/build/gazebo_world
+[2.837s] -- Install configuration: ""
+[2.837s] -- Execute custom install script
+[2.837s] -- Symlinking: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/launch/empty_world.launch.py
+[2.849s] -- Symlinking: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/launch/world.launch.py
+[2.881s] -- Symlinking: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/worlds/my_world.sdf
+[2.906s] -- Symlinking: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/worlds/my_world2.sdf
+[2.935s] -- Symlinking: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/worlds/package.xml
+[2.952s] -- Symlinking: /home/eceteam4/ECE480Team4/install/gazebo_world/share/ament_index/resource_index/package_run_dependencies/gazebo_world
+[2.971s] -- Symlinking: /home/eceteam4/ECE480Team4/install/gazebo_world/share/ament_index/resource_index/parent_prefix_path/gazebo_world
+[2.994s] -- Symlinking: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/environment/ament_prefix_path.sh
+[3.023s] -- Symlinking: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/environment/ament_prefix_path.dsv
+[3.047s] -- Symlinking: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/environment/path.sh
+[3.070s] -- Symlinking: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/environment/path.dsv
+[3.101s] -- Symlinking: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/local_setup.bash
+[3.126s] -- Symlinking: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/local_setup.sh
+[3.153s] -- Symlinking: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/local_setup.zsh
+[3.173s] -- Symlinking: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/local_setup.dsv
+[3.192s] -- Symlinking: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/package.dsv
+[3.730s] -- Symlinking: /home/eceteam4/ECE480Team4/install/gazebo_world/share/ament_index/resource_index/packages/gazebo_world
+[3.749s] -- Symlinking: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/cmake/gazebo_worldConfig.cmake
+[3.782s] -- Symlinking: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/cmake/gazebo_worldConfig-version.cmake
+[3.799s] -- Symlinking: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/package.xml
+[3.823s] Invoked command in '/home/eceteam4/ECE480Team4/build/gazebo_world' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/eceteam4/ECE480Team4/build/gazebo_world

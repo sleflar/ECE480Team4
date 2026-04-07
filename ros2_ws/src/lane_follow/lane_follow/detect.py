@@ -65,78 +65,98 @@ class DetectNode(Node):
             return
 
         # Define Region of Interest (ROI)
-        height, width, _ = cv_image.shape
-        roi_offset=int(0.2*height)
-        # roi = 
-        #roi_height = int(height * 0.2)  # bottom 20% of image
-        if self.last_known_lane_width < 600:
-            roi_height = int(height * 0.4)  # look higher up if lane is narrow (turn) was 0.6
-        else:
-            roi_height = int(height * 0.3)  # normal: was 0.5
-        roi = cv_image[height - roi_height - roi_offset:height-roi_offset, :]
         
-        # Detect Lines using OpenCV BGR Masking  and optionally cv2.morphologyEx ---
-        mask_orange = cv2.inRange(roi, self.lower_orange_bgr, self.upper_orange_bgr)
-        mask_black = cv2.inRange(roi, self.lower_black_bgr, self.upper_black_bgr)
+        
+        
+        
+        height, width, _ = cv_image.shape
+        
+        # ROI vertical range: 20% to 50% from bottom
+        roi_bottom = int(height * 0.2)  # 20% from bottom
+        roi_top    = int(height * 0.5)  # 50% from bottom
+        usable_height = roi_top - roi_bottom
+        
+        roi_offset = int(0.2*height)
 
-        mask_orange = cv2.morphologyEx(mask_orange, cv2.MORPH_OPEN, self.morph_kernel)
-        mask_orange = cv2.morphologyEx(mask_orange, cv2.MORPH_CLOSE, self.morph_kernel)
-        mask_black = cv2.morphologyEx(mask_black, cv2.MORPH_OPEN, self.morph_kernel)
-        mask_black = cv2.morphologyEx(mask_black, cv2.MORPH_CLOSE, self.morph_kernel)
+        num_slices = 50  # number of trajectory points
+        roi_height = usable_height // num_slices
+        trajectory_points = []
 
-        # Find Centroids ---
-        left_centroid = self.get_centroid(mask_orange,"left",width)
-        right_centroid = self.get_centroid(mask_black, "right", width)
+        for i in range(num_slices):
+            y_start = height - roi_top + i * roi_height
+            y_end   = height - roi_top + (i + 1) * roi_height
+            roi = cv_image[y_start:y_end, :]
 
-        # Convert ROI coordinates to full-image coordinates
-        if left_centroid is not None:
-            left_centroid = (int(left_centroid[0]), int(left_centroid[1] + (height - roi_height)))
-        if right_centroid is not None:
-            right_centroid = (int(right_centroid[0]), int(right_centroid[1] + (height - roi_height)))
+            # Masks
+            mask_orange = cv2.inRange(roi, self.lower_orange_bgr, self.upper_orange_bgr)
+            mask_black  = cv2.inRange(roi, self.lower_black_bgr, self.upper_black_bgr)
+            mask_orange = cv2.morphologyEx(mask_orange, cv2.MORPH_OPEN, self.morph_kernel)
+            mask_orange = cv2.morphologyEx(mask_orange, cv2.MORPH_CLOSE, self.morph_kernel)
+            mask_black  = cv2.morphologyEx(mask_black, cv2.MORPH_OPEN, self.morph_kernel)
+            mask_black  = cv2.morphologyEx(mask_black, cv2.MORPH_CLOSE, self.morph_kernel)
+
+            # Get centroids
+            left_centroid  = self.get_centroid(mask_orange, "left", width)
+            right_centroid = self.get_centroid(mask_black,  "right", width)
+
+            if left_centroid:
+                left_centroid = (int(left_centroid[0]), int(left_centroid[1] + y_start))
+            if right_centroid:
+                right_centroid = (int(right_centroid[0]), int(right_centroid[1] + y_start))
+
+            # Compute lane center for this slice, filters out strays
+            if left_centroid and right_centroid:
+                lane_width = right_centroid[0] - left_centroid[0]
+                # Horizontal lane width sanity check
+                if not (0.5 * self.last_known_lane_width < lane_width < 1.5 * self.last_known_lane_width):
+                    continue  # skip this slice, likely stray
+                center = ((left_centroid[0] + right_centroid[0]) // 2,
+                          (left_centroid[1] + right_centroid[1]) // 2)
+                self.last_known_lane_width = lane_width
+            elif left_centroid:
+                center = (left_centroid[0] + self.last_known_lane_width // 2, left_centroid[1])
+            elif right_centroid:
+                center = (right_centroid[0] - self.last_known_lane_width // 2, right_centroid[1])
+            else:
+                continue  # skip slice if neither line is detected
+
+            trajectory_points.append(center)
+        
+        # Smoothing the trajectory lane
+        SMOOTH_WINDOW = 3  # number of neighboring points to average
+        smoothed_trajectory = []
+        for i in range(len(trajectory_points)):
+            x_vals = [trajectory_points[j][0] for j in range(max(0, i-SMOOTH_WINDOW),
+                                                             min(len(trajectory_points), i+SMOOTH_WINDOW+1))]
+            y_vals = [trajectory_points[j][1] for j in range(max(0, i-SMOOTH_WINDOW),
+                                                             min(len(trajectory_points), i+SMOOTH_WINDOW+1))]
+            smoothed_trajectory.append((int(np.mean(x_vals)), int(np.mean(y_vals))))
+
+        trajectory_points = smoothed_trajectory
+        
 
 
-        # Define PointStamped message to publish
-        lane_center = None
-        if left_centroid and right_centroid:
-            # both lines detected
-            lane_center = ((left_centroid[0] + right_centroid[0]) // 2,
-                           (left_centroid[1] + right_centroid[1]) // 2)
-            self.last_known_lane_width = abs(right_centroid[0] - left_centroid[0])
-        elif left_centroid and not right_centroid:
-            # only left line detected
-            lane_center = (left_centroid[0] + self.last_known_lane_width // 2, left_centroid[1])
-        elif right_centroid and not left_centroid:
-            # only right line detected
-            lane_center = (right_centroid[0] - self.last_known_lane_width // 2, right_centroid[1])
+        # --- Visualization ---
+        annotated = cv_image.copy()
+        for pt in trajectory_points:
+            cv2.circle(annotated, pt, 6, (0, 0, 255), -1)  # red dots for trajectory
+
+        # Draw rectangles to visualize ROI slices (optional)
+        for i in range(num_slices):
+            y_start = height - roi_offset - (i + 1) * roi_height
+            y_end   = height - roi_offset - i * roi_height
+            cv2.rectangle(annotated, (0, y_start), (width - 1, y_end), (100, 100, 100), 1)
+
+        # --- Publish closest trajectory point for steering ---
+        if trajectory_points:
+            self.publish_point(msg, trajectory_points[0][0], trajectory_points[0][1], 0.0)
         else:
-            # neither line detected → end of curvy road
+            # No lane points detected → publish zero point
             self.publish_point(msg, 0.0, 0.0, 0.0)
-            annotated = cv_image.copy()
             cv2.putText(annotated, "NO LANES DETECTED", (30, 80),
                         cv2.FONT_HERSHEY_SIMPLEX, 1.2, (0, 0, 255), 3)
-            self.publish_image(annotated, msg)
-            return
-        
-        # Depending on whether orange or white or both or neither lines are detected,
-        # compute the target point accordingly 
 
-        self.get_logger().debug('Output the which lines were detected as a debug message.')
-
-        # Draw visualization dot ONLY if we have a valid (non-zero) point
-        annotated = cv_image.copy()
-        cv2.rectangle(annotated, (0, height - roi_height - roi_offset), (width - 1, height - 1), (60, 60, 60), 2)
-        cv2.rectangle(annotated, (0, height - roi_offset), (width - 1, height - 1), (255, 60, 60), 2)
-        if left_centroid:
-            cv2.circle(annotated, left_centroid, 6, (0, 255, 0), -1)
-        if right_centroid:
-            cv2.circle(annotated, right_centroid, 6, (255, 0, 0), -1)
-        if lane_center:
-            cv2.circle(annotated, lane_center, 8, (0, 0, 255), -1)
-
-        # Publish the detected point
-        self.publish_point(msg, lane_center[0], lane_center[1], 0.0)
-
-        # Publish the processed image for detected center visualization
+        # --- Publish annotated image ---
         self.publish_image(annotated, msg)
 
 

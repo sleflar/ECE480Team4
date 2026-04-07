@@ -1,0 +1,17 @@
+[2.393s] Invoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_camera_node': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_camera_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node/lib/python3.10/site-packages: /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/sensors_camera_node/build --no-deps symlink_data
+[3.021s] running develop
+[3.323s] running egg_info
+[3.324s] writing sensors_camera_node.egg-info/PKG-INFO
+[3.324s] writing dependency_links to sensors_camera_node.egg-info/dependency_links.txt
+[3.324s] writing entry points to sensors_camera_node.egg-info/entry_points.txt
+[3.325s] writing requirements to sensors_camera_node.egg-info/requires.txt
+[3.325s] writing top-level names to sensors_camera_node.egg-info/top_level.txt
+[3.332s] reading manifest file 'sensors_camera_node.egg-info/SOURCES.txt'
+[3.336s] writing manifest file 'sensors_camera_node.egg-info/SOURCES.txt'
+[3.344s] running build_ext
+[3.344s] Creating /home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node/lib/python3.10/site-packages/sensors-camera-node.egg-link (link to .)
+[3.350s] Installing sensors_camera_node script to /home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node/lib/sensors_camera_node
+[3.351s] 
+[3.352s] Installed /home/eceteam4/ECE480Team4/ros2_ws/build/sensors_camera_node
+[3.352s] running symlink_data
+[3.559s] Invoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_camera_node' returned '0': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/sensors_camera_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/sensors_camera_node/lib/python3.10/site-packages: /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/sensors_camera_node/build --no-deps symlink_data

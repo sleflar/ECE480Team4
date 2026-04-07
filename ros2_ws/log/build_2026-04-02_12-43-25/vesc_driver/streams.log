@@ -1,0 +1,104 @@
+[0.029s] Invoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_driver': AMENT_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/eceteam4/ECE480Team4/ros2_ws/src/vesc_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver
+[0.124s] -- The C compiler identification is GNU 11.4.0
+[0.230s] -- The CXX compiler identification is GNU 11.4.0
+[0.245s] -- Detecting C compiler ABI info
+[0.386s] -- Detecting C compiler ABI info - done
+[0.398s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.399s] -- Detecting C compile features
+[0.400s] -- Detecting C compile features - done
+[0.410s] -- Detecting CXX compiler ABI info
+[0.553s] -- Detecting CXX compiler ABI info - done
+[0.569s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.570s] -- Detecting CXX compile features
+[0.571s] -- Detecting CXX compile features - done
+[0.578s] -- Found ament_cmake_auto: 1.3.13 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.888s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.018s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.079s] -- Found vesc_msgs: 1.1.0 (/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/share/vesc_msgs/cmake)
+[1.143s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.150s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.164s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.184s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.209s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.510s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.514s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.655s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.711s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.785s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.800s] -- Looking for pthread.h
+[1.938s] -- Looking for pthread.h - found
+[1.938s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.088s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.090s] -- Found Threads: TRUE  
+[2.302s] -- Found asio_cmake_module: 1.2.0 (/opt/ros/humble/share/asio_cmake_module/cmake)
+[2.305s] -- Found ASIO: /usr/include  
+[2.439s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.464s] [0mIn this package, headers install destination is set to `include` by ament_auto_package. It is recommended to install `include/vesc_driver` instead and will be the default behavior of ament_auto_package from ROS 2 Kilted Kaiju. On distributions before Kilted, ament_auto_package behaves the same way when you use USE_SCOPED_HEADER_INSTALL_DIR option.[0m
+[2.475s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.478s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.478s] -- Configured cppcheck include dirs: /home/eceteam4/ECE480Team4/ros2_ws/src/vesc_driver/include
+[2.478s] -- Configured cppcheck exclude dirs and/or files: 
+[2.481s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.481s] -- Configured cpplint exclude dirs and/or files: 
+[2.482s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.483s] -- Added test 'lint_cmake' to check CMake code style
+[2.484s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.486s] -- Added test 'uncrustify' to check C / C++ code style
+[2.487s] -- Configured uncrustify additional arguments: 
+[2.487s] -- Added test 'xmllint' to check XML markup files
+[2.493s] -- Configuring done
+[2.582s] -- Generating done
+[2.596s] -- Build files have been written to: /home/eceteam4/ECE480Team4/ros2_ws/build/vesc_driver
+[2.625s] Invoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_driver' returned '0': AMENT_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/eceteam4/ECE480Team4/ros2_ws/src/vesc_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver
+[2.629s] Invoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_driver': AMENT_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/eceteam4/ECE480Team4/ros2_ws/build/vesc_driver -- -j6 -l6
+[2.725s] [ 30%] [32mBuilding CXX object CMakeFiles/vesc_driver.dir/src/vesc_interface.cpp.o[0m
+[2.725s] [ 30%] [32mBuilding CXX object CMakeFiles/vesc_driver.dir/src/vesc_packet.cpp.o[0m
+[2.725s] [ 30%] [32mBuilding CXX object CMakeFiles/vesc_driver.dir/src/vesc_packet_factory.cpp.o[0m
+[2.729s] [ 40%] [32mBuilding CXX object CMakeFiles/vesc_driver.dir/src/vesc_driver.cpp.o[0m
+[2.731s] [ 50%] [32mBuilding CXX object CMakeFiles/vesc_driver_node.dir/rclcpp_components/node_main_vesc_driver_node.cpp.o[0m
+[12.395s] [ 60%] [32m[1mLinking CXX executable vesc_driver_node[0m
+[12.903s] [ 60%] Built target vesc_driver_node
+[26.375s] [ 70%] [32m[1mLinking CXX shared library libvesc_driver.so[0m
+[27.695s] [ 70%] Built target vesc_driver
+[27.736s] [ 80%] [32mBuilding CXX object CMakeFiles/vesc_device_namer.dir/src/vesc_device_namer.cpp.o[0m
+[27.737s] [ 90%] [32mBuilding CXX object CMakeFiles/vesc_device_namer.dir/src/vesc_device_uuid_lookup.cpp.o[0m
+[29.715s] [100%] [32m[1mLinking CXX executable vesc_device_namer[0m
+[30.310s] [100%] Built target vesc_device_namer
+[30.334s] Invoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_driver' returned '0': AMENT_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/eceteam4/ECE480Team4/ros2_ws/build/vesc_driver -- -j6 -l6
+[30.337s] Invoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_driver': AMENT_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/eceteam4/ECE480Team4/ros2_ws/build/vesc_driver
+[30.353s] -- Install configuration: ""
+[30.354s] -- Execute custom install script
+[30.354s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/lib/vesc_driver/vesc_driver_node
+[30.372s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/include/vesc_driver/crc.hpp
+[30.387s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/include/vesc_driver/datatypes.hpp
+[30.405s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/include/vesc_driver/vesc_device_uuid_lookup.hpp
+[30.420s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/include/vesc_driver/vesc_driver.hpp
+[30.439s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/include/vesc_driver/vesc_interface.hpp
+[30.455s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/include/vesc_driver/vesc_packet.hpp
+[30.471s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/include/vesc_driver/vesc_packet_factory.hpp
+[30.490s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/environment/library_path.sh
+[30.510s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/environment/library_path.dsv
+[30.526s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/lib/libvesc_driver.so
+[30.547s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/lib/vesc_driver/vesc_device_namer
+[30.566s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/launch/vesc_driver_node.launch.py
+[30.585s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/params/vesc_config.yaml
+[30.602s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/ament_index/resource_index/package_run_dependencies/vesc_driver
+[30.620s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/ament_index/resource_index/parent_prefix_path/vesc_driver
+[30.636s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/environment/ament_prefix_path.sh
+[30.652s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/environment/ament_prefix_path.dsv
+[30.670s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/environment/path.sh
+[30.688s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/environment/path.dsv
+[30.704s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/local_setup.bash
+[30.720s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/local_setup.sh
+[30.736s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/local_setup.zsh
+[30.751s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/local_setup.dsv
+[30.767s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/package.dsv
+[30.783s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/ament_index/resource_index/packages/vesc_driver
+[30.800s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/ament_index/resource_index/rclcpp_components/vesc_driver
+[30.816s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+[30.833s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/cmake/ament_cmake_export_include_directories-extras.cmake
+[30.851s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/cmake/ament_cmake_export_libraries-extras.cmake
+[30.868s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/cmake/vesc_driverConfig.cmake
+[30.887s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/cmake/vesc_driverConfig-version.cmake
+[30.902s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/vesc_driver/share/vesc_driver/package.xml
+[30.925s] Invoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_driver' returned '0': AMENT_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/eceteam4/ECE480Team4/ros2_ws/build/vesc_driver
