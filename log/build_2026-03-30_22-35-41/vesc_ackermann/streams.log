@@ -1,0 +1,59 @@
+[0.061s] Invoking command in '/home/eceteam4/ECE480Team4/build/vesc_ackermann': CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/install/vesc_msgs:/home/eceteam4/ECE480Team4/install/vesc:/home/eceteam4/ECE480Team4/install/vesc_driver:/home/eceteam4/ECE480Team4/install/vesc_ackermann:/home/eceteam4/ECE480Team4/install/curvy_road:/home/eceteam4/ECE480Team4/install/vesc_control:/home/eceteam4/ECE480Team4/install/sensors_lidar_bridge:/home/eceteam4/ECE480Team4/install/sensors_imu_bridge:/home/eceteam4/ECE480Team4/install/sensors_camera_node:/home/eceteam4/ECE480Team4/install/perception_sync_node:/home/eceteam4/ECE480Team4/install/perception_ml_node:/home/eceteam4/ECE480Team4/install/obstacle_det:/home/eceteam4/ECE480Team4/install/lane_follow:/opt/ros/humble LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/install/vesc_msgs/lib:/home/eceteam4/ECE480Team4/install/vesc_driver/lib:/home/eceteam4/ECE480Team4/install/vesc_ackermann/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/eceteam4/ECE480Team4/build/vesc_ackermann -- -j6 -l6
+[0.221s] [35m[1mConsolidate compiler generated dependencies of target vesc_ackermann[0m
+[0.257s] [ 28%] Built target ackermann_to_vesc_node
+[0.316s] [ 57%] Built target vesc_to_odom_node
+[0.330s] [ 71%] [32mBuilding CXX object CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o[0m
+[5.952s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[5.952s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[5.953s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[5.953s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[5.953s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[5.953s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[5.954s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[5.954s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[5.954s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[5.954s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[5.954s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[5.955s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.hpp:41[m[K,
+[5.955s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.h:36[m[K,
+[5.955s]                  from [01m[K/home/eceteam4/ECE480Team4/ros2_ws/src/vesc_ackermann/include/vesc_ackermann/vesc_to_odom.hpp:34[m[K,
+[5.955s]                  from [01m[K/home/eceteam4/ECE480Team4/ros2_ws/src/vesc_ackermann/src/vesc_to_odom.cpp:31[m[K:
+[5.955s] [01m[K/home/eceteam4/ECE480Team4/ros2_ws/src/vesc_ackermann/src/vesc_to_odom.cpp:[m[K In member function ‘[01m[Kvoid vesc_ackermann::VescToOdom::vescStateCallback(vesc_msgs::msg::VescStateStamped_<std::allocator<void> >::SharedPtr)[m[K’:
+[5.956s] [01m[K/home/eceteam4/ECE480Team4/ros2_ws/src/vesc_ackermann/src/vesc_to_odom.cpp:115:37:[m[K [01;35m[Kwarning: [m[Ktoo many arguments for format [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-extra-args-Wformat-extra-args]8;;[m[K]
+[5.956s]   115 |     RCLCPP_INFO(this->get_logger(), [01;35m[K"Use servo cmd"[m[K, current_speed);
+[5.956s]       |                                     [01;35m[K^~~~~~~~~~~~~~~[m[K
+[24.775s] [ 85%] [32m[1mLinking CXX shared library libvesc_ackermann.so[0m
+[26.805s] [100%] Built target vesc_ackermann
+[26.835s] Invoked command in '/home/eceteam4/ECE480Team4/build/vesc_ackermann' returned '0': CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/install/vesc_msgs:/home/eceteam4/ECE480Team4/install/vesc:/home/eceteam4/ECE480Team4/install/vesc_driver:/home/eceteam4/ECE480Team4/install/vesc_ackermann:/home/eceteam4/ECE480Team4/install/curvy_road:/home/eceteam4/ECE480Team4/install/vesc_control:/home/eceteam4/ECE480Team4/install/sensors_lidar_bridge:/home/eceteam4/ECE480Team4/install/sensors_imu_bridge:/home/eceteam4/ECE480Team4/install/sensors_camera_node:/home/eceteam4/ECE480Team4/install/perception_sync_node:/home/eceteam4/ECE480Team4/install/perception_ml_node:/home/eceteam4/ECE480Team4/install/obstacle_det:/home/eceteam4/ECE480Team4/install/lane_follow:/opt/ros/humble LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/install/vesc_msgs/lib:/home/eceteam4/ECE480Team4/install/vesc_driver/lib:/home/eceteam4/ECE480Team4/install/vesc_ackermann/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/eceteam4/ECE480Team4/build/vesc_ackermann -- -j6 -l6
+[26.840s] Invoking command in '/home/eceteam4/ECE480Team4/build/vesc_ackermann': CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/install/vesc_msgs:/home/eceteam4/ECE480Team4/install/vesc:/home/eceteam4/ECE480Team4/install/vesc_driver:/home/eceteam4/ECE480Team4/install/vesc_ackermann:/home/eceteam4/ECE480Team4/install/curvy_road:/home/eceteam4/ECE480Team4/install/vesc_control:/home/eceteam4/ECE480Team4/install/sensors_lidar_bridge:/home/eceteam4/ECE480Team4/install/sensors_imu_bridge:/home/eceteam4/ECE480Team4/install/sensors_camera_node:/home/eceteam4/ECE480Team4/install/perception_sync_node:/home/eceteam4/ECE480Team4/install/perception_ml_node:/home/eceteam4/ECE480Team4/install/obstacle_det:/home/eceteam4/ECE480Team4/install/lane_follow:/opt/ros/humble LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/install/vesc_msgs/lib:/home/eceteam4/ECE480Team4/install/vesc_driver/lib:/home/eceteam4/ECE480Team4/install/vesc_ackermann/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/eceteam4/ECE480Team4/build/vesc_ackermann
+[26.857s] -- Install configuration: ""
+[26.858s] -- Execute custom install script
+[26.859s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/lib/vesc_ackermann/ackermann_to_vesc_node
+[26.860s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/lib/vesc_ackermann/vesc_to_odom_node
+[26.860s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/include/vesc_ackermann/ackermann_to_vesc.hpp
+[26.861s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/include/vesc_ackermann/vesc_to_odom.hpp
+[26.861s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/environment/library_path.sh
+[26.861s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/environment/library_path.dsv
+[26.862s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/lib/libvesc_ackermann.so
+[26.862s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/launch/ackermann_to_vesc_node.launch.xml
+[26.863s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/launch/vesc_to_odom_node.launch.xml
+[26.863s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/ament_index/resource_index/package_run_dependencies/vesc_ackermann
+[26.863s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/ament_index/resource_index/parent_prefix_path/vesc_ackermann
+[26.864s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/environment/ament_prefix_path.sh
+[26.864s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/environment/ament_prefix_path.dsv
+[26.864s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/environment/path.sh
+[26.865s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/environment/path.dsv
+[26.865s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/local_setup.bash
+[26.865s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/local_setup.sh
+[26.866s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/local_setup.zsh
+[26.866s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/local_setup.dsv
+[26.866s] -- Symlinking: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/package.dsv
+[26.888s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/ament_index/resource_index/packages/vesc_ackermann
+[26.888s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/ament_index/resource_index/rclcpp_components/vesc_ackermann
+[26.889s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_dependencies-extras.cmake
+[26.889s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_include_directories-extras.cmake
+[26.890s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_libraries-extras.cmake
+[26.890s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/cmake/vesc_ackermannConfig.cmake
+[26.890s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/cmake/vesc_ackermannConfig-version.cmake
+[26.890s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/package.xml
+[26.896s] Invoked command in '/home/eceteam4/ECE480Team4/build/vesc_ackermann' returned '0': CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/install/vesc_msgs:/home/eceteam4/ECE480Team4/install/vesc:/home/eceteam4/ECE480Team4/install/vesc_driver:/home/eceteam4/ECE480Team4/install/vesc_ackermann:/home/eceteam4/ECE480Team4/install/curvy_road:/home/eceteam4/ECE480Team4/install/vesc_control:/home/eceteam4/ECE480Team4/install/sensors_lidar_bridge:/home/eceteam4/ECE480Team4/install/sensors_imu_bridge:/home/eceteam4/ECE480Team4/install/sensors_camera_node:/home/eceteam4/ECE480Team4/install/perception_sync_node:/home/eceteam4/ECE480Team4/install/perception_ml_node:/home/eceteam4/ECE480Team4/install/obstacle_det:/home/eceteam4/ECE480Team4/install/lane_follow:/opt/ros/humble LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/install/vesc_msgs/lib:/home/eceteam4/ECE480Team4/install/vesc_driver/lib:/home/eceteam4/ECE480Team4/install/vesc_ackermann/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/eceteam4/ECE480Team4/build/vesc_ackermann

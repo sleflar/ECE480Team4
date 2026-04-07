@@ -1,0 +1,9 @@
+Download NoMachine onto your personal computer
+Create a new connection, named Jetson Nano. The Host is the IP address (35.12.219.18), and the port should be 4000.
+
+For Initial setup on Nano (shouldnt need to be done):
+eceteam4@eceteam4-desktop:~$ sudo cp -p nomachine_9.3.7_1_aarch64.tar.gz /usr
+eceteam4@eceteam4-desktop:~$ cd /usr
+eceteam4@eceteam4-desktop:/usr$ sudo tar zxf nomachine_9.3.7_1_aarch64.tar.gz
+eceteam4@eceteam4-desktop:/usr$ sudo ./NX/nxserver --install
+

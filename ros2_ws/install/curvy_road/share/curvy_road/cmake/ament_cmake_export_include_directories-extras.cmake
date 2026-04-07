@@ -1,1 +1,0 @@
-/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/build/curvy_road/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake

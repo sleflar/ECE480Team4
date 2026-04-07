@@ -1,0 +1,7 @@
+[01m[K/home/eceteam4/ECE480Team4/ros2_ws/src/vesc_ackermann/src/vesc_to_odom.cpp:[m[K In member function ‘[01m[Kvoid vesc_ackermann::VescToOdom::vescStateCallback(vesc_msgs::msg::VescStateStamped_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/eceteam4/ECE480Team4/ros2_ws/src/vesc_ackermann/src/vesc_to_odom.cpp:105:3:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kif[m[K’
+  105 |   [01;31m[Kif[m[K (std::fabs(current_speed) < 0.05) {
+      |   [01;31m[K^~[m[K
+gmake[2]: *** [CMakeFiles/vesc_ackermann.dir/build.make:90: CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/vesc_ackermann.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

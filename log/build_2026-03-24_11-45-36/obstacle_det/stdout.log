@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating obstacle_det.egg-info
+writing obstacle_det.egg-info/PKG-INFO
+writing dependency_links to obstacle_det.egg-info/dependency_links.txt
+writing entry points to obstacle_det.egg-info/entry_points.txt
+writing requirements to obstacle_det.egg-info/requires.txt
+writing top-level names to obstacle_det.egg-info/top_level.txt
+writing manifest file 'obstacle_det.egg-info/SOURCES.txt'
+reading manifest file 'obstacle_det.egg-info/SOURCES.txt'
+writing manifest file 'obstacle_det.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/eceteam4/ECE480Team4/install/obstacle_det/lib/python3.10/site-packages/obstacle-det.egg-link (link to .)
+Installing obstacles_det script to /home/eceteam4/ECE480Team4/install/obstacle_det/lib/obstacle_det
+
+Installed /home/eceteam4/ECE480Team4/build/obstacle_det
+running symlink_data
+creating /home/eceteam4/ECE480Team4/install/obstacle_det/share/ament_index
+creating /home/eceteam4/ECE480Team4/install/obstacle_det/share/ament_index/resource_index
+creating /home/eceteam4/ECE480Team4/install/obstacle_det/share/ament_index/resource_index/packages
+symbolically linking /home/eceteam4/ECE480Team4/build/obstacle_det/resource/obstacle_det -> /home/eceteam4/ECE480Team4/install/obstacle_det/share/ament_index/resource_index/packages
+symbolically linking /home/eceteam4/ECE480Team4/build/obstacle_det/package.xml -> /home/eceteam4/ECE480Team4/install/obstacle_det/share/obstacle_det

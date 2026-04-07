@@ -1,0 +1,1 @@
+/home/eceteam4/ECE480Team4/build/vesc_msgs/rosidl_generator_cpp/vesc_msgs/msg/vesc_state_stamped.hpp

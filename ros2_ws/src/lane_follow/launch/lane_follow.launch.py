@@ -7,6 +7,14 @@ from ament_index_python.packages import get_package_share_directory
 def generate_launch_description():
 
     return launch.LaunchDescription([
+    
+        # Lane Detection Node
+        launch_ros.actions.Node(
+            package='sensors_camera_node',
+            executable='sensors_camera_node',          # console script name
+            name='sensors_camera_node',
+            output='screen'
+        ),
 
         # Lane Detection Node
         launch_ros.actions.Node(

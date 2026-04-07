@@ -1,0 +1,122 @@
+[0.054s] Invoking command in '/home/eceteam4/ECE480Team4/build/curvy_road': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/eceteam4/ECE480Team4/ros2_ws/src/curvy_road -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/eceteam4/ECE480Team4/install/curvy_road
+[1.699s] -- The C compiler identification is GNU 11.4.0
+[1.700s] -- The CXX compiler identification is GNU 11.4.0
+[1.700s] -- Detecting C compiler ABI info
+[1.700s] -- Detecting C compiler ABI info - done
+[1.700s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.700s] -- Detecting C compile features
+[1.700s] -- Detecting C compile features - done
+[1.700s] -- Detecting CXX compiler ABI info
+[1.700s] -- Detecting CXX compiler ABI info - done
+[1.700s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.701s] -- Detecting CXX compile features
+[1.701s] -- Detecting CXX compile features - done
+[1.701s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.701s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.836s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.909s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.080s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.093s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.117s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.172s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.198s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.321s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[2.411s] -- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)
+[2.584s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.601s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.952s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.008s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.090s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.144s] -- Looking for pthread.h
+[3.373s] -- Looking for pthread.h - found
+[3.373s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.618s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.620s] -- Found Threads: TRUE  
+[3.732s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[3.782s] -- Found tf2: 0.25.17 (/opt/ros/humble/share/tf2/cmake)
+[4.036s] -- Configuring done
+[4.046s] -- Generating done
+[4.054s] -- Build files have been written to: /home/eceteam4/ECE480Team4/build/curvy_road
+[4.158s] Invoked command in '/home/eceteam4/ECE480Team4/build/curvy_road' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/eceteam4/ECE480Team4/ros2_ws/src/curvy_road -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/eceteam4/ECE480Team4/install/curvy_road
+[4.159s] Invoking command in '/home/eceteam4/ECE480Team4/build/curvy_road': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/eceteam4/ECE480Team4/build/curvy_road -- -j6 -l6
+[4.719s] Invoked command in '/home/eceteam4/ECE480Team4/build/curvy_road' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/eceteam4/ECE480Team4/build/curvy_road -- -j6 -l6
+[4.741s] Invoking command in '/home/eceteam4/ECE480Team4/build/curvy_road': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/eceteam4/ECE480Team4/build/curvy_road
+[4.786s] -- Install configuration: ""
+[4.786s] -- Execute custom install script
+[4.786s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//launch/curvy_road.launch.py
+[4.787s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//launch/empty_world.launch.py
+[4.794s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//launch/robot_state_publisher.launch.py
+[4.810s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//launch/turtlebot3_world.launch.py
+[4.838s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_burger/meshes/burger_base.dae
+[4.857s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_burger/meshes/lds.dae
+[4.873s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_burger/meshes/tire.dae
+[4.889s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_burger/model-1_4.sdf
+[4.905s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_burger/model.config
+[4.922s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_burger/model.sdf
+[4.938s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/course/materials/scripts/course.material
+[4.954s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/course/materials/textures/road_2.png
+[4.970s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/course/materials/textures/road_3.png
+[4.986s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/course/model.config
+[5.001s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/course/model.sdf
+[5.017s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/curvy_road/model.config
+[5.031s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/curvy_road/model.sdf
+[5.046s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/curvy_road_world/model.config
+[5.061s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/curvy_road_world/model.sdf
+[5.076s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/model.config
+[5.091s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/traffic_parking/materials/scripts/traffic_parking.material
+[5.107s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/traffic_parking/materials/textures/traffic_parking.png
+[5.121s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/traffic_parking/model.config
+[5.137s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_curvy_road/traffic_parking/model.sdf
+[5.153s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_waffle/meshes/lds.dae
+[5.166s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_waffle/meshes/r200.dae
+[5.182s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_waffle/meshes/tire.dae
+[5.196s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_waffle/meshes/waffle_base.dae
+[5.211s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_waffle/model-1_4.sdf
+[5.226s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_waffle/model.config
+[5.242s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_waffle/model.sdf
+[5.257s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_pi/meshes/lds.dae
+[5.273s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_pi/meshes/tire.dae
+[5.290s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_pi/meshes/waffle_pi_base.dae
+[5.307s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_pi/model-1_4_.sdf
+[5.322s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_pi/model.config
+[5.346s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_pi/model.sdf
+[5.361s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_robot1/meshes/lds.dae
+[5.377s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_robot1/meshes/r200.dae
+[5.393s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_robot1/meshes/tire.dae
+[5.411s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_robot1/meshes/waffle_base.dae
+[5.426s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_robot1/model-1_4.sdf
+[5.453s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_robot1/model.config
+[5.469s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_waffle_robot1/model.sdf
+[5.485s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_world/meshes/hexagon.dae
+[5.502s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_world/meshes/wall.dae
+[5.519s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_world/model-1_4.sdf
+[5.537s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_world/model.config
+[5.556s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//models/turtlebot3_world/model.sdf
+[5.574s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//rviz/tb3_gazebo.rviz
+[5.593s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//worlds/empty_worlds/burger.model
+[5.612s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//worlds/empty_worlds/waffle.model
+[5.630s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//worlds/empty_worlds/waffle_pi.model
+[5.649s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//worlds/turtlebot3_curvy_road/burger.model
+[5.668s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//worlds/turtlebot3_curvy_road/waffle.model
+[5.683s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//worlds/turtlebot3_curvy_road/waffle_pi.model
+[5.698s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//worlds/turtlebot3_worlds/burger.model
+[5.713s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//worlds/turtlebot3_worlds/waffle.model
+[5.729s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road//worlds/turtlebot3_worlds/waffle_pi.model
+[5.748s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/ament_index/resource_index/package_run_dependencies/curvy_road
+[5.767s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/ament_index/resource_index/parent_prefix_path/curvy_road
+[5.783s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road/environment/ament_prefix_path.sh
+[5.798s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road/environment/ament_prefix_path.dsv
+[5.813s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road/environment/path.sh
+[5.829s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road/environment/path.dsv
+[5.846s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road/local_setup.bash
+[5.863s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road/local_setup.sh
+[5.882s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road/local_setup.zsh
+[5.899s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road/local_setup.dsv
+[5.915s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road/package.dsv
+[5.932s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/ament_index/resource_index/packages/curvy_road
+[5.951s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.968s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.985s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road/cmake/curvy_roadConfig.cmake
+[6.001s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road/cmake/curvy_roadConfig-version.cmake
+[6.018s] -- Symlinking: /home/eceteam4/ECE480Team4/install/curvy_road/share/curvy_road/package.xml
+[6.406s] Invoked command in '/home/eceteam4/ECE480Team4/build/curvy_road' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/eceteam4/ECE480Team4/build/curvy_road

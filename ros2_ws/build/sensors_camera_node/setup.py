@@ -1,1 +1,0 @@
-/mnt/home/leflarsa/av/ECE480Team4/ros2_ws/src/sensors_camera_node/setup.py

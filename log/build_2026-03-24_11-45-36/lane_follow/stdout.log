@@ -1,0 +1,28 @@
+running develop
+running egg_info
+creating lane_follow.egg-info
+writing lane_follow.egg-info/PKG-INFO
+writing dependency_links to lane_follow.egg-info/dependency_links.txt
+writing entry points to lane_follow.egg-info/entry_points.txt
+writing requirements to lane_follow.egg-info/requires.txt
+writing top-level names to lane_follow.egg-info/top_level.txt
+writing manifest file 'lane_follow.egg-info/SOURCES.txt'
+reading manifest file 'lane_follow.egg-info/SOURCES.txt'
+writing manifest file 'lane_follow.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/eceteam4/ECE480Team4/install/lane_follow/lib/python3.10/site-packages/lane-follow.egg-link (link to .)
+Installing detect script to /home/eceteam4/ECE480Team4/install/lane_follow/lib/lane_follow
+Installing follow_pid script to /home/eceteam4/ECE480Team4/install/lane_follow/lib/lane_follow
+Installing follow_pure_pursuit script to /home/eceteam4/ECE480Team4/install/lane_follow/lib/lane_follow
+Installing ground_spot script to /home/eceteam4/ECE480Team4/install/lane_follow/lib/lane_follow
+Installing sensors_camera_node script to /home/eceteam4/ECE480Team4/install/lane_follow/lib/lane_follow
+
+Installed /home/eceteam4/ECE480Team4/build/lane_follow
+running symlink_data
+creating /home/eceteam4/ECE480Team4/install/lane_follow/share/ament_index
+creating /home/eceteam4/ECE480Team4/install/lane_follow/share/ament_index/resource_index
+creating /home/eceteam4/ECE480Team4/install/lane_follow/share/ament_index/resource_index/packages
+symbolically linking /home/eceteam4/ECE480Team4/build/lane_follow/resource/lane_follow -> /home/eceteam4/ECE480Team4/install/lane_follow/share/ament_index/resource_index/packages
+symbolically linking /home/eceteam4/ECE480Team4/build/lane_follow/package.xml -> /home/eceteam4/ECE480Team4/install/lane_follow/share/lane_follow
+creating /home/eceteam4/ECE480Team4/install/lane_follow/share/lane_follow/launch
+symbolically linking /home/eceteam4/ECE480Team4/build/lane_follow/launch/lane_follow.launch.py -> /home/eceteam4/ECE480Team4/install/lane_follow/share/lane_follow/launch

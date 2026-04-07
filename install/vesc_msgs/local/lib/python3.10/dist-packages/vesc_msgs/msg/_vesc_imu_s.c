@@ -1,0 +1,1 @@
+/home/eceteam4/ECE480Team4/build/vesc_msgs/rosidl_generator_py/vesc_msgs/msg/_vesc_imu_s.c

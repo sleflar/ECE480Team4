@@ -29,5 +29,17 @@ def generate_launch_description():
             name='sensors_lidar_bridge',
             output='screen',
             parameters=[params],
-        )
+        ),
+        Node(
+            package='urg_node',
+            executable='urg_node_driver',
+            name='hokuyo_driver',
+            output='screen',
+            parameters=[{
+                'ip_address': '192.168.0.10',  # replace with your LIDAR IP
+                'frame_id': 'laser_frame',
+                'scan_topic': '/scan',
+                "ip_port": 10940,
+            }]
+        ),
     ])
