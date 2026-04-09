@@ -1,0 +1,17 @@
+[2.458s] Invoking command in '/home/eceteam4/ECE480Team4/build/perception_sync_node': PYTHONPATH=/home/eceteam4/ECE480Team4/build/perception_sync_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/install/perception_sync_node/lib/python3.10/site-packages: /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/build/perception_sync_node/build --no-deps symlink_data
+[2.928s] running develop
+[3.132s] running egg_info
+[3.133s] writing perception_sync_node.egg-info/PKG-INFO
+[3.133s] writing dependency_links to perception_sync_node.egg-info/dependency_links.txt
+[3.134s] writing entry points to perception_sync_node.egg-info/entry_points.txt
+[3.134s] writing requirements to perception_sync_node.egg-info/requires.txt
+[3.134s] writing top-level names to perception_sync_node.egg-info/top_level.txt
+[3.139s] reading manifest file 'perception_sync_node.egg-info/SOURCES.txt'
+[3.141s] writing manifest file 'perception_sync_node.egg-info/SOURCES.txt'
+[3.144s] running build_ext
+[3.145s] Creating /home/eceteam4/ECE480Team4/install/perception_sync_node/lib/python3.10/site-packages/perception-sync-node.egg-link (link to .)
+[3.147s] Installing perception_sync_node script to /home/eceteam4/ECE480Team4/install/perception_sync_node/lib/perception_sync_node
+[3.148s] 
+[3.148s] Installed /home/eceteam4/ECE480Team4/build/perception_sync_node
+[3.148s] running symlink_data
+[3.248s] Invoked command in '/home/eceteam4/ECE480Team4/build/perception_sync_node' returned '0': PYTHONPATH=/home/eceteam4/ECE480Team4/build/perception_sync_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/install/perception_sync_node/lib/python3.10/site-packages: /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/build/perception_sync_node/build --no-deps symlink_data

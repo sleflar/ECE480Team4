@@ -1,0 +1,26 @@
+[0.524s] Invoking command in '/home/eceteam4/ECE480Team4/build/gazebo_world': /usr/bin/cmake --build /home/eceteam4/ECE480Team4/build/gazebo_world -- -j6 -l6
+[1.341s] Invoked command in '/home/eceteam4/ECE480Team4/build/gazebo_world' returned '0': /usr/bin/cmake --build /home/eceteam4/ECE480Team4/build/gazebo_world -- -j6 -l6
+[1.368s] Invoking command in '/home/eceteam4/ECE480Team4/build/gazebo_world': /usr/bin/cmake --install /home/eceteam4/ECE480Team4/build/gazebo_world
+[1.390s] -- Install configuration: ""
+[1.390s] -- Execute custom install script
+[1.394s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/launch/empty_world.launch.py
+[1.397s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/launch/world.launch.py
+[1.401s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/worlds/my_world.sdf
+[1.402s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/worlds/my_world2.sdf
+[1.403s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/worlds/package.xml
+[1.410s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/ament_index/resource_index/package_run_dependencies/gazebo_world
+[1.413s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/ament_index/resource_index/parent_prefix_path/gazebo_world
+[1.416s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/environment/ament_prefix_path.sh
+[1.418s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/environment/ament_prefix_path.dsv
+[1.419s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/environment/path.sh
+[1.421s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/environment/path.dsv
+[1.422s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/local_setup.bash
+[1.423s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/local_setup.sh
+[1.425s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/local_setup.zsh
+[1.426s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/local_setup.dsv
+[1.428s] -- Symlinking: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/package.dsv
+[1.452s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/ament_index/resource_index/packages/gazebo_world
+[1.452s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/cmake/gazebo_worldConfig.cmake
+[1.453s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/cmake/gazebo_worldConfig-version.cmake
+[1.456s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/package.xml
+[1.486s] Invoked command in '/home/eceteam4/ECE480Team4/build/gazebo_world' returned '0': /usr/bin/cmake --install /home/eceteam4/ECE480Team4/build/gazebo_world

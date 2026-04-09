@@ -1,0 +1,26 @@
+[0.618s] Invoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/gazebo_world': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/eceteam4/ECE480Team4/ros2_ws/build/gazebo_world -- -j6 -l6
+[1.741s] Invoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/gazebo_world' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/eceteam4/ECE480Team4/ros2_ws/build/gazebo_world -- -j6 -l6
+[1.762s] Invoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/gazebo_world': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/eceteam4/ECE480Team4/ros2_ws/build/gazebo_world
+[1.781s] -- Install configuration: ""
+[1.781s] -- Execute custom install script
+[1.782s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/gazebo_world/share/gazebo_world/launch/empty_world.launch.py
+[1.783s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/gazebo_world/share/gazebo_world/launch/world.launch.py
+[1.792s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/gazebo_world/share/gazebo_world/worlds/my_world.sdf
+[1.793s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/gazebo_world/share/gazebo_world/worlds/my_world2.sdf
+[1.798s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/gazebo_world/share/gazebo_world/worlds/package.xml
+[1.805s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/gazebo_world/share/ament_index/resource_index/package_run_dependencies/gazebo_world
+[1.806s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/gazebo_world/share/ament_index/resource_index/parent_prefix_path/gazebo_world
+[1.806s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/gazebo_world/share/gazebo_world/environment/ament_prefix_path.sh
+[1.806s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/gazebo_world/share/gazebo_world/environment/ament_prefix_path.dsv
+[1.808s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/gazebo_world/share/gazebo_world/environment/path.sh
+[1.808s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/gazebo_world/share/gazebo_world/environment/path.dsv
+[1.808s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/gazebo_world/share/gazebo_world/local_setup.bash
+[1.809s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/gazebo_world/share/gazebo_world/local_setup.sh
+[1.810s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/gazebo_world/share/gazebo_world/local_setup.zsh
+[1.810s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/gazebo_world/share/gazebo_world/local_setup.dsv
+[1.810s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/gazebo_world/share/gazebo_world/package.dsv
+[1.828s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/gazebo_world/share/ament_index/resource_index/packages/gazebo_world
+[1.829s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/gazebo_world/share/gazebo_world/cmake/gazebo_worldConfig.cmake
+[1.830s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/gazebo_world/share/gazebo_world/cmake/gazebo_worldConfig-version.cmake
+[1.834s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/gazebo_world/share/gazebo_world/package.xml
+[1.838s] Invoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/gazebo_world' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/eceteam4/ECE480Team4/ros2_ws/build/gazebo_world

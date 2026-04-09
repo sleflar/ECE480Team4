@@ -1,0 +1,17 @@
+[2.498s] Invoking command in '/home/eceteam4/ECE480Team4/build/obstacle_det': PYTHONPATH=/home/eceteam4/ECE480Team4/build/obstacle_det/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/install/obstacle_det/lib/python3.10/site-packages: /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/build/obstacle_det/build --no-deps symlink_data
+[2.949s] running develop
+[3.153s] running egg_info
+[3.154s] writing obstacle_det.egg-info/PKG-INFO
+[3.154s] writing dependency_links to obstacle_det.egg-info/dependency_links.txt
+[3.154s] writing entry points to obstacle_det.egg-info/entry_points.txt
+[3.155s] writing requirements to obstacle_det.egg-info/requires.txt
+[3.156s] writing top-level names to obstacle_det.egg-info/top_level.txt
+[3.161s] reading manifest file 'obstacle_det.egg-info/SOURCES.txt'
+[3.171s] writing manifest file 'obstacle_det.egg-info/SOURCES.txt'
+[3.175s] running build_ext
+[3.175s] Creating /home/eceteam4/ECE480Team4/install/obstacle_det/lib/python3.10/site-packages/obstacle-det.egg-link (link to .)
+[3.177s] Installing obstacles_det script to /home/eceteam4/ECE480Team4/install/obstacle_det/lib/obstacle_det
+[3.178s] 
+[3.178s] Installed /home/eceteam4/ECE480Team4/build/obstacle_det
+[3.178s] running symlink_data
+[3.332s] Invoked command in '/home/eceteam4/ECE480Team4/build/obstacle_det' returned '0': PYTHONPATH=/home/eceteam4/ECE480Team4/build/obstacle_det/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/install/obstacle_det/lib/python3.10/site-packages: /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/build/obstacle_det/build --no-deps symlink_data

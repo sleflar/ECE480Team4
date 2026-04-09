@@ -1,0 +1,18 @@
+[2.793s] Invoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/bot_slam': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/bot_slam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/bot_slam/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/bot_slam/build --no-deps symlink_data
+[3.419s] running develop
+[3.771s] running egg_info
+[3.771s] writing bot_slam.egg-info/PKG-INFO
+[3.772s] writing dependency_links to bot_slam.egg-info/dependency_links.txt
+[3.772s] writing entry points to bot_slam.egg-info/entry_points.txt
+[3.773s] writing requirements to bot_slam.egg-info/requires.txt
+[3.773s] writing top-level names to bot_slam.egg-info/top_level.txt
+[3.777s] reading manifest file 'bot_slam.egg-info/SOURCES.txt'
+[3.779s] writing manifest file 'bot_slam.egg-info/SOURCES.txt'
+[3.782s] running build_ext
+[3.783s] Creating /home/eceteam4/ECE480Team4/ros2_ws/install/bot_slam/lib/python3.10/site-packages/bot-slam.egg-link (link to .)
+[3.785s] Installing obstacles script to /home/eceteam4/ECE480Team4/ros2_ws/install/bot_slam/lib/bot_slam
+[3.785s] Installing waypoint_follower script to /home/eceteam4/ECE480Team4/ros2_ws/install/bot_slam/lib/bot_slam
+[3.786s] 
+[3.786s] Installed /home/eceteam4/ECE480Team4/ros2_ws/build/bot_slam
+[3.786s] running symlink_data
+[4.434s] Invoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/bot_slam' returned '0': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/bot_slam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/bot_slam/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/bot_slam/build --no-deps symlink_data

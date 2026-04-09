@@ -1,0 +1,4 @@
+Invoking command in '/home/eceteam4/ECE480Team4/build/curvy_road': /usr/bin/cmake --build /home/eceteam4/ECE480Team4/build/curvy_road -- -j6 -l6
+Invoked command in '/home/eceteam4/ECE480Team4/build/curvy_road' returned '0': /usr/bin/cmake --build /home/eceteam4/ECE480Team4/build/curvy_road -- -j6 -l6
+Invoking command in '/home/eceteam4/ECE480Team4/build/curvy_road': /usr/bin/cmake --install /home/eceteam4/ECE480Team4/build/curvy_road
+Invoked command in '/home/eceteam4/ECE480Team4/build/curvy_road' returned '0': /usr/bin/cmake --install /home/eceteam4/ECE480Team4/build/curvy_road

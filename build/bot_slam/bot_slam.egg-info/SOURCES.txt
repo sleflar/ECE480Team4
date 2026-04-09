@@ -12,5 +12,6 @@ bot_slam.egg-info/requires.txt
 bot_slam.egg-info/top_level.txt
 bot_slam.egg-info/zip-safe
 config/waypoints.json
+launch/cartographer.launch.py
 launch/waypoint_nav.launch.py
 resource/bot_slam

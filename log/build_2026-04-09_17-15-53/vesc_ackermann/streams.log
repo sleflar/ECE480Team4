@@ -1,0 +1,37 @@
+[0.065s] Invoking command in '/home/eceteam4/ECE480Team4/build/vesc_ackermann': AMENT_PREFIX_PATH=/home/eceteam4/ECE480Team4/install/vesc_msgs CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/install/vesc_msgs LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/install/vesc_msgs/lib PYTHONPATH=/home/eceteam4/ECE480Team4/install/vesc_msgs/local/lib/python3.10/dist-packages /usr/bin/cmake --build /home/eceteam4/ECE480Team4/build/vesc_ackermann -- -j6 -l6
+[0.337s] [ 28%] Built target ackermann_to_vesc_node
+[0.352s] [ 71%] Built target vesc_ackermann
+[0.354s] [100%] Built target vesc_to_odom_node
+[0.389s] Invoked command in '/home/eceteam4/ECE480Team4/build/vesc_ackermann' returned '0': AMENT_PREFIX_PATH=/home/eceteam4/ECE480Team4/install/vesc_msgs CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/install/vesc_msgs LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/install/vesc_msgs/lib PYTHONPATH=/home/eceteam4/ECE480Team4/install/vesc_msgs/local/lib/python3.10/dist-packages /usr/bin/cmake --build /home/eceteam4/ECE480Team4/build/vesc_ackermann -- -j6 -l6
+[0.395s] Invoking command in '/home/eceteam4/ECE480Team4/build/vesc_ackermann': AMENT_PREFIX_PATH=/home/eceteam4/ECE480Team4/install/vesc_msgs CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/install/vesc_msgs LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/install/vesc_msgs/lib PYTHONPATH=/home/eceteam4/ECE480Team4/install/vesc_msgs/local/lib/python3.10/dist-packages /usr/bin/cmake --install /home/eceteam4/ECE480Team4/build/vesc_ackermann
+[0.415s] -- Install configuration: ""
+[0.417s] -- Execute custom install script
+[0.421s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/lib/vesc_ackermann/ackermann_to_vesc_node
+[0.422s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/lib/vesc_ackermann/vesc_to_odom_node
+[0.425s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/include/vesc_ackermann/ackermann_to_vesc.hpp
+[0.426s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/include/vesc_ackermann/vesc_to_odom.hpp
+[0.427s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/environment/library_path.sh
+[0.428s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/environment/library_path.dsv
+[0.429s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/lib/libvesc_ackermann.so
+[0.432s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/launch/ackermann_to_vesc_node.launch.xml
+[0.432s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/launch/vesc_to_odom_node.launch.xml
+[0.434s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/ament_index/resource_index/package_run_dependencies/vesc_ackermann
+[0.435s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/ament_index/resource_index/parent_prefix_path/vesc_ackermann
+[0.436s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/environment/ament_prefix_path.sh
+[0.437s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/environment/ament_prefix_path.dsv
+[0.438s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/environment/path.sh
+[0.439s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/environment/path.dsv
+[0.440s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/local_setup.bash
+[0.441s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/local_setup.sh
+[0.441s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/local_setup.zsh
+[0.442s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/local_setup.dsv
+[0.442s] -- Symlinking: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/package.dsv
+[0.462s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/ament_index/resource_index/packages/vesc_ackermann
+[0.463s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/ament_index/resource_index/rclcpp_components/vesc_ackermann
+[0.466s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.467s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.468s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_libraries-extras.cmake
+[0.469s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/cmake/vesc_ackermannConfig.cmake
+[0.475s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/cmake/vesc_ackermannConfig-version.cmake
+[0.479s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/package.xml
+[0.489s] Invoked command in '/home/eceteam4/ECE480Team4/build/vesc_ackermann' returned '0': AMENT_PREFIX_PATH=/home/eceteam4/ECE480Team4/install/vesc_msgs CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/install/vesc_msgs LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/install/vesc_msgs/lib PYTHONPATH=/home/eceteam4/ECE480Team4/install/vesc_msgs/local/lib/python3.10/dist-packages /usr/bin/cmake --install /home/eceteam4/ECE480Team4/build/vesc_ackermann

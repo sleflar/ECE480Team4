@@ -1,0 +1,15 @@
+[1.779s] Invoking command in '/home/eceteam4/ECE480Team4/build/perception_ml_node': PYTHONPATH=/home/eceteam4/ECE480Team4/build/perception_ml_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/install/perception_ml_node/lib/python3.10/site-packages: /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/build/perception_ml_node/build --no-deps symlink_data
+[2.217s] running develop
+[2.416s] running egg_info
+[2.416s] writing perception_ml_node.egg-info/PKG-INFO
+[2.417s] writing dependency_links to perception_ml_node.egg-info/dependency_links.txt
+[2.417s] writing requirements to perception_ml_node.egg-info/requires.txt
+[2.417s] writing top-level names to perception_ml_node.egg-info/top_level.txt
+[2.421s] reading manifest file 'perception_ml_node.egg-info/SOURCES.txt'
+[2.424s] writing manifest file 'perception_ml_node.egg-info/SOURCES.txt'
+[2.427s] running build_ext
+[2.427s] Creating /home/eceteam4/ECE480Team4/install/perception_ml_node/lib/python3.10/site-packages/perception-ml-node.egg-link (link to .)
+[2.429s] 
+[2.429s] Installed /home/eceteam4/ECE480Team4/build/perception_ml_node
+[2.429s] running symlink_data
+[2.802s] Invoked command in '/home/eceteam4/ECE480Team4/build/perception_ml_node' returned '0': PYTHONPATH=/home/eceteam4/ECE480Team4/build/perception_ml_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/install/perception_ml_node/lib/python3.10/site-packages: /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/build/perception_ml_node/build --no-deps symlink_data
