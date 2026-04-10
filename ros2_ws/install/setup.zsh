@@ -19,7 +19,11 @@ _colcon_prefix_chain_zsh_source_script() {
 
 # source chained prefixes
 # setting COLCON_CURRENT_PREFIX avoids determining the prefix in the sourced script
+<<<<<<< HEAD
+COLCON_CURRENT_PREFIX="/opt/ros/jazzy"
+=======
 COLCON_CURRENT_PREFIX="/opt/ros/humble"
+>>>>>>> d7d4bd6415b85d674601d5be4de5f809193d7f1c
 _colcon_prefix_chain_zsh_source_script "$COLCON_CURRENT_PREFIX/local_setup.zsh"
 
 # source this prefix

@@ -4,6 +4,9 @@ source;share/racing_line/hook/pythonpath.sh
 source;share/racing_line/hook/ament_prefix_path.ps1
 source;share/racing_line/hook/ament_prefix_path.dsv
 source;share/racing_line/hook/ament_prefix_path.sh
+<<<<<<< HEAD
+=======
 source;../../build/racing_line/share/racing_line/hook/pythonpath_develop.ps1
 source;../../build/racing_line/share/racing_line/hook/pythonpath_develop.dsv
 source;../../build/racing_line/share/racing_line/hook/pythonpath_develop.sh
+>>>>>>> d7d4bd6415b85d674601d5be4de5f809193d7f1c

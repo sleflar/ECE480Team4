@@ -2,4 +2,7 @@
 lidar_racing_line = racing_line.lidar_racing_line:main
 lidar_racing_simple = racing_line.lidar_racing_simple:main
 racing_line = racing_line.racing_line:main
+<<<<<<< HEAD
+=======
 
+>>>>>>> d7d4bd6415b85d674601d5be4de5f809193d7f1c

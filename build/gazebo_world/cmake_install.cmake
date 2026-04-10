@@ -1,8 +1,16 @@
+<<<<<<< HEAD
+# Install script for directory: /mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/src/gazebo_world
+
+# Set the install prefix
+if(NOT DEFINED CMAKE_INSTALL_PREFIX)
+  set(CMAKE_INSTALL_PREFIX "/mnt/ffs24/home/ramosriv/av/ECE480Team4/install/gazebo_world")
+=======
 # Install script for directory: /home/eceteam4/ECE480Team4/ros2_ws/src/gazebo_world
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
   set(CMAKE_INSTALL_PREFIX "/home/eceteam4/ECE480Team4/install/gazebo_world")
+>>>>>>> d7d4bd6415b85d674601d5be4de5f809193d7f1c
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +51,73 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+<<<<<<< HEAD
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gazebo_world" TYPE DIRECTORY FILES
+    "/mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/src/gazebo_world/launch"
+    "/mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/src/gazebo_world/worlds"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/mnt/ffs24/home/ramosriv/av/ECE480Team4/build/gazebo_world/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/gazebo_world")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/mnt/ffs24/home/ramosriv/av/ECE480Team4/build/gazebo_world/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/gazebo_world")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gazebo_world/environment" TYPE FILE FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gazebo_world/environment" TYPE FILE FILES "/mnt/ffs24/home/ramosriv/av/ECE480Team4/build/gazebo_world/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gazebo_world/environment" TYPE FILE FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gazebo_world/environment" TYPE FILE FILES "/mnt/ffs24/home/ramosriv/av/ECE480Team4/build/gazebo_world/ament_cmake_environment_hooks/path.dsv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gazebo_world" TYPE FILE FILES "/mnt/ffs24/home/ramosriv/av/ECE480Team4/build/gazebo_world/ament_cmake_environment_hooks/local_setup.bash")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gazebo_world" TYPE FILE FILES "/mnt/ffs24/home/ramosriv/av/ECE480Team4/build/gazebo_world/ament_cmake_environment_hooks/local_setup.sh")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gazebo_world" TYPE FILE FILES "/mnt/ffs24/home/ramosriv/av/ECE480Team4/build/gazebo_world/ament_cmake_environment_hooks/local_setup.zsh")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gazebo_world" TYPE FILE FILES "/mnt/ffs24/home/ramosriv/av/ECE480Team4/build/gazebo_world/ament_cmake_environment_hooks/local_setup.dsv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gazebo_world" TYPE FILE FILES "/mnt/ffs24/home/ramosriv/av/ECE480Team4/build/gazebo_world/ament_cmake_environment_hooks/package.dsv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/mnt/ffs24/home/ramosriv/av/ECE480Team4/build/gazebo_world/ament_cmake_index/share/ament_index/resource_index/packages/gazebo_world")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gazebo_world/cmake" TYPE FILE FILES
+    "/mnt/ffs24/home/ramosriv/av/ECE480Team4/build/gazebo_world/ament_cmake_core/gazebo_worldConfig.cmake"
+    "/mnt/ffs24/home/ramosriv/av/ECE480Team4/build/gazebo_world/ament_cmake_core/gazebo_worldConfig-version.cmake"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gazebo_world" TYPE FILE FILES "/mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/src/gazebo_world/package.xml")
+=======
   include("/home/eceteam4/ECE480Team4/build/gazebo_world/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+>>>>>>> d7d4bd6415b85d674601d5be4de5f809193d7f1c
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -54,5 +128,9 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
+<<<<<<< HEAD
+file(WRITE "/mnt/ffs24/home/ramosriv/av/ECE480Team4/build/gazebo_world/${CMAKE_INSTALL_MANIFEST}"
+=======
 file(WRITE "/home/eceteam4/ECE480Team4/build/gazebo_world/${CMAKE_INSTALL_MANIFEST}"
+>>>>>>> d7d4bd6415b85d674601d5be4de5f809193d7f1c
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

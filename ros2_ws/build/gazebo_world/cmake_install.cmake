@@ -1,8 +1,16 @@
+<<<<<<< HEAD
+# Install script for directory: /mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/src/gazebo_world
+
+# Set the install prefix
+if(NOT DEFINED CMAKE_INSTALL_PREFIX)
+  set(CMAKE_INSTALL_PREFIX "/mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/install/gazebo_world")
+=======
 # Install script for directory: /home/eceteam4/ECE480Team4/ros2_ws/src/gazebo_world
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
   set(CMAKE_INSTALL_PREFIX "/home/eceteam4/ECE480Team4/ros2_ws/install/gazebo_world")
+>>>>>>> d7d4bd6415b85d674601d5be4de5f809193d7f1c
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +51,11 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+<<<<<<< HEAD
+  include("/mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/build/gazebo_world/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+=======
   include("/home/eceteam4/ECE480Team4/ros2_ws/build/gazebo_world/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+>>>>>>> d7d4bd6415b85d674601d5be4de5f809193d7f1c
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -54,5 +66,9 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
+<<<<<<< HEAD
+file(WRITE "/mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/build/gazebo_world/${CMAKE_INSTALL_MANIFEST}"
+=======
 file(WRITE "/home/eceteam4/ECE480Team4/ros2_ws/build/gazebo_world/${CMAKE_INSTALL_MANIFEST}"
+>>>>>>> d7d4bd6415b85d674601d5be4de5f809193d7f1c
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

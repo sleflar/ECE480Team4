@@ -1,7 +1,11 @@
 # generated from
 # ament_cmake_core/cmake/symlink_install/ament_cmake_symlink_install_uninstall_script.cmake.in
 
+<<<<<<< HEAD
+set(install_manifest "/mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/build/gazebo_world/symlink_install_manifest.txt")
+=======
 set(install_manifest "/home/eceteam4/ECE480Team4/ros2_ws/build/gazebo_world/symlink_install_manifest.txt")
+>>>>>>> d7d4bd6415b85d674601d5be4de5f809193d7f1c
 if(NOT EXISTS "${install_manifest}")
   message(FATAL_ERROR "Cannot find symlink install manifest: ${install_manifest}")
 endif()

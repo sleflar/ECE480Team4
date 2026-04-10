@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/eceteam4/ECE480Team4/build/vesc_ackermann/libvesc_ackermann.so" "TARGETS" "vesc_ackermann" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

@@ -7,38 +7,49 @@ from rclpy.node import Node
 from sensor_msgs.msg import LaserScan
 from geometry_msgs.msg import Twist
 
-
 class LiDARRacingLine(Node):
     def __init__(self):
         super().__init__('lidar_racing_line')
 
-        # Parameters
-        self.declare_parameter('max_speed', 1.0)
-        self.declare_parameter('min_speed', 0.25)
+        # Speed parameters
+        self.declare_parameter('max_speed', 0.6)
+        self.declare_parameter('min_speed', 0.20)
+        self.declare_parameter('corner_speed', 0.15)
 
+        # Lookahead parameters
         self.declare_parameter('near_lookahead', 1.0)
-        self.declare_parameter('far_lookahead', 2.0)
-        self.declare_parameter('lookahead_window', 0.25)
+        self.declare_parameter('mid_lookahead', 1.8)
+        self.declare_parameter('far_lookahead', 2.6)
+        self.declare_parameter('lookahead_window', 0.30)
 
+        # Track / LiDAR parameters
         self.declare_parameter('front_angle_deg', 120.0)
         self.declare_parameter('wall_offset', 0.10)
         self.declare_parameter('track_half_width_guess', 0.6)
 
-        self.declare_parameter('steering_gain', 1.8)
+        # Steering parameters
+        self.declare_parameter('steering_gain', 0.9)
         self.declare_parameter('max_steering', 1.2)
-        self.declare_parameter('steering_smooth_alpha', 0.35)
+        self.declare_parameter('steering_smooth_alpha', 0.60)
 
-        self.declare_parameter('racing_offset_gain', 0.5)
+        # Racing line parameters
+        self.declare_parameter('racing_offset_gain', 1.0)
         self.declare_parameter('max_racing_offset', 0.35)
 
+        # Safety parameters
         self.declare_parameter('min_range', 0.08)
         self.declare_parameter('max_range', 10.0)
-        self.declare_parameter('emergency_stop_distance', 0.30)
+        self.declare_parameter('emergency_stop_distance', 0.25)
+        self.declare_parameter('corner_recovery_distance', 0.60)
+        self.declare_parameter('corner_turn_steering', 0.90)
 
+        # Read parameters
         self.max_speed = float(self.get_parameter('max_speed').value)
         self.min_speed = float(self.get_parameter('min_speed').value)
+        self.corner_speed = float(self.get_parameter('corner_speed').value)
 
         self.near_lookahead = float(self.get_parameter('near_lookahead').value)
+        self.mid_lookahead = float(self.get_parameter('mid_lookahead').value)
         self.far_lookahead = float(self.get_parameter('far_lookahead').value)
         self.lookahead_window = float(self.get_parameter('lookahead_window').value)
 
@@ -56,10 +67,14 @@ class LiDARRacingLine(Node):
         self.min_range = float(self.get_parameter('min_range').value)
         self.max_range = float(self.get_parameter('max_range').value)
         self.emergency_stop_distance = float(self.get_parameter('emergency_stop_distance').value)
+        self.corner_recovery_distance = float(self.get_parameter('corner_recovery_distance').value)
+        self.corner_turn_steering = float(self.get_parameter('corner_turn_steering').value)
 
+        # State
         self.prev_steering = 0.0
         self.prev_center_y = 0.0
 
+        # ROS interfaces
         self.scan_sub = self.create_subscription(
             LaserScan, 'scan', self.scan_callback, 10
         )
@@ -92,10 +107,21 @@ class LiDARRacingLine(Node):
 
         return center_y, left_y, right_y
 
+    def publish_cmd(self, speed, steering):
+        cmd = Twist()
+        cmd.linear.x = float(speed)
+        cmd.angular.z = float(steering)
+        self.cmd_pub.publish(cmd)
+
+    def stop(self, reason="Stopping"):
+        self.publish_cmd(0.0, 0.0)
+        self.get_logger().warn(reason, throttle_duration_sec=1.0)
+
     def scan_callback(self, msg: LaserScan):
         ranges = np.array(msg.ranges, dtype=np.float32)
         angles = msg.angle_min + np.arange(len(ranges)) * msg.angle_increment
 
+        # Filter valid scan points
         valid = np.isfinite(ranges)
         valid &= (ranges > self.min_range)
         valid &= (ranges < self.max_range)
@@ -110,6 +136,7 @@ class LiDARRacingLine(Node):
         x = ranges * np.cos(angles)
         y = ranges * np.sin(angles)
 
+        # Only use forward points
         front_half_angle = math.radians(self.front_angle_deg / 2.0)
         front_mask = (np.abs(angles) < front_half_angle) & (x > 0.0)
 
@@ -120,38 +147,73 @@ class LiDARRacingLine(Node):
         x = x[front_mask]
         y = y[front_mask]
 
-        # Emergency stop check
+        distances = np.sqrt(x**2 + y**2)
+
+        # Emergency stop
         narrow_front = np.abs(np.arctan2(y, x)) < math.radians(15.0)
         if np.any(narrow_front):
-            front_dist = np.min(np.sqrt(x[narrow_front] ** 2 + y[narrow_front] ** 2))
+            front_dist = float(np.min(distances[narrow_front]))
             if front_dist < self.emergency_stop_distance:
                 self.stop("Obstacle too close ahead")
                 return
+        else:
+            front_dist = 999.0
 
-        # Find centerline at near and far distances
-        near_center_y, near_left_y, near_right_y = self.get_center_at_lookahead(
-            x, y, self.near_lookahead
-        )
-        far_center_y, far_left_y, far_right_y = self.get_center_at_lookahead(
-            x, y, self.far_lookahead
-        )
+        # -------------------------
+        # Corner recovery behavior
+        # -------------------------
+        left_open_mask = y > 0.15
+        right_open_mask = y < -0.15
+        narrow_recovery_mask = np.abs(np.arctan2(y, x)) < math.radians(20.0)
+
+        if np.any(narrow_recovery_mask):
+            front_recovery_dist = float(np.min(distances[narrow_recovery_mask]))
+        else:
+            front_recovery_dist = 999.0
+
+        left_open = float(np.mean(distances[left_open_mask])) if np.any(left_open_mask) else 0.0
+        right_open = float(np.mean(distances[right_open_mask])) if np.any(right_open_mask) else 0.0
+
+        if front_recovery_dist < self.corner_recovery_distance:
+            steering = self.corner_turn_steering if left_open > right_open else -self.corner_turn_steering
+
+            steering = (
+                self.steering_smooth_alpha * steering
+                + (1.0 - self.steering_smooth_alpha) * self.prev_steering
+            )
+            self.prev_steering = steering
+
+            self.publish_cmd(self.corner_speed, steering)
+            self.get_logger().info(
+                f"CORNER RECOVERY | front={front_recovery_dist:.2f}, "
+                f"left_open={left_open:.2f}, right_open={right_open:.2f}, "
+                f"steer={steering:.2f}",
+                throttle_duration_sec=0.5
+            )
+            return
+
+        # -------------------------
+        # Normal racing-line logic
+        # -------------------------
+        near_center_y, _, _ = self.get_center_at_lookahead(x, y, self.near_lookahead)
+        mid_center_y, _, _ = self.get_center_at_lookahead(x, y, self.mid_lookahead)
+        far_center_y, _, _ = self.get_center_at_lookahead(x, y, self.far_lookahead)
 
         self.prev_center_y = near_center_y
 
-        # Estimate turn direction from centerline change
-        # Positive curve value => track bends left
-        # Negative curve value => track bends right
-        curve_direction = far_center_y - near_center_y
+        # Use multiple slices to estimate upcoming turn
+        curve_direction = (
+            0.5 * (mid_center_y - near_center_y) +
+            1.0 * (far_center_y - mid_center_y)
+        )
 
-        # Racing line offset:
-        # For a left turn, start from the right side (negative offset)
-        # For a right turn, start from the left side (positive offset)
+        # For a left turn, start right; for a right turn, start left
         racing_offset = -self.racing_offset_gain * curve_direction
         racing_offset = max(-self.max_racing_offset, min(self.max_racing_offset, racing_offset))
 
-        # Final target is shifted from center
+        # Blend near + mid slices so target is less twitchy
         target_x = self.near_lookahead
-        target_y = near_center_y + racing_offset
+        target_y = 0.6 * near_center_y + 0.4 * mid_center_y + racing_offset
 
         heading_error = math.atan2(target_y, max(target_x, 0.1))
 
@@ -165,28 +227,19 @@ class LiDARRacingLine(Node):
         )
         self.prev_steering = steering
 
-        # Speed control
+        # Slow down in tighter turns
         turn_factor = max(0.3, 1.0 - 0.6 * abs(steering) / max(self.max_steering, 1e-6))
         speed = self.max_speed * turn_factor
         speed = max(self.min_speed, min(self.max_speed, speed))
 
-        cmd = Twist()
-        cmd.linear.x = speed
-        cmd.angular.z = steering
-        self.cmd_pub.publish(cmd)
+        self.publish_cmd(speed, steering)
 
         self.get_logger().info(
             f"speed={speed:.2f}, steer={steering:.2f}, "
-            f"near_center={near_center_y:.2f}, far_center={far_center_y:.2f}, "
-            f"curve={curve_direction:.2f}, offset={racing_offset:.2f}",
+            f"near={near_center_y:.2f}, mid={mid_center_y:.2f}, far={far_center_y:.2f}, "
+            f"curve={curve_direction:.2f}, offset={racing_offset:.2f}, target_y={target_y:.2f}",
             throttle_duration_sec=1.0
         )
-
-    def stop(self, reason="Stopping"):
-        cmd = Twist()
-        self.cmd_pub.publish(cmd)
-        self.get_logger().warn(reason, throttle_duration_sec=1.0)
-
 
 def main(args=None):
     rclpy.init(args=args)
@@ -194,7 +247,6 @@ def main(args=None):
     rclpy.spin(node)
     node.destroy_node()
     rclpy.shutdown()
-
 
 if __name__ == '__main__':
     main()

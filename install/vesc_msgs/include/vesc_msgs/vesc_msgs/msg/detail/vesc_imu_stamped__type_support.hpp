@@ -1,1 +1,0 @@
-/home/eceteam4/ECE480Team4/build/vesc_msgs/rosidl_generator_cpp/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.hpp

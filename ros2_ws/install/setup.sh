@@ -7,7 +7,11 @@
 # since a plain shell script can't determine its own path when being sourced
 # either use the provided COLCON_CURRENT_PREFIX
 # or fall back to the build time prefix (if it exists)
+<<<<<<< HEAD
+_colcon_prefix_chain_sh_COLCON_CURRENT_PREFIX=/mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/install
+=======
 _colcon_prefix_chain_sh_COLCON_CURRENT_PREFIX=/home/eceteam4/ECE480Team4/ros2_ws/install
+>>>>>>> d7d4bd6415b85d674601d5be4de5f809193d7f1c
 if [ ! -z "$COLCON_CURRENT_PREFIX" ]; then
   _colcon_prefix_chain_sh_COLCON_CURRENT_PREFIX="$COLCON_CURRENT_PREFIX"
 elif [ ! -d "$_colcon_prefix_chain_sh_COLCON_CURRENT_PREFIX" ]; then
@@ -31,7 +35,11 @@ _colcon_prefix_chain_sh_source_script() {
 
 # source chained prefixes
 # setting COLCON_CURRENT_PREFIX avoids relying on the build time prefix of the sourced script
+<<<<<<< HEAD
+COLCON_CURRENT_PREFIX="/opt/ros/jazzy"
+=======
 COLCON_CURRENT_PREFIX="/opt/ros/humble"
+>>>>>>> d7d4bd6415b85d674601d5be4de5f809193d7f1c
 _colcon_prefix_chain_sh_source_script "$COLCON_CURRENT_PREFIX/local_setup.sh"
 
 

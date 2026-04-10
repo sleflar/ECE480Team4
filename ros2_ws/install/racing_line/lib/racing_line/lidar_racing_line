@@ -1,10 +1,18 @@
 #!/usr/bin/python3
+<<<<<<< HEAD
+# EASY-INSTALL-ENTRY-SCRIPT: 'racing-line==0.0.0','console_scripts','lidar_racing_line'
+=======
 # EASY-INSTALL-ENTRY-SCRIPT: 'racing-line','console_scripts','lidar_racing_line'
+>>>>>>> d7d4bd6415b85d674601d5be4de5f809193d7f1c
 import re
 import sys
 
 # for compatibility with easy_install; see #2198
+<<<<<<< HEAD
+__requires__ = 'racing-line==0.0.0'
+=======
 __requires__ = 'racing-line'
+>>>>>>> d7d4bd6415b85d674601d5be4de5f809193d7f1c
 
 try:
     from importlib.metadata import distribution
@@ -30,4 +38,8 @@ globals().setdefault('load_entry_point', importlib_load_entry_point)
 
 if __name__ == '__main__':
     sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+<<<<<<< HEAD
+    sys.exit(load_entry_point('racing-line==0.0.0', 'console_scripts', 'lidar_racing_line')())
+=======
     sys.exit(load_entry_point('racing-line', 'console_scripts', 'lidar_racing_line')())
+>>>>>>> d7d4bd6415b85d674601d5be4de5f809193d7f1c
