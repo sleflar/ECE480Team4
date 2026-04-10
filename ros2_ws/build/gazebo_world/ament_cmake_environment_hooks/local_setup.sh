@@ -2,11 +2,7 @@
 
 # since this file is sourced use either the provided AMENT_CURRENT_PREFIX
 # or fall back to the destination set at configure time
-<<<<<<< HEAD
 : ${AMENT_CURRENT_PREFIX:="/mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/install/gazebo_world"}
-=======
-: ${AMENT_CURRENT_PREFIX:="/home/eceteam4/ECE480Team4/ros2_ws/install/gazebo_world"}
->>>>>>> d7d4bd6415b85d674601d5be4de5f809193d7f1c
 if [ ! -d "$AMENT_CURRENT_PREFIX" ]; then
   if [ -z "$COLCON_CURRENT_PREFIX" ]; then
     echo "The compile time prefix path '$AMENT_CURRENT_PREFIX' doesn't " \

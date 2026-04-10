@@ -2,11 +2,7 @@
 # ament_cmake_core/cmake/uninstall_target/ament_cmake_uninstall_target.cmake.in
 
 function(ament_cmake_uninstall_target_remove_empty_directories path)
-<<<<<<< HEAD
   set(install_space "/mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/install/gazebo_world")
-=======
-  set(install_space "/home/eceteam4/ECE480Team4/ros2_ws/install/gazebo_world")
->>>>>>> d7d4bd6415b85d674601d5be4de5f809193d7f1c
   if(install_space STREQUAL "")
     message(FATAL_ERROR "The CMAKE_INSTALL_PREFIX variable must not be empty")
   endif()
@@ -33,11 +29,7 @@ function(ament_cmake_uninstall_target_remove_empty_directories path)
 endfunction()
 
 # uninstall files installed using the standard install() function
-<<<<<<< HEAD
 set(install_manifest "/mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/build/gazebo_world/install_manifest.txt")
-=======
-set(install_manifest "/home/eceteam4/ECE480Team4/ros2_ws/build/gazebo_world/install_manifest.txt")
->>>>>>> d7d4bd6415b85d674601d5be4de5f809193d7f1c
 if(NOT EXISTS "${install_manifest}")
   message(FATAL_ERROR "Cannot find install manifest: ${install_manifest}")
 endif()
@@ -63,10 +55,3 @@ endforeach()
 message(STATUS "Execute custom uninstall script")
 
 # begin of custom uninstall code
-
-# uninstall files installed using the symlink install functions
-<<<<<<< HEAD
-include("/mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/build/gazebo_world/ament_cmake_symlink_install/ament_cmake_symlink_install_uninstall_script.cmake")
-=======
-include("/home/eceteam4/ECE480Team4/ros2_ws/build/gazebo_world/ament_cmake_symlink_install/ament_cmake_symlink_install_uninstall_script.cmake")
->>>>>>> d7d4bd6415b85d674601d5be4de5f809193d7f1c

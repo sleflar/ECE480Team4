@@ -1,7 +1,6 @@
 package.xml
 setup.cfg
 setup.py
-<<<<<<< HEAD
 ../../build/racing_line/racing_line.egg-info/PKG-INFO
 ../../build/racing_line/racing_line.egg-info/SOURCES.txt
 ../../build/racing_line/racing_line.egg-info/dependency_links.txt
@@ -9,24 +8,11 @@ setup.py
 ../../build/racing_line/racing_line.egg-info/requires.txt
 ../../build/racing_line/racing_line.egg-info/top_level.txt
 ../../build/racing_line/racing_line.egg-info/zip-safe
-=======
->>>>>>> d7d4bd6415b85d674601d5be4de5f809193d7f1c
 racing_line/__init__.py
 racing_line/lidar_racing_line.py
 racing_line/lidar_racing_simple.py
 racing_line/racing_line.py
-<<<<<<< HEAD
 resource/racing_line
 test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py
-=======
-racing_line.egg-info/PKG-INFO
-racing_line.egg-info/SOURCES.txt
-racing_line.egg-info/dependency_links.txt
-racing_line.egg-info/entry_points.txt
-racing_line.egg-info/requires.txt
-racing_line.egg-info/top_level.txt
-racing_line.egg-info/zip-safe
-resource/racing_line
->>>>>>> d7d4bd6415b85d674601d5be4de5f809193d7f1c

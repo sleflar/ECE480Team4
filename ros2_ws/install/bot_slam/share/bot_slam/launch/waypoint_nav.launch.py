@@ -1,1 +1,0 @@
-/home/eceteam4/ECE480Team4/ros2_ws/build/bot_slam/launch/waypoint_nav.launch.py

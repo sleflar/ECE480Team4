@@ -12,13 +12,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
   "ament_cmake_core/package.cmake"
   "ament_cmake_package_templates/templates.cmake"
-<<<<<<< HEAD
   "/mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/src/gazebo_world/CMakeLists.txt"
   "/mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/src/gazebo_world/package.xml"
-=======
-  "/home/eceteam4/ECE480Team4/ros2_ws/src/gazebo_world/CMakeLists.txt"
-  "/home/eceteam4/ECE480Team4/ros2_ws/src/gazebo_world/package.xml"
->>>>>>> d7d4bd6415b85d674601d5be4de5f809193d7f1c
   "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/package_level/local_setup.bash.in"
   "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/package_level/local_setup.sh.in"
   "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/package_level/local_setup.zsh.in"
@@ -64,14 +59,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/ros/humble/share/ament_cmake_core/cmake/index/ament_index_register_package.cmake"
   "/opt/ros/humble/share/ament_cmake_core/cmake/index/ament_index_register_resource.cmake"
   "/opt/ros/humble/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py"
-  "/opt/ros/humble/share/ament_cmake_core/cmake/symlink_install/ament_cmake_symlink_install.cmake.in"
-  "/opt/ros/humble/share/ament_cmake_core/cmake/symlink_install/ament_cmake_symlink_install_append_install_code.cmake"
-  "/opt/ros/humble/share/ament_cmake_core/cmake/symlink_install/ament_cmake_symlink_install_directory.cmake"
-  "/opt/ros/humble/share/ament_cmake_core/cmake/symlink_install/ament_cmake_symlink_install_files.cmake"
-  "/opt/ros/humble/share/ament_cmake_core/cmake/symlink_install/ament_cmake_symlink_install_programs.cmake"
-  "/opt/ros/humble/share/ament_cmake_core/cmake/symlink_install/ament_cmake_symlink_install_targets.cmake"
-  "/opt/ros/humble/share/ament_cmake_core/cmake/symlink_install/ament_cmake_symlink_install_uninstall_script.cmake.in"
-  "/opt/ros/humble/share/ament_cmake_core/cmake/symlink_install/install.cmake"
   "/opt/ros/humble/share/ament_cmake_core/cmake/uninstall_target/ament_cmake_uninstall_target.cmake.in"
   "/opt/ros/humble/share/ament_cmake_core/cmake/uninstall_target/ament_cmake_uninstall_target_append_uninstall_code.cmake"
   "/opt/ros/humble/share/ament_cmake_export_definitions/cmake/ament_cmake_export_definitions-extras.cmake"
@@ -136,20 +123,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/ros/humble/share/ament_cmake_version/cmake/ament_cmake_versionConfig-version.cmake"
   "/opt/ros/humble/share/ament_cmake_version/cmake/ament_cmake_versionConfig.cmake"
   "/opt/ros/humble/share/ament_cmake_version/cmake/ament_export_development_version_if_higher_than_manifest.cmake"
-<<<<<<< HEAD
-  "/usr/share/cmake-3.22/Modules/CMakeCInformation.cmake"
-  "/usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake"
-  "/usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake"
-  "/usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake"
-  "/usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake"
-  "/usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake"
-  "/usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake"
-  "/usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake"
-  "/usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
-  "/usr/share/cmake-3.22/Modules/Compiler/GNU-C.cmake"
-  "/usr/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake"
-  "/usr/share/cmake-3.22/Modules/Compiler/GNU.cmake"
-=======
   "/usr/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in"
   "/usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c"
   "/usr/share/cmake-3.22/Modules/CMakeCInformation.cmake"
@@ -230,17 +203,13 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.22/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake"
   "/usr/share/cmake-3.22/Modules/Compiler/zOS-C-DetermineCompiler.cmake"
   "/usr/share/cmake-3.22/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake"
->>>>>>> d7d4bd6415b85d674601d5be4de5f809193d7f1c
   "/usr/share/cmake-3.22/Modules/DartConfiguration.tcl.in"
   "/usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake"
   "/usr/share/cmake-3.22/Modules/FindPackageMessage.cmake"
   "/usr/share/cmake-3.22/Modules/FindPython/Support.cmake"
   "/usr/share/cmake-3.22/Modules/FindPython3.cmake"
-<<<<<<< HEAD
-=======
   "/usr/share/cmake-3.22/Modules/Internal/FeatureTesting.cmake"
   "/usr/share/cmake-3.22/Modules/Platform/Linux-Determine-CXX.cmake"
->>>>>>> d7d4bd6415b85d674601d5be4de5f809193d7f1c
   "/usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake"
   "/usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake"
   "/usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake"
@@ -256,18 +225,13 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-<<<<<<< HEAD
-=======
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
   "CMakeFiles/3.22.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
->>>>>>> d7d4bd6415b85d674601d5be4de5f809193d7f1c
   "ament_cmake_core/stamps/templates_2_cmake.py.stamp"
   "ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake"
-  "ament_cmake_symlink_install/ament_cmake_symlink_install.cmake"
-  "ament_cmake_symlink_install/ament_cmake_symlink_install_uninstall_script.cmake"
   "CTestConfiguration.ini"
   "ament_cmake_core/stamps/package.xml.stamp"
   "ament_cmake_core/stamps/package_xml_2_cmake.py.stamp"

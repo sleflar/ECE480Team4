@@ -52,11 +52,7 @@ _colcon_prepend_unique_value() {
 # since a plain shell script can't determine its own path when being sourced
 # either use the provided COLCON_CURRENT_PREFIX
 # or fall back to the build time prefix (if it exists)
-<<<<<<< HEAD
 _colcon_package_sh_COLCON_CURRENT_PREFIX="/mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/install/gazebo_world"
-=======
-_colcon_package_sh_COLCON_CURRENT_PREFIX="/home/eceteam4/ECE480Team4/ros2_ws/install/gazebo_world"
->>>>>>> d7d4bd6415b85d674601d5be4de5f809193d7f1c
 if [ -z "$COLCON_CURRENT_PREFIX" ]; then
   if [ ! -d "$_colcon_package_sh_COLCON_CURRENT_PREFIX" ]; then
     echo "The build time path \"$_colcon_package_sh_COLCON_CURRENT_PREFIX\" doesn't exist. Either source a script for a different shell or set the environment variable \"COLCON_CURRENT_PREFIX\" explicitly." 1>&2

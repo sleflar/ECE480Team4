@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/build/gazebo_world/CMakeFiles/uninstall.dir
 /mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/build/gazebo_world/CMakeFiles/gazebo_world_uninstall.dir
 /mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/build/gazebo_world/CMakeFiles/test.dir
@@ -8,14 +7,3 @@
 /mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/build/gazebo_world/CMakeFiles/install.dir
 /mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/build/gazebo_world/CMakeFiles/install/local.dir
 /mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/build/gazebo_world/CMakeFiles/install/strip.dir
-=======
-/home/eceteam4/ECE480Team4/ros2_ws/build/gazebo_world/CMakeFiles/uninstall.dir
-/home/eceteam4/ECE480Team4/ros2_ws/build/gazebo_world/CMakeFiles/gazebo_world_uninstall.dir
-/home/eceteam4/ECE480Team4/ros2_ws/build/gazebo_world/CMakeFiles/test.dir
-/home/eceteam4/ECE480Team4/ros2_ws/build/gazebo_world/CMakeFiles/edit_cache.dir
-/home/eceteam4/ECE480Team4/ros2_ws/build/gazebo_world/CMakeFiles/rebuild_cache.dir
-/home/eceteam4/ECE480Team4/ros2_ws/build/gazebo_world/CMakeFiles/list_install_components.dir
-/home/eceteam4/ECE480Team4/ros2_ws/build/gazebo_world/CMakeFiles/install.dir
-/home/eceteam4/ECE480Team4/ros2_ws/build/gazebo_world/CMakeFiles/install/local.dir
-/home/eceteam4/ECE480Team4/ros2_ws/build/gazebo_world/CMakeFiles/install/strip.dir
->>>>>>> d7d4bd6415b85d674601d5be4de5f809193d7f1c

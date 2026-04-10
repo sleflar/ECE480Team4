@@ -112,9 +112,5 @@ $env:COLCON_CURRENT_PREFIX=(Get-Item $PSCommandPath).Directory.Parent.Parent.Ful
 
 colcon_package_source_powershell_script "$env:COLCON_CURRENT_PREFIX\share/racing_line/hook/pythonpath.ps1"
 colcon_package_source_powershell_script "$env:COLCON_CURRENT_PREFIX\share/racing_line/hook/ament_prefix_path.ps1"
-<<<<<<< HEAD
-=======
-colcon_package_source_powershell_script "$env:COLCON_CURRENT_PREFIX\../../build/racing_line/share/racing_line/hook/pythonpath_develop.ps1"
->>>>>>> d7d4bd6415b85d674601d5be4de5f809193d7f1c
 
 Remove-Item Env:\COLCON_CURRENT_PREFIX
