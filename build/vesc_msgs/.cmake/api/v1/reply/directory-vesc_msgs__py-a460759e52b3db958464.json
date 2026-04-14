@@ -1,0 +1,19 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "vesc_msgs__py",
+		"source" : "/home/eceteam4/ECE480Team4/build/vesc_msgs/vesc_msgs__py"
+	}
+}

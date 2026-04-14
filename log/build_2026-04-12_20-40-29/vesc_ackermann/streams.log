@@ -1,0 +1,96 @@
+[0.095s] Invoking command in '/home/eceteam4/ECE480Team4/build/vesc_ackermann': CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/install/vesc_msgs:/home/eceteam4/ECE480Team4/install/vesc:/home/eceteam4/ECE480Team4/install/vesc_driver:/home/eceteam4/ECE480Team4/install/vesc_ackermann:/home/eceteam4/ECE480Team4/install/gazebo_world:/home/eceteam4/ECE480Team4/install/curvy_road:/home/eceteam4/ECE480Team4/install/vesc_control:/home/eceteam4/ECE480Team4/install/sensors_lidar_bridge:/home/eceteam4/ECE480Team4/install/sensors_imu_bridge:/home/eceteam4/ECE480Team4/install/sensors_camera_node:/home/eceteam4/ECE480Team4/install/racing_line:/home/eceteam4/ECE480Team4/install/perception_sync_node:/home/eceteam4/ECE480Team4/install/perception_ml_node:/home/eceteam4/ECE480Team4/install/obstacle_det:/home/eceteam4/ECE480Team4/install/lane_follow:/home/eceteam4/ECE480Team4/install/bot_slam:/opt/ros/humble LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/install/vesc_msgs/lib:/home/eceteam4/ECE480Team4/install/vesc_driver/lib:/home/eceteam4/ECE480Team4/install/vesc_ackermann/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/eceteam4/ECE480Team4/build/vesc_ackermann -- -j6 -l6
+[0.182s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.183s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.183s]   CMake.
+[0.183s] 
+[0.183s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.183s]   to tell CMake that the project requires at least <min> but has been updated
+[0.183s]   to work with policies introduced by <max> or earlier.
+[0.183s] 
+[0.184s] [0m
+[0.342s] -- The C compiler identification is GNU 11.4.0
+[0.679s] -- The CXX compiler identification is GNU 11.4.0
+[0.725s] -- Detecting C compiler ABI info
+[0.945s] -- Detecting C compiler ABI info - done
+[0.993s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.994s] -- Detecting C compile features
+[0.995s] -- Detecting C compile features - done
+[1.056s] -- Detecting CXX compiler ABI info
+[1.207s] -- Detecting CXX compiler ABI info - done
+[1.240s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.240s] -- Detecting CXX compile features
+[1.241s] -- Detecting CXX compile features - done
+[1.256s] -- Found ament_cmake_auto: 1.3.13 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[1.861s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[2.038s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.055s] -- Found vesc_msgs: 1.1.0 (/home/eceteam4/ECE480Team4/install/vesc_msgs/share/vesc_msgs/cmake)
+[2.107s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.113s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.126s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.147s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.175s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.715s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.719s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.795s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")
+[2.955s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.231s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.243s] [0mIn this package, headers install destination is set to `include` by ament_auto_package. It is recommended to install `include/vesc_ackermann` instead and will be the default behavior of ament_auto_package from ROS 2 Kilted Kaiju. On distributions before Kilted, ament_auto_package behaves the same way when you use USE_SCOPED_HEADER_INSTALL_DIR option.[0m
+[3.257s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.259s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.260s] -- Configured cppcheck include dirs: /home/eceteam4/ECE480Team4/ros2_ws/src/vesc_ackermann/include
+[3.260s] -- Configured cppcheck exclude dirs and/or files: 
+[3.261s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[3.261s] -- Configured cpplint exclude dirs and/or files: 
+[3.262s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.264s] -- Added test 'lint_cmake' to check CMake code style
+[3.265s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.270s] -- Added test 'uncrustify' to check C / C++ code style
+[3.270s] -- Configured uncrustify additional arguments: 
+[3.271s] -- Added test 'xmllint' to check XML markup files
+[3.280s] -- Configuring done (3.1s)
+[3.358s] -- Generating done (0.1s)
+[3.424s] -- Build files have been written to: /home/eceteam4/ECE480Team4/build/vesc_ackermann
+[3.512s] [ 14%] [32mBuilding CXX object CMakeFiles/vesc_ackermann.dir/src/ackermann_to_vesc.cpp.o[0m
+[3.521s] [ 28%] [32mBuilding CXX object CMakeFiles/ackermann_to_vesc_node.dir/rclcpp_components/node_main_ackermann_to_vesc_node.cpp.o[0m
+[3.522s] [ 42%] [32mBuilding CXX object CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o[0m
+[3.558s] [ 57%] [32mBuilding CXX object CMakeFiles/vesc_to_odom_node.dir/rclcpp_components/node_main_vesc_to_odom_node.cpp.o[0m
+[15.207s] [ 71%] [1m[32mLinking CXX executable vesc_to_odom_node[0m
+[15.738s] [ 71%] Built target vesc_to_odom_node
+[16.647s] [ 85%] [1m[32mLinking CXX executable ackermann_to_vesc_node[0m
+[16.950s] [ 85%] Built target ackermann_to_vesc_node
+[34.819s] [100%] [1m[32mLinking CXX shared library libvesc_ackermann.so[0m
+[36.960s] [100%] Built target vesc_ackermann
+[36.973s] Invoked command in '/home/eceteam4/ECE480Team4/build/vesc_ackermann' returned '0': CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/install/vesc_msgs:/home/eceteam4/ECE480Team4/install/vesc:/home/eceteam4/ECE480Team4/install/vesc_driver:/home/eceteam4/ECE480Team4/install/vesc_ackermann:/home/eceteam4/ECE480Team4/install/gazebo_world:/home/eceteam4/ECE480Team4/install/curvy_road:/home/eceteam4/ECE480Team4/install/vesc_control:/home/eceteam4/ECE480Team4/install/sensors_lidar_bridge:/home/eceteam4/ECE480Team4/install/sensors_imu_bridge:/home/eceteam4/ECE480Team4/install/sensors_camera_node:/home/eceteam4/ECE480Team4/install/racing_line:/home/eceteam4/ECE480Team4/install/perception_sync_node:/home/eceteam4/ECE480Team4/install/perception_ml_node:/home/eceteam4/ECE480Team4/install/obstacle_det:/home/eceteam4/ECE480Team4/install/lane_follow:/home/eceteam4/ECE480Team4/install/bot_slam:/opt/ros/humble LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/install/vesc_msgs/lib:/home/eceteam4/ECE480Team4/install/vesc_driver/lib:/home/eceteam4/ECE480Team4/install/vesc_ackermann/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/eceteam4/ECE480Team4/build/vesc_ackermann -- -j6 -l6
+[36.979s] Invoking command in '/home/eceteam4/ECE480Team4/build/vesc_ackermann': CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/install/vesc_msgs:/home/eceteam4/ECE480Team4/install/vesc:/home/eceteam4/ECE480Team4/install/vesc_driver:/home/eceteam4/ECE480Team4/install/vesc_ackermann:/home/eceteam4/ECE480Team4/install/gazebo_world:/home/eceteam4/ECE480Team4/install/curvy_road:/home/eceteam4/ECE480Team4/install/vesc_control:/home/eceteam4/ECE480Team4/install/sensors_lidar_bridge:/home/eceteam4/ECE480Team4/install/sensors_imu_bridge:/home/eceteam4/ECE480Team4/install/sensors_camera_node:/home/eceteam4/ECE480Team4/install/racing_line:/home/eceteam4/ECE480Team4/install/perception_sync_node:/home/eceteam4/ECE480Team4/install/perception_ml_node:/home/eceteam4/ECE480Team4/install/obstacle_det:/home/eceteam4/ECE480Team4/install/lane_follow:/home/eceteam4/ECE480Team4/install/bot_slam:/opt/ros/humble LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/install/vesc_msgs/lib:/home/eceteam4/ECE480Team4/install/vesc_driver/lib:/home/eceteam4/ECE480Team4/install/vesc_ackermann/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/eceteam4/ECE480Team4/build/vesc_ackermann
+[36.987s] -- Install configuration: ""
+[36.989s] -- Execute custom install script
+[36.990s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/lib/vesc_ackermann/ackermann_to_vesc_node
+[36.991s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/lib/vesc_ackermann/vesc_to_odom_node
+[36.991s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/include/vesc_ackermann/ackermann_to_vesc.hpp
+[36.991s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/include/vesc_ackermann/vesc_to_odom.hpp
+[36.992s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/environment/library_path.sh
+[36.993s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/environment/library_path.dsv
+[36.993s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/lib/libvesc_ackermann.so
+[36.994s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/launch/ackermann_to_vesc_node.launch.xml
+[36.995s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/launch/odom_plus_mapping.launch.py
+[36.995s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/launch/vesc_to_odom_node.launch.xml
+[36.998s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/ament_index/resource_index/package_run_dependencies/vesc_ackermann
+[36.998s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/ament_index/resource_index/parent_prefix_path/vesc_ackermann
+[36.998s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/environment/ament_prefix_path.sh
+[36.999s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/environment/ament_prefix_path.dsv
+[37.000s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/environment/path.sh
+[37.000s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/environment/path.dsv
+[37.001s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/local_setup.bash
+[37.002s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/local_setup.sh
+[37.002s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/local_setup.zsh
+[37.003s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/local_setup.dsv
+[37.003s] -- Symlinking: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/package.dsv
+[37.015s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/ament_index/resource_index/packages/vesc_ackermann
+[37.016s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/ament_index/resource_index/rclcpp_components/vesc_ackermann
+[37.018s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_dependencies-extras.cmake
+[37.019s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_include_directories-extras.cmake
+[37.020s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_libraries-extras.cmake
+[37.021s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/cmake/vesc_ackermannConfig.cmake
+[37.021s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/cmake/vesc_ackermannConfig-version.cmake
+[37.026s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_ackermann/share/vesc_ackermann/package.xml
+[37.030s] Invoked command in '/home/eceteam4/ECE480Team4/build/vesc_ackermann' returned '0': CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/install/vesc_msgs:/home/eceteam4/ECE480Team4/install/vesc:/home/eceteam4/ECE480Team4/install/vesc_driver:/home/eceteam4/ECE480Team4/install/vesc_ackermann:/home/eceteam4/ECE480Team4/install/gazebo_world:/home/eceteam4/ECE480Team4/install/curvy_road:/home/eceteam4/ECE480Team4/install/vesc_control:/home/eceteam4/ECE480Team4/install/sensors_lidar_bridge:/home/eceteam4/ECE480Team4/install/sensors_imu_bridge:/home/eceteam4/ECE480Team4/install/sensors_camera_node:/home/eceteam4/ECE480Team4/install/racing_line:/home/eceteam4/ECE480Team4/install/perception_sync_node:/home/eceteam4/ECE480Team4/install/perception_ml_node:/home/eceteam4/ECE480Team4/install/obstacle_det:/home/eceteam4/ECE480Team4/install/lane_follow:/home/eceteam4/ECE480Team4/install/bot_slam:/opt/ros/humble LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/install/vesc_msgs/lib:/home/eceteam4/ECE480Team4/install/vesc_driver/lib:/home/eceteam4/ECE480Team4/install/vesc_ackermann/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/eceteam4/ECE480Team4/build/vesc_ackermann

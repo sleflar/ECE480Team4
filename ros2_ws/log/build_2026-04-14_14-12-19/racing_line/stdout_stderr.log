@@ -1,0 +1,40 @@
+running develop
+Removing /home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/python3.10/site-packages/racing-line.egg-link (link to .)
+running egg_info
+writing ../../build/racing_line/racing_line.egg-info/PKG-INFO
+writing dependency_links to ../../build/racing_line/racing_line.egg-info/dependency_links.txt
+writing entry points to ../../build/racing_line/racing_line.egg-info/entry_points.txt
+writing requirements to ../../build/racing_line/racing_line.egg-info/requires.txt
+writing top-level names to ../../build/racing_line/racing_line.egg-info/top_level.txt
+reading manifest file '../../build/racing_line/racing_line.egg-info/SOURCES.txt'
+writing manifest file '../../build/racing_line/racing_line.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/build
+creating /home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/build/lib
+creating /home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/build/lib/racing_line
+copying racing_line/lidar_racing_line.py -> /home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/build/lib/racing_line
+copying racing_line/__init__.py -> /home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/build/lib/racing_line
+copying racing_line/racing_line.py -> /home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/build/lib/racing_line
+copying racing_line/lidar_racing_simple.py -> /home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/build/lib/racing_line
+running install
+running install_lib
+creating /home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/python3.10/site-packages/racing_line
+copying /home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/build/lib/racing_line/lidar_racing_line.py -> /home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/python3.10/site-packages/racing_line
+copying /home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/build/lib/racing_line/__init__.py -> /home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/python3.10/site-packages/racing_line
+copying /home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/build/lib/racing_line/racing_line.py -> /home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/python3.10/site-packages/racing_line
+copying /home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/build/lib/racing_line/lidar_racing_simple.py -> /home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/python3.10/site-packages/racing_line
+byte-compiling /home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/python3.10/site-packages/racing_line/lidar_racing_line.py to lidar_racing_line.cpython-310.pyc
+byte-compiling /home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/python3.10/site-packages/racing_line/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/python3.10/site-packages/racing_line/racing_line.py to racing_line.cpython-310.pyc
+byte-compiling /home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/python3.10/site-packages/racing_line/lidar_racing_simple.py to lidar_racing_simple.cpython-310.pyc
+running install_data
+copying resource/racing_line -> /home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/share/ament_index/resource_index/packages
+copying package.xml -> /home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/share/racing_line
+running install_egg_info
+Copying ../../build/racing_line/racing_line.egg-info to /home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/python3.10/site-packages/racing_line-0.0.0-py3.10.egg-info
+running install_scripts
+Installing lidar_racing_line script to /home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/racing_line
+Installing lidar_racing_simple script to /home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/racing_line
+Installing racing_line script to /home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/racing_line
+writing list of installed files to '/home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/install.log'

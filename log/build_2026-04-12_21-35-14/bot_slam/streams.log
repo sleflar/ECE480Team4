@@ -1,0 +1,18 @@
+[6.007s] Invoking command in '/home/eceteam4/ECE480Team4/build/bot_slam': PYTHONPATH=/home/eceteam4/ECE480Team4/build/bot_slam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/install/bot_slam/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/build/bot_slam/build --no-deps symlink_data
+[7.380s] running develop
+[8.019s] running egg_info
+[8.020s] writing bot_slam.egg-info/PKG-INFO
+[8.022s] writing dependency_links to bot_slam.egg-info/dependency_links.txt
+[8.022s] writing entry points to bot_slam.egg-info/entry_points.txt
+[8.022s] writing requirements to bot_slam.egg-info/requires.txt
+[8.022s] writing top-level names to bot_slam.egg-info/top_level.txt
+[8.026s] reading manifest file 'bot_slam.egg-info/SOURCES.txt'
+[8.028s] writing manifest file 'bot_slam.egg-info/SOURCES.txt'
+[8.037s] running build_ext
+[8.037s] Creating /home/eceteam4/ECE480Team4/install/bot_slam/lib/python3.10/site-packages/bot-slam.egg-link (link to .)
+[8.044s] Installing obstacles script to /home/eceteam4/ECE480Team4/install/bot_slam/lib/bot_slam
+[8.045s] Installing waypoint_follower script to /home/eceteam4/ECE480Team4/install/bot_slam/lib/bot_slam
+[8.045s] 
+[8.045s] Installed /home/eceteam4/ECE480Team4/build/bot_slam
+[8.045s] running symlink_data
+[8.225s] Invoked command in '/home/eceteam4/ECE480Team4/build/bot_slam' returned '0': PYTHONPATH=/home/eceteam4/ECE480Team4/build/bot_slam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/install/bot_slam/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/build/bot_slam/build --no-deps symlink_data

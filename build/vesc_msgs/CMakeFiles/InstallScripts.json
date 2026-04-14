@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/eceteam4/ECE480Team4/build/vesc_msgs/cmake_install.cmake",
+		"/home/eceteam4/ECE480Team4/build/vesc_msgs/vesc_msgs__py/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,19 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "_deps/tessil-build",
+		"source" : "/home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp/_deps/tessil-src"
+	}
+}

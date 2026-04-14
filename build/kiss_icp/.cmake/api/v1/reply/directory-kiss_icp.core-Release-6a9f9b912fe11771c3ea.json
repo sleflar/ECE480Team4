@@ -1,0 +1,19 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "kiss_icp/core",
+		"source" : "/home/eceteam4/ECE480Team4/ros2_ws/src/kiss-icp/cpp/kiss_icp/core"
+	}
+}

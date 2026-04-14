@@ -4,6 +4,7 @@ setup.py
 launch/lidar.launch.py
 resource/sensors_lidar_bridge
 sensors_lidar_bridge/__init__.py
+sensors_lidar_bridge/scan_to_pc2.py
 sensors_lidar_bridge/sensors_lidar_bridge.py
 sensors_lidar_bridge.egg-info/PKG-INFO
 sensors_lidar_bridge.egg-info/SOURCES.txt

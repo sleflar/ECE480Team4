@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/eceteam4/ECE480Team4/ros2_ws/build/curvy_road/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -3,7 +3,6 @@ import math, time, threading
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import LaserScan
-
 # Optional serial backend (RPLIDAR)
 try:
     from rplidar import RPLidar
@@ -53,7 +52,7 @@ class SensorsLidarBridge(Node):
 
         self.pub_raw  = self.create_publisher(LaserScan, self.raw_topic, 10)
         self.pub_sync = self.create_publisher(LaserScan, self.sync_topic, 10)
-
+        
         self._stop = threading.Event()
 
         if self.mode == 'bridge':
@@ -74,7 +73,6 @@ class SensorsLidarBridge(Node):
 
     # ---- bridge mode ----
     def _bridge_cb(self, msg: LaserScan):
-        msg.header.frame_id = self.frame_id
         self.pub_raw.publish(msg)
         self.pub_sync.publish(msg)
 

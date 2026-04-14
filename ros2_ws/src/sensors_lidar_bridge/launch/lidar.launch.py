@@ -31,6 +31,12 @@ def generate_launch_description():
             parameters=[params],
         ),
         Node(
+            package='sensors_lidar_bridge',
+            executable='scan_to_pc2',
+            name='scan_to_pc2',
+            output='screen',
+        ),
+        Node(
             package='urg_node',
             executable='urg_node_driver',
             name='hokuyo_driver',

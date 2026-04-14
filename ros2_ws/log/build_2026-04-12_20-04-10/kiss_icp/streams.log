@@ -1,0 +1,8 @@
+[0.019s] Invoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/eceteam4/ECE480Team4/ros2_ws/src/kiss-icp/ros -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp
+[0.248s] [31mCMake Error at /home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp/_deps/sophus-src/CMakeLists.txt:1 (cmake_minimum_required):
+[0.249s]   CMake 3.24 or higher is required.  You are running version 3.22.1
+[0.249s] 
+[0.249s] [0m
+[0.249s] -- Configuring incomplete, errors occurred!
+[0.249s] See also "/home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp/CMakeFiles/CMakeOutput.log".
+[0.257s] Invoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/eceteam4/ECE480Team4/ros2_ws/src/kiss-icp/ros -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp

@@ -18,23 +18,30 @@ class DetectNode(Node):
     def __init__(self):
         super().__init__('detect_node')
         
+        self.saved = 0
+        
         self.bridge = CvBridge()
         
         # Color Ranges for Line Detection in BGR Space ---
         # BGR for Orange
-        #0,20,60
-        #80,150,200
-        self.lower_orange_bgr = np.array([0, 20, 60])  # Complete with appropriate values
-        self.upper_orange_bgr = np.array([80, 150, 220])
+       
+        
+        # rgba(31, 5, 0)
+        # old low: 0, 11, 62
+        
+        self.lower_orange_bgr = np.array([0, 5, 31])  # Complete with appropriate values
+        self.upper_orange_bgr = np.array([28, 114, 252])
+        
         
         # BGR for black (allowing for shadows/gray)
         #0,0,0
         #180,255,80
         self.lower_black_bgr = np.array([0, 0, 0])
-        self.upper_black_bgr = np.array([180, 255, 80])
+        self.upper_black_bgr = np.array([60,60,60])
+        
 
         # Kernel for morphological operations (for noise reduction)
-        self.morph_kernel = np.ones((5, 5), np.uint8)
+        self.morph_kernel = np.ones((7, 7), np.uint8)
         
         # Lane Width Memory to Handle Sharp Turns ---
         # Initial guess for lane width in pixels. This will be updated
@@ -72,13 +79,13 @@ class DetectNode(Node):
         height, width, _ = cv_image.shape
         
         # ROI vertical range: 20% to 50% from bottom
-        roi_bottom = int(height * 0.2)  # 20% from bottom
-        roi_top    = int(height * 0.5)  # 50% from bottom
+        roi_bottom = int(height * 0.25)  # 20% from bottom
+        roi_top    = int(height * 0.38)  # 50% from bottom
         usable_height = roi_top - roi_bottom
         
         roi_offset = int(0.2*height)
 
-        num_slices = 50  # number of trajectory points
+        num_slices = 10  # number of trajectory points
         roi_height = usable_height // num_slices
         trajectory_points = []
 
@@ -86,6 +93,8 @@ class DetectNode(Node):
             y_start = height - roi_top + i * roi_height
             y_end   = height - roi_top + (i + 1) * roi_height
             roi = cv_image[y_start:y_end, :]
+            
+            
 
             # Masks
             mask_orange = cv2.inRange(roi, self.lower_orange_bgr, self.upper_orange_bgr)
@@ -94,6 +103,14 @@ class DetectNode(Node):
             mask_orange = cv2.morphologyEx(mask_orange, cv2.MORPH_CLOSE, self.morph_kernel)
             mask_black  = cv2.morphologyEx(mask_black, cv2.MORPH_OPEN, self.morph_kernel)
             mask_black  = cv2.morphologyEx(mask_black, cv2.MORPH_CLOSE, self.morph_kernel)
+            
+            #if i == 0 and self.saved < 10:  # pick whichever slice you want (0 = closest, higher = farther)
+                #filename = f"/tmp/roi_slice_{i}.png"
+                #cv2.imwrite(filename, roi)
+                #cv2.imwrite(f"/tmp/mask_orange_{i}.png", mask_orange)
+                #cv2.imwrite(f"/tmp/mask_black_{i}.png", mask_black)
+                #self.get_logger().info(f"Saved ROI slice to {filename}")
+                #self.saved += 1
 
             # Get centroids
             left_centroid  = self.get_centroid(mask_orange, "left", width)
@@ -109,21 +126,31 @@ class DetectNode(Node):
                 lane_width = right_centroid[0] - left_centroid[0]
                 # Horizontal lane width sanity check
                 if not (0.5 * self.last_known_lane_width < lane_width < 1.5 * self.last_known_lane_width):
+                    #self.get_logger().info(f"Skipped point in region {i}")
                     continue  # skip this slice, likely stray
                 center = ((left_centroid[0] + right_centroid[0]) // 2,
                           (left_centroid[1] + right_centroid[1]) // 2)
-                self.last_known_lane_width = lane_width
+                
+                self.last_known_lane_width = int(0.8 * self.last_known_lane_width + 0.2 * lane_width)
+                
+                cv2.circle(cv_image, left_centroid, 6, (204, 0, 0), -1)  # blue dots for left barrier
+                cv2.circle(cv_image, right_centroid, 6, (0, 204, 0), -1)  # green dots for right barrier
+
+                
             elif left_centroid:
                 center = (left_centroid[0] + self.last_known_lane_width // 2, left_centroid[1])
+                cv2.circle(cv_image, left_centroid, 6, (204, 0, 0), -1)  # blue dots for left barrier
             elif right_centroid:
                 center = (right_centroid[0] - self.last_known_lane_width // 2, right_centroid[1])
+                cv2.circle(cv_image, right_centroid, 6, (0, 204, 0), -1)  # green dots for right barrier
             else:
                 continue  # skip slice if neither line is detected
 
             trajectory_points.append(center)
+            #self.get_logger().info(f"New point at {center}")
         
         # Smoothing the trajectory lane
-        SMOOTH_WINDOW = 3  # number of neighboring points to average
+        SMOOTH_WINDOW = num_slices // 2  # number of neighboring points to average
         smoothed_trajectory = []
         for i in range(len(trajectory_points)):
             x_vals = [trajectory_points[j][0] for j in range(max(0, i-SMOOTH_WINDOW),
@@ -142,10 +169,12 @@ class DetectNode(Node):
             cv2.circle(annotated, pt, 6, (0, 0, 255), -1)  # red dots for trajectory
 
         # Draw rectangles to visualize ROI slices (optional)
-        for i in range(num_slices):
-            y_start = height - roi_offset - (i + 1) * roi_height
-            y_end   = height - roi_offset - i * roi_height
-            cv2.rectangle(annotated, (0, y_start), (width - 1, y_end), (100, 100, 100), 1)
+        #for i in range(num_slices):
+            #y_start = height - roi_top + i * roi_height
+            #y_end   = height - roi_top + (i+1) * roi_height
+            #cv2.rectangle(annotated, (0, y_start), (width - 1, y_end), (100, 100, 100), 1)
+            
+        cv2.rectangle(annotated, (0, height - roi_bottom), (width - 1, height - roi_top - 1), (255, 171, 0), 1)
 
         # --- Publish closest trajectory point for steering ---
         if trajectory_points:
@@ -169,7 +198,7 @@ class DetectNode(Node):
         candidates = []
         for cnt in contours:
             area = cv2.contourArea(cnt)
-            if area < 50:
+            if area < 150:
                 continue
 
             M = cv2.moments(cnt)

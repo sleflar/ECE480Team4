@@ -1,0 +1,19 @@
+[3.938s] Invoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/racing_line': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/build --no-deps symlink_data
+[4.691s] running develop
+[5.219s] running egg_info
+[5.219s] writing racing_line.egg-info/PKG-INFO
+[5.226s] writing dependency_links to racing_line.egg-info/dependency_links.txt
+[5.227s] writing entry points to racing_line.egg-info/entry_points.txt
+[5.228s] writing requirements to racing_line.egg-info/requires.txt
+[5.228s] writing top-level names to racing_line.egg-info/top_level.txt
+[5.232s] reading manifest file 'racing_line.egg-info/SOURCES.txt'
+[5.233s] writing manifest file 'racing_line.egg-info/SOURCES.txt'
+[5.236s] running build_ext
+[5.236s] Creating /home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/python3.10/site-packages/racing-line.egg-link (link to .)
+[5.238s] Installing lidar_racing_line script to /home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/racing_line
+[5.239s] Installing lidar_racing_simple script to /home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/racing_line
+[5.239s] Installing racing_line script to /home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/racing_line
+[5.239s] 
+[5.239s] Installed /home/eceteam4/ECE480Team4/ros2_ws/build/racing_line
+[5.240s] running symlink_data
+[5.397s] Invoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/racing_line' returned '0': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/build --no-deps symlink_data

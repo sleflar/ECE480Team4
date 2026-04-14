@@ -12,8 +12,8 @@ set_target_properties(vesc_msgs::vesc_msgs__rosidl_generator_py PROPERTIES
   IMPORTED_SONAME_NOCONFIG "libvesc_msgs__rosidl_generator_py.so"
   )
 
-list(APPEND _IMPORT_CHECK_TARGETS vesc_msgs::vesc_msgs__rosidl_generator_py )
-list(APPEND _IMPORT_CHECK_FILES_FOR_vesc_msgs::vesc_msgs__rosidl_generator_py "${_IMPORT_PREFIX}/lib/libvesc_msgs__rosidl_generator_py.so" )
+list(APPEND _cmake_import_check_targets vesc_msgs::vesc_msgs__rosidl_generator_py )
+list(APPEND _cmake_import_check_files_for_vesc_msgs::vesc_msgs__rosidl_generator_py "${_IMPORT_PREFIX}/lib/libvesc_msgs__rosidl_generator_py.so" )
 
 # Commands beyond this point should not need to know the version.
 set(CMAKE_IMPORT_FILE_VERSION)
