@@ -36,9 +36,9 @@ class LiDARRacingLineRealCar(Node):
         self.declare_parameter('corner_turn_cmd', 350.0)
 
         # Real car motor behavior
-        self.declare_parameter('target_motor_speed', 5000.0)
-        self.declare_parameter('startup_ramp_increment', 10.0)
-        self.declare_parameter('startup_ramp_steps', 500)
+        self.declare_parameter('target_motor_speed', 1500.0)
+        self.declare_parameter('startup_ramp_increment', 50.0)
+        self.declare_parameter('startup_ramp_steps', 30)
 
         self.near_lookahead = float(self.get_parameter('near_lookahead').value)
         self.mid_lookahead = float(self.get_parameter('mid_lookahead').value)

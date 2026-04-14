@@ -12,15 +12,15 @@ class LiDARRacingLine(Node):
         super().__init__('lidar_racing_line')
 
         # Speed parameters
-        self.declare_parameter('max_speed', 0.6)
-        self.declare_parameter('min_speed', 0.20)
-        self.declare_parameter('corner_speed', 0.15)
+        self.declare_parameter('max_speed', 1.3)
+        self.declare_parameter('min_speed', 0.3)
+        self.declare_parameter('corner_speed', 0.6)
 
         # Lookahead parameters
-        self.declare_parameter('near_lookahead', 1.0)
-        self.declare_parameter('mid_lookahead', 1.8)
-        self.declare_parameter('far_lookahead', 2.6)
-        self.declare_parameter('lookahead_window', 0.30)
+        self.declare_parameter('near_lookahead', 1.5)
+        self.declare_parameter('mid_lookahead', 2.5)
+        self.declare_parameter('far_lookahead', 3)
+        self.declare_parameter('lookahead_window', 0.4)
 
         # Track / LiDAR parameters
         self.declare_parameter('front_angle_deg', 120.0)
@@ -28,20 +28,20 @@ class LiDARRacingLine(Node):
         self.declare_parameter('track_half_width_guess', 0.6)
 
         # Steering parameters
-        self.declare_parameter('steering_gain', 0.9)
-        self.declare_parameter('max_steering', 1.2)
-        self.declare_parameter('steering_smooth_alpha', 0.60)
+        self.declare_parameter('steering_gain', 1.3)
+        self.declare_parameter('max_steering', 2)
+        self.declare_parameter('steering_smooth_alpha', 0.70)
 
         # Racing line parameters
-        self.declare_parameter('racing_offset_gain', 1.0)
-        self.declare_parameter('max_racing_offset', 0.35)
+        self.declare_parameter('racing_offset_gain', 1.1)
+        self.declare_parameter('max_racing_offset', 0.40)
 
         # Safety parameters
         self.declare_parameter('min_range', 0.08)
         self.declare_parameter('max_range', 10.0)
         self.declare_parameter('emergency_stop_distance', 0.25)
         self.declare_parameter('corner_recovery_distance', 0.60)
-        self.declare_parameter('corner_turn_steering', 0.90)
+        self.declare_parameter('corner_turn_steering', 0.80)
 
         # Read parameters
         self.max_speed = float(self.get_parameter('max_speed').value)
