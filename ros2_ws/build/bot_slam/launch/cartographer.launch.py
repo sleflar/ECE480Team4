@@ -1,1 +1,0 @@
-/home/eceteam4/ECE480Team4/ros2_ws/src/bot_slam/launch/cartographer.launch.py

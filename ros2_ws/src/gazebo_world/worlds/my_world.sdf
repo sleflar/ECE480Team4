@@ -73,7 +73,7 @@
     </scene>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>0.319654 -0.235002 9.29441 0 1.5138 0.009599</pose>
+        <pose>-7.17546 -2.26336 22.1308 0 1.5138 0.009599</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -113,7 +113,7 @@
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
     <model name='waffle'>
-      <pose>-10 0 0.01 0 0 1.57</pose>
+      <pose>-9 0 0.01 0 -0 1.57</pose>
       <link name='base_footprint'>
         <self_collide>0</self_collide>
         <inertial>
@@ -625,7 +625,7 @@
       <joint name='base_joint' type='fixed'>
         <parent>base_footprint</parent>
         <child>base_link</child>
-        <pose>0 0 0.01 0 -0 0</pose>
+        <pose>-9.0 0 0.01 0 0 1.57</pose>
       </joint>
       <joint name='wheel_left_joint' type='revolute'>
         <parent>base_link</parent>
@@ -741,22 +741,19 @@
         <joint_name>wheel_right_joint</joint_name>
       </plugin>
     </model>
-        <!-- ===================== LARGE RACE TRACK ===================== -->
 
-    <!-- Outer walls -->
-    <model name='outer_wall_top'>
+      <!-- ===================== CONNECTED TRACK WITH ROUNDER TURNS ===================== -->
+
+    <!-- OUTER LOOP -->
+    <model name='outer_top'>
       <static>1</static>
-      <pose>0 7 0.25 0 0 0</pose>
+      <pose>0 6 0.25 0 0 0</pose>
       <link name='link'>
         <collision name='collision'>
-          <geometry>
-            <box><size>24 0.2 0.5</size></box>
-          </geometry>
+          <geometry><box><size>20 0.2 0.5</size></box></geometry>
         </collision>
         <visual name='visual'>
-          <geometry>
-            <box><size>24 0.2 0.5</size></box>
-          </geometry>
+          <geometry><box><size>20 0.2 0.5</size></box></geometry>
           <material>
             <ambient>1 0.4 0.2 1</ambient>
             <diffuse>1 0.4 0.2 1</diffuse>
@@ -765,19 +762,15 @@
       </link>
     </model>
 
-    <model name='outer_wall_bottom'>
+    <model name='outer_bottom'>
       <static>1</static>
-      <pose>0 -7 0.25 0 0 0</pose>
+      <pose>0 -6 0.25 0 0 0</pose>
       <link name='link'>
         <collision name='collision'>
-          <geometry>
-            <box><size>24 0.2 0.5</size></box>
-          </geometry>
+          <geometry><box><size>20 0.2 0.5</size></box></geometry>
         </collision>
         <visual name='visual'>
-          <geometry>
-            <box><size>24 0.2 0.5</size></box>
-          </geometry>
+          <geometry><box><size>20 0.2 0.5</size></box></geometry>
           <material>
             <ambient>1 0.4 0.2 1</ambient>
             <diffuse>1 0.4 0.2 1</diffuse>
@@ -786,19 +779,15 @@
       </link>
     </model>
 
-    <model name='outer_wall_left'>
+    <model name='outer_left'>
       <static>1</static>
-      <pose>-12 0 0.25 0 0 0</pose>
+      <pose>-10 0 0.25 0 0 0</pose>
       <link name='link'>
         <collision name='collision'>
-          <geometry>
-            <box><size>0.2 14 0.5</size></box>
-          </geometry>
+          <geometry><box><size>0.2 12 0.5</size></box></geometry>
         </collision>
         <visual name='visual'>
-          <geometry>
-            <box><size>0.2 14 0.5</size></box>
-          </geometry>
+          <geometry><box><size>0.2 12 0.5</size></box></geometry>
           <material>
             <ambient>1 0.4 0.2 1</ambient>
             <diffuse>1 0.4 0.2 1</diffuse>
@@ -807,19 +796,15 @@
       </link>
     </model>
 
-    <model name='outer_wall_right'>
+    <model name='outer_right'>
       <static>1</static>
-      <pose>12 0 0.25 0 0 0</pose>
+      <pose>10 0 0.25 0 0 0</pose>
       <link name='link'>
         <collision name='collision'>
-          <geometry>
-            <box><size>0.2 14 0.5</size></box>
-          </geometry>
+          <geometry><box><size>0.2 12 0.5</size></box></geometry>
         </collision>
         <visual name='visual'>
-          <geometry>
-            <box><size>0.2 14 0.5</size></box>
-          </geometry>
+          <geometry><box><size>0.2 12 0.5</size></box></geometry>
           <material>
             <ambient>1 0.4 0.2 1</ambient>
             <diffuse>1 0.4 0.2 1</diffuse>
@@ -828,20 +813,16 @@
       </link>
     </model>
 
-    <!-- Inner walls -->
-    <model name='inner_wall_top'>
+    <!-- INNER CONNECTED LOOP: straights -->
+    <model name='inner_top_center'>
       <static>1</static>
-      <pose>0 3 0.25 0 0 0</pose>
+      <pose>0 4.8 0.25 0 0 0</pose>
       <link name='link'>
         <collision name='collision'>
-          <geometry>
-            <box><size>16 0.2 0.5</size></box>
-          </geometry>
+          <geometry><box><size>10.8 0.2 0.5</size></box></geometry>
         </collision>
         <visual name='visual'>
-          <geometry>
-            <box><size>16 0.2 0.5</size></box>
-          </geometry>
+          <geometry><box><size>10.8 0.2 0.5</size></box></geometry>
           <material>
             <ambient>1 0.4 0.2 1</ambient>
             <diffuse>1 0.4 0.2 1</diffuse>
@@ -850,19 +831,15 @@
       </link>
     </model>
 
-    <model name='inner_wall_bottom'>
+    <model name='inner_bottom_center'>
       <static>1</static>
-      <pose>0 -3 0.25 0 0 0</pose>
+      <pose>0 -4.8 0.25 0 0 0</pose>
       <link name='link'>
         <collision name='collision'>
-          <geometry>
-            <box><size>16 0.2 0.5</size></box>
-          </geometry>
+          <geometry><box><size>10.8 0.2 0.5</size></box></geometry>
         </collision>
         <visual name='visual'>
-          <geometry>
-            <box><size>16 0.2 0.5</size></box>
-          </geometry>
+          <geometry><box><size>10.8 0.2 0.5</size></box></geometry>
           <material>
             <ambient>1 0.4 0.2 1</ambient>
             <diffuse>1 0.4 0.2 1</diffuse>
@@ -871,19 +848,15 @@
       </link>
     </model>
 
-    <model name='inner_wall_left'>
+    <model name='inner_left_center'>
       <static>1</static>
-      <pose>-8 0 0.25 0 0 0</pose>
+      <pose>-8.0 0 0.25 0 0 0</pose>
       <link name='link'>
         <collision name='collision'>
-          <geometry>
-            <box><size>0.2 6 0.5</size></box>
-          </geometry>
+          <geometry><box><size>0.2 7.6 0.5</size></box></geometry>
         </collision>
         <visual name='visual'>
-          <geometry>
-            <box><size>0.2 6 0.5</size></box>
-          </geometry>
+          <geometry><box><size>0.2 7.6 0.5</size></box></geometry>
           <material>
             <ambient>1 0.4 0.2 1</ambient>
             <diffuse>1 0.4 0.2 1</diffuse>
@@ -892,19 +865,84 @@
       </link>
     </model>
 
-    <model name='inner_wall_right'>
+    <model name='inner_right_center'>
       <static>1</static>
-      <pose>8 0 0.25 0 0 0</pose>
+      <pose>8.0 0 0.25 0 0 0</pose>
       <link name='link'>
         <collision name='collision'>
-          <geometry>
-            <box><size>0.2 6 0.5</size></box>
-          </geometry>
+          <geometry><box><size>0.2 7.6 0.5</size></box></geometry>
         </collision>
         <visual name='visual'>
-          <geometry>
-            <box><size>0.2 6 0.5</size></box>
-          </geometry>
+          <geometry><box><size>0.2 7.6 0.5</size></box></geometry>
+          <material>
+            <ambient>1 0.4 0.2 1</ambient>
+            <diffuse>1 0.4 0.2 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- INNER CONNECTED LOOP: rounded corners using diagonals -->
+    <model name='inner_corner_tl'>
+      <static>1</static>
+      <pose>-6.2 4.0 0.25 0 0 0.7854</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>2.8 0.2 0.5</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>2.8 0.2 0.5</size></box></geometry>
+          <material>
+            <ambient>1 0.4 0.2 1</ambient>
+            <diffuse>1 0.4 0.2 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name='inner_corner_tr'>
+      <static>1</static>
+      <pose>6.2 4.0 0.25 0 0 -0.7854</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>2.8 0.2 0.5</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>2.8 0.2 0.5</size></box></geometry>
+          <material>
+            <ambient>1 0.4 0.2 1</ambient>
+            <diffuse>1 0.4 0.2 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name='inner_corner_bl'>
+      <static>1</static>
+      <pose>-6.2 -4.0 0.25 0 0 -0.7854</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>2.8 0.2 0.5</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>2.8 0.2 0.5</size></box></geometry>
+          <material>
+            <ambient>1 0.4 0.2 1</ambient>
+            <diffuse>1 0.4 0.2 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name='inner_corner_br'>
+      <static>1</static>
+      <pose>6.2 -4.0 0.25 0 0 0.7854</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>2.8 0.2 0.5</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>2.8 0.2 0.5</size></box></geometry>
           <material>
             <ambient>1 0.4 0.2 1</ambient>
             <diffuse>1 0.4 0.2 1</diffuse>
@@ -916,12 +954,10 @@
     <!-- Start line -->
     <model name='start_line'>
       <static>1</static>
-      <pose>-10 0 0.01 0 0 0</pose>
+      <pose>-9.0 0 0.01 0 0 0</pose>
       <link name='link'>
         <visual name='visual'>
-          <geometry>
-            <box><size>0.4 3.6 0.02</size></box>
-          </geometry>
+          <geometry><box><size>0.4 1.8 0.02</size></box></geometry>
           <material>
             <ambient>0 0 0 1</ambient>
             <diffuse>0 0 0 1</diffuse>
@@ -975,6 +1011,514 @@
               <name>Gazebo/Grey</name>
               <uri>file://media/materials/scripts/gazebo.material</uri>
             </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <state world_name='default'>
+      <sim_time>17 736000000</sim_time>
+      <real_time>18 784481355</real_time>
+      <wall_time>1775786815 525857614</wall_time>
+      <iterations>17736</iterations>
+      <model name='ground_plane'>
+        <pose>0 0 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>0 0 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='inner_bottom_center'>
+        <pose>0 -4.8 0.25 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>0 -4.8 0.25 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='inner_corner_bl'>
+        <pose>-6.2 -4 0.25 0 0 -0.7854</pose>
+        <scale>0.908627 1 1</scale>
+        <link name='link'>
+          <pose>-6.2 -4 0.25 0 0 -0.7854</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='inner_corner_bl_clone'>
+        <pose>-9.10912 -5.06205 0.25 0 0 -0.7854</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-9.10912 -5.06205 0.25 0 0 -0.7854</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='inner_corner_br'>
+        <pose>6.2 -4 0.25 0 -0 0.7854</pose>
+        <scale>0.871931 1 1</scale>
+        <link name='link'>
+          <pose>6.2 -4 0.25 0 -0 0.7854</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='inner_corner_br_clone'>
+        <pose>8.97603 -5.1033 0.25 0 -0 0.7854</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>8.97603 -5.1033 0.25 0 -0 0.7854</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='inner_corner_tl'>
+        <pose>-6.2 4 0.25 0 -0 0.7854</pose>
+        <scale>0.903011 1 1</scale>
+        <link name='link'>
+          <pose>-6.2 4 0.25 0 -0 0.7854</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='inner_corner_tl_clone'>
+        <pose>-8.98244 4.98663 0.25 0 -0 0.7854</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-8.98244 4.98663 0.25 0 -0 0.7854</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='inner_corner_tr'>
+        <pose>6.2 4 0.25 0 0 -0.7854</pose>
+        <scale>0.879055 1 1</scale>
+        <link name='link'>
+          <pose>6.2 4 0.25 0 0 -0.7854</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='inner_corner_tr_clone'>
+        <pose>9.00672 5.10289 0.25 0 0 -0.7854</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>9.00672 5.10289 0.25 0 0 -0.7854</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='inner_left_center'>
+        <pose>-7.15154 0.002785 0.25 0 -0 0</pose>
+        <scale>1 0.815388 1</scale>
+        <link name='link'>
+          <pose>-7.15154 0.002785 0.25 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='inner_right_center'>
+        <pose>7.12566 0 0.25 0 -0 0</pose>
+        <scale>1 0.803783 1</scale>
+        <link name='link'>
+          <pose>7.12566 0 0.25 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='inner_top_center'>
+        <pose>0 4.8 0.25 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>0 4.8 0.25 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='outer_bottom'>
+        <pose>0 -6 0.25 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>0 -6 0.25 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='outer_left'>
+        <pose>-10 0 0.25 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-10 0 0.25 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='outer_right'>
+        <pose>10 0 0.25 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>10 0 0.25 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='outer_top'>
+        <pose>0 6 0.25 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>0 6 0.25 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='start_line'>
+        <pose>-9 0 0.01 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-9 0 0.01 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='unit_box'>
+        <pose>0.737822 0.671546 0.5 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>0.737822 0.671546 0.5 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0 -0 0 0 -0 0</acceleration>
+          <wrench>-0 -0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='waffle'>
+        <pose>-9 0.000696 0.007845 2e-05 0.006624 1.57041</pose>
+        <scale>1 1 1</scale>
+        <link name='base_footprint'>
+          <pose>-9 0.000696 0.007845 2e-05 0.006624 1.57041</pose>
+          <velocity>7e-06 3.4e-05 -0.086893 -0.003471 -0.000185 1.8e-05</velocity>
+          <acceleration>8e-05 -0.001421 -1.09161 0.254858 0.010074 6.7e-05</acceleration>
+          <wrench>8e-05 -0.001421 -1.09161 0 -0 0</wrench>
+        </link>
+        <link name='base_link'>
+          <pose>-9 0.000696 0.00785 2e-05 0.006624 1.57041</pose>
+          <velocity>2.3e-05 -0.000305 -0.088222 -0.003499 -0.000185 1.8e-05</velocity>
+          <acceleration>0.000572 -0.013765 -1.10473 0.254952 0.010072 3.6e-05</acceleration>
+          <wrench>0.000785 -0.018898 -1.5167 0 -0 0</wrench>
+        </link>
+        <link name='base_scan'>
+          <pose>-9 0.000696 0.00785 2e-05 0.006624 1.57041</pose>
+          <velocity>4.8e-05 -0.000745 -0.088034 -0.003496 -0.000186 1.8e-05</velocity>
+          <acceleration>0.001204 -0.029802 -1.10192 0.254941 0.010074 6.8e-05</acceleration>
+          <wrench>0.000137 -0.003397 -0.125619 0 -0 0</wrench>
+        </link>
+        <link name='camera_link'>
+          <pose>-9 0.000696 0.007845 2e-05 0.006624 1.57041</pose>
+          <velocity>8e-06 3.8e-05 -0.086857 -0.003409 -0.000188 1.8e-05</velocity>
+          <acceleration>7.9e-05 -0.001432 -1.09174 0.254638 0.010085 6.8e-05</acceleration>
+          <wrench>7.9e-05 -0.001432 -1.09174 0 -0 0</wrench>
+        </link>
+        <link name='camera_rgb_frame'>
+          <pose>-8.95297 0.070385 0.114385 2e-05 0.006624 1.57041</pose>
+          <velocity>3e-05 -0.000326 -0.086598 -0.003405 -0.000191 1.8e-05</velocity>
+          <acceleration>0.00222 -0.055678 -1.05731 0.254623 0.010098 6.6e-05</acceleration>
+          <wrench>7.8e-05 -0.001949 -0.037006 0 -0 0</wrench>
+        </link>
+        <link name='caster_back_left_link'>
+          <pose>-9.06407 -0.176301 0.005024 -1.53955 0.067537 1.57189</pose>
+          <velocity>1.2e-05 2.5e-05 -0.087158 -0.000514 0.00163 0</velocity>
+          <acceleration>-1.3e-05 -0.001206 -1.13565 0 -0 0</acceleration>
+          <wrench>-0 -1e-06 -0.001136 0 -0 0</wrench>
+        </link>
+        <link name='caster_back_right_link'>
+          <pose>-8.93607 -0.176351 0.005021 -1.55492 0.058663 1.57084</pose>
+          <velocity>1.3e-05 2.9e-05 -0.087135 -0.000233 0.000856 0</velocity>
+          <acceleration>-0.000166 -0.001552 -1.13675 0 -0 0</acceleration>
+          <wrench>-0 -2e-06 -0.001137 0 -0 0</wrench>
+        </link>
+        <link name='imu_link'>
+          <pose>-9 0.000696 0.007845 2e-05 0.006624 1.57041</pose>
+          <velocity>8e-06 3.8e-05 -0.086888 -0.003415 -0.000185 1.8e-05</velocity>
+          <acceleration>7.9e-05 -0.00143 -1.09163 0.254666 0.010077 6.9e-05</acceleration>
+          <wrench>7.9e-05 -0.00143 -1.09163 0 -0 0</wrench>
+        </link>
+        <link name='wheel_left_link'>
+          <pose>-9 0.0003 0.007867 2e-05 0.023956 1.57042</pose>
+          <velocity>3e-06 -0.000122 -0.089755 -0.003589 -9.1e-05 1.6e-05</velocity>
+          <acceleration>0.000326 -0.007341 -1.08007 0.120011 0.018152 0.000197</acceleration>
+          <wrench>3.3e-05 -0.000734 -0.108007 0 -0 0</wrench>
+        </link>
+        <link name='wheel_right_link'>
+          <pose>-9 0.000213 0.007869 2e-05 0.027522 1.57043</pose>
+          <velocity>3e-06 -0.000141 -0.089786 -0.003728 -7.7e-05 1.6e-05</velocity>
+          <acceleration>0.000324 -0.007322 -1.08289 0.119707 0.018069 0.000195</acceleration>
+          <wrench>3.2e-05 -0.000732 -0.108288 0 -0 0</wrench>
+        </link>
+      </model>
+      <light name='sun'>
+        <pose>0 0 10 0 -0 0</pose>
+      </light>
+    </state>
+    <model name='inner_left_center'>
+      <link name='link'>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+        <pose>0.866449 -0.10863 0 0 -0 0</pose>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.2 7.60001 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 0.4 0.2 1</ambient>
+            <diffuse>1 0.4 0.2 1</diffuse>
+            <shader type='pixel'/>
+            <script>
+              <name>ModelPreview_1::link::visual_MATERIAL_</name>
+              <uri>__default__</uri>
+            </script>
+          </material>
+          <pose>0 0 0 0 -0 0</pose>
+          <transparency>0</transparency>
+          <cast_shadows>1</cast_shadows>
+        </visual>
+        <collision name='collision'>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.2 7.60001 0.5</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <coefficient>1</coefficient>
+                <patch_radius>0</patch_radius>
+                <surface_radius>0</surface_radius>
+                <use_patch_radius>1</use_patch_radius>
+                <ode>
+                  <slip>0</slip>
+                </ode>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1e+06</threshold>
+            </bounce>
+            <contact>
+              <collide_without_contact>0</collide_without_contact>
+              <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+              <collide_bitmask>1</collide_bitmask>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1</kd>
+                <max_vel>0.01</max_vel>
+                <min_depth>0</min_depth>
+              </ode>
+              <bullet>
+                <split_impulse>1</split_impulse>
+                <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1</kd>
+              </bullet>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+      <allow_auto_disable>1</allow_auto_disable>
+      <pose>-8 0 0.25 0 -0 0</pose>
+    </model>
+    <model name='inner_corner_tl_clone'>
+      <static>1</static>
+      <pose>-8.44816 4.94782 0.25 0 -0 0.7854</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>2.8 0.2 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>2.8 0.2 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 0.4 0.2 1</ambient>
+            <diffuse>1 0.4 0.2 1</diffuse>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='inner_corner_bl_clone'>
+      <static>1</static>
+      <pose>-7.99668 -4.93838 0.25 0 0 -0.7854</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>2.8 0.2 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>2.8 0.2 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 0.4 0.2 1</ambient>
+            <diffuse>1 0.4 0.2 1</diffuse>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='inner_corner_tr_clone'>
+      <static>1</static>
+      <pose>12.1878 4.38013 0.25 0 0 -0.7854</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>2.8 0.2 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>2.8 0.2 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 0.4 0.2 1</ambient>
+            <diffuse>1 0.4 0.2 1</diffuse>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='inner_corner_br_clone'>
+      <static>1</static>
+      <pose>8 -5 0.25 0 -0 0.7854</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>2.8 0.2 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>2.8 0.2 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 0.4 0.2 1</ambient>
+            <diffuse>1 0.4 0.2 1</diffuse>
           </material>
         </visual>
         <self_collide>0</self_collide>

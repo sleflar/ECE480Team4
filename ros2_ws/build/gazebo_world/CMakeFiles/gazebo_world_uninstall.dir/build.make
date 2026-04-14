@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eceteam4/ECE480Team4/ros2_ws/src/gazebo_world
+CMAKE_SOURCE_DIR = /mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/src/gazebo_world
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eceteam4/ECE480Team4/ros2_ws/build/gazebo_world
+CMAKE_BINARY_DIR = /mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/build/gazebo_world
 
 # Utility rule file for gazebo_world_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/gazebo_world_uninstall.dir/compiler_depend.make
 include CMakeFiles/gazebo_world_uninstall.dir/progress.make
 
 CMakeFiles/gazebo_world_uninstall:
-	/usr/bin/cmake -P /home/eceteam4/ECE480Team4/ros2_ws/build/gazebo_world/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/build/gazebo_world/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 CMakeFiles/gazebo_world_uninstall.dir/codegen:
 .PHONY : CMakeFiles/gazebo_world_uninstall.dir/codegen
@@ -85,6 +85,10 @@ CMakeFiles/gazebo_world_uninstall.dir/clean:
 .PHONY : CMakeFiles/gazebo_world_uninstall.dir/clean
 
 CMakeFiles/gazebo_world_uninstall.dir/depend:
+<<<<<<< HEAD
 	cd /home/eceteam4/ECE480Team4/ros2_ws/build/gazebo_world && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/eceteam4/ECE480Team4/ros2_ws/src/gazebo_world /home/eceteam4/ECE480Team4/ros2_ws/src/gazebo_world /home/eceteam4/ECE480Team4/ros2_ws/build/gazebo_world /home/eceteam4/ECE480Team4/ros2_ws/build/gazebo_world /home/eceteam4/ECE480Team4/ros2_ws/build/gazebo_world/CMakeFiles/gazebo_world_uninstall.dir/DependInfo.cmake "--color=$(COLOR)" gazebo_world_uninstall
+=======
+	cd /mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/build/gazebo_world && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/src/gazebo_world /mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/src/gazebo_world /mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/build/gazebo_world /mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/build/gazebo_world /mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/build/gazebo_world/CMakeFiles/gazebo_world_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+>>>>>>> 9dcdb3f839bcf62dc81c195d20256160f57d338c
 .PHONY : CMakeFiles/gazebo_world_uninstall.dir/depend
 

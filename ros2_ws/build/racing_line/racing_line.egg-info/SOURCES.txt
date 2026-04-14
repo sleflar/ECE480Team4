@@ -10,9 +10,14 @@ setup.py
 ../../build/racing_line/racing_line.egg-info/zip-safe
 racing_line/__init__.py
 racing_line/lidar_racing_line.py
+racing_line/lidar_racing_line_real_car.py
 racing_line/lidar_racing_simple.py
 racing_line/racing_line.py
+racing_line.egg-info/PKG-INFO
+racing_line.egg-info/SOURCES.txt
+racing_line.egg-info/dependency_links.txt
+racing_line.egg-info/entry_points.txt
+racing_line.egg-info/requires.txt
+racing_line.egg-info/top_level.txt
+racing_line.egg-info/zip-safe
 resource/racing_line
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py

@@ -14,6 +14,8 @@
 # EXTERNAL cache entries
 ########################
 
+:UNINITIALIZED=======
+
 //Generate environment files in the CMAKE_INSTALL_PREFIX
 AMENT_CMAKE_ENVIRONMENT_GENERATION:BOOL=OFF
 
@@ -31,7 +33,6 @@ AMENT_CMAKE_SYMLINK_INSTALL:BOOL=1
 // step
 AMENT_CMAKE_UNINSTALL_TARGET:BOOL=ON
 
-//The path where test results are generated
 AMENT_TEST_RESULTS_DIR:PATH=/home/eceteam4/ECE480Team4/build/gazebo_world/test_results
 
 //Build the testing tree.
@@ -247,7 +248,6 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 //Path to a program.
 Python3_EXECUTABLE:FILEPATH=/usr/bin/python3
 
-//Name of the computer/site where compile is being run
 SITE:STRING=eceteam4-desktop
 
 //The directory containing a CMake configuration file for ament_cmake.
@@ -390,8 +390,6 @@ CMAKE_GENERATOR_INSTANCE:INTERNAL=
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
-//Source directory with the top level CMakeLists.txt file for this
-// project
 CMAKE_HOME_DIRECTORY:INTERNAL=/home/eceteam4/ECE480Team4/ros2_ws/src/gazebo_world
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1

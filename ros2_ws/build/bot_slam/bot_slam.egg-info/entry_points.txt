@@ -1,4 +1,0 @@
-[console_scripts]
-obstacles = bot_slam.obstacles:main
-waypoint_follower = bot_slam.waypoint_follower:main
-

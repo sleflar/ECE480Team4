@@ -23,6 +23,7 @@ setup(
             'racing_line = racing_line.racing_line:main',
             'lidar_racing_simple = racing_line.lidar_racing_simple:main',
             'lidar_racing_line = racing_line.lidar_racing_line:main',
+            'lidar_racing_line_real_car = racing_line.lidar_racing_line_real_car:main',
 
         ],
     },

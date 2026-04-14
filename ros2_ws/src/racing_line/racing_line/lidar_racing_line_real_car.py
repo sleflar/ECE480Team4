@@ -1,0 +1,271 @@
+#!/usr/bin/env python3
+import math
+import numpy as np
+
+import rclpy
+from rclpy.node import Node
+from sensor_msgs.msg import LaserScan
+from std_msgs.msg import Float64, Bool
+
+
+class LiDARRacingLineRealCar(Node):
+    def __init__(self):
+        super().__init__('lidar_racing_line_real_car')
+
+        # ---------------- Parameters ----------------
+        self.declare_parameter('near_lookahead', 1.0)
+        self.declare_parameter('mid_lookahead', 1.6)
+        self.declare_parameter('far_lookahead', 2.2)
+        self.declare_parameter('lookahead_window', 0.30)
+
+        self.declare_parameter('front_angle_deg', 270.0)
+        self.declare_parameter('wall_offset', 0.25)
+        self.declare_parameter('track_half_width_guess', 0.7)
+
+        self.declare_parameter('steering_gain', 0.35)
+        self.declare_parameter('max_steering_cmd', 300.0)
+        self.declare_parameter('steering_smooth_alpha', 0.7)
+
+        self.declare_parameter('racing_offset_gain', 0.8)
+        self.declare_parameter('max_racing_offset', 0.25)
+
+        self.declare_parameter('min_range', 0.08)
+        self.declare_parameter('max_range', 10.0)
+        self.declare_parameter('emergency_stop_distance', 0.15)
+        self.declare_parameter('corner_recovery_distance', 0.40)
+        self.declare_parameter('corner_turn_cmd', 200.0)
+
+        # Real car motor behavior
+        self.declare_parameter('target_motor_speed', 1500.0)
+        self.declare_parameter('startup_ramp_increment', 50.0)
+        self.declare_parameter('startup_ramp_steps', 30)
+
+        self.near_lookahead = float(self.get_parameter('near_lookahead').value)
+        self.mid_lookahead = float(self.get_parameter('mid_lookahead').value)
+        self.far_lookahead = float(self.get_parameter('far_lookahead').value)
+        self.lookahead_window = float(self.get_parameter('lookahead_window').value)
+
+        self.front_angle_deg = float(self.get_parameter('front_angle_deg').value)
+        self.wall_offset = float(self.get_parameter('wall_offset').value)
+        self.track_half_width_guess = float(self.get_parameter('track_half_width_guess').value)
+
+        self.steering_gain = float(self.get_parameter('steering_gain').value)
+        self.max_steering_cmd = float(self.get_parameter('max_steering_cmd').value)
+        self.steering_smooth_alpha = float(self.get_parameter('steering_smooth_alpha').value)
+
+        self.racing_offset_gain = float(self.get_parameter('racing_offset_gain').value)
+        self.max_racing_offset = float(self.get_parameter('max_racing_offset').value)
+
+        self.min_range = float(self.get_parameter('min_range').value)
+        self.max_range = float(self.get_parameter('max_range').value)
+        self.emergency_stop_distance = float(self.get_parameter('emergency_stop_distance').value)
+        self.corner_recovery_distance = float(self.get_parameter('corner_recovery_distance').value)
+        self.corner_turn_cmd = float(self.get_parameter('corner_turn_cmd').value)
+
+        self.target_motor_speed = float(self.get_parameter('target_motor_speed').value)
+        self.startup_ramp_increment = float(self.get_parameter('startup_ramp_increment').value)
+        self.startup_ramp_steps = int(self.get_parameter('startup_ramp_steps').value)
+
+        # ---------------- State ----------------
+        self.prev_steering_cmd = 0.0
+        self.prev_center_y = 0.0
+        self.front_obstacle = False
+        self.spot_count = 0
+        self.motor_speed_command = 0.0
+
+        # ---------------- ROS interfaces ----------------
+        self.scan_sub = self.create_subscription(
+            LaserScan, '/scan', self.scan_callback, 10
+        )
+
+        self.obstacle_sub = self.create_subscription(
+            Bool, '/front_obstacle', self.obstacle_callback, 10
+        )
+
+        self.pub_speed = self.create_publisher(Float64, '/commands/motor/speed', 10)
+        self.pub_steer = self.create_publisher(Float64, '/commands/servo/position', 10)
+
+        self.get_logger().info('LiDAR racing line real-car node started')
+
+    # --------------------------------------------------
+    def obstacle_callback(self, msg: Bool):
+        self.front_obstacle = msg.data
+        if self.front_obstacle:
+            self.get_logger().warn('Front obstacle detected, stopping')
+            self.stop_robot()
+
+    # --------------------------------------------------
+    def publish_cmd(self, motor_speed, steering_cmd):
+        self.pub_speed.publish(Float64(data=float(motor_speed)))
+        self.pub_steer.publish(Float64(data=float(steering_cmd)))
+
+    # --------------------------------------------------
+    def stop_robot(self):
+        self.motor_speed_command = 0.0
+        self.publish_cmd(0.0, 0.0)
+
+    # --------------------------------------------------
+    def get_center_at_lookahead(self, x, y, lookahead):
+        band = np.abs(x - lookahead) < self.lookahead_window
+
+        left_mask = band & (y > self.wall_offset)
+        right_mask = band & (y < -self.wall_offset)
+
+        left_y = None
+        right_y = None
+
+        if np.any(left_mask):
+            left_y = float(np.median(y[left_mask]))
+        if np.any(right_mask):
+            right_y = float(np.median(y[right_mask]))
+
+        if left_y is not None and right_y is not None:
+            center_y = 0.5 * (left_y + right_y)
+        elif left_y is not None:
+            center_y = left_y - self.track_half_width_guess
+        elif right_y is not None:
+            center_y = right_y + self.track_half_width_guess
+        else:
+            center_y = self.prev_center_y
+
+        return center_y
+
+    # --------------------------------------------------
+    def compute_motor_speed(self):
+        self.spot_count += 1
+        if self.spot_count <= self.startup_ramp_steps:
+            self.motor_speed_command = self.startup_ramp_increment * self.spot_count
+        else:
+            self.motor_speed_command = self.target_motor_speed
+        return self.motor_speed_command
+
+    # --------------------------------------------------
+    def scan_callback(self, msg: LaserScan):
+        if self.front_obstacle:
+            self.stop_robot()
+            return
+
+        ranges = np.array(msg.ranges, dtype=np.float32)
+        angles = msg.angle_min + np.arange(len(ranges)) * msg.angle_increment
+
+        valid = np.isfinite(ranges)
+        valid &= (ranges > self.min_range)
+        valid &= (ranges < self.max_range)
+
+        if not np.any(valid):
+            self.get_logger().warn('No valid scan points')
+            self.stop_robot()
+            return
+
+        ranges = ranges[valid]
+        angles = angles[valid]
+
+        x = ranges * np.cos(angles)
+        y = ranges * np.sin(angles)
+
+        front_half_angle = math.radians(self.front_angle_deg / 2.0)
+        front_mask = (np.abs(angles) < front_half_angle) & (x > 0.0)
+
+        if not np.any(front_mask):
+            self.get_logger().warn('No forward points')
+            self.stop_robot()
+            return
+
+        x = x[front_mask]
+        y = y[front_mask]
+        distances = np.sqrt(x**2 + y**2)
+
+        # Emergency stop directly ahead
+        narrow_front = np.abs(np.arctan2(y, x)) < math.radians(15.0)
+        if np.any(narrow_front):
+            front_dist = float(np.min(distances[narrow_front]))
+            if front_dist < self.emergency_stop_distance:
+                self.get_logger().warn(f'Emergency stop: front_dist={front_dist:.2f}')
+                self.stop_robot()
+                return
+
+        # Corner recovery
+        left_open_mask = y > 0.15
+        right_open_mask = y < -0.15
+        narrow_recovery_mask = np.abs(np.arctan2(y, x)) < math.radians(20.0)
+
+        front_recovery_dist = float(np.min(distances[narrow_recovery_mask])) if np.any(narrow_recovery_mask) else 999.0
+        left_open = float(np.mean(distances[left_open_mask])) if np.any(left_open_mask) else 0.0
+        right_open = float(np.mean(distances[right_open_mask])) if np.any(right_open_mask) else 0.0
+
+        if front_recovery_dist < self.corner_recovery_distance:
+            steering_cmd = self.corner_turn_cmd if left_open > right_open else -self.corner_turn_cmd
+            steering_cmd = (
+                self.steering_smooth_alpha * steering_cmd
+                + (1.0 - self.steering_smooth_alpha) * self.prev_steering_cmd
+            )
+            self.prev_steering_cmd = steering_cmd
+
+            motor_speed = self.compute_motor_speed() * 0.35
+            self.publish_cmd(motor_speed, steering_cmd)
+
+            self.get_logger().info(
+                f'CORNER RECOVERY | speed={motor_speed:.1f}, steer={steering_cmd:.1f}, '
+                f'front={front_recovery_dist:.2f}, left_open={left_open:.2f}, right_open={right_open:.2f}',
+                throttle_duration_sec=0.5
+            )
+            return
+
+        # Normal racing-line logic
+        near_center_y = self.get_center_at_lookahead(x, y, self.near_lookahead)
+        mid_center_y = self.get_center_at_lookahead(x, y, self.mid_lookahead)
+        far_center_y = self.get_center_at_lookahead(x, y, self.far_lookahead)
+
+        self.prev_center_y = near_center_y
+
+        curve_direction = (
+            0.5 * (mid_center_y - near_center_y) +
+            1.0 * (far_center_y - mid_center_y)
+        )
+
+        racing_offset = -self.racing_offset_gain * curve_direction
+        racing_offset = max(-self.max_racing_offset, min(self.max_racing_offset, racing_offset))
+
+        target_x = self.near_lookahead
+        target_y = 0.6 * near_center_y + 0.4 * mid_center_y + racing_offset
+
+        heading_error = math.atan2(target_y, max(target_x, 0.1))
+
+        # Convert heading error into real-car steering command
+        steering_cmd = self.steering_gain * heading_error * self.max_steering_cmd
+        steering_cmd = max(-self.max_steering_cmd, min(self.max_steering_cmd, steering_cmd))
+
+        steering_cmd = (
+            self.steering_smooth_alpha * steering_cmd
+            + (1.0 - self.steering_smooth_alpha) * self.prev_steering_cmd
+        )
+        self.prev_steering_cmd = steering_cmd
+
+        motor_speed = self.compute_motor_speed()
+
+        self.publish_cmd(motor_speed, steering_cmd)
+
+        self.get_logger().info(
+            f'speed={motor_speed:.1f}, steer={steering_cmd:.1f}, '
+            f'near={near_center_y:.2f}, mid={mid_center_y:.2f}, far={far_center_y:.2f}, '
+            f'curve={curve_direction:.2f}, offset={racing_offset:.2f}, target_y={target_y:.2f}',
+            throttle_duration_sec=1.0
+        )
+
+
+def main(args=None):
+    rclpy.init(args=args)
+    node = LiDARRacingLineRealCar()
+
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        node.stop_robot()
+        node.destroy_node()
+        rclpy.shutdown()
+
+
+if __name__ == '__main__':
+    main()

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eceteam4/ECE480Team4/ros2_ws/src/gazebo_world
+CMAKE_SOURCE_DIR = /mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/src/gazebo_world
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eceteam4/ECE480Team4/ros2_ws/build/gazebo_world
+CMAKE_BINARY_DIR = /mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/build/gazebo_world
 
 # Utility rule file for uninstall.
 
@@ -81,6 +81,10 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
+<<<<<<< HEAD
 	cd /home/eceteam4/ECE480Team4/ros2_ws/build/gazebo_world && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/eceteam4/ECE480Team4/ros2_ws/src/gazebo_world /home/eceteam4/ECE480Team4/ros2_ws/src/gazebo_world /home/eceteam4/ECE480Team4/ros2_ws/build/gazebo_world /home/eceteam4/ECE480Team4/ros2_ws/build/gazebo_world /home/eceteam4/ECE480Team4/ros2_ws/build/gazebo_world/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)" uninstall
+=======
+	cd /mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/build/gazebo_world && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/src/gazebo_world /mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/src/gazebo_world /mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/build/gazebo_world /mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/build/gazebo_world /mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/build/gazebo_world/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+>>>>>>> 9dcdb3f839bcf62dc81c195d20256160f57d338c
 .PHONY : CMakeFiles/uninstall.dir/depend
 

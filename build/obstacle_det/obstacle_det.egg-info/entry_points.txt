@@ -1,3 +1,0 @@
-[console_scripts]
-obstacles_det = obstacle_det.obstacles_det:main
-

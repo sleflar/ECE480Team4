@@ -1,9 +1,0 @@
-/home/eceteam4/ECE480Team4/build/curvy_road/CMakeFiles/uninstall.dir
-/home/eceteam4/ECE480Team4/build/curvy_road/CMakeFiles/curvy_road_uninstall.dir
-/home/eceteam4/ECE480Team4/build/curvy_road/CMakeFiles/test.dir
-/home/eceteam4/ECE480Team4/build/curvy_road/CMakeFiles/edit_cache.dir
-/home/eceteam4/ECE480Team4/build/curvy_road/CMakeFiles/rebuild_cache.dir
-/home/eceteam4/ECE480Team4/build/curvy_road/CMakeFiles/list_install_components.dir
-/home/eceteam4/ECE480Team4/build/curvy_road/CMakeFiles/install.dir
-/home/eceteam4/ECE480Team4/build/curvy_road/CMakeFiles/install/local.dir
-/home/eceteam4/ECE480Team4/build/curvy_road/CMakeFiles/install/strip.dir

@@ -1,1 +1,0 @@
-/home/eceteam4/ECE480Team4/ros2_ws/build/perception_ml_node/perception_ml_node/scripts/run_yolopv2_demo.py

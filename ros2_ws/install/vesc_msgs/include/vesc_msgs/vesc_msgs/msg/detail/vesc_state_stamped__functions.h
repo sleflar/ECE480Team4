@@ -1,1 +1,0 @@
-/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_msgs/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.h

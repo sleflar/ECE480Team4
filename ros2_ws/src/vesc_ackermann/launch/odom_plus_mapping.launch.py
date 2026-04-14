@@ -34,7 +34,10 @@ def generate_launch_description():
                 arguments=[
                     '-configuration_directory', config_dir,
                     '-configuration_basename', config_file
-                ]
+                ],
+                remappings=[
+                ('/kiss/odometry', '/odom')
+            ]
             )
         ]
     )
@@ -50,7 +53,10 @@ def generate_launch_description():
                 arguments=[
                     '-configuration_directory', config_dir,
                     '-configuration_basename', config_file
-                ]
+                ],
+                remappings=[
+                ('/kiss/odometry', '/odom')
+            ]
             )
         ]
     )
