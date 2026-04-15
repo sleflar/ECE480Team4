@@ -12,30 +12,28 @@ class LiDARRacingLineRealCar(Node):
     def __init__(self):
         super().__init__('lidar_racing_line_real_car')
 
-        # ---------------- Parameters ----------------
-        self.declare_parameter('near_lookahead', 1.0)
-        self.declare_parameter('mid_lookahead', 1.6)
-        self.declare_parameter('far_lookahead', 2.2)
-        self.declare_parameter('lookahead_window', 0.30)
+        self.declare_parameter('near_lookahead', 1.2)
+        self.declare_parameter('mid_lookahead', 1.9)
+        self.declare_parameter('far_lookahead', 2.6)
+        self.declare_parameter('lookahead_window', 0.35)
 
-        self.declare_parameter('front_angle_deg', 120.0)
-        self.declare_parameter('wall_offset', 0.10)
-        self.declare_parameter('track_half_width_guess', 0.6)
+        self.declare_parameter('front_angle_deg', 100.0)
+        self.declare_parameter('wall_offset', 0.15)
+        self.declare_parameter('track_half_width_guess', 0.75)
 
-        self.declare_parameter('steering_gain', 0.8)
-        self.declare_parameter('max_steering_cmd', 500.0)
-        self.declare_parameter('steering_smooth_alpha', 0.65)
+        self.declare_parameter('steering_gain', 0.35)
+        self.declare_parameter('max_steering_cmd', 220.0)
+        self.declare_parameter('steering_smooth_alpha', 0.80)
 
-        self.declare_parameter('racing_offset_gain', 0.8)
-        self.declare_parameter('max_racing_offset', 0.25)
+        self.declare_parameter('racing_offset_gain', 0.0)
+        self.declare_parameter('max_racing_offset', 0.0)
 
         self.declare_parameter('min_range', 0.08)
         self.declare_parameter('max_range', 10.0)
-        self.declare_parameter('emergency_stop_distance', 0.25)
-        self.declare_parameter('corner_recovery_distance', 0.55)
-        self.declare_parameter('corner_turn_cmd', 350.0)
+        self.declare_parameter('emergency_stop_distance', 0.18)
+        self.declare_parameter('corner_recovery_distance', 0.40)
+        self.declare_parameter('corner_turn_cmd', 180.0)
 
-        # Real car motor behavior
         self.declare_parameter('target_motor_speed', 1500.0)
         self.declare_parameter('startup_ramp_increment', 50.0)
         self.declare_parameter('startup_ramp_steps', 30)
