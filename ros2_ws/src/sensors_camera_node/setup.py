@@ -23,6 +23,7 @@ setup(
     entry_points={
         'console_scripts': [
             'sensors_camera_node = sensors_camera_node.sensors_camera_node:main',
+            'new_camera = sensors_camera_node.Sensors_camera_new_node:main',
         ],
     },
 )

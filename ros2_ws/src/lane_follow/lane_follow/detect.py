@@ -80,7 +80,7 @@ class DetectNode(Node):
         
         # ROI vertical range: 20% to 50% from bottom
         roi_bottom = int(height * 0.25)  # 20% from bottom
-        roi_top    = int(height * 0.38)  # 50% from bottom
+        roi_top    = int(height * 0.40)  # 50% from bottom
         usable_height = roi_top - roi_bottom
         
         roi_offset = int(0.2*height)
@@ -88,6 +88,8 @@ class DetectNode(Node):
         num_slices = 10  # number of trajectory points
         roi_height = usable_height // num_slices
         trajectory_points = []
+        left_lane = []
+        right_lane = []
 
         for i in range(num_slices):
             y_start = height - roi_top + i * roi_height
@@ -104,17 +106,10 @@ class DetectNode(Node):
             mask_black  = cv2.morphologyEx(mask_black, cv2.MORPH_OPEN, self.morph_kernel)
             mask_black  = cv2.morphologyEx(mask_black, cv2.MORPH_CLOSE, self.morph_kernel)
             
-            #if i == 0 and self.saved < 10:  # pick whichever slice you want (0 = closest, higher = farther)
-                #filename = f"/tmp/roi_slice_{i}.png"
-                #cv2.imwrite(filename, roi)
-                #cv2.imwrite(f"/tmp/mask_orange_{i}.png", mask_orange)
-                #cv2.imwrite(f"/tmp/mask_black_{i}.png", mask_black)
-                #self.get_logger().info(f"Saved ROI slice to {filename}")
-                #self.saved += 1
-
+            
             # Get centroids
             left_centroid  = self.get_centroid(mask_orange, "left", width)
-            right_centroid = self.get_centroid(mask_black,  "right", width)
+            right_centroid = self.get_centroid(mask_orange,  "right", width)
 
             if left_centroid:
                 left_centroid = (int(left_centroid[0]), int(left_centroid[1] + y_start))
@@ -133,16 +128,25 @@ class DetectNode(Node):
                 
                 self.last_known_lane_width = int(0.8 * self.last_known_lane_width + 0.2 * lane_width)
                 
-                cv2.circle(cv_image, left_centroid, 6, (204, 0, 0), -1)  # blue dots for left barrier
-                cv2.circle(cv_image, right_centroid, 6, (0, 204, 0), -1)  # green dots for right barrier
+                left_lane.append(left_centroid)
+                right_lane.append(right_centroid)
+                
+                #cv2.circle(cv_image, left_centroid, 6, (204, 0, 0), -1)  # blue dots for left barrier
+                #cv2.circle(cv_image, right_centroid, 6, (0, 204, 0), -1)  # green dots for right barrier
+                
+                self.get_logger().info('Both Lanes Detected')
 
                 
             elif left_centroid:
                 center = (left_centroid[0] + self.last_known_lane_width // 2, left_centroid[1])
-                cv2.circle(cv_image, left_centroid, 6, (204, 0, 0), -1)  # blue dots for left barrier
+                left_lane.append(left_centroid)
+                #cv2.circle(cv_image, left_centroid, 6, (204, 0, 0), -1)  # blue dots for left barrier
+                self.get_logger().info('Left Lane Detected')
             elif right_centroid:
                 center = (right_centroid[0] - self.last_known_lane_width // 2, right_centroid[1])
-                cv2.circle(cv_image, right_centroid, 6, (0, 204, 0), -1)  # green dots for right barrier
+                right_lane.append(right_centroid)
+                #cv2.circle(cv_image, right_centroid, 6, (0, 204, 0), -1)  # green dots for right barrier
+                self.get_logger().info('Right Lane Detected')
             else:
                 continue  # skip slice if neither line is detected
 
@@ -178,12 +182,32 @@ class DetectNode(Node):
 
         # --- Publish closest trajectory point for steering ---
         if trajectory_points:
-            self.publish_point(msg, trajectory_points[0][0], trajectory_points[0][1], 0.0)
+            self.publish_point(msg, trajectory_points[-1][0], trajectory_points[-1][1], 0.0)
         else:
             # No lane points detected → publish zero point
             self.publish_point(msg, 0.0, 0.0, 0.0)
             cv2.putText(annotated, "NO LANES DETECTED", (30, 80),
                         cv2.FONT_HERSHEY_SIMPLEX, 1.2, (0, 0, 255), 3)
+                        
+                        
+        for i in range(len(trajectory_points) - 1):
+            pt1 = trajectory_points[i]
+            pt2 = trajectory_points[i + 1]
+            cv2.line(annotated, pt1, pt2, (0, 0, 204), 2)  # Red line, thickness=2
+        
+        for i in range(len(left_lane) - 1):
+            pt1 = left_lane[i]
+            pt2 = left_lane[i + 1]
+            cv2.circle(annotated, pt1, 6, (204, 0, 0), -1)  # blue dots for left barrier
+            cv2.circle(annotated, pt2, 6, (204, 0, 0), -1)  # blue dots for left barrier
+            cv2.line(annotated, pt1, pt2, (204,0,0), 2)  # Blue line, thickness=2
+            
+        for i in range(len(right_lane) - 1):
+            pt1 = right_lane[i]
+            pt2 = right_lane[i + 1]
+            cv2.circle(annotated, pt1, 6, (0, 204, 0), -1)  # green dots for left barrier
+            cv2.circle(annotated, pt2, 6, (0, 204, 0), -1)  # green dots for left barrier
+            cv2.line(annotated, pt1, pt2, (0, 204, 0), 2)  # Green line, thickness=2
 
         # --- Publish annotated image ---
         self.publish_image(annotated, msg)

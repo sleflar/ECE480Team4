@@ -5,19 +5,32 @@ from rclpy.node import Node
 from geometry_msgs.msg import PointStamped
 from std_msgs.msg import Bool
 from std_msgs.msg import Float64
+from sensor_msgs.msg import LaserScan
 import math
 import time
+import numpy as np
 
 
 class FollowPurePursuit(Node):
     def __init__(self):
         super().__init__('follow_pure_pursuit')
         
+        self.x_prev = -1
+        self.y_prev = -1
+        
         # Sub: ground point (lane center)
         self.subscription = self.create_subscription(
             PointStamped,
             '/ground_point',
             self.pure_pursuit_callback,
+            1)
+            
+            
+        # Sub: lidar scan  
+        self.lidar_sub = self.create_subscription(
+            LaserScan,
+            '/lidar/scan_raw',
+            self.lidar_callback,
             1)
 
         # Sub: obstacle detection flag
@@ -56,6 +69,47 @@ class FollowPurePursuit(Node):
         if self.front_obstacle:
             self.get_logger().info("[OBSTACLE] Stopping vehicle.")
             self.stop_robot()
+            
+  
+    def get_closest_in_range(self, msg, min_angle, max_angle):
+        closest_dist = float('inf')
+        closest_angle = None
+
+        for i, r in enumerate(msg.ranges):
+            if not math.isfinite(r):
+                continue
+            if r < msg.range_min or r > msg.range_max:
+                continue
+
+            angle = msg.angle_min + i * msg.angle_increment
+
+            if min_angle <= angle <= max_angle:
+                if r < closest_dist:
+                    closest_dist = r
+                    closest_angle = angle
+
+        if closest_angle is None:
+            return None, None
+
+        return closest_dist, closest_angle
+        
+        
+    def lidar_callback(self, msg):
+        left_dist, left_ang = self.get_closest_in_range(
+            msg,
+            math.radians(30),
+            math.radians(150)
+        )
+
+        right_dist, right_ang = self.get_closest_in_range(
+            msg,
+            -math.radians(150),
+            -math.radians(30)
+        )
+
+        self.get_logger().info(
+            f"Left: {left_dist}, Right: {right_dist}"
+        )
 
 
     # ============================================================
@@ -74,22 +128,22 @@ class FollowPurePursuit(Node):
             self.get_logger().info('Started lane following!')
 
         # Lane disappears → STOP and record time
-        if self.is_zero_point(msg.point):
-            if not self.reached_end and self.start_time is not None:
-                self.stop_robot()
-                self.reached_end = True
-                self.end_time = time.time()
-                elapsed = self.end_time - self.start_time
+        #if self.is_zero_point(msg.point):
+            #if not self.reached_end and self.start_time is not None:
+                #self.stop_robot()
+                #self.reached_end = True
+                #self.end_time = time.time()
+                #elapsed = self.end_time - self.start_time
 
-                print("\n" + "="*40)
-                print("LANE FOLLOWING COMPLETE!")
-                print("="*40)
-                print(f"Speed Command: {self.motor_speed_command}")
-                print(f"Time to complete: {elapsed:.2f} seconds")
-                print("="*40 + "\n")
+                #print("\n" + "="*40)
+                #print("LANE FOLLOWING COMPLETE!")
+                #print("="*40)
+                #print(f"Speed Command: {self.motor_speed_command}")
+                #print(f"Time to complete: {elapsed:.2f} seconds")
+                #print("="*40 + "\n")
 
-                self.get_logger().info(f"Completed course in {elapsed:.2f} seconds")
-            return
+                #self.get_logger().info(f"Completed course in {elapsed:.2f} seconds")
+            #return
         
         if self.reached_end:
             return
@@ -97,6 +151,17 @@ class FollowPurePursuit(Node):
         # Extract lane center point
         x = msg.point.x
         y = msg.point.y
+        
+        if self.x_prev == -1 and self.y_prev == -1:
+            self.x_prev = x
+            self.y_prev = y
+        
+        #alpha = 0.3
+        #x = alpha * x + (1-alpha) * self.x_prev
+        #y = alpha * y + (1-alpha) * self.y_prev
+        
+        #self.x_prev = x
+        #self.y_prev = y
 
         L = math.sqrt(x * x + y * y)
         if L < 0.01:
@@ -104,8 +169,13 @@ class FollowPurePursuit(Node):
             return
 
         # Pure Pursuit curvature → steering
-        curvature = 2.0 * y / (L * L)
-        steering = 500*curvature    # You can scale this later if needed
+        curvature = 2.0 * y / (L * L + 1e-6) #Get rid of 1e-6 later if messing up
+        steering = 290*curvature    # You can scale this later if needed
+        
+
+            
+        
+        
 
         self.spot_count += 1
         
