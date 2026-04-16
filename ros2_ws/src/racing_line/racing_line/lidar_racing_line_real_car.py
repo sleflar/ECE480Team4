@@ -36,7 +36,7 @@ class LiDARRacingLineRealCar(Node):
 
         self.declare_parameter('target_motor_speed', 1200.0)
         self.declare_parameter('startup_ramp_increment', 40.0)
-        self.declare_parameter('startup_ramp_steps', 35)
+        self.declare_parameter('startup_ramp_steps', 25)
 
         self.near_lookahead = float(self.get_parameter('near_lookahead').value)
         self.mid_lookahead = float(self.get_parameter('mid_lookahead').value)
@@ -230,7 +230,7 @@ class LiDARRacingLineRealCar(Node):
         heading_error = math.atan2(target_y, max(target_x, 0.1))
 
         # Convert heading error into real-car steering command
-        steering_cmd = self.steering_gain * heading_error * self.max_steering_cmd
+        steering_cmd = -self.steering_gain * heading_error * self.max_steering_cmd
         steering_cmd = max(-self.max_steering_cmd, min(self.max_steering_cmd, steering_cmd))
 
         steering_cmd = (
