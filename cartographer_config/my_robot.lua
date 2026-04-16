@@ -14,7 +14,6 @@
 
 include "map_builder.lua"
 include "trajectory_builder.lua"
-
 options = {
   map_builder = MAP_BUILDER,
   trajectory_builder = TRAJECTORY_BUILDER,
@@ -25,7 +24,7 @@ options = {
   provide_odom_frame = true,
   publish_frame_projected_to_2d = false,
   use_pose_extrapolator = true,
-  use_odometry = false,
+  use_odometry = true,
   use_nav_sat = false,
   use_landmarks = false,
   num_laser_scans = 1,
@@ -44,6 +43,6 @@ options = {
 }
 TRAJECTORY_BUILDER_2D.use_imu_data = false
 MAP_BUILDER.use_trajectory_builder_2d = true
-TRAJECTORY_BUILDER_2D.num_accumulated_range_data = 10
+TRAJECTORY_BUILDER_2D.num_accumulated_range_data = 1
 
 return options

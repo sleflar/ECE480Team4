@@ -3,6 +3,7 @@ setup.cfg
 setup.py
 racing_line/__init__.py
 racing_line/lidar_racing_line.py
+racing_line/lidar_racing_line_real_car.py
 racing_line/lidar_racing_simple.py
 racing_line/racing_line.py
 racing_line.egg-info/PKG-INFO

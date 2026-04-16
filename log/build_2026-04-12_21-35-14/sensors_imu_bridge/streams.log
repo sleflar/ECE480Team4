@@ -1,0 +1,17 @@
+[4.351s] Invoking command in '/home/eceteam4/ECE480Team4/build/sensors_imu_bridge': PYTHONPATH=/home/eceteam4/ECE480Team4/build/sensors_imu_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/install/sensors_imu_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/build/sensors_imu_bridge/build --no-deps symlink_data
+[5.698s] running develop
+[6.532s] running egg_info
+[6.532s] writing sensors_imu_bridge.egg-info/PKG-INFO
+[6.534s] writing dependency_links to sensors_imu_bridge.egg-info/dependency_links.txt
+[6.534s] writing entry points to sensors_imu_bridge.egg-info/entry_points.txt
+[6.535s] writing requirements to sensors_imu_bridge.egg-info/requires.txt
+[6.535s] writing top-level names to sensors_imu_bridge.egg-info/top_level.txt
+[6.554s] reading manifest file 'sensors_imu_bridge.egg-info/SOURCES.txt'
+[6.556s] writing manifest file 'sensors_imu_bridge.egg-info/SOURCES.txt'
+[6.561s] running build_ext
+[6.561s] Creating /home/eceteam4/ECE480Team4/install/sensors_imu_bridge/lib/python3.10/site-packages/sensors-imu-bridge.egg-link (link to .)
+[6.564s] Installing sensors_imu_bridge script to /home/eceteam4/ECE480Team4/install/sensors_imu_bridge/lib/sensors_imu_bridge
+[6.564s] 
+[6.564s] Installed /home/eceteam4/ECE480Team4/build/sensors_imu_bridge
+[6.567s] running symlink_data
+[6.749s] Invoked command in '/home/eceteam4/ECE480Team4/build/sensors_imu_bridge' returned '0': PYTHONPATH=/home/eceteam4/ECE480Team4/build/sensors_imu_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/install/sensors_imu_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/build/sensors_imu_bridge/build --no-deps symlink_data

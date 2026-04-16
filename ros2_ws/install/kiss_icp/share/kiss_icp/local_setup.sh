@@ -1,0 +1,1 @@
+/home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp/ament_cmake_environment_hooks/local_setup.sh

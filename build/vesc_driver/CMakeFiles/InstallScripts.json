@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/eceteam4/ECE480Team4/build/vesc_driver/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

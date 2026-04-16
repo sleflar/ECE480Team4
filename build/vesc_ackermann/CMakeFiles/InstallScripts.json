@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/eceteam4/ECE480Team4/build/vesc_ackermann/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

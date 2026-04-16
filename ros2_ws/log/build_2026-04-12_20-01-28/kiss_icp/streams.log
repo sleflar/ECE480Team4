@@ -1,0 +1,14 @@
+[0.018s] Invoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/eceteam4/ECE480Team4/ros2_ws/src/kiss-icp/ros -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp
+[0.564s] -- The CXX compiler identification is GNU 11.4.0
+[0.587s] -- Detecting CXX compiler ABI info
+[0.739s] -- Detecting CXX compiler ABI info - done
+[0.750s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.752s] -- Detecting CXX compile features
+[0.753s] -- Detecting CXX compile features - done
+[1.984s] [31mCMake Error at /home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp/_deps/sophus-src/CMakeLists.txt:1 (cmake_minimum_required):
+[1.984s]   CMake 3.24 or higher is required.  You are running version 3.22.1
+[1.985s] 
+[1.985s] [0m
+[1.985s] -- Configuring incomplete, errors occurred!
+[1.985s] See also "/home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp/CMakeFiles/CMakeOutput.log".
+[1.993s] Invoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/eceteam4/ECE480Team4/ros2_ws/src/kiss-icp/ros -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp

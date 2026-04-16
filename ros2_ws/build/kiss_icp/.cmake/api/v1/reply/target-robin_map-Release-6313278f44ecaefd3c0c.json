@@ -1,0 +1,74 @@
+{
+	"abstract" : true,
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library"
+		],
+		"files" : 
+		[
+			"/home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp/_deps/tessil-src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 17,
+				"parent" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"id" : "robin_map::@4115c7f5744acfd5bb8c",
+	"interfaceSources" : 
+	[
+		{
+			"path" : "/home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp/_deps/tessil-src/include/tsl/robin_growth_policy.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"path" : "/home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp/_deps/tessil-src/include/tsl/robin_hash.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"path" : "/home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp/_deps/tessil-src/include/tsl/robin_map.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"path" : "/home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp/_deps/tessil-src/include/tsl/robin_set.h",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"name" : "robin_map",
+	"paths" : 
+	{
+		"build" : "_deps/tessil-build",
+		"source" : "/home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp/_deps/tessil-src"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"interfaceSourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3
+			],
+			"name" : "Header Files",
+			"sourceIndexes" : []
+		}
+	],
+	"sources" : [],
+	"type" : "INTERFACE_LIBRARY"
+}

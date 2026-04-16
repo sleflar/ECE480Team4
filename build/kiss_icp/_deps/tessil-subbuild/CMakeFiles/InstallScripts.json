@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/eceteam4/ECE480Team4/build/kiss_icp/_deps/tessil-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

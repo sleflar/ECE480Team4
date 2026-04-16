@@ -1,0 +1,44 @@
+[1.096s] Invoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/racing_line': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/python3.10/site-packages: /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/build
+[1.505s] running develop
+[1.698s] Removing /home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/python3.10/site-packages/racing-line.egg-link (link to .)
+[1.771s] Invoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/racing_line' returned '0': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/python3.10/site-packages: /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/build
+[1.777s] Invoking command in '/home/eceteam4/ECE480Team4/ros2_ws/src/racing_line': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/python3.10/site-packages: /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/racing_line build --build-base /home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/build install --record /home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/install.log --single-version-externally-managed install_data --force
+[2.133s] running egg_info
+[2.134s] writing ../../build/racing_line/racing_line.egg-info/PKG-INFO
+[2.135s] writing dependency_links to ../../build/racing_line/racing_line.egg-info/dependency_links.txt
+[2.135s] writing entry points to ../../build/racing_line/racing_line.egg-info/entry_points.txt
+[2.135s] writing requirements to ../../build/racing_line/racing_line.egg-info/requires.txt
+[2.135s] writing top-level names to ../../build/racing_line/racing_line.egg-info/top_level.txt
+[2.139s] reading manifest file '../../build/racing_line/racing_line.egg-info/SOURCES.txt'
+[2.142s] writing manifest file '../../build/racing_line/racing_line.egg-info/SOURCES.txt'
+[2.142s] running build
+[2.142s] running build_py
+[2.142s] creating /home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/build
+[2.142s] creating /home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/build/lib
+[2.142s] creating /home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/build/lib/racing_line
+[2.143s] copying racing_line/lidar_racing_line.py -> /home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/build/lib/racing_line
+[2.147s] copying racing_line/__init__.py -> /home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/build/lib/racing_line
+[2.151s] copying racing_line/racing_line.py -> /home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/build/lib/racing_line
+[2.152s] copying racing_line/lidar_racing_simple.py -> /home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/build/lib/racing_line
+[2.153s] running install
+[2.154s] running install_lib
+[2.156s] creating /home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/python3.10/site-packages/racing_line
+[2.156s] copying /home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/build/lib/racing_line/lidar_racing_line.py -> /home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/python3.10/site-packages/racing_line
+[2.157s] copying /home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/build/lib/racing_line/__init__.py -> /home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/python3.10/site-packages/racing_line
+[2.157s] copying /home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/build/lib/racing_line/racing_line.py -> /home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/python3.10/site-packages/racing_line
+[2.157s] copying /home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/build/lib/racing_line/lidar_racing_simple.py -> /home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/python3.10/site-packages/racing_line
+[2.157s] byte-compiling /home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/python3.10/site-packages/racing_line/lidar_racing_line.py to lidar_racing_line.cpython-310.pyc
+[2.160s] byte-compiling /home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/python3.10/site-packages/racing_line/__init__.py to __init__.cpython-310.pyc
+[2.160s] byte-compiling /home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/python3.10/site-packages/racing_line/racing_line.py to racing_line.cpython-310.pyc
+[2.163s] byte-compiling /home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/python3.10/site-packages/racing_line/lidar_racing_simple.py to lidar_racing_simple.cpython-310.pyc
+[2.164s] running install_data
+[2.165s] copying resource/racing_line -> /home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/share/ament_index/resource_index/packages
+[2.166s] copying package.xml -> /home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/share/racing_line
+[2.167s] running install_egg_info
+[2.170s] Copying ../../build/racing_line/racing_line.egg-info to /home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/python3.10/site-packages/racing_line-0.0.0-py3.10.egg-info
+[2.173s] running install_scripts
+[2.210s] Installing lidar_racing_line script to /home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/racing_line
+[2.214s] Installing lidar_racing_simple script to /home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/racing_line
+[2.214s] Installing racing_line script to /home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/racing_line
+[2.215s] writing list of installed files to '/home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/install.log'
+[2.278s] Invoked command in '/home/eceteam4/ECE480Team4/ros2_ws/src/racing_line' returned '0': PYTHONPATH=/home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/ros2_ws/install/racing_line/lib/python3.10/site-packages: /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/racing_line build --build-base /home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/build install --record /home/eceteam4/ECE480Team4/ros2_ws/build/racing_line/install.log --single-version-externally-managed install_data --force

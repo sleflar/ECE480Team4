@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+/home/eceteam4/ECE480Team4/install/vesc:/home/eceteam4/ECE480Team4/install/vesc_driver:/home/eceteam4/ECE480Team4/install/vesc_ackermann:/home/eceteam4/ECE480Team4/install/vesc_msgs:/home/eceteam4/ECE480Team4/install/vesc_control:/home/eceteam4/ECE480Team4/install/sensors_lidar_bridge:/home/eceteam4/ECE480Team4/install/sensors_imu_bridge:/home/eceteam4/ECE480Team4/install/sensors_camera_node:/home/eceteam4/ECE480Team4/install/racing_line:/home/eceteam4/ECE480Team4/install/perception_sync_node:/home/eceteam4/ECE480Team4/install/perception_ml_node:/home/eceteam4/ECE480Team4/install/obstacle_det:/home/eceteam4/ECE480Team4/install/lane_follow:/home/eceteam4/ECE480Team4/install/gazebo_world:/home/eceteam4/ECE480Team4/install/curvy_road:/home/eceteam4/ECE480Team4/install/bot_slam:/opt/ros/humble
+=======
+<<<<<<< HEAD
 /mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/install/racing_line:/mnt/ffs24/home/ramosriv/av/ECE480Team4/ros2_ws/install/gazebo_world:/mnt/ffs24/home/ramosriv/av/ECE480Team4/install/vesc_control:/mnt/ffs24/home/ramosriv/av/ECE480Team4/install/sensors_lidar_bridge:/mnt/ffs24/home/ramosriv/av/ECE480Team4/install/sensors_imu_bridge:/mnt/ffs24/home/ramosriv/av/ECE480Team4/install/sensors_camera_node:/mnt/ffs24/home/ramosriv/av/ECE480Team4/install/perception_sync_node:/mnt/ffs24/home/ramosriv/av/ECE480Team4/install/perception_ml_node:/mnt/ffs24/home/ramosriv/av/ECE480Team4/install/obstacle_det:/mnt/ffs24/home/ramosriv/av/ECE480Team4/install/lane_follow:/mnt/ffs24/home/ramosriv/av/ECE480Team4/install/gazebo_world:/opt/ros/humble
 =======
 /opt/ros/humble
 >>>>>>> d7d4bd6415b85d674601d5be4de5f809193d7f1c
+>>>>>>> 9dcdb3f839bcf62dc81c195d20256160f57d338c

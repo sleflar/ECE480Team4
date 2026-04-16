@@ -1,0 +1,33 @@
+[0.626s] Invoking command in '/home/eceteam4/ECE480Team4/build/kiss_icp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/eceteam4/ECE480Team4/install/vesc_control:/home/eceteam4/ECE480Team4/install/sensors_lidar_bridge:/home/eceteam4/ECE480Team4/install/sensors_imu_bridge:/home/eceteam4/ECE480Team4/install/sensors_camera_node:/home/eceteam4/ECE480Team4/install/racing_line:/home/eceteam4/ECE480Team4/install/perception_sync_node:/home/eceteam4/ECE480Team4/install/perception_ml_node:/home/eceteam4/ECE480Team4/install/obstacle_det:/home/eceteam4/ECE480Team4/install/lane_follow:/home/eceteam4/ECE480Team4/install/bot_slam:/opt/ros/humble /usr/bin/cmake --build /home/eceteam4/ECE480Team4/build/kiss_icp -- -j6 -l6
+[0.690s] [ 14%] Built target kiss_icp_metrics
+[0.692s] [ 28%] Built target kiss_icp_node
+[0.697s] [ 71%] Built target kiss_icp_core
+[0.725s] [ 85%] Built target kiss_icp_pipeline
+[0.765s] [100%] Built target odometry_component
+[1.243s] Invoked command in '/home/eceteam4/ECE480Team4/build/kiss_icp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/eceteam4/ECE480Team4/install/vesc_control:/home/eceteam4/ECE480Team4/install/sensors_lidar_bridge:/home/eceteam4/ECE480Team4/install/sensors_imu_bridge:/home/eceteam4/ECE480Team4/install/sensors_camera_node:/home/eceteam4/ECE480Team4/install/racing_line:/home/eceteam4/ECE480Team4/install/perception_sync_node:/home/eceteam4/ECE480Team4/install/perception_ml_node:/home/eceteam4/ECE480Team4/install/obstacle_det:/home/eceteam4/ECE480Team4/install/lane_follow:/home/eceteam4/ECE480Team4/install/bot_slam:/opt/ros/humble /usr/bin/cmake --build /home/eceteam4/ECE480Team4/build/kiss_icp -- -j6 -l6
+[1.250s] Invoking command in '/home/eceteam4/ECE480Team4/build/kiss_icp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/eceteam4/ECE480Team4/install/vesc_control:/home/eceteam4/ECE480Team4/install/sensors_lidar_bridge:/home/eceteam4/ECE480Team4/install/sensors_imu_bridge:/home/eceteam4/ECE480Team4/install/sensors_camera_node:/home/eceteam4/ECE480Team4/install/racing_line:/home/eceteam4/ECE480Team4/install/perception_sync_node:/home/eceteam4/ECE480Team4/install/perception_ml_node:/home/eceteam4/ECE480Team4/install/obstacle_det:/home/eceteam4/ECE480Team4/install/lane_follow:/home/eceteam4/ECE480Team4/install/bot_slam:/opt/ros/humble /usr/bin/cmake --install /home/eceteam4/ECE480Team4/build/kiss_icp
+[1.284s] -- Install configuration: "Release"
+[1.289s] -- Execute custom install script
+[1.290s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/kiss_icp/lib/kiss_icp/kiss_icp_node
+[1.303s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/kiss_icp/lib/libodometry_component.so
+[1.303s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/kiss_icp/share/kiss_icp//launch/my_odometry.launch.py
+[1.303s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/kiss_icp/share/kiss_icp//launch/odometry.launch.py
+[1.309s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/kiss_icp/share/kiss_icp//rviz/kiss_icp.rviz
+[1.309s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/kiss_icp/share/kiss_icp//config/config.yaml
+[1.309s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/kiss_icp/share/ament_index/resource_index/package_run_dependencies/kiss_icp
+[1.309s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/kiss_icp/share/ament_index/resource_index/parent_prefix_path/kiss_icp
+[1.310s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/kiss_icp/share/kiss_icp/environment/ament_prefix_path.sh
+[1.310s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/kiss_icp/share/kiss_icp/environment/ament_prefix_path.dsv
+[1.310s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/kiss_icp/share/kiss_icp/environment/path.sh
+[1.310s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/kiss_icp/share/kiss_icp/environment/path.dsv
+[1.310s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/kiss_icp/share/kiss_icp/local_setup.bash
+[1.311s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/kiss_icp/share/kiss_icp/local_setup.sh
+[1.311s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/kiss_icp/share/kiss_icp/local_setup.zsh
+[1.311s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/kiss_icp/share/kiss_icp/local_setup.dsv
+[1.311s] -- Symlinking: /home/eceteam4/ECE480Team4/install/kiss_icp/share/kiss_icp/package.dsv
+[1.333s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/kiss_icp/share/ament_index/resource_index/packages/kiss_icp
+[1.334s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/kiss_icp/share/ament_index/resource_index/rclcpp_components/kiss_icp
+[1.334s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/kiss_icp/share/kiss_icp/cmake/kiss_icpConfig.cmake
+[1.335s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/kiss_icp/share/kiss_icp/cmake/kiss_icpConfig-version.cmake
+[1.337s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/kiss_icp/share/kiss_icp/package.xml
+[1.405s] Invoked command in '/home/eceteam4/ECE480Team4/build/kiss_icp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/eceteam4/ECE480Team4/install/vesc_control:/home/eceteam4/ECE480Team4/install/sensors_lidar_bridge:/home/eceteam4/ECE480Team4/install/sensors_imu_bridge:/home/eceteam4/ECE480Team4/install/sensors_camera_node:/home/eceteam4/ECE480Team4/install/racing_line:/home/eceteam4/ECE480Team4/install/perception_sync_node:/home/eceteam4/ECE480Team4/install/perception_ml_node:/home/eceteam4/ECE480Team4/install/obstacle_det:/home/eceteam4/ECE480Team4/install/lane_follow:/home/eceteam4/ECE480Team4/install/bot_slam:/opt/ros/humble /usr/bin/cmake --install /home/eceteam4/ECE480Team4/build/kiss_icp

@@ -1,0 +1,22 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/launch/empty_world.launch.py
+-- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/launch/world.launch.py
+-- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/worlds/my_world.sdf
+-- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/worlds/my_world2.sdf
+-- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/worlds/package.xml
+-- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/ament_index/resource_index/package_run_dependencies/gazebo_world
+-- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/ament_index/resource_index/parent_prefix_path/gazebo_world
+-- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/environment/path.sh
+-- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/environment/path.dsv
+-- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/local_setup.bash
+-- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/local_setup.sh
+-- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/local_setup.zsh
+-- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/local_setup.dsv
+-- Symlinking: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/package.dsv
+-- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/ament_index/resource_index/packages/gazebo_world
+-- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/cmake/gazebo_worldConfig.cmake
+-- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/cmake/gazebo_worldConfig-version.cmake
+-- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/gazebo_world/share/gazebo_world/package.xml

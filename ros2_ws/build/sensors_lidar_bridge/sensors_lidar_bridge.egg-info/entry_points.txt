@@ -1,0 +1,4 @@
+[console_scripts]
+scan_to_pc2 = sensors_lidar_bridge.scan_to_pc2:main
+sensors_lidar_bridge = sensors_lidar_bridge.sensors_lidar_bridge:main
+

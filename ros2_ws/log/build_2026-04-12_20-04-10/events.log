@@ -1,0 +1,33 @@
+[0.000000] (-) TimerEvent: {}
+[0.000731] (-) JobUnselected: {'identifier': 'bot_slam'}
+[0.001206] (-) JobUnselected: {'identifier': 'curvy_road'}
+[0.001479] (-) JobUnselected: {'identifier': 'gazebo_world'}
+[0.001783] (-) JobUnselected: {'identifier': 'lane_follow'}
+[0.001896] (-) JobUnselected: {'identifier': 'obstacle_det'}
+[0.001988] (-) JobUnselected: {'identifier': 'perception_ml_node'}
+[0.002075] (-) JobUnselected: {'identifier': 'perception_sync_node'}
+[0.002184] (-) JobUnselected: {'identifier': 'racing_line'}
+[0.002269] (-) JobUnselected: {'identifier': 'sensors_camera_node'}
+[0.002353] (-) JobUnselected: {'identifier': 'sensors_imu_bridge'}
+[0.002429] (-) JobUnselected: {'identifier': 'sensors_lidar_bridge'}
+[0.002533] (-) JobUnselected: {'identifier': 'vesc'}
+[0.002747] (-) JobUnselected: {'identifier': 'vesc_ackermann'}
+[0.002805] (-) JobUnselected: {'identifier': 'vesc_control'}
+[0.002857] (-) JobUnselected: {'identifier': 'vesc_driver'}
+[0.002926] (-) JobUnselected: {'identifier': 'vesc_msgs'}
+[0.002984] (kiss_icp) JobQueued: {'identifier': 'kiss_icp', 'dependencies': OrderedDict()}
+[0.003160] (kiss_icp) JobStarted: {'identifier': 'kiss_icp'}
+[0.016348] (kiss_icp) JobProgress: {'identifier': 'kiss_icp', 'progress': 'cmake'}
+[0.017156] (kiss_icp) Command: {'cmd': ['/usr/bin/cmake', '/home/eceteam4/ECE480Team4/ros2_ws/src/kiss-icp/ros', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp'], 'cwd': '/home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp', 'env': OrderedDict([('USER', 'eceteam4'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eceteam4'), ('OLDPWD', '/home/eceteam4/ECE480Team4/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '3918'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'eceteam4'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PROMPT_DIRTRIM', '4'), ('USERNAME', 'eceteam4'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/eceteam4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eceteam4-desktop:@/tmp/.ICE-unix/1940,unix/eceteam4-desktop:/tmp/.ICE-unix/1940'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a56e4522_f786_4873_8578_7dde43d23038'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.90'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099281] (-) TimerEvent: {}
+[0.199932] (-) TimerEvent: {}
+[0.250582] (kiss_icp) StderrLine: {'line': b'\x1b[31mCMake Error at /home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp/_deps/sophus-src/CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[0.251614] (kiss_icp) StderrLine: {'line': b'  CMake 3.24 or higher is required.  You are running version 3.22.1\n'}
+[0.251861] (kiss_icp) StderrLine: {'line': b'\n'}
+[0.252047] (kiss_icp) StderrLine: {'line': b'\x1b[0m\n'}
+[0.252223] (kiss_icp) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.252458] (kiss_icp) StdoutLine: {'line': b'See also "/home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp/CMakeFiles/CMakeOutput.log".\n'}
+[0.259494] (kiss_icp) CommandEnded: {'returncode': 1}
+[0.300822] (-) TimerEvent: {}
+[0.318110] (kiss_icp) JobEnded: {'identifier': 'kiss_icp', 'rc': 1}
+[0.329774] (-) EventReactorShutdown: {}

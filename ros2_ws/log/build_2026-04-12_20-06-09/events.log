@@ -1,0 +1,818 @@
+[0.000000] (-) TimerEvent: {}
+[0.000729] (-) JobUnselected: {'identifier': 'bot_slam'}
+[0.001236] (-) JobUnselected: {'identifier': 'curvy_road'}
+[0.001520] (-) JobUnselected: {'identifier': 'gazebo_world'}
+[0.001813] (-) JobUnselected: {'identifier': 'lane_follow'}
+[0.001928] (-) JobUnselected: {'identifier': 'obstacle_det'}
+[0.002025] (-) JobUnselected: {'identifier': 'perception_ml_node'}
+[0.002116] (-) JobUnselected: {'identifier': 'perception_sync_node'}
+[0.002227] (-) JobUnselected: {'identifier': 'racing_line'}
+[0.002314] (-) JobUnselected: {'identifier': 'sensors_camera_node'}
+[0.002397] (-) JobUnselected: {'identifier': 'sensors_imu_bridge'}
+[0.002474] (-) JobUnselected: {'identifier': 'sensors_lidar_bridge'}
+[0.002577] (-) JobUnselected: {'identifier': 'vesc'}
+[0.002769] (-) JobUnselected: {'identifier': 'vesc_ackermann'}
+[0.002821] (-) JobUnselected: {'identifier': 'vesc_control'}
+[0.002906] (-) JobUnselected: {'identifier': 'vesc_driver'}
+[0.003067] (-) JobUnselected: {'identifier': 'vesc_msgs'}
+[0.003201] (kiss_icp) JobQueued: {'identifier': 'kiss_icp', 'dependencies': OrderedDict()}
+[0.003267] (kiss_icp) JobStarted: {'identifier': 'kiss_icp'}
+[0.015756] (kiss_icp) JobProgress: {'identifier': 'kiss_icp', 'progress': 'cmake'}
+[0.016953] (kiss_icp) Command: {'cmd': ['/usr/bin/cmake', '/home/eceteam4/ECE480Team4/ros2_ws/src/kiss-icp/ros', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp'], 'cwd': '/home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp', 'env': OrderedDict([('USER', 'eceteam4'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eceteam4'), ('OLDPWD', '/home/eceteam4/ECE480Team4/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '3918'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'eceteam4'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PROMPT_DIRTRIM', '4'), ('USERNAME', 'eceteam4'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/eceteam4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eceteam4-desktop:@/tmp/.ICE-unix/1940,unix/eceteam4-desktop:/tmp/.ICE-unix/1940'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a56e4522_f786_4873_8578_7dde43d23038'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.90'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099287] (-) TimerEvent: {}
+[0.200012] (-) TimerEvent: {}
+[0.206572] (kiss_icp) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.225981] (kiss_icp) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.300303] (-) TimerEvent: {}
+[0.380426] (kiss_icp) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.400467] (-) TimerEvent: {}
+[0.424892] (kiss_icp) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.425704] (kiss_icp) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.427081] (kiss_icp) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.449341] (kiss_icp) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /home/eceteam4/ECE480Team4/ros2_ws/src/kiss-icp/cpp/kiss_icp/3rdparty/find_dependencies.cmake:25 (cmake_policy):\n'}
+[0.449971] (kiss_icp) StderrLine: {'line': b'  The OLD behavior for policy CMP0135 will be removed from a future version\n'}
+[0.450272] (kiss_icp) StderrLine: {'line': b'  of CMake.\n'}
+[0.450541] (kiss_icp) StderrLine: {'line': b'\n'}
+[0.450793] (kiss_icp) StderrLine: {'line': b'  The cmake-policies(7) manual explains that the OLD behaviors of all\n'}
+[0.451040] (kiss_icp) StderrLine: {'line': b'  policies are deprecated and that a policy should be set to OLD only under\n'}
+[0.451276] (kiss_icp) StderrLine: {'line': b'  specific short-term circumstances.  Projects should be ported to the NEW\n'}
+[0.451505] (kiss_icp) StderrLine: {'line': b'  behavior and not rely on setting a policy to OLD.\n'}
+[0.451726] (kiss_icp) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.451944] (kiss_icp) StderrLine: {'line': b'  /home/eceteam4/ECE480Team4/ros2_ws/src/kiss-icp/cpp/kiss_icp/CMakeLists.txt:48 (include)\n'}
+[0.452164] (kiss_icp) StderrLine: {'line': b'\n'}
+[0.452376] (kiss_icp) StderrLine: {'line': b'\x1b[0m\n'}
+[0.500639] (-) TimerEvent: {}
+[0.601468] (-) TimerEvent: {}
+[0.702420] (-) TimerEvent: {}
+[0.803167] (-) TimerEvent: {}
+[0.904023] (-) TimerEvent: {}
+[1.004821] (-) TimerEvent: {}
+[1.105668] (-) TimerEvent: {}
+[1.206494] (-) TimerEvent: {}
+[1.307379] (-) TimerEvent: {}
+[1.408520] (-) TimerEvent: {}
+[1.509722] (-) TimerEvent: {}
+[1.610663] (-) TimerEvent: {}
+[1.712084] (-) TimerEvent: {}
+[1.813442] (-) TimerEvent: {}
+[1.914526] (-) TimerEvent: {}
+[2.011585] (kiss_icp) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[2.014632] (-) TimerEvent: {}
+[2.033378] (kiss_icp) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.114871] (-) TimerEvent: {}
+[2.167965] (kiss_icp) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.199714] (kiss_icp) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.200456] (kiss_icp) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.201393] (kiss_icp) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.214950] (-) TimerEvent: {}
+[2.315589] (-) TimerEvent: {}
+[2.416491] (-) TimerEvent: {}
+[2.517549] (-) TimerEvent: {}
+[2.618247] (-) TimerEvent: {}
+[2.719173] (-) TimerEvent: {}
+[2.820000] (-) TimerEvent: {}
+[2.920946] (-) TimerEvent: {}
+[3.022086] (-) TimerEvent: {}
+[3.123036] (-) TimerEvent: {}
+[3.224330] (-) TimerEvent: {}
+[3.284896] (kiss_icp) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp/_deps/tessil-src/CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[3.285845] (kiss_icp) StderrLine: {'line': b'  Compatibility with CMake < 3.10 will be removed from a future version of\n'}
+[3.286144] (kiss_icp) StderrLine: {'line': b'  CMake.\n'}
+[3.286405] (kiss_icp) StderrLine: {'line': b'\n'}
+[3.286652] (kiss_icp) StderrLine: {'line': b'  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax\n'}
+[3.286894] (kiss_icp) StderrLine: {'line': b'  to tell CMake that the project requires at least <min> but has been updated\n'}
+[3.287128] (kiss_icp) StderrLine: {'line': b'  to work with policies introduced by <max> or earlier.\n'}
+[3.287359] (kiss_icp) StderrLine: {'line': b'\n'}
+[3.287580] (kiss_icp) StderrLine: {'line': b'\x1b[0m\n'}
+[3.301037] (kiss_icp) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[3.324634] (-) TimerEvent: {}
+[3.427391] (-) TimerEvent: {}
+[3.528564] (-) TimerEvent: {}
+[3.629813] (-) TimerEvent: {}
+[3.640573] (kiss_icp) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter\n'}
+[3.730018] (-) TimerEvent: {}
+[3.803632] (kiss_icp) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[3.830404] (-) TimerEvent: {}
+[3.931756] (-) TimerEvent: {}
+[3.948147] (kiss_icp) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[4.032223] (-) TimerEvent: {}
+[4.092164] (kiss_icp) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[4.109001] (kiss_icp) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.132451] (-) TimerEvent: {}
+[4.140822] (kiss_icp) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[4.181636] (kiss_icp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.227554] (kiss_icp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.232601] (-) TimerEvent: {}
+[4.333231] (-) TimerEvent: {}
+[4.342884] (kiss_icp) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[4.388906] (kiss_icp) StdoutLine: {'line': b'-- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[4.433446] (-) TimerEvent: {}
+[4.501432] (kiss_icp) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[4.509718] (kiss_icp) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.533637] (-) TimerEvent: {}
+[4.634411] (-) TimerEvent: {}
+[4.735096] (-) TimerEvent: {}
+[4.775698] (kiss_icp) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")\n'}
+[4.835430] (-) TimerEvent: {}
+[4.861801] (kiss_icp) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include\n'}
+[4.935549] (-) TimerEvent: {}
+[4.953460] (kiss_icp) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.975863] (kiss_icp) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[5.035884] (-) TimerEvent: {}
+[5.137277] (-) TimerEvent: {}
+[5.151361] (kiss_icp) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[5.154526] (kiss_icp) StdoutLine: {'line': b'-- Found Threads: TRUE\n'}
+[5.237735] (-) TimerEvent: {}
+[5.308462] (kiss_icp) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.18 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[5.337861] (-) TimerEvent: {}
+[5.393407] (kiss_icp) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[5.438044] (-) TimerEvent: {}
+[5.442054] (kiss_icp) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.17 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[5.538211] (-) TimerEvent: {}
+[5.638841] (-) TimerEvent: {}
+[5.648785] (kiss_icp) StdoutLine: {'line': b'-- Found std_srvs: 4.9.1 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[5.738978] (-) TimerEvent: {}
+[5.839613] (-) TimerEvent: {}
+[5.852572] (kiss_icp) StdoutLine: {'line': b'-- Configuring done (5.8s)\n'}
+[5.925506] (kiss_icp) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[5.939823] (-) TimerEvent: {}
+[5.996884] (kiss_icp) StdoutLine: {'line': b'-- Build files have been written to: /home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp\n'}
+[6.031083] (kiss_icp) CommandEnded: {'returncode': 0}
+[6.033118] (kiss_icp) JobProgress: {'identifier': 'kiss_icp', 'progress': 'build'}
+[6.035490] (kiss_icp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp', '--', '-j6', '-l6'], 'cwd': '/home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp', 'env': OrderedDict([('USER', 'eceteam4'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eceteam4'), ('OLDPWD', '/home/eceteam4/ECE480Team4/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '3918'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'eceteam4'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PROMPT_DIRTRIM', '4'), ('USERNAME', 'eceteam4'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/eceteam4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eceteam4-desktop:@/tmp/.ICE-unix/1940,unix/eceteam4-desktop:/tmp/.ICE-unix/1940'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a56e4522_f786_4873_8578_7dde43d23038'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.90'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[6.040153] (-) TimerEvent: {}
+[6.091780] (kiss_icp) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object kiss_icp/core/CMakeFiles/kiss_icp_core.dir/VoxelHashMap.cpp.o\x1b[0m\n'}
+[6.092732] (kiss_icp) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/kiss_icp_node.dir/rclcpp_components/node_main_kiss_icp_node.cpp.o\x1b[0m\n'}
+[6.093005] (kiss_icp) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object kiss_icp/core/CMakeFiles/kiss_icp_core.dir/Registration.cpp.o\x1b[0m\n'}
+[6.093402] (kiss_icp) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object kiss_icp/core/CMakeFiles/kiss_icp_core.dir/VoxelUtils.cpp.o\x1b[0m\n'}
+[6.097247] (kiss_icp) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object kiss_icp/metrics/CMakeFiles/kiss_icp_metrics.dir/Metrics.cpp.o\x1b[0m\n'}
+[6.097910] (kiss_icp) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object kiss_icp/core/CMakeFiles/kiss_icp_core.dir/Preprocessing.cpp.o\x1b[0m\n'}
+[6.140433] (-) TimerEvent: {}
+[6.241252] (-) TimerEvent: {}
+[6.341993] (-) TimerEvent: {}
+[6.443042] (-) TimerEvent: {}
+[6.543678] (-) TimerEvent: {}
+[6.644569] (-) TimerEvent: {}
+[6.745367] (-) TimerEvent: {}
+[6.846128] (-) TimerEvent: {}
+[6.946851] (-) TimerEvent: {}
+[7.047543] (-) TimerEvent: {}
+[7.148309] (-) TimerEvent: {}
+[7.248985] (-) TimerEvent: {}
+[7.349931] (-) TimerEvent: {}
+[7.450652] (-) TimerEvent: {}
+[7.551400] (-) TimerEvent: {}
+[7.653520] (-) TimerEvent: {}
+[7.766364] (-) TimerEvent: {}
+[7.867091] (-) TimerEvent: {}
+[7.967846] (-) TimerEvent: {}
+[8.068902] (-) TimerEvent: {}
+[8.169663] (-) TimerEvent: {}
+[8.270379] (-) TimerEvent: {}
+[8.371136] (-) TimerEvent: {}
+[8.471853] (-) TimerEvent: {}
+[8.572598] (-) TimerEvent: {}
+[8.673318] (-) TimerEvent: {}
+[8.774059] (-) TimerEvent: {}
+[8.874818] (-) TimerEvent: {}
+[8.975553] (-) TimerEvent: {}
+[9.076429] (-) TimerEvent: {}
+[9.177202] (-) TimerEvent: {}
+[9.278540] (-) TimerEvent: {}
+[9.379214] (-) TimerEvent: {}
+[9.480133] (-) TimerEvent: {}
+[9.580860] (-) TimerEvent: {}
+[9.681581] (-) TimerEvent: {}
+[9.782888] (-) TimerEvent: {}
+[9.884018] (-) TimerEvent: {}
+[9.984713] (-) TimerEvent: {}
+[10.085451] (-) TimerEvent: {}
+[10.186128] (-) TimerEvent: {}
+[10.286815] (-) TimerEvent: {}
+[10.387494] (-) TimerEvent: {}
+[10.488165] (-) TimerEvent: {}
+[10.588930] (-) TimerEvent: {}
+[10.689706] (-) TimerEvent: {}
+[10.790408] (-) TimerEvent: {}
+[10.877513] (kiss_icp) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object kiss_icp/core/CMakeFiles/kiss_icp_core.dir/Threshold.cpp.o\x1b[0m\n'}
+[10.890780] (-) TimerEvent: {}
+[10.991505] (-) TimerEvent: {}
+[11.092215] (-) TimerEvent: {}
+[11.193084] (-) TimerEvent: {}
+[11.294525] (-) TimerEvent: {}
+[11.395254] (-) TimerEvent: {}
+[11.496013] (-) TimerEvent: {}
+[11.596800] (-) TimerEvent: {}
+[11.697882] (-) TimerEvent: {}
+[11.798599] (-) TimerEvent: {}
+[11.899403] (-) TimerEvent: {}
+[12.000127] (-) TimerEvent: {}
+[12.100854] (-) TimerEvent: {}
+[12.201614] (-) TimerEvent: {}
+[12.302835] (-) TimerEvent: {}
+[12.404107] (-) TimerEvent: {}
+[12.504812] (-) TimerEvent: {}
+[12.605551] (-) TimerEvent: {}
+[12.706380] (-) TimerEvent: {}
+[12.807131] (-) TimerEvent: {}
+[12.907858] (-) TimerEvent: {}
+[13.009799] (-) TimerEvent: {}
+[13.110551] (-) TimerEvent: {}
+[13.211710] (-) TimerEvent: {}
+[13.313199] (-) TimerEvent: {}
+[13.413899] (-) TimerEvent: {}
+[13.514904] (-) TimerEvent: {}
+[13.615671] (-) TimerEvent: {}
+[13.716474] (-) TimerEvent: {}
+[13.817294] (-) TimerEvent: {}
+[13.918101] (-) TimerEvent: {}
+[14.018816] (-) TimerEvent: {}
+[14.119521] (-) TimerEvent: {}
+[14.220325] (-) TimerEvent: {}
+[14.321132] (-) TimerEvent: {}
+[14.422798] (-) TimerEvent: {}
+[14.523785] (-) TimerEvent: {}
+[14.624455] (-) TimerEvent: {}
+[14.725472] (-) TimerEvent: {}
+[14.826202] (-) TimerEvent: {}
+[14.926992] (-) TimerEvent: {}
+[15.027821] (-) TimerEvent: {}
+[15.129216] (-) TimerEvent: {}
+[15.230143] (-) TimerEvent: {}
+[15.330827] (-) TimerEvent: {}
+[15.431559] (-) TimerEvent: {}
+[15.532881] (-) TimerEvent: {}
+[15.633588] (-) TimerEvent: {}
+[15.734260] (-) TimerEvent: {}
+[15.835150] (-) TimerEvent: {}
+[15.936030] (-) TimerEvent: {}
+[16.036714] (-) TimerEvent: {}
+[16.137393] (-) TimerEvent: {}
+[16.238100] (-) TimerEvent: {}
+[16.338796] (-) TimerEvent: {}
+[16.439509] (-) TimerEvent: {}
+[16.540647] (-) TimerEvent: {}
+[16.641493] (-) TimerEvent: {}
+[16.742273] (-) TimerEvent: {}
+[16.842984] (-) TimerEvent: {}
+[16.944333] (-) TimerEvent: {}
+[16.956273] (kiss_icp) StdoutLine: {'line': b'[ 57%] \x1b[1m\x1b[32mLinking CXX executable kiss_icp_node\x1b[0m\n'}
+[17.044528] (-) TimerEvent: {}
+[17.145420] (-) TimerEvent: {}
+[17.246495] (-) TimerEvent: {}
+[17.251389] (kiss_icp) StdoutLine: {'line': b'[ 57%] Built target kiss_icp_node\n'}
+[17.346670] (-) TimerEvent: {}
+[17.447940] (-) TimerEvent: {}
+[17.548633] (-) TimerEvent: {}
+[17.649321] (-) TimerEvent: {}
+[17.750009] (-) TimerEvent: {}
+[17.850698] (-) TimerEvent: {}
+[17.951457] (-) TimerEvent: {}
+[18.052146] (-) TimerEvent: {}
+[18.152830] (-) TimerEvent: {}
+[18.253576] (-) TimerEvent: {}
+[18.354843] (-) TimerEvent: {}
+[18.455737] (-) TimerEvent: {}
+[18.556413] (-) TimerEvent: {}
+[18.657102] (-) TimerEvent: {}
+[18.758184] (-) TimerEvent: {}
+[18.858862] (-) TimerEvent: {}
+[18.959532] (-) TimerEvent: {}
+[19.060194] (-) TimerEvent: {}
+[19.160883] (-) TimerEvent: {}
+[19.261580] (-) TimerEvent: {}
+[19.362271] (-) TimerEvent: {}
+[19.462961] (-) TimerEvent: {}
+[19.563613] (-) TimerEvent: {}
+[19.664278] (-) TimerEvent: {}
+[19.764946] (-) TimerEvent: {}
+[19.865813] (-) TimerEvent: {}
+[19.966478] (-) TimerEvent: {}
+[20.067149] (-) TimerEvent: {}
+[20.167849] (-) TimerEvent: {}
+[20.268531] (-) TimerEvent: {}
+[20.369227] (-) TimerEvent: {}
+[20.469889] (-) TimerEvent: {}
+[20.570580] (-) TimerEvent: {}
+[20.671263] (-) TimerEvent: {}
+[20.771947] (-) TimerEvent: {}
+[20.872623] (-) TimerEvent: {}
+[20.973272] (-) TimerEvent: {}
+[21.073981] (-) TimerEvent: {}
+[21.174650] (-) TimerEvent: {}
+[21.275326] (-) TimerEvent: {}
+[21.375986] (-) TimerEvent: {}
+[21.476668] (-) TimerEvent: {}
+[21.577373] (-) TimerEvent: {}
+[21.678042] (-) TimerEvent: {}
+[21.778718] (-) TimerEvent: {}
+[21.879379] (-) TimerEvent: {}
+[21.980044] (-) TimerEvent: {}
+[22.080704] (-) TimerEvent: {}
+[22.181335] (-) TimerEvent: {}
+[22.201401] (kiss_icp) StdoutLine: {'line': b'[ 64%] \x1b[1m\x1b[32mLinking CXX static library libkiss_icp_core.a\x1b[0m\n'}
+[22.254387] (kiss_icp) StdoutLine: {'line': b'[ 64%] Built target kiss_icp_core\n'}
+[22.279253] (kiss_icp) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object kiss_icp/pipeline/CMakeFiles/kiss_icp_pipeline.dir/KissICP.cpp.o\x1b[0m\n'}
+[22.281435] (-) TimerEvent: {}
+[22.382032] (-) TimerEvent: {}
+[22.482853] (-) TimerEvent: {}
+[22.583576] (-) TimerEvent: {}
+[22.684277] (-) TimerEvent: {}
+[22.785304] (-) TimerEvent: {}
+[22.885978] (-) TimerEvent: {}
+[22.986713] (-) TimerEvent: {}
+[23.087447] (-) TimerEvent: {}
+[23.188119] (-) TimerEvent: {}
+[23.288924] (-) TimerEvent: {}
+[23.389637] (-) TimerEvent: {}
+[23.490323] (-) TimerEvent: {}
+[23.590985] (-) TimerEvent: {}
+[23.691645] (-) TimerEvent: {}
+[23.792312] (-) TimerEvent: {}
+[23.892991] (-) TimerEvent: {}
+[23.993695] (-) TimerEvent: {}
+[24.094383] (-) TimerEvent: {}
+[24.195040] (-) TimerEvent: {}
+[24.295694] (-) TimerEvent: {}
+[24.396355] (-) TimerEvent: {}
+[24.497016] (-) TimerEvent: {}
+[24.597687] (-) TimerEvent: {}
+[24.698488] (-) TimerEvent: {}
+[24.799346] (-) TimerEvent: {}
+[24.900068] (-) TimerEvent: {}
+[25.000726] (-) TimerEvent: {}
+[25.101420] (-) TimerEvent: {}
+[25.202115] (-) TimerEvent: {}
+[25.302813] (-) TimerEvent: {}
+[25.403696] (-) TimerEvent: {}
+[25.504362] (-) TimerEvent: {}
+[25.605032] (-) TimerEvent: {}
+[25.705710] (-) TimerEvent: {}
+[25.806375] (-) TimerEvent: {}
+[25.907051] (-) TimerEvent: {}
+[26.007717] (-) TimerEvent: {}
+[26.108369] (-) TimerEvent: {}
+[26.209036] (-) TimerEvent: {}
+[26.309729] (-) TimerEvent: {}
+[26.410395] (-) TimerEvent: {}
+[26.511182] (-) TimerEvent: {}
+[26.611840] (-) TimerEvent: {}
+[26.712518] (-) TimerEvent: {}
+[26.813212] (-) TimerEvent: {}
+[26.875571] (kiss_icp) StdoutLine: {'line': b'[ 78%] \x1b[1m\x1b[32mLinking CXX static library libkiss_icp_pipeline.a\x1b[0m\n'}
+[26.909297] (kiss_icp) StdoutLine: {'line': b'[ 78%] Built target kiss_icp_pipeline\n'}
+[26.913322] (-) TimerEvent: {}
+[26.934683] (kiss_icp) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object CMakeFiles/odometry_component.dir/src/OdometryServer.cpp.o\x1b[0m\n'}
+[27.013519] (-) TimerEvent: {}
+[27.114177] (-) TimerEvent: {}
+[27.214847] (-) TimerEvent: {}
+[27.315522] (-) TimerEvent: {}
+[27.416219] (-) TimerEvent: {}
+[27.516921] (-) TimerEvent: {}
+[27.617709] (-) TimerEvent: {}
+[27.718365] (-) TimerEvent: {}
+[27.819021] (-) TimerEvent: {}
+[27.919881] (-) TimerEvent: {}
+[28.020566] (-) TimerEvent: {}
+[28.121276] (-) TimerEvent: {}
+[28.221938] (-) TimerEvent: {}
+[28.322607] (-) TimerEvent: {}
+[28.423280] (-) TimerEvent: {}
+[28.523948] (-) TimerEvent: {}
+[28.624609] (-) TimerEvent: {}
+[28.725300] (-) TimerEvent: {}
+[28.825960] (-) TimerEvent: {}
+[28.926614] (-) TimerEvent: {}
+[29.027278] (-) TimerEvent: {}
+[29.127967] (-) TimerEvent: {}
+[29.228630] (-) TimerEvent: {}
+[29.329307] (-) TimerEvent: {}
+[29.429989] (-) TimerEvent: {}
+[29.530653] (-) TimerEvent: {}
+[29.631338] (-) TimerEvent: {}
+[29.731972] (-) TimerEvent: {}
+[29.832658] (-) TimerEvent: {}
+[29.933307] (-) TimerEvent: {}
+[30.033949] (-) TimerEvent: {}
+[30.134578] (-) TimerEvent: {}
+[30.235241] (-) TimerEvent: {}
+[30.335895] (-) TimerEvent: {}
+[30.436563] (-) TimerEvent: {}
+[30.537247] (-) TimerEvent: {}
+[30.637925] (-) TimerEvent: {}
+[30.738612] (-) TimerEvent: {}
+[30.839292] (-) TimerEvent: {}
+[30.939960] (-) TimerEvent: {}
+[31.040639] (-) TimerEvent: {}
+[31.141308] (-) TimerEvent: {}
+[31.241985] (-) TimerEvent: {}
+[31.342661] (-) TimerEvent: {}
+[31.443353] (-) TimerEvent: {}
+[31.544028] (-) TimerEvent: {}
+[31.644724] (-) TimerEvent: {}
+[31.745453] (-) TimerEvent: {}
+[31.846197] (-) TimerEvent: {}
+[31.947203] (-) TimerEvent: {}
+[32.047959] (-) TimerEvent: {}
+[32.148739] (-) TimerEvent: {}
+[32.249449] (-) TimerEvent: {}
+[32.350080] (-) TimerEvent: {}
+[32.450741] (-) TimerEvent: {}
+[32.551407] (-) TimerEvent: {}
+[32.652079] (-) TimerEvent: {}
+[32.752736] (-) TimerEvent: {}
+[32.853401] (-) TimerEvent: {}
+[32.954075] (-) TimerEvent: {}
+[33.054744] (-) TimerEvent: {}
+[33.155415] (-) TimerEvent: {}
+[33.256106] (-) TimerEvent: {}
+[33.356777] (-) TimerEvent: {}
+[33.457456] (-) TimerEvent: {}
+[33.558125] (-) TimerEvent: {}
+[33.658787] (-) TimerEvent: {}
+[33.759448] (-) TimerEvent: {}
+[33.860120] (-) TimerEvent: {}
+[33.960804] (-) TimerEvent: {}
+[34.061514] (-) TimerEvent: {}
+[34.162190] (-) TimerEvent: {}
+[34.262906] (-) TimerEvent: {}
+[34.363605] (-) TimerEvent: {}
+[34.464309] (-) TimerEvent: {}
+[34.565036] (-) TimerEvent: {}
+[34.665706] (-) TimerEvent: {}
+[34.766413] (-) TimerEvent: {}
+[34.798956] (kiss_icp) StdoutLine: {'line': b'[ 92%] \x1b[1m\x1b[32mLinking CXX static library libkiss_icp_metrics.a\x1b[0m\n'}
+[34.842333] (kiss_icp) StdoutLine: {'line': b'[ 92%] Built target kiss_icp_metrics\n'}
+[34.866594] (-) TimerEvent: {}
+[34.967391] (-) TimerEvent: {}
+[35.068193] (-) TimerEvent: {}
+[35.168977] (-) TimerEvent: {}
+[35.269837] (-) TimerEvent: {}
+[35.370687] (-) TimerEvent: {}
+[35.471530] (-) TimerEvent: {}
+[35.572381] (-) TimerEvent: {}
+[35.673280] (-) TimerEvent: {}
+[35.774118] (-) TimerEvent: {}
+[35.874959] (-) TimerEvent: {}
+[35.975799] (-) TimerEvent: {}
+[36.076623] (-) TimerEvent: {}
+[36.177467] (-) TimerEvent: {}
+[36.278269] (-) TimerEvent: {}
+[36.378952] (-) TimerEvent: {}
+[36.479641] (-) TimerEvent: {}
+[36.580367] (-) TimerEvent: {}
+[36.681202] (-) TimerEvent: {}
+[36.782050] (-) TimerEvent: {}
+[36.882902] (-) TimerEvent: {}
+[36.983698] (-) TimerEvent: {}
+[37.084488] (-) TimerEvent: {}
+[37.185303] (-) TimerEvent: {}
+[37.286088] (-) TimerEvent: {}
+[37.386925] (-) TimerEvent: {}
+[37.487933] (-) TimerEvent: {}
+[37.588994] (-) TimerEvent: {}
+[37.689866] (-) TimerEvent: {}
+[37.790689] (-) TimerEvent: {}
+[37.891507] (-) TimerEvent: {}
+[37.992324] (-) TimerEvent: {}
+[38.093460] (-) TimerEvent: {}
+[38.194342] (-) TimerEvent: {}
+[38.295210] (-) TimerEvent: {}
+[38.395958] (-) TimerEvent: {}
+[38.496627] (-) TimerEvent: {}
+[38.597555] (-) TimerEvent: {}
+[38.698361] (-) TimerEvent: {}
+[38.799263] (-) TimerEvent: {}
+[38.900104] (-) TimerEvent: {}
+[39.000981] (-) TimerEvent: {}
+[39.101845] (-) TimerEvent: {}
+[39.202759] (-) TimerEvent: {}
+[39.303595] (-) TimerEvent: {}
+[39.404474] (-) TimerEvent: {}
+[39.505333] (-) TimerEvent: {}
+[39.606153] (-) TimerEvent: {}
+[39.706983] (-) TimerEvent: {}
+[39.807907] (-) TimerEvent: {}
+[39.908807] (-) TimerEvent: {}
+[40.009691] (-) TimerEvent: {}
+[40.110619] (-) TimerEvent: {}
+[40.211455] (-) TimerEvent: {}
+[40.312160] (-) TimerEvent: {}
+[40.412810] (-) TimerEvent: {}
+[40.513742] (-) TimerEvent: {}
+[40.614624] (-) TimerEvent: {}
+[40.715509] (-) TimerEvent: {}
+[40.816354] (-) TimerEvent: {}
+[40.917226] (-) TimerEvent: {}
+[41.018020] (-) TimerEvent: {}
+[41.118795] (-) TimerEvent: {}
+[41.219668] (-) TimerEvent: {}
+[41.320555] (-) TimerEvent: {}
+[41.421411] (-) TimerEvent: {}
+[41.522243] (-) TimerEvent: {}
+[41.623069] (-) TimerEvent: {}
+[41.723934] (-) TimerEvent: {}
+[41.824821] (-) TimerEvent: {}
+[41.925680] (-) TimerEvent: {}
+[42.026515] (-) TimerEvent: {}
+[42.127255] (-) TimerEvent: {}
+[42.228051] (-) TimerEvent: {}
+[42.328731] (-) TimerEvent: {}
+[42.429644] (-) TimerEvent: {}
+[42.530458] (-) TimerEvent: {}
+[42.631296] (-) TimerEvent: {}
+[42.732094] (-) TimerEvent: {}
+[42.832889] (-) TimerEvent: {}
+[42.933893] (-) TimerEvent: {}
+[43.034710] (-) TimerEvent: {}
+[43.135457] (-) TimerEvent: {}
+[43.235996] (-) TimerEvent: {}
+[43.336840] (-) TimerEvent: {}
+[43.437590] (-) TimerEvent: {}
+[43.538385] (-) TimerEvent: {}
+[43.639204] (-) TimerEvent: {}
+[43.740001] (-) TimerEvent: {}
+[43.840852] (-) TimerEvent: {}
+[43.941706] (-) TimerEvent: {}
+[44.042476] (-) TimerEvent: {}
+[44.143159] (-) TimerEvent: {}
+[44.243752] (-) TimerEvent: {}
+[44.344456] (-) TimerEvent: {}
+[44.445317] (-) TimerEvent: {}
+[44.546217] (-) TimerEvent: {}
+[44.647054] (-) TimerEvent: {}
+[44.747869] (-) TimerEvent: {}
+[44.848743] (-) TimerEvent: {}
+[44.949652] (-) TimerEvent: {}
+[45.050336] (-) TimerEvent: {}
+[45.151130] (-) TimerEvent: {}
+[45.251889] (-) TimerEvent: {}
+[45.352782] (-) TimerEvent: {}
+[45.453643] (-) TimerEvent: {}
+[45.554476] (-) TimerEvent: {}
+[45.655279] (-) TimerEvent: {}
+[45.756090] (-) TimerEvent: {}
+[45.856903] (-) TimerEvent: {}
+[45.957759] (-) TimerEvent: {}
+[46.058692] (-) TimerEvent: {}
+[46.159397] (-) TimerEvent: {}
+[46.260147] (-) TimerEvent: {}
+[46.360898] (-) TimerEvent: {}
+[46.461709] (-) TimerEvent: {}
+[46.562455] (-) TimerEvent: {}
+[46.663141] (-) TimerEvent: {}
+[46.763917] (-) TimerEvent: {}
+[46.864891] (-) TimerEvent: {}
+[46.965737] (-) TimerEvent: {}
+[47.066457] (-) TimerEvent: {}
+[47.167101] (-) TimerEvent: {}
+[47.267846] (-) TimerEvent: {}
+[47.368533] (-) TimerEvent: {}
+[47.469453] (-) TimerEvent: {}
+[47.570293] (-) TimerEvent: {}
+[47.671127] (-) TimerEvent: {}
+[47.771969] (-) TimerEvent: {}
+[47.872812] (-) TimerEvent: {}
+[47.973713] (-) TimerEvent: {}
+[48.074720] (-) TimerEvent: {}
+[48.175467] (-) TimerEvent: {}
+[48.276124] (-) TimerEvent: {}
+[48.376941] (-) TimerEvent: {}
+[48.477918] (-) TimerEvent: {}
+[48.578744] (-) TimerEvent: {}
+[48.679448] (-) TimerEvent: {}
+[48.780183] (-) TimerEvent: {}
+[48.881000] (-) TimerEvent: {}
+[48.981847] (-) TimerEvent: {}
+[49.082519] (-) TimerEvent: {}
+[49.183189] (-) TimerEvent: {}
+[49.283857] (-) TimerEvent: {}
+[49.384551] (-) TimerEvent: {}
+[49.485383] (-) TimerEvent: {}
+[49.586144] (-) TimerEvent: {}
+[49.686943] (-) TimerEvent: {}
+[49.787813] (-) TimerEvent: {}
+[49.888640] (-) TimerEvent: {}
+[49.989363] (-) TimerEvent: {}
+[50.090142] (-) TimerEvent: {}
+[50.190923] (-) TimerEvent: {}
+[50.291493] (-) TimerEvent: {}
+[50.392044] (-) TimerEvent: {}
+[50.493049] (-) TimerEvent: {}
+[50.593950] (-) TimerEvent: {}
+[50.694800] (-) TimerEvent: {}
+[50.795647] (-) TimerEvent: {}
+[50.896508] (-) TimerEvent: {}
+[50.997417] (-) TimerEvent: {}
+[51.098236] (-) TimerEvent: {}
+[51.199017] (-) TimerEvent: {}
+[51.299695] (-) TimerEvent: {}
+[51.400668] (-) TimerEvent: {}
+[51.501625] (-) TimerEvent: {}
+[51.602458] (-) TimerEvent: {}
+[51.703269] (-) TimerEvent: {}
+[51.804106] (-) TimerEvent: {}
+[51.904935] (-) TimerEvent: {}
+[52.005785] (-) TimerEvent: {}
+[52.106588] (-) TimerEvent: {}
+[52.207374] (-) TimerEvent: {}
+[52.308038] (-) TimerEvent: {}
+[52.408783] (-) TimerEvent: {}
+[52.509588] (-) TimerEvent: {}
+[52.610367] (-) TimerEvent: {}
+[52.711123] (-) TimerEvent: {}
+[52.811927] (-) TimerEvent: {}
+[52.912764] (-) TimerEvent: {}
+[53.013645] (-) TimerEvent: {}
+[53.114483] (-) TimerEvent: {}
+[53.215306] (-) TimerEvent: {}
+[53.316139] (-) TimerEvent: {}
+[53.416966] (-) TimerEvent: {}
+[53.517829] (-) TimerEvent: {}
+[53.618660] (-) TimerEvent: {}
+[53.719460] (-) TimerEvent: {}
+[53.820199] (-) TimerEvent: {}
+[53.921031] (-) TimerEvent: {}
+[54.021855] (-) TimerEvent: {}
+[54.122649] (-) TimerEvent: {}
+[54.223479] (-) TimerEvent: {}
+[54.324118] (-) TimerEvent: {}
+[54.424778] (-) TimerEvent: {}
+[54.525685] (-) TimerEvent: {}
+[54.626485] (-) TimerEvent: {}
+[54.727279] (-) TimerEvent: {}
+[54.828135] (-) TimerEvent: {}
+[54.928922] (-) TimerEvent: {}
+[55.029855] (-) TimerEvent: {}
+[55.130604] (-) TimerEvent: {}
+[55.231275] (-) TimerEvent: {}
+[55.331927] (-) TimerEvent: {}
+[55.432597] (-) TimerEvent: {}
+[55.533299] (-) TimerEvent: {}
+[55.634056] (-) TimerEvent: {}
+[55.734770] (-) TimerEvent: {}
+[55.835641] (-) TimerEvent: {}
+[55.936493] (-) TimerEvent: {}
+[56.037325] (-) TimerEvent: {}
+[56.138144] (-) TimerEvent: {}
+[56.238965] (-) TimerEvent: {}
+[56.339636] (-) TimerEvent: {}
+[56.440276] (-) TimerEvent: {}
+[56.540980] (-) TimerEvent: {}
+[56.641837] (-) TimerEvent: {}
+[56.742660] (-) TimerEvent: {}
+[56.843495] (-) TimerEvent: {}
+[56.944310] (-) TimerEvent: {}
+[57.045192] (-) TimerEvent: {}
+[57.146033] (-) TimerEvent: {}
+[57.246852] (-) TimerEvent: {}
+[57.347660] (-) TimerEvent: {}
+[57.448453] (-) TimerEvent: {}
+[57.549301] (-) TimerEvent: {}
+[57.650087] (-) TimerEvent: {}
+[57.750886] (-) TimerEvent: {}
+[57.851746] (-) TimerEvent: {}
+[57.952556] (-) TimerEvent: {}
+[58.053414] (-) TimerEvent: {}
+[58.154236] (-) TimerEvent: {}
+[58.255128] (-) TimerEvent: {}
+[58.355769] (-) TimerEvent: {}
+[58.456395] (-) TimerEvent: {}
+[58.557057] (-) TimerEvent: {}
+[58.657859] (-) TimerEvent: {}
+[58.758642] (-) TimerEvent: {}
+[58.859443] (-) TimerEvent: {}
+[58.960232] (-) TimerEvent: {}
+[59.061020] (-) TimerEvent: {}
+[59.161857] (-) TimerEvent: {}
+[59.262673] (-) TimerEvent: {}
+[59.363495] (-) TimerEvent: {}
+[59.464309] (-) TimerEvent: {}
+[59.565110] (-) TimerEvent: {}
+[59.665967] (-) TimerEvent: {}
+[59.766754] (-) TimerEvent: {}
+[59.867536] (-) TimerEvent: {}
+[59.968341] (-) TimerEvent: {}
+[60.069181] (-) TimerEvent: {}
+[60.169970] (-) TimerEvent: {}
+[60.270781] (-) TimerEvent: {}
+[60.371466] (-) TimerEvent: {}
+[60.472098] (-) TimerEvent: {}
+[60.572717] (-) TimerEvent: {}
+[60.673352] (-) TimerEvent: {}
+[60.774037] (-) TimerEvent: {}
+[60.874852] (-) TimerEvent: {}
+[60.975671] (-) TimerEvent: {}
+[61.076483] (-) TimerEvent: {}
+[61.177336] (-) TimerEvent: {}
+[61.278167] (-) TimerEvent: {}
+[61.378983] (-) TimerEvent: {}
+[61.479796] (-) TimerEvent: {}
+[61.580603] (-) TimerEvent: {}
+[61.681460] (-) TimerEvent: {}
+[61.782260] (-) TimerEvent: {}
+[61.883052] (-) TimerEvent: {}
+[61.983851] (-) TimerEvent: {}
+[62.084689] (-) TimerEvent: {}
+[62.185543] (-) TimerEvent: {}
+[62.286366] (-) TimerEvent: {}
+[62.387182] (-) TimerEvent: {}
+[62.487867] (-) TimerEvent: {}
+[62.588576] (-) TimerEvent: {}
+[62.689273] (-) TimerEvent: {}
+[62.790081] (-) TimerEvent: {}
+[62.890876] (-) TimerEvent: {}
+[62.991690] (-) TimerEvent: {}
+[63.092505] (-) TimerEvent: {}
+[63.193340] (-) TimerEvent: {}
+[63.563547] (-) TimerEvent: {}
+[63.664343] (-) TimerEvent: {}
+[63.765141] (-) TimerEvent: {}
+[63.865965] (-) TimerEvent: {}
+[63.966772] (-) TimerEvent: {}
+[64.067567] (-) TimerEvent: {}
+[64.168223] (-) TimerEvent: {}
+[64.268855] (-) TimerEvent: {}
+[64.369526] (-) TimerEvent: {}
+[64.470205] (-) TimerEvent: {}
+[64.571009] (-) TimerEvent: {}
+[64.671815] (-) TimerEvent: {}
+[64.772623] (-) TimerEvent: {}
+[64.873478] (-) TimerEvent: {}
+[64.974359] (-) TimerEvent: {}
+[65.075219] (-) TimerEvent: {}
+[65.176060] (-) TimerEvent: {}
+[65.276916] (-) TimerEvent: {}
+[65.377778] (-) TimerEvent: {}
+[65.478620] (-) TimerEvent: {}
+[65.579463] (-) TimerEvent: {}
+[65.680337] (-) TimerEvent: {}
+[65.781205] (-) TimerEvent: {}
+[65.882034] (-) TimerEvent: {}
+[65.982869] (-) TimerEvent: {}
+[66.083681] (-) TimerEvent: {}
+[66.184502] (-) TimerEvent: {}
+[66.285324] (-) TimerEvent: {}
+[66.386064] (-) TimerEvent: {}
+[66.486704] (-) TimerEvent: {}
+[66.587346] (-) TimerEvent: {}
+[66.687990] (-) TimerEvent: {}
+[66.788667] (-) TimerEvent: {}
+[66.889517] (-) TimerEvent: {}
+[66.990324] (-) TimerEvent: {}
+[67.091138] (-) TimerEvent: {}
+[67.191942] (-) TimerEvent: {}
+[67.292750] (-) TimerEvent: {}
+[67.393590] (-) TimerEvent: {}
+[67.494400] (-) TimerEvent: {}
+[67.595219] (-) TimerEvent: {}
+[67.696020] (-) TimerEvent: {}
+[67.796826] (-) TimerEvent: {}
+[67.897656] (-) TimerEvent: {}
+[67.998470] (-) TimerEvent: {}
+[68.099259] (-) TimerEvent: {}
+[68.200053] (-) TimerEvent: {}
+[68.300823] (-) TimerEvent: {}
+[68.401509] (-) TimerEvent: {}
+[68.502410] (-) TimerEvent: {}
+[68.603056] (-) TimerEvent: {}
+[68.694881] (kiss_icp) StdoutLine: {'line': b'[100%] \x1b[1m\x1b[32mLinking CXX shared library libodometry_component.so\x1b[0m\n'}
+[68.703254] (-) TimerEvent: {}
+[68.804009] (-) TimerEvent: {}
+[68.905061] (-) TimerEvent: {}
+[69.005811] (-) TimerEvent: {}
+[69.106543] (-) TimerEvent: {}
+[69.149023] (kiss_icp) StdoutLine: {'line': b'[100%] Built target odometry_component\n'}
+[69.162634] (kiss_icp) CommandEnded: {'returncode': 0}
+[69.166968] (kiss_icp) JobProgress: {'identifier': 'kiss_icp', 'progress': 'install'}
+[69.192771] (kiss_icp) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp'], 'cwd': '/home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp', 'env': OrderedDict([('USER', 'eceteam4'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eceteam4'), ('OLDPWD', '/home/eceteam4/ECE480Team4/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '3918'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'eceteam4'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PROMPT_DIRTRIM', '4'), ('USERNAME', 'eceteam4'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/eceteam4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eceteam4-desktop:@/tmp/.ICE-unix/1940,unix/eceteam4-desktop:/tmp/.ICE-unix/1940'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a56e4522_f786_4873_8578_7dde43d23038'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.90'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[69.206675] (-) TimerEvent: {}
+[69.230579] (kiss_icp) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[69.232684] (kiss_icp) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[69.233472] (kiss_icp) StdoutLine: {'line': b'-- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/lib/kiss_icp/kiss_icp_node\n'}
+[69.246153] (kiss_icp) StdoutLine: {'line': b'-- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/lib/libodometry_component.so\n'}
+[69.256252] (kiss_icp) StdoutLine: {'line': b'-- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp//launch/odometry.launch.py\n'}
+[69.265228] (kiss_icp) StdoutLine: {'line': b'-- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp//rviz/kiss_icp.rviz\n'}
+[69.275280] (kiss_icp) StdoutLine: {'line': b'-- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp//config/config.yaml\n'}
+[69.282878] (kiss_icp) StdoutLine: {'line': b'-- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/ament_index/resource_index/package_run_dependencies/kiss_icp\n'}
+[69.292323] (kiss_icp) StdoutLine: {'line': b'-- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/ament_index/resource_index/parent_prefix_path/kiss_icp\n'}
+[69.302005] (kiss_icp) StdoutLine: {'line': b'-- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp/environment/ament_prefix_path.sh\n'}
+[69.306829] (-) TimerEvent: {}
+[69.312011] (kiss_icp) StdoutLine: {'line': b'-- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp/environment/ament_prefix_path.dsv\n'}
+[69.323817] (kiss_icp) StdoutLine: {'line': b'-- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp/environment/path.sh\n'}
+[69.331303] (kiss_icp) StdoutLine: {'line': b'-- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp/environment/path.dsv\n'}
+[69.340548] (kiss_icp) StdoutLine: {'line': b'-- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp/local_setup.bash\n'}
+[69.348440] (kiss_icp) StdoutLine: {'line': b'-- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp/local_setup.sh\n'}
+[69.358702] (kiss_icp) StdoutLine: {'line': b'-- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp/local_setup.zsh\n'}
+[69.368130] (kiss_icp) StdoutLine: {'line': b'-- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp/local_setup.dsv\n'}
+[69.378119] (kiss_icp) StdoutLine: {'line': b'-- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp/package.dsv\n'}
+[69.388185] (kiss_icp) StdoutLine: {'line': b'-- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/ament_index/resource_index/packages/kiss_icp\n'}
+[69.395774] (kiss_icp) StdoutLine: {'line': b'-- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/ament_index/resource_index/rclcpp_components/kiss_icp\n'}
+[69.405128] (kiss_icp) StdoutLine: {'line': b'-- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp/cmake/kiss_icpConfig.cmake\n'}
+[69.406902] (-) TimerEvent: {}
+[69.415296] (kiss_icp) StdoutLine: {'line': b'-- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp/cmake/kiss_icpConfig-version.cmake\n'}
+[69.425067] (kiss_icp) StdoutLine: {'line': b'-- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp/package.xml\n'}
+[69.435285] (kiss_icp) CommandEnded: {'returncode': 0}
+[69.507043] (-) TimerEvent: {}
+[69.510232] (kiss_icp) JobEnded: {'identifier': 'kiss_icp', 'rc': 0}
+[69.512840] (-) EventReactorShutdown: {}

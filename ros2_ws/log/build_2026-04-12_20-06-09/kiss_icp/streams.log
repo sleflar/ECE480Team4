@@ -1,0 +1,107 @@
+[0.018s] Invoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/eceteam4/ECE480Team4/ros2_ws/src/kiss-icp/ros -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp
+[0.204s] -- The CXX compiler identification is GNU 11.4.0
+[0.223s] -- Detecting CXX compiler ABI info
+[0.378s] -- Detecting CXX compiler ABI info - done
+[0.422s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.423s] -- Detecting CXX compile features
+[0.424s] -- Detecting CXX compile features - done
+[0.447s] [0mCMake Deprecation Warning at /home/eceteam4/ECE480Team4/ros2_ws/src/kiss-icp/cpp/kiss_icp/3rdparty/find_dependencies.cmake:25 (cmake_policy):
+[0.447s]   The OLD behavior for policy CMP0135 will be removed from a future version
+[0.447s]   of CMake.
+[0.447s] 
+[0.448s]   The cmake-policies(7) manual explains that the OLD behaviors of all
+[0.448s]   policies are deprecated and that a policy should be set to OLD only under
+[0.448s]   specific short-term circumstances.  Projects should be ported to the NEW
+[0.448s]   behavior and not rely on setting a policy to OLD.
+[0.449s] Call Stack (most recent call first):
+[0.449s]   /home/eceteam4/ECE480Team4/ros2_ws/src/kiss-icp/cpp/kiss_icp/CMakeLists.txt:48 (include)
+[0.449s] 
+[0.449s] [0m
+[2.009s] -- The C compiler identification is GNU 11.4.0
+[2.030s] -- Detecting C compiler ABI info
+[2.165s] -- Detecting C compiler ABI info - done
+[2.197s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.197s] -- Detecting C compile features
+[2.198s] -- Detecting C compile features - done
+[3.282s] [0mCMake Deprecation Warning at /home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp/_deps/tessil-src/CMakeLists.txt:1 (cmake_minimum_required):
+[3.283s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[3.283s]   CMake.
+[3.283s] 
+[3.284s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[3.284s]   to tell CMake that the project requires at least <min> but has been updated
+[3.284s]   to work with policies introduced by <max> or earlier.
+[3.284s] 
+[3.284s] [0m
+[3.298s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.638s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[3.801s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.945s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[4.089s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[4.106s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[4.138s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[4.179s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.225s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.340s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[4.386s] -- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)
+[4.499s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[4.507s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[4.773s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")
+[4.859s] -- Found FastRTPS: /opt/ros/humble/include
+[4.950s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.973s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.149s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[5.151s] -- Found Threads: TRUE
+[5.306s] -- Found rclcpp_components: 16.0.18 (/opt/ros/humble/share/rclcpp_components/cmake)
+[5.390s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[5.439s] -- Found tf2_ros: 0.25.17 (/opt/ros/humble/share/tf2_ros/cmake)
+[5.646s] -- Found std_srvs: 4.9.1 (/opt/ros/humble/share/std_srvs/cmake)
+[5.850s] -- Configuring done (5.8s)
+[5.923s] -- Generating done (0.1s)
+[5.994s] -- Build files have been written to: /home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp
+[6.029s] Invoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/eceteam4/ECE480Team4/ros2_ws/src/kiss-icp/ros -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp
+[6.035s] Invoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp -- -j6 -l6
+[6.089s] [ 14%] [32mBuilding CXX object kiss_icp/core/CMakeFiles/kiss_icp_core.dir/VoxelHashMap.cpp.o[0m
+[6.090s] [ 14%] [32mBuilding CXX object CMakeFiles/kiss_icp_node.dir/rclcpp_components/node_main_kiss_icp_node.cpp.o[0m
+[6.090s] [ 21%] [32mBuilding CXX object kiss_icp/core/CMakeFiles/kiss_icp_core.dir/Registration.cpp.o[0m
+[6.090s] [ 28%] [32mBuilding CXX object kiss_icp/core/CMakeFiles/kiss_icp_core.dir/VoxelUtils.cpp.o[0m
+[6.094s] [ 35%] [32mBuilding CXX object kiss_icp/metrics/CMakeFiles/kiss_icp_metrics.dir/Metrics.cpp.o[0m
+[6.095s] [ 42%] [32mBuilding CXX object kiss_icp/core/CMakeFiles/kiss_icp_core.dir/Preprocessing.cpp.o[0m
+[10.875s] [ 50%] [32mBuilding CXX object kiss_icp/core/CMakeFiles/kiss_icp_core.dir/Threshold.cpp.o[0m
+[16.953s] [ 57%] [1m[32mLinking CXX executable kiss_icp_node[0m
+[17.249s] [ 57%] Built target kiss_icp_node
+[22.198s] [ 64%] [1m[32mLinking CXX static library libkiss_icp_core.a[0m
+[22.252s] [ 64%] Built target kiss_icp_core
+[22.276s] [ 71%] [32mBuilding CXX object kiss_icp/pipeline/CMakeFiles/kiss_icp_pipeline.dir/KissICP.cpp.o[0m
+[26.873s] [ 78%] [1m[32mLinking CXX static library libkiss_icp_pipeline.a[0m
+[26.906s] [ 78%] Built target kiss_icp_pipeline
+[26.932s] [ 85%] [32mBuilding CXX object CMakeFiles/odometry_component.dir/src/OdometryServer.cpp.o[0m
+[34.796s] [ 92%] [1m[32mLinking CXX static library libkiss_icp_metrics.a[0m
+[34.839s] [ 92%] Built target kiss_icp_metrics
+[68.692s] [100%] [1m[32mLinking CXX shared library libodometry_component.so[0m
+[69.146s] [100%] Built target odometry_component
+[69.160s] Invoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp -- -j6 -l6
+[69.192s] Invoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp
+[69.228s] -- Install configuration: "Release"
+[69.230s] -- Execute custom install script
+[69.231s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/lib/kiss_icp/kiss_icp_node
+[69.243s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/lib/libodometry_component.so
+[69.253s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp//launch/odometry.launch.py
+[69.262s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp//rviz/kiss_icp.rviz
+[69.272s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp//config/config.yaml
+[69.280s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/ament_index/resource_index/package_run_dependencies/kiss_icp
+[69.289s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/ament_index/resource_index/parent_prefix_path/kiss_icp
+[69.299s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp/environment/ament_prefix_path.sh
+[69.309s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp/environment/ament_prefix_path.dsv
+[69.321s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp/environment/path.sh
+[69.328s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp/environment/path.dsv
+[69.337s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp/local_setup.bash
+[69.345s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp/local_setup.sh
+[69.356s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp/local_setup.zsh
+[69.365s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp/local_setup.dsv
+[69.375s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp/package.dsv
+[69.385s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/ament_index/resource_index/packages/kiss_icp
+[69.393s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/ament_index/resource_index/rclcpp_components/kiss_icp
+[69.402s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp/cmake/kiss_icpConfig.cmake
+[69.412s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp/cmake/kiss_icpConfig-version.cmake
+[69.422s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp/package.xml
+[69.433s] Invoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp

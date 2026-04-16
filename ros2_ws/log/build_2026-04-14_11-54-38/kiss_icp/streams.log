@@ -1,0 +1,33 @@
+[0.815s] Invoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp -- -j6 -l6
+[1.547s] [ 42%] Built target kiss_icp_core
+[1.563s] [ 57%] Built target kiss_icp_metrics
+[1.594s] [ 71%] Built target kiss_icp_node
+[1.654s] [ 85%] Built target kiss_icp_pipeline
+[1.851s] [100%] Built target odometry_component
+[1.874s] Invoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp -- -j6 -l6
+[1.900s] Invoking command in '/home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp
+[1.906s] -- Install configuration: "Release"
+[1.916s] -- Execute custom install script
+[1.930s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/lib/kiss_icp/kiss_icp_node
+[1.932s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/lib/libodometry_component.so
+[1.935s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp//launch/my_odometry.launch.py
+[1.935s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp//launch/odometry.launch.py
+[1.937s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp//rviz/kiss_icp.rviz
+[1.938s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp//config/config.yaml
+[1.941s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/ament_index/resource_index/package_run_dependencies/kiss_icp
+[1.946s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/ament_index/resource_index/parent_prefix_path/kiss_icp
+[1.947s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp/environment/ament_prefix_path.sh
+[1.947s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp/environment/ament_prefix_path.dsv
+[1.948s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp/environment/path.sh
+[1.949s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp/environment/path.dsv
+[1.949s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp/local_setup.bash
+[1.950s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp/local_setup.sh
+[1.951s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp/local_setup.zsh
+[1.951s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp/local_setup.dsv
+[1.951s] -- Symlinking: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp/package.dsv
+[1.975s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/ament_index/resource_index/packages/kiss_icp
+[1.976s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/ament_index/resource_index/rclcpp_components/kiss_icp
+[1.977s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp/cmake/kiss_icpConfig.cmake
+[1.978s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp/cmake/kiss_icpConfig-version.cmake
+[1.980s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/ros2_ws/install/kiss_icp/share/kiss_icp/package.xml
+[1.982s] Invoked command in '/home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/eceteam4/ECE480Team4/ros2_ws/build/kiss_icp

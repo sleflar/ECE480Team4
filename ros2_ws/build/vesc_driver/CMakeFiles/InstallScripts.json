@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/eceteam4/ECE480Team4/ros2_ws/build/vesc_driver/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,17 @@
+[4.849s] Invoking command in '/home/eceteam4/ECE480Team4/build/sensors_lidar_bridge': PYTHONPATH=/home/eceteam4/ECE480Team4/build/sensors_lidar_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/install/sensors_lidar_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/build/sensors_lidar_bridge/build --no-deps symlink_data
+[6.498s] running develop
+[7.125s] running egg_info
+[7.126s] writing sensors_lidar_bridge.egg-info/PKG-INFO
+[7.126s] writing dependency_links to sensors_lidar_bridge.egg-info/dependency_links.txt
+[7.127s] writing entry points to sensors_lidar_bridge.egg-info/entry_points.txt
+[7.127s] writing requirements to sensors_lidar_bridge.egg-info/requires.txt
+[7.127s] writing top-level names to sensors_lidar_bridge.egg-info/top_level.txt
+[7.132s] reading manifest file 'sensors_lidar_bridge.egg-info/SOURCES.txt'
+[7.141s] writing manifest file 'sensors_lidar_bridge.egg-info/SOURCES.txt'
+[7.145s] running build_ext
+[7.145s] Creating /home/eceteam4/ECE480Team4/install/sensors_lidar_bridge/lib/python3.10/site-packages/sensors-lidar-bridge.egg-link (link to .)
+[7.148s] Installing sensors_lidar_bridge script to /home/eceteam4/ECE480Team4/install/sensors_lidar_bridge/lib/sensors_lidar_bridge
+[7.148s] 
+[7.148s] Installed /home/eceteam4/ECE480Team4/build/sensors_lidar_bridge
+[7.149s] running symlink_data
+[7.246s] Invoked command in '/home/eceteam4/ECE480Team4/build/sensors_lidar_bridge' returned '0': PYTHONPATH=/home/eceteam4/ECE480Team4/build/sensors_lidar_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eceteam4/ECE480Team4/install/sensors_lidar_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eceteam4/ECE480Team4/build/sensors_lidar_bridge/build --no-deps symlink_data

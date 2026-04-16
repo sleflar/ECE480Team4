@@ -1,0 +1,104 @@
+[0.084s] Invoking command in '/home/eceteam4/ECE480Team4/build/vesc_driver': CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/install/vesc_msgs:/home/eceteam4/ECE480Team4/install/vesc:/home/eceteam4/ECE480Team4/install/vesc_driver:/home/eceteam4/ECE480Team4/install/vesc_ackermann:/home/eceteam4/ECE480Team4/install/gazebo_world:/home/eceteam4/ECE480Team4/install/curvy_road:/home/eceteam4/ECE480Team4/install/vesc_control:/home/eceteam4/ECE480Team4/install/sensors_lidar_bridge:/home/eceteam4/ECE480Team4/install/sensors_imu_bridge:/home/eceteam4/ECE480Team4/install/sensors_camera_node:/home/eceteam4/ECE480Team4/install/racing_line:/home/eceteam4/ECE480Team4/install/perception_sync_node:/home/eceteam4/ECE480Team4/install/perception_ml_node:/home/eceteam4/ECE480Team4/install/obstacle_det:/home/eceteam4/ECE480Team4/install/lane_follow:/home/eceteam4/ECE480Team4/install/bot_slam:/opt/ros/humble LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/install/vesc_msgs/lib:/home/eceteam4/ECE480Team4/install/vesc_driver/lib:/home/eceteam4/ECE480Team4/install/vesc_ackermann/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/eceteam4/ECE480Team4/build/vesc_driver -- -j6 -l6
+[0.164s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.165s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.165s]   CMake.
+[0.165s] 
+[0.165s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.165s]   to tell CMake that the project requires at least <min> but has been updated
+[0.165s]   to work with policies introduced by <max> or earlier.
+[0.165s] 
+[0.165s] [0m
+[0.316s] -- The C compiler identification is GNU 11.4.0
+[0.653s] -- The CXX compiler identification is GNU 11.4.0
+[0.690s] -- Detecting C compiler ABI info
+[0.961s] -- Detecting C compiler ABI info - done
+[0.998s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.998s] -- Detecting C compile features
+[0.999s] -- Detecting C compile features - done
+[1.062s] -- Detecting CXX compiler ABI info
+[1.356s] -- Detecting CXX compiler ABI info - done
+[1.409s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.410s] -- Detecting CXX compile features
+[1.410s] -- Detecting CXX compile features - done
+[1.443s] -- Found ament_cmake_auto: 1.3.13 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[2.126s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[2.372s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.396s] -- Found vesc_msgs: 1.1.0 (/home/eceteam4/ECE480Team4/install/vesc_msgs/share/vesc_msgs/cmake)
+[2.528s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.546s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.560s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.580s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.607s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.919s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.922s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.998s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")
+[3.163s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.363s] -- Found asio_cmake_module: 1.2.0 (/opt/ros/humble/share/asio_cmake_module/cmake)
+[3.541s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.557s] [0mIn this package, headers install destination is set to `include` by ament_auto_package. It is recommended to install `include/vesc_driver` instead and will be the default behavior of ament_auto_package from ROS 2 Kilted Kaiju. On distributions before Kilted, ament_auto_package behaves the same way when you use USE_SCOPED_HEADER_INSTALL_DIR option.[0m
+[3.578s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.581s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.582s] -- Configured cppcheck include dirs: /home/eceteam4/ECE480Team4/ros2_ws/src/vesc_driver/include
+[3.582s] -- Configured cppcheck exclude dirs and/or files: 
+[3.584s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[3.584s] -- Configured cpplint exclude dirs and/or files: 
+[3.585s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.586s] -- Added test 'lint_cmake' to check CMake code style
+[3.590s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.598s] -- Added test 'uncrustify' to check C / C++ code style
+[3.598s] -- Configured uncrustify additional arguments: 
+[3.598s] -- Added test 'xmllint' to check XML markup files
+[3.617s] -- Configuring done (3.5s)
+[3.847s] -- Generating done (0.2s)
+[3.921s] -- Build files have been written to: /home/eceteam4/ECE480Team4/build/vesc_driver
+[4.134s] [ 10%] [32mBuilding CXX object CMakeFiles/vesc_driver_node.dir/rclcpp_components/node_main_vesc_driver_node.cpp.o[0m
+[4.159s] [ 20%] [32mBuilding CXX object CMakeFiles/vesc_driver.dir/src/vesc_driver.cpp.o[0m
+[4.200s] [ 30%] [32mBuilding CXX object CMakeFiles/vesc_driver.dir/src/vesc_interface.cpp.o[0m
+[4.226s] [ 40%] [32mBuilding CXX object CMakeFiles/vesc_driver.dir/src/vesc_packet.cpp.o[0m
+[4.236s] [ 50%] [32mBuilding CXX object CMakeFiles/vesc_driver.dir/src/vesc_packet_factory.cpp.o[0m
+[17.195s] [ 60%] [1m[32mLinking CXX executable vesc_driver_node[0m
+[17.425s] [ 60%] Built target vesc_driver_node
+[32.034s] [ 70%] [1m[32mLinking CXX shared library libvesc_driver.so[0m
+[33.454s] [ 70%] Built target vesc_driver
+[33.488s] [ 80%] [32mBuilding CXX object CMakeFiles/vesc_device_namer.dir/src/vesc_device_namer.cpp.o[0m
+[33.488s] [ 90%] [32mBuilding CXX object CMakeFiles/vesc_device_namer.dir/src/vesc_device_uuid_lookup.cpp.o[0m
+[35.039s] [100%] [1m[32mLinking CXX executable vesc_device_namer[0m
+[35.791s] [100%] Built target vesc_device_namer
+[35.806s] Invoked command in '/home/eceteam4/ECE480Team4/build/vesc_driver' returned '0': CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/install/vesc_msgs:/home/eceteam4/ECE480Team4/install/vesc:/home/eceteam4/ECE480Team4/install/vesc_driver:/home/eceteam4/ECE480Team4/install/vesc_ackermann:/home/eceteam4/ECE480Team4/install/gazebo_world:/home/eceteam4/ECE480Team4/install/curvy_road:/home/eceteam4/ECE480Team4/install/vesc_control:/home/eceteam4/ECE480Team4/install/sensors_lidar_bridge:/home/eceteam4/ECE480Team4/install/sensors_imu_bridge:/home/eceteam4/ECE480Team4/install/sensors_camera_node:/home/eceteam4/ECE480Team4/install/racing_line:/home/eceteam4/ECE480Team4/install/perception_sync_node:/home/eceteam4/ECE480Team4/install/perception_ml_node:/home/eceteam4/ECE480Team4/install/obstacle_det:/home/eceteam4/ECE480Team4/install/lane_follow:/home/eceteam4/ECE480Team4/install/bot_slam:/opt/ros/humble LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/install/vesc_msgs/lib:/home/eceteam4/ECE480Team4/install/vesc_driver/lib:/home/eceteam4/ECE480Team4/install/vesc_ackermann/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/eceteam4/ECE480Team4/build/vesc_driver -- -j6 -l6
+[35.817s] Invoking command in '/home/eceteam4/ECE480Team4/build/vesc_driver': CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/install/vesc_msgs:/home/eceteam4/ECE480Team4/install/vesc:/home/eceteam4/ECE480Team4/install/vesc_driver:/home/eceteam4/ECE480Team4/install/vesc_ackermann:/home/eceteam4/ECE480Team4/install/gazebo_world:/home/eceteam4/ECE480Team4/install/curvy_road:/home/eceteam4/ECE480Team4/install/vesc_control:/home/eceteam4/ECE480Team4/install/sensors_lidar_bridge:/home/eceteam4/ECE480Team4/install/sensors_imu_bridge:/home/eceteam4/ECE480Team4/install/sensors_camera_node:/home/eceteam4/ECE480Team4/install/racing_line:/home/eceteam4/ECE480Team4/install/perception_sync_node:/home/eceteam4/ECE480Team4/install/perception_ml_node:/home/eceteam4/ECE480Team4/install/obstacle_det:/home/eceteam4/ECE480Team4/install/lane_follow:/home/eceteam4/ECE480Team4/install/bot_slam:/opt/ros/humble LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/install/vesc_msgs/lib:/home/eceteam4/ECE480Team4/install/vesc_driver/lib:/home/eceteam4/ECE480Team4/install/vesc_ackermann/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/eceteam4/ECE480Team4/build/vesc_driver
+[35.829s] -- Install configuration: ""
+[35.831s] -- Execute custom install script
+[35.833s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_driver/lib/vesc_driver/vesc_driver_node
+[35.833s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_driver/include/vesc_driver/crc.hpp
+[35.834s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_driver/include/vesc_driver/datatypes.hpp
+[35.834s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_driver/include/vesc_driver/vesc_device_uuid_lookup.hpp
+[35.834s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_driver/include/vesc_driver/vesc_driver.hpp
+[35.835s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_driver/include/vesc_driver/vesc_interface.hpp
+[35.835s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_driver/include/vesc_driver/vesc_packet.hpp
+[35.835s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_driver/include/vesc_driver/vesc_packet_factory.hpp
+[35.836s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_driver/share/vesc_driver/environment/library_path.sh
+[35.837s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_driver/share/vesc_driver/environment/library_path.dsv
+[35.837s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_driver/lib/libvesc_driver.so
+[35.838s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_driver/lib/vesc_driver/vesc_device_namer
+[35.840s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_driver/share/vesc_driver/launch/vesc_driver_node.launch.py
+[35.841s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_driver/share/vesc_driver/params/vesc_config.yaml
+[35.842s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_driver/share/ament_index/resource_index/package_run_dependencies/vesc_driver
+[35.843s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_driver/share/ament_index/resource_index/parent_prefix_path/vesc_driver
+[35.843s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_driver/share/vesc_driver/environment/ament_prefix_path.sh
+[35.844s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_driver/share/vesc_driver/environment/ament_prefix_path.dsv
+[35.845s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_driver/share/vesc_driver/environment/path.sh
+[35.845s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_driver/share/vesc_driver/environment/path.dsv
+[35.846s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_driver/share/vesc_driver/local_setup.bash
+[35.846s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_driver/share/vesc_driver/local_setup.sh
+[35.847s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_driver/share/vesc_driver/local_setup.zsh
+[35.848s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_driver/share/vesc_driver/local_setup.dsv
+[35.848s] -- Symlinking: /home/eceteam4/ECE480Team4/install/vesc_driver/share/vesc_driver/package.dsv
+[35.859s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_driver/share/ament_index/resource_index/packages/vesc_driver
+[35.859s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_driver/share/ament_index/resource_index/rclcpp_components/vesc_driver
+[35.860s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_driver/share/vesc_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+[35.861s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_driver/share/vesc_driver/cmake/ament_cmake_export_include_directories-extras.cmake
+[35.862s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_driver/share/vesc_driver/cmake/ament_cmake_export_libraries-extras.cmake
+[35.862s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_driver/share/vesc_driver/cmake/vesc_driverConfig.cmake
+[35.863s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_driver/share/vesc_driver/cmake/vesc_driverConfig-version.cmake
+[35.863s] -- Up-to-date symlink: /home/eceteam4/ECE480Team4/install/vesc_driver/share/vesc_driver/package.xml
+[35.868s] Invoked command in '/home/eceteam4/ECE480Team4/build/vesc_driver' returned '0': CMAKE_PREFIX_PATH=/home/eceteam4/ECE480Team4/install/vesc_msgs:/home/eceteam4/ECE480Team4/install/vesc:/home/eceteam4/ECE480Team4/install/vesc_driver:/home/eceteam4/ECE480Team4/install/vesc_ackermann:/home/eceteam4/ECE480Team4/install/gazebo_world:/home/eceteam4/ECE480Team4/install/curvy_road:/home/eceteam4/ECE480Team4/install/vesc_control:/home/eceteam4/ECE480Team4/install/sensors_lidar_bridge:/home/eceteam4/ECE480Team4/install/sensors_imu_bridge:/home/eceteam4/ECE480Team4/install/sensors_camera_node:/home/eceteam4/ECE480Team4/install/racing_line:/home/eceteam4/ECE480Team4/install/perception_sync_node:/home/eceteam4/ECE480Team4/install/perception_ml_node:/home/eceteam4/ECE480Team4/install/obstacle_det:/home/eceteam4/ECE480Team4/install/lane_follow:/home/eceteam4/ECE480Team4/install/bot_slam:/opt/ros/humble LD_LIBRARY_PATH=/home/eceteam4/ECE480Team4/install/vesc_msgs/lib:/home/eceteam4/ECE480Team4/install/vesc_driver/lib:/home/eceteam4/ECE480Team4/install/vesc_ackermann/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/eceteam4/ECE480Team4/build/vesc_driver

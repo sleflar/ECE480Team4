@@ -1,0 +1,23 @@
+[0.086s] Invoking command in '/home/eceteam4/ECE480Team4/build/vesc_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/eceteam4/ECE480Team4/install/vesc_control:/home/eceteam4/ECE480Team4/install/sensors_lidar_bridge:/home/eceteam4/ECE480Team4/install/sensors_imu_bridge:/home/eceteam4/ECE480Team4/install/sensors_camera_node:/home/eceteam4/ECE480Team4/install/racing_line:/home/eceteam4/ECE480Team4/install/perception_sync_node:/home/eceteam4/ECE480Team4/install/perception_ml_node:/home/eceteam4/ECE480Team4/install/obstacle_det:/home/eceteam4/ECE480Team4/install/lane_follow:/home/eceteam4/ECE480Team4/install/bot_slam:/opt/ros/humble /usr/bin/cmake --build /home/eceteam4/ECE480Team4/build/vesc_msgs -- -j6 -l6
+[0.712s] [  1%] Built target vesc_msgs__cpp
+[0.712s] [  1%] Built target ament_cmake_python_symlink_vesc_msgs
+[0.713s] [ 12%] Built target vesc_msgs__rosidl_generator_c
+[0.713s] [ 23%] Built target vesc_msgs__rosidl_typesupport_cpp
+[0.714s] [ 34%] Built target vesc_msgs__rosidl_typesupport_introspection_cpp
+[0.714s] [ 46%] Built target vesc_msgs__rosidl_typesupport_fastrtps_cpp
+[0.715s] [ 57%] Built target vesc_msgs__rosidl_typesupport_fastrtps_c
+[0.715s] [ 68%] Built target vesc_msgs__rosidl_typesupport_introspection_c
+[0.716s] [ 79%] Built target vesc_msgs__rosidl_typesupport_c
+[0.716s] [ 79%] Built target vesc_msgs
+[0.718s] [ 80%] Built target vesc_msgs__py
+[0.795s] [ 90%] Built target vesc_msgs__rosidl_generator_py
+[0.848s] [ 93%] Built target vesc_msgs__rosidl_typesupport_introspection_c__pyext
+[0.851s] [ 96%] Built target vesc_msgs__rosidl_typesupport_c__pyext
+[0.857s] [100%] Built target vesc_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.952s] running egg_info
+[0.953s] writing vesc_msgs.egg-info/PKG-INFO
+[0.954s] writing dependency_links to vesc_msgs.egg-info/dependency_links.txt
+[0.954s] writing top-level names to vesc_msgs.egg-info/top_level.txt
+[0.987s] reading manifest file 'vesc_msgs.egg-info/SOURCES.txt'
+[0.988s] writing manifest file 'vesc_msgs.egg-info/SOURCES.txt'
+[1.061s] [100%] Built target ament_cmake_python_build_vesc_msgs_egg
