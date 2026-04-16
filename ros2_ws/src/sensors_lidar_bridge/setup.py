@@ -13,6 +13,7 @@ setup(
             ['resource/' + package_name]),
         (os.path.join('share', package_name), ['package.xml']),
         (os.path.join('share', package_name, 'launch'), glob('launch/lidar.launch.py')),
+        (os.path.join('share', package_name, 'launch'), glob('launch/lidar_mapping.launch.py')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,

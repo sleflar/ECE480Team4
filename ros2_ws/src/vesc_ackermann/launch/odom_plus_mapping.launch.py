@@ -35,9 +35,6 @@ def generate_launch_description():
                     '-configuration_directory', config_dir,
                     '-configuration_basename', config_file
                 ],
-                remappings=[
-                ('/kiss/odometry', '/odom')
-            ]
             )
         ]
     )
