@@ -29,7 +29,7 @@ options = {
   use_landmarks = false,
   num_laser_scans = 1,
   num_multi_echo_laser_scans = 0,
-  num_subdivisions_per_laser_scan = 10,
+  num_subdivisions_per_laser_scan = 3, -- was 10
   num_point_clouds = 0,
   lookup_transform_timeout_sec = 0.2,
   submap_publish_period_sec = 0.3,
@@ -43,6 +43,20 @@ options = {
 }
 TRAJECTORY_BUILDER_2D.use_imu_data = false
 MAP_BUILDER.use_trajectory_builder_2d = true
-TRAJECTORY_BUILDER_2D.num_accumulated_range_data = 1
-
+TRAJECTORY_BUILDER_2D.use_online_correlative_scan_matching = true
+TRAJECTORY_BUILDER_2D.motion_filter.max_time_seconds = 0.5
+TRAJECTORY_BUILDER_2D.motion_filter.max_distance_meters = 0.1
+TRAJECTORY_BUILDER_2D.motion_filter.max_angle_radians = math.rad(1.0)
+TRAJECTORY_BUILDER_2D.ceres_scan_matcher.translation_weight = 100
+TRAJECTORY_BUILDER_2D.ceres_scan_matcher.rotation_weight = 200
+TRAJECTORY_BUILDER_2D.ceres_scan_matcher.occupied_space_weight = 20
+TRAJECTORY_BUILDER_2D.real_time_correlative_scan_matcher.linear_search_window = 0.3
+TRAJECTORY_BUILDER_2D.real_time_correlative_scan_matcher.angular_search_window = math.rad(45.)
+TRAJECTORY_BUILDER_2D.num_accumulated_range_data = 3 -- was 1
+TRAJECTORY_BUILDER_2D.submaps.num_range_data = 35
+POSE_GRAPH.constraint_builder.min_score = 0.55
+POSE_GRAPH.constraint_builder.global_localization_min_score = 0.6
+POSE_GRAPH.optimize_every_n_nodes = 30
+POSE_GRAPH.constraint_builder.sampling_ratio = 1.
+POSE_GRAPH.constraint_builder.max_constraint_distance = 5 -- meters
 return options
