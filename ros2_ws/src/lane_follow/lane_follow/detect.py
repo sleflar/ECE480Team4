@@ -79,13 +79,13 @@ class DetectNode(Node):
         height, width, _ = cv_image.shape
         
         # ROI vertical range: 20% to 50% from bottom
-        roi_bottom = int(height * 0.25)  # 20% from bottom
-        roi_top    = int(height * 0.40)  # 50% from bottom
+        roi_bottom = int(height * 0.10)  # 20% from bottom
+        roi_top    = int(height * 0.30)  # 50% from bottom
         usable_height = roi_top - roi_bottom
         
         roi_offset = int(0.2*height)
 
-        num_slices = 10  # number of trajectory points
+        num_slices = 5  # number of trajectory points
         roi_height = usable_height // num_slices
         trajectory_points = []
         left_lane = []
@@ -108,8 +108,8 @@ class DetectNode(Node):
             
             
             # Get centroids
-            left_centroid  = self.get_centroid(mask_orange, "left", width)
-            right_centroid = self.get_centroid(mask_orange,  "right", width)
+            left_centroid  = self.get_centroid(mask_black, "left", width)
+            right_centroid = self.get_centroid(mask_black,  "right", width)
 
             if left_centroid:
                 left_centroid = (int(left_centroid[0]), int(left_centroid[1] + y_start))
@@ -154,7 +154,7 @@ class DetectNode(Node):
             #self.get_logger().info(f"New point at {center}")
         
         # Smoothing the trajectory lane
-        SMOOTH_WINDOW = num_slices // 2  # number of neighboring points to average
+        SMOOTH_WINDOW = 3  # number of neighboring points to average
         smoothed_trajectory = []
         for i in range(len(trajectory_points)):
             x_vals = [trajectory_points[j][0] for j in range(max(0, i-SMOOTH_WINDOW),
@@ -182,7 +182,7 @@ class DetectNode(Node):
 
         # --- Publish closest trajectory point for steering ---
         if trajectory_points:
-            self.publish_point(msg, trajectory_points[-1][0], trajectory_points[-1][1], 0.0)
+            self.publish_point(msg, trajectory_points[0][0], trajectory_points[0][1], 0.0)
         else:
             # No lane points detected → publish zero point
             self.publish_point(msg, 0.0, 0.0, 0.0)
@@ -222,7 +222,7 @@ class DetectNode(Node):
         candidates = []
         for cnt in contours:
             area = cv2.contourArea(cnt)
-            if area < 150:
+            if area < 200:
                 continue
 
             M = cv2.moments(cnt)

@@ -12,10 +12,10 @@ class LiDARRacingLineRealCar(Node):
     def __init__(self):
         super().__init__('lidar_racing_line_real_car')
 
-        self.declare_parameter('near_lookahead', 1.4)
-        self.declare_parameter('mid_lookahead', 1.6)
-        self.declare_parameter('far_lookahead', 1.8)
-        self.declare_parameter('lookahead_window', 0.25)
+        self.declare_parameter('near_lookahead', 1)
+        self.declare_parameter('mid_lookahead', 1.5)
+        self.declare_parameter('far_lookahead', 2)
+        self.declare_parameter('lookahead_window', 0.75)
 
         self.declare_parameter('front_angle_deg', 270.0)
         self.declare_parameter('wall_offset', 0.65)
@@ -30,8 +30,8 @@ class LiDARRacingLineRealCar(Node):
 
         self.declare_parameter('min_range', 0.08)
         self.declare_parameter('max_range', 10.0)
-        self.declare_parameter('emergency_stop_distance', 0.12)
-        self.declare_parameter('corner_recovery_distance', 0.50)
+        self.declare_parameter('emergency_stop_distance', 0.001)
+        self.declare_parameter('corner_recovery_distance', 0.75)
         self.declare_parameter('corner_turn_cmd', 0.1)
 
         self.declare_parameter('target_motor_speed', 2000.0)
@@ -192,7 +192,7 @@ class LiDARRacingLineRealCar(Node):
         right_open = float(np.mean(distances[right_open_mask])) if np.any(right_open_mask) else 0.0
 
         if front_recovery_dist < self.corner_recovery_distance:
-            steering_cmd = 1-self.corner_turn_cmd if left_open > right_open else self.corner_turn_cmd
+            steering_cmd = 1-self.corner_turn_cmd if left_open < right_open else self.corner_turn_cmd
             """steering_cmd = (
                 self.steering_smooth_alpha * steering_cmd
                 + (1.0 - self.steering_smooth_alpha) * self.prev_steering_cmd
@@ -230,7 +230,9 @@ class LiDARRacingLineRealCar(Node):
         heading_error = math.atan2(target_y, max(target_x, 0.1))
 
         # Convert heading error into real-car steering command
-        steering_cmd = 1 - (0.5 + (self.steering_gain * heading_error))
+        steering_cmd = (0.5 + (self.steering_gain * heading_error))
+        if left_open > 0.75 and right_open > 0.75:
+            steering_cmd = 0.5
 
         self.prev_steering_cmd = steering_cmd
 
