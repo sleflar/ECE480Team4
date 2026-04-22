@@ -12,15 +12,15 @@ class LiDARRacingLine(Node):
         super().__init__('lidar_racing_line')
 
         # Speed parameters
-        self.declare_parameter('max_speed', 1.3)
-        self.declare_parameter('min_speed', 0.3)
-        self.declare_parameter('corner_speed', 0.6)
+        self.declare_parameter('max_speed', 0.8)
+        self.declare_parameter('min_speed', 0.45)
+        self.declare_parameter('corner_speed', 0.3)
 
         # Lookahead parameters
-        self.declare_parameter('near_lookahead', 1.5)
-        self.declare_parameter('mid_lookahead', 2.5)
-        self.declare_parameter('far_lookahead', 3)
-        self.declare_parameter('lookahead_window', 0.4)
+        self.declare_parameter('near_lookahead', 0.85)
+        self.declare_parameter('mid_lookahead', 1.65)
+        self.declare_parameter('far_lookahead', 2.2)
+        self.declare_parameter('lookahead_window', 0.30)
 
         # Track / LiDAR parameters
         self.declare_parameter('front_angle_deg', 120.0)
@@ -28,20 +28,20 @@ class LiDARRacingLine(Node):
         self.declare_parameter('track_half_width_guess', 0.6)
 
         # Steering parameters
-        self.declare_parameter('steering_gain', 1.3)
-        self.declare_parameter('max_steering', 2)
-        self.declare_parameter('steering_smooth_alpha', 0.70)
+        self.declare_parameter('steering_gain', 1.10)
+        self.declare_parameter('max_steering', 1.4)
+        self.declare_parameter('steering_smooth_alpha', 0.42)
 
         # Racing line parameters
-        self.declare_parameter('racing_offset_gain', 1.1)
-        self.declare_parameter('max_racing_offset', 0.40)
+        self.declare_parameter('racing_offset_gain', 1.25)
+        self.declare_parameter('max_racing_offset', 0.42)
 
         # Safety parameters
         self.declare_parameter('min_range', 0.08)
         self.declare_parameter('max_range', 10.0)
-        self.declare_parameter('emergency_stop_distance', 0.25)
-        self.declare_parameter('corner_recovery_distance', 0.60)
-        self.declare_parameter('corner_turn_steering', 0.80)
+        self.declare_parameter('emergency_stop_distance', 0.2)
+        self.declare_parameter('corner_recovery_distance', 0.44)
+        self.declare_parameter('corner_turn_steering', 0.95)
 
         # Read parameters
         self.max_speed = float(self.get_parameter('max_speed').value)
@@ -228,7 +228,7 @@ class LiDARRacingLine(Node):
         self.prev_steering = steering
 
         # Slow down in tighter turns
-        turn_factor = max(0.3, 1.0 - 0.6 * abs(steering) / max(self.max_steering, 1e-6))
+        turn_factor = max(0.55, 1.0 - 0.28 * abs(steering) / max(self.max_steering, 1e-6))
         speed = self.max_speed * turn_factor
         speed = max(self.min_speed, min(self.max_speed, speed))
 
